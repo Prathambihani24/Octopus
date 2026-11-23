@@ -114,6 +114,7 @@ details{background:white;border:1px solid var(--rule);padding:18px 22px;margin:1
 <section id="verification">
   <div class="kicker">Verification</div><h2>Where the first pass missed</h2>
   <p class="subtle">A targeted sample checks named fields against official documentation. These are the fields used for corrections, so the comparison measures the fixes on this sample. It does not estimate accuracy across all 100 apps.</p>
+  <div class="audit-top" id="audit-overall"></div>
   <div class="audit-top" id="audit-top"></div>
   <p id="human"></p>
   <details><summary>Where a human must verify the result</summary>
@@ -152,7 +153,7 @@ details{background:white;border:1px solid var(--rule);padding:18px 22px;margin:1
 <script>
 "use strict";
 const data = JSON.parse(document.getElementById("findings-data").textContent);
-const {apps, audit, summary, auth_labels, access_labels, mcp_labels, human_audit, source_repo} = data;
+const {apps, audit, summary, auth_labels, access_labels, mcp_labels, human_audit, source_repo, audit_summary} = data;
 const el = id => document.getElementById(id);
 function node(tag, value, className) {
   const element = document.createElement(tag);
@@ -249,6 +250,14 @@ function auditLabel(field,value) {
   return value.join(", ");
 }
 el("audit-top").append(node("strong",summary.before_correct+"/"+audit.length+" → "+summary.after_correct+"/"+audit.length),node("div","Exact field matches in the targeted documentation comparison."));
+if (audit_summary) {
+  const o = audit_summary.outcomes;
+  el("audit-overall").append(
+    node("strong",(o.confirmed_unchanged + o.corrected_with_cited_evidence)+"/"+audit_summary.fields_checked+" fields have a recorded review outcome"),
+    node("div",o.confirmed_unchanged+" unchanged; "+o.corrected_with_cited_evidence+" corrected with cited evidence; "+audit_summary.open_fields+" remain open ("+o.insufficient_evidence+" insufficient evidence, "+o.source_unavailable+" source unavailable). "+audit_summary.direct_source_urls_captured+" records include a source URL."),
+    link("unresolved-facts.json","Inspect unresolved fields")
+  );
+}
 el("human").textContent = human_audit.length ? "Browser documentation cross-checks: "+human_audit.map(x=>x.note).join(" ")+" Applicant-performed checks remain pending." : "Independent applicant spot checks are pending. The table below records assistant checks against vendor documentation.";
 for (const check of audit) {
   const row = node("tr",null);
