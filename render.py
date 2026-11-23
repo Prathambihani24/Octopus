@@ -16,7 +16,7 @@ second = ROOT / "data/holdout-audit.json"
 findings["second_audit"] = json.loads(second.read_text()) if second.exists() else None
 demo = ROOT / "data/demo.json"
 findings["demo"] = json.loads(demo.read_text()) if demo.exists() else None
-for key, filename in [("verification_evaluation", "verification-evaluation.json"), ("batch_run", "batch-run.json"), ("human_review_plan", "human-review-plan.json")]:
+for key, filename in [("verification_evaluation", "verification-evaluation.json"), ("batch_run", "batch-run.json"), ("human_review_plan", "human-review-plan.json"), ("audit_summary", "audit-summary.json")]:
     path = ROOT / "data" / filename
     findings[key] = json.loads(path.read_text()) if path.exists() else None
 for row in findings["apps"]:
@@ -28,13 +28,16 @@ payload = json.dumps(findings, ensure_ascii=False, separators=(",", ":")).replac
 template = (ROOT / "page.html").read_text(encoding="utf-8")
 (dist / "index.html").write_text(template.replace("__FINDINGS__", payload), encoding="utf-8")
 (dist / "findings.json").write_text(json.dumps(findings, indent=2, ensure_ascii=False))
-for name in ["demo.json", "holdout-audit.json", "verification-evaluation.json", "batch-run.json", "human-review-plan.json"]:
+for name in ["demo.json", "holdout-audit.json", "verification-evaluation.json", "batch-run.json", "human-review-plan.json", "audit-summary.json", "unresolved-facts.json"]:
     if (ROOT / "data" / name).exists(): shutil.copyfile(ROOT / "data" / name, dist / name)
 shutil.copyfile(ROOT / "README.md", dist / "README.md")
 paths = ["data/human-review-plan.json", "verify.py", "evaluate.py", "batch_run.py", "data/verification-evaluation.json", "agent.py", "test_agent.py", "data/holdout-before.json", "data/holdout-audit.json", "data/demo.json", "data/seeds.json", "README.md", "research.py", "render.py", "page.html",
          "data/discovery.json", "data/reviewed.psv", "data/audit.json",
          "output/findings.json", "dist/index.html", "dist/findings.json", "dist/README.md"]
 for path in ["data/human-audit.json", "data/source-url.txt", "data/batch-run.json"]:
+    if (ROOT / path).exists():
+        paths.append(path)
+for path in ["data/audit-summary.json", "data/unresolved-facts.json", "data/full-fact-audit.json", "data/fact-corrections.json"]:
     if (ROOT / path).exists():
         paths.append(path)
 with ZipFile(dist / "composio-toolkit-study.zip", "w", ZIP_DEFLATED) as archive:
