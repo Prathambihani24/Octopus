@@ -10,7 +10,7 @@ class PipelineTests(unittest.TestCase):
         docs={
           'https://example.com/docs': {'text':'Developer documentation','links':['https://example.com/docs/authentication','https://unrelated.test/api']},
           'https://example.com/llms.txt':{'text':'Index','links':[]},
-          'https://example.com/docs/authentication':{'text':'Use an API key. REST API. Free trial available.','links':[]}}
+          'https://example.com/docs/authentication':{'text':'Requests require an API key to authenticate. The API uses REST. Free trial available.','links':[]}}
         def fake(url,cache,refresh): return {'url':url,'status':'read',**docs[url]}
         with tempfile.TemporaryDirectory() as tmp, patch('agent.fetch',side_effect=fake):
             result=agent.run('New app','https://example.com/docs',Path(tmp)/'run',4)
@@ -40,5 +40,28 @@ class PipelineTests(unittest.TestCase):
         rows={r['id']:r for r in load_review()}
         self.assertEqual(len(second),10)
         for c in second:self.assertEqual(rows[c['id']]['auth'],c['expected'])
+
+class VerificationTests(unittest.TestCase):
+    def verify(self,docs):
+        from verify import verify_documents
+        return verify_documents([dict(url=url,text=text,status='read') for url,text in docs])
+    def test_mcp_oauth_does_not_leak_into_api(self):
+        r=self.verify([('https://example.com/api/auth','The API uses an API key to authenticate requests.'),('https://example.com/mcp','The MCP server uses OAuth to authenticate users.')])
+        self.assertEqual(r['scoped_fields']['api']['auth'],['K'])
+        self.assertEqual(r['scoped_fields']['mcp']['auth'],['O'])
+    def test_index_is_not_evidence(self):
+        r=self.verify([('https://example.com/llms.txt','The API uses OAuth to authenticate requests.')])
+        self.assertEqual(r['scoped_fields']['api']['auth'],[])
+    def test_conflicting_sources_are_not_promoted(self):
+        r=self.verify([('https://example.com/api/auth','The API supports OAuth authentication for requests.'),('https://example.com/api/legacy','The API does not support OAuth authentication anymore.')])
+        self.assertEqual(r['scoped_fields']['api']['auth'],[])
+        self.assertTrue(any(e['status']=='conflicting' for e in r['evidence']))
+    def test_free_plan_does_not_prove_credential_entitlement(self):
+        r=self.verify([('https://example.com/api/pricing','The free plan includes website access for users.')])
+        self.assertEqual(r['scoped_fields']['api']['access'],[])
+    def test_webhook_signature_is_separate(self):
+        r=self.verify([('https://example.com/webhooks/auth','Webhook authentication uses HMAC signatures to verify requests.')])
+        self.assertEqual(r['scoped_fields']['webhook']['auth'],['S'])
+        self.assertEqual(r['scoped_fields']['api']['auth'],[])
 
 if __name__=='__main__':unittest.main()

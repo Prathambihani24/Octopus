@@ -16,21 +16,25 @@ second = ROOT / "data/holdout-audit.json"
 findings["second_audit"] = json.loads(second.read_text()) if second.exists() else None
 demo = ROOT / "data/demo.json"
 findings["demo"] = json.loads(demo.read_text()) if demo.exists() else None
+for key, filename in [("verification_evaluation", "verification-evaluation.json"), ("batch_run", "batch-run.json"), ("human_review_plan", "human-review-plan.json")]:
+    path = ROOT / "data" / filename
+    findings[key] = json.loads(path.read_text()) if path.exists() else None
 for row in findings["apps"]:
     row["decision_group"] = "research" if row["access"] == "U" or "U" in row["auth"] else ("access" if row["access"] in ("P","R") else "prototype")
     row["prototype"] = {"F":"Documented free/test route", "C":"Local execution route", "P":"Paid access required", "R":"Approval or tenant access required", "U":"Unconfirmed"}[row["access"]]
+    row["next_action"] = {"prototype":"Test one read action with least-privilege credentials; confirm existing Composio coverage.", "access":"Confirm account eligibility, API entitlement and distribution approval before estimating implementation.", "research":"Resolve the missing credential or access evidence in official documentation before making a build commitment."}[row["decision_group"]]
     row["production"] = "Not verified; check entitlement, scopes and distribution"
 payload = json.dumps(findings, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
 template = (ROOT / "page.html").read_text(encoding="utf-8")
 (dist / "index.html").write_text(template.replace("__FINDINGS__", payload), encoding="utf-8")
 (dist / "findings.json").write_text(json.dumps(findings, indent=2, ensure_ascii=False))
-for name in ["demo.json", "holdout-audit.json"]:
-    shutil.copyfile(ROOT / "data" / name, dist / name)
+for name in ["demo.json", "holdout-audit.json", "verification-evaluation.json", "batch-run.json", "human-review-plan.json"]:
+    if (ROOT / "data" / name).exists(): shutil.copyfile(ROOT / "data" / name, dist / name)
 shutil.copyfile(ROOT / "README.md", dist / "README.md")
-paths = ["agent.py", "test_agent.py", "data/holdout-before.json", "data/holdout-audit.json", "data/demo.json", "data/seeds.json", "README.md", "research.py", "render.py", "page.html",
+paths = ["data/human-review-plan.json", "verify.py", "evaluate.py", "batch_run.py", "data/verification-evaluation.json", "agent.py", "test_agent.py", "data/holdout-before.json", "data/holdout-audit.json", "data/demo.json", "data/seeds.json", "README.md", "research.py", "render.py", "page.html",
          "data/discovery.json", "data/reviewed.psv", "data/audit.json",
          "output/findings.json", "dist/index.html", "dist/findings.json", "dist/README.md"]
-for path in ["data/human-audit.json", "data/source-url.txt"]:
+for path in ["data/human-audit.json", "data/source-url.txt", "data/batch-run.json"]:
     if (ROOT / path).exists():
         paths.append(path)
 with ZipFile(dist / "composio-toolkit-study.zip", "w", ZIP_DEFLATED) as archive:

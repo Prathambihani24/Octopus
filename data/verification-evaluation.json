@@ -1,0 +1,282 @@
+{
+  "method": "Ten previously reviewed auth sets, one frozen official document per app. Baseline and new rules see identical text. Development sample, not blind or independently labeled. Expected sets can require additional sources; missing methods measure a combination of retrieval coverage and extraction errors. Access and buildability are not scored.",
+  "checks": [
+    {
+      "id": 4,
+      "app": "Attio",
+      "url": "https://docs.attio.com/rest-api/guides/authentication",
+      "expected": [
+        "K",
+        "O"
+      ],
+      "before": [
+        "B",
+        "K",
+        "O",
+        "S",
+        "T"
+      ],
+      "after": [
+        "B",
+        "K",
+        "O",
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false,
+      "fetch_status": "read",
+      "document_sha256": "73797fe7404f5c039ecd628855d6291ca0d9bc4c60e110a5870b80b319182a01",
+      "missing_after": [],
+      "extra_after": [
+        "B",
+        "T"
+      ]
+    },
+    {
+      "id": 6,
+      "app": "Podio",
+      "url": "https://developers.podio.com/authentication",
+      "expected": [
+        "O"
+      ],
+      "before": [
+        "K",
+        "O",
+        "T"
+      ],
+      "after": [
+        "K",
+        "O",
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false,
+      "fetch_status": "read",
+      "document_sha256": "fdb92d9b48451e1383a98766a5c8a59d74d3506c5fca3af1860b8423e0270066",
+      "missing_after": [],
+      "extra_after": [
+        "K",
+        "T"
+      ]
+    },
+    {
+      "id": 13,
+      "app": "Freshdesk",
+      "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+      "expected": [
+        "B",
+        "K",
+        "O"
+      ],
+      "before": [
+        "K",
+        "O",
+        "T"
+      ],
+      "after": [
+        "K",
+        "O",
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false,
+      "fetch_status": "read",
+      "document_sha256": "3468687740fb5932efb816a6572a35d30722d63ab36011b628e9c9de0cd446f4",
+      "missing_after": [
+        "B"
+      ],
+      "extra_after": [
+        "T"
+      ]
+    },
+    {
+      "id": 17,
+      "app": "Plain",
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "expected": [
+        "K",
+        "O"
+      ],
+      "before": [
+        "K",
+        "O",
+        "S"
+      ],
+      "after": [
+        "K",
+        "O"
+      ],
+      "before_ok": false,
+      "after_ok": true,
+      "fetch_status": "read",
+      "document_sha256": "87c5155c7a61c8eed11a4db530c7a1ee6c519726fdcc83f2f15eaee2238bd1e7",
+      "missing_after": [],
+      "extra_after": []
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "url": "https://docs.slack.dev/authentication/",
+      "expected": [
+        "O",
+        "T"
+      ],
+      "before": [
+        "O",
+        "T"
+      ],
+      "after": [
+        "O",
+        "T"
+      ],
+      "before_ok": true,
+      "after_ok": true,
+      "fetch_status": "read",
+      "document_sha256": "4c4a965b02e002f3653a8333e517f936f67de61acc6da23fbef1a6a619bcdbef",
+      "missing_after": [],
+      "extra_after": []
+    },
+    {
+      "id": 35,
+      "app": "Mailchimp",
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+      "expected": [
+        "B",
+        "K",
+        "O"
+      ],
+      "before": [
+        "B",
+        "K",
+        "O",
+        "T"
+      ],
+      "after": [
+        "B",
+        "K",
+        "O"
+      ],
+      "before_ok": false,
+      "after_ok": true,
+      "fetch_status": "read",
+      "document_sha256": "fb2c82cfa37440ab12f4d5fe055a7a720df4b7b0835125f13544d66a7c2ec83d",
+      "missing_after": [],
+      "extra_after": []
+    },
+    {
+      "id": 55,
+      "app": "Apify",
+      "url": "https://docs.apify.com/api/v2",
+      "expected": [
+        "H",
+        "T"
+      ],
+      "before": [
+        "K",
+        "T"
+      ],
+      "after": [
+        "K",
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false,
+      "fetch_status": "read",
+      "document_sha256": "544cb2d39b90cfcb54ba30cb3d78804f5a2ebaeeae9eb287fad1578909e9ec92",
+      "missing_after": [
+        "H"
+      ],
+      "extra_after": [
+        "K"
+      ]
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "expected": [
+        "B",
+        "O",
+        "S",
+        "T"
+      ],
+      "before": [
+        "B",
+        "O",
+        "S",
+        "T"
+      ],
+      "after": [
+        "B",
+        "O",
+        "S",
+        "T"
+      ],
+      "before_ok": true,
+      "after_ok": true,
+      "fetch_status": "read",
+      "document_sha256": "36ff71498c529aae63480bde55b9cd6f6187aeb72f4d735aa03bb3310be47f3c",
+      "missing_after": [],
+      "extra_after": []
+    },
+    {
+      "id": 73,
+      "app": "Linear",
+      "url": "https://linear.app/developers/graphql",
+      "expected": [
+        "K",
+        "O"
+      ],
+      "before": [
+        "K",
+        "O",
+        "T"
+      ],
+      "after": [
+        "K",
+        "O",
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false,
+      "fetch_status": "read",
+      "document_sha256": "179f91f9e529a6c2a6808f2a5616aff6c8946243997fc40f524890d8bc890e9a",
+      "missing_after": [],
+      "extra_after": [
+        "T"
+      ]
+    },
+    {
+      "id": 81,
+      "app": "Stripe",
+      "url": "https://docs.stripe.com/api/authentication",
+      "expected": [
+        "B",
+        "K",
+        "O"
+      ],
+      "before": [
+        "B",
+        "K",
+        "T"
+      ],
+      "after": [
+        "K",
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false,
+      "fetch_status": "read",
+      "document_sha256": "feef3ca2c8f07838210f320a1777de7e1359ae0dcd2c5249b791622b122bdfd8",
+      "missing_after": [
+        "B",
+        "O"
+      ],
+      "extra_after": [
+        "T"
+      ]
+    }
+  ],
+  "before_correct": 2,
+  "after_correct": 4
+}

@@ -61,3 +61,23 @@ Results include a local HTML report, JSON evidence, timestamps, document hashes,
 Ten apps outside the first correction sample were selected before opening the fresh sources. Their original rows are retained in `data/holdout-before.json`; findings are in `data/holdout-audit.json`. This checks auth-set completeness only. Five original sets matched and five required additions. The corrected sets then match the reviewed expected sets. This is a second assistant review, not a blind independent evaluation or an estimate of total dataset accuracy. It exposes real omissions in Plain, Freshdesk, Mailchimp, Apify and GitHub. Applicant checks remain pending.
 
 The decision panel groups feasibility using explicit access/auth labels. Prototype candidates have a documented free/test/local route and known auth. Paid or approval routes need access work. Unknown auth or access goes to research. Customer demand and existing Composio coverage remain unmeasured, so this is not a revenue-ranked roadmap. No production integration is represented as tested.
+
+## Scoped verification (v3)
+
+`verify.py` separates API, MCP, webhook and unknown contexts. It rejects documentation indexes as assertion evidence, filters leaked navigation code, flags nearby negation/deprecation, and keeps contradictory claims out of supported output. Each claim includes a status, rationale, source and document hash when available. `supported` means rule-supported text, not independent truth. Missing evidence is never treated as proof that an integration is impossible.
+
+Access mentions always require review because a free plan does not establish API credential entitlement. MCP mentions also require review of server ownership and direction. No model is called and no credentials are needed. The system does not perform semantic reasoning or substitute for human checks.
+
+`data/verification-evaluation.json` compares old keyword candidates and new scoped rules on the same ten frozen official documents. Exact auth matches improved from 2/10 to 4/10; six remain incomplete or noisy. This development sample uses the previous reviewed labels, not independent labels. One document may not cover every auth method, so retrieval coverage and extraction errors both affect the metric. Access and buildability are not scored in this experiment. `evaluate.py` can reproduce it when the local `output/verification-frozen.json` capture is available; vendor document bodies are deliberately not published. Published results retain hashes, sources, expected sets and misses.
+
+Run `python3 batch_run.py` for a bounded pass across all 100 supplied seeds, with three pages per app and up to three concurrent apps. `data/batch-run.json` records actual retrieval outcomes. These are research candidates and failure records; the reviewed matrix is a separate artifact and is never silently overwritten.
+
+## Submission status
+
+The report contains the 100-app matrix, patterns, runnable pipeline, evidence, correction examples and measured limitations. Remaining work includes applicant-performed manual spot checks, deeper research for unresolved rows, and validation of automated findings. No overall accuracy percentage or production-ready integration is claimed. The assignment allows a script/pipeline; this implementation does not claim to use Composio SDK or MCP.
+
+### Applicant verification handoff
+
+Open **Verification → Where a human must verify the result** on the case study for five concrete checks. Record the app, field, original claim, your observed answer, status (match, correction, or unresolved), official source and section, and check date. Preserve the starting claim before editing the matrix. Recheck any correction against the cited source, then rerun `research.py` and `render.py`. An unresolved case remains open.
+
+The original search pass covered 100 apps. The separate live refresh was interrupted by network policy. Its download contains the saved per-app results and explicitly marks the status as interrupted.

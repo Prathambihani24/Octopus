@@ -106,6 +106,13 @@ footer{padding:22px 0;color:var(--muted);font-size:.9rem}
   <p class="subtle">A targeted sample checks named fields against official documentation. These are the fields used for corrections, so the comparison measures the fixes on this sample. It does not estimate accuracy across all 100 apps.</p>
   <div class="audit-top" id="audit-top"></div>
   <p id="human"></p>
+  <details><summary>Where a human must verify the result</summary>
+    <p>The pipeline finds relevant passages and flags possible conflicts. A reviewer confirms the product and API version, checks whether credentials are actually available on the stated plan, and distinguishes test access from customer rollout. For MCP, verify the vendor actually provides a server for this product. Escalate unclear or contradictory docs instead of guessing.</p>
+    <p>For each sample below, read the official source before revealing the published row. Record the source and section, your finding, and one outcome: <strong>match</strong>, <strong>correction</strong>, or <strong>unresolved</strong>. Recheck corrected claims against the source and keep the original value in the audit trail. A document check requires no paid signup.</p>
+    <div id="applicant-sample"></div>
+    <p><a href="human-review-plan.json">Download sample prompts</a></p>
+  </details>
+  <details><summary>Automatic verification — measured limits</summary><div id="rule-evaluation"></div><p class="subtle">A rule-supported claim has an affirmative text context. It can still be wrong about product scope or credentials. Access entitlement and vendor MCP ownership always remain in the review queue. This is not an independent accuracy estimate.</p><p><a href="verification-evaluation.json">Inspect frozen comparison, misses and document hashes</a></p></details>
 <div class="audit-top" id="second-score"></div>
 <details><summary>Second audit — ten previously unsampled apps</summary><p class="subtle" id="second-method"></p><div class="table-wrap" tabindex="0" role="region" aria-label="Second audit"><table><thead><tr><th>App</th><th>Frozen original auth</th><th>Corrected auth</th><th>Evidence and finding</th></tr></thead><tbody id="second-audit"></tbody></table></div></details>
 <h3>Three failures that changed the review process</h3><div class="workflow" id="error-stories"></div>
@@ -117,7 +124,9 @@ footer{padding:22px 0;color:var(--muted);font-size:.9rem}
 <form id="command-form" class="filter"><label>App name<input id="new-app" required maxlength="80" value="Resend"></label><label>Official HTTPS website or docs<input id="new-url" type="url" required value="https://resend.com/docs"></label><button type="submit">Generate run command</button></form>
 <pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code id="run-command">python3 agent.py --app 'Resend' --website 'https://resend.com/docs' --max-pages 8 --out output/new-app</code></pre>
 <p class="subtle">Run this command from the downloaded source or repository. This static page generates a local command; it does not run a backend or ask for credentials.</p>
-<div class="audit-top" id="demo-proof"></div><p class="links"><a href="demo.json">Inspect the actual new-app run</a><a href="holdout-audit.json">Download second audit</a></p>
+<div class="audit-top" id="demo-proof"></div>
+<details><summary>Inspect API, MCP and webhook evidence separately</summary><div id="scope-results"></div></details>
+<div class="audit-top" id="batch-proof"></div><p class="links"><a href="demo.json">Inspect the actual new-app run</a><a href="holdout-audit.json">Download second audit</a></p>
 <h3>How the 100-app snapshot was produced</h3>
   <div class="workflow">
     <div><h3>Discover</h3><p>Search every app for API, auth, credential access and MCP. Save the source candidates and extract the first result's signals.</p></div>
@@ -213,6 +222,10 @@ function renderMatrix() {
     const sources = node("div",null,"src");
     row.sources.forEach((url,index)=>sources.append(link(url,"Source "+(index+1))));
     decision.append(node("span",row.verdict,"verdict"),node("small","Prototype: "+row.prototype),node("small","Production: "+row.production),node("small",row.caveat),sources);
+    const why=node("details",null);
+    why.append(node("summary","Why this verdict?"),node("p","Starting route: "+access_labels[row.access]+". Auth: "+row.auth.map(x=>auth_labels[x]).join(", ")+"."),node("p",row.caveat),node("strong","Next action"),node("p",row.next_action),node("p","Evidence reflects documentation review. No authenticated vendor action or production approval was tested."));
+    row.sources.forEach((url,i)=>why.append(link(url,"Evidence "+(i+1)),document.createTextNode(" ")));
+    decision.append(why);
     tr.append(name,auth,surface,decision);
     return tr;
   }));
@@ -256,6 +269,18 @@ if(data.demo){el("demo-proof").append(node("strong",data.demo.app+" · "+data.de
 function shellQuote(value){return "'"+value.replaceAll("'", "'\"'\"'")+"'";}
 el("command-form").addEventListener("submit",event=>{event.preventDefault();const url=new URL(el("new-url").value);if(url.protocol!=="https:"){el("run-command").textContent="Enter an HTTPS documentation URL.";return;}el("run-command").textContent="python3 agent.py --app "+shellQuote(el("new-app").value)+" --website "+shellQuote(url.href)+" --max-pages 8 --out output/new-app";});
 
+if(data.verification_evaluation){const v=data.verification_evaluation;el("rule-evaluation").append(node("h3",v.before_correct+"/10 → "+v.after_correct+"/10 exact auth sets"),node("p",v.method));for(const c of v.checks){el("rule-evaluation").append(node("p",c.app+": "+auditLabel("auth",c.before)+" → "+(c.after.length?auditLabel("auth",c.after):"Insufficient evidence")+". "+(c.after_ok?"Matched reviewed set.":"Still needs review.")));}}
+if(data.demo && data.demo.verification){const v=data.demo.verification;for(const scope of ["api","mcp","webhook","unknown"]){const box=node("div",null);box.append(node("h3",scope.toUpperCase()),node("p","Rule-supported auth: "+(v.scoped_fields[scope].auth.map(k=>auth_labels[k]).join(", ")||"None established")));const details=node("details",null);details.append(node("summary","Inspect contexts and review flags"));for(const e of v.evidence.filter(e=>e.scope===scope && e.field==="auth")){const line=node("p",e.status+" · "+auth_labels[e.value]+" · "+e.reason);line.append(document.createTextNode(" "),link(e.url,"Source"));details.append(line);}box.append(details);el("scope-results").append(box);}}
+for (const check of data.human_review_plan || []) {
+  const app=apps.find(row=>row.id===check.id);
+  const item=node("div",null,"audit-top");
+  item.append(node("h3",app.app+" · "+check.field),node("p",check.question),link(check.url,"Review official source"));
+  const recorded=node("details",null);
+  recorded.append(node("summary","Reveal published row after checking"),node("p",access_labels[app.access]+". "+app.caveat));
+  item.append(recorded);
+  el("applicant-sample").append(item);
+}
+if(data.batch_run){const b=data.batch_run,read=b.apps.filter(r=>r.pages_read>0).length;el("batch-proof").append(node("strong",b.apps.length+"/"+(b.planned||apps.length)+" saved live refresh results"),node("p",read+" apps returned at least one readable document; "+(b.apps.length-read)+" returned none. "+b.method),link("batch-run.json","Inspect per-app run outcomes"));}
 if (source_repo) el("repo-links").prepend(link(source_repo,"Source repository"));
 </script>
 </body>

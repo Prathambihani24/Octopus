@@ -1,0 +1,7 @@
+[
+  {"id":6,"field":"Credential access","question":"Can a developer on a free account register an API client? Check whether the stated rate limits cover both free and paid accounts.","url":"https://developers.podio.com/index/faq"},
+  {"id":25,"field":"Workspace permissions","question":"Can a free workspace enable the API add-on and create a key? Identify the required role and the difference between enabling the add-on and granting permissions.","url":"https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"},
+  {"id":33,"field":"Production approval","question":"What can a development-tier app do, and what approval is needed to serve multiple customers? Check the specific ads product and tier.","url":"https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started"},
+  {"id":47,"field":"Prototype versus production","question":"Can a developer get API credentials on a free store or through an upgrade? Separate the development exception from the normal merchant plan.","url":"https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid"},
+  {"id":100,"field":"Auth versus entitlement","question":"Which credentials cover a personal workspace versus multiple customers, and does the source establish plan eligibility? Leave access unconfirmed if the docs do not say.","url":"https://developers.grain.com/authentication.html"}
+]

@@ -10,346 +10,290 @@
   "model_tokens": 0,
   "fields": {
     "auth": [
-      "K",
-      "O",
-      "S",
-      "T"
+      "K"
     ],
-    "access": [
-      "C",
-      "F",
-      "P",
-      "R"
-    ],
+    "access": [],
     "surface": [
       "cli",
       "rest"
     ],
-    "mcp": [
-      "Y"
-    ]
+    "mcp": []
   },
   "evidence": [
     {
       "field": "auth",
       "value": "K",
       "url": "https://resend.com/docs/introduction",
-      "excerpt": "ur own domain, verified with Resend A Resend API key Then, you\u2019ll be ready to send both types of emails : Transactional emails: personalized, event",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "S",
       "url": "https://resend.com/docs/introduction",
-      "excerpt": "impressionData\":false},{\"name\":\"revalidation-jwt\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressi",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "rest",
       "url": "https://resend.com/docs/introduction",
-      "excerpt": "for developers. The documentation covers the REST API, official SDKs, the CLI, the MCP server, webhooks, deliverability guides, and step-by-step",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "cli",
       "url": "https://resend.com/docs/introduction",
-      "excerpt": "r Quickstart Java Quickstart .NET Quickstart CLI Quickstart Explore Discover the full range of features and capabilities. Emails Visualize all",
       "status": "candidate"
     },
     {
       "field": "mcp",
       "value": "Y",
       "url": "https://resend.com/docs/introduction",
-      "excerpt": "rs the REST API, official SDKs, the CLI, the MCP server, webhooks, deliverability guides, and step-by-step quickstarts for every major language and fr",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "O",
       "url": "https://resend.com/llms.txt",
-      "excerpt": "eate an API key (or connect your app through OAuth), and send your first email with one API call. You can test right away by sending from onboard",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "K",
       "url": "https://resend.com/llms.txt",
-      "excerpt": "`POST https://api.resend.com/emails` with an API key, or through an official SDK. - Send batch email (up to 100 messages per request) via `POST htt",
       "status": "candidate"
     },
     {
       "field": "access",
       "value": "F",
       "url": "https://resend.com/llms.txt",
-      "excerpt": "### How much does Resend cost? Resend has a free plan with no credit card required: 3,000 transactional emails a month (up to 100 a day) and 1,000 m",
       "status": "candidate"
     },
     {
       "field": "access",
       "value": "R",
       "url": "https://resend.com/llms.txt",
-      "excerpt": "s, SLAs, security and compliance, and how to contact sales. - [Enterprise (Markdown)](https://resend.com/enterprise.md) - [Enterprise (HTML)](https://re",
       "status": "candidate"
     },
     {
       "field": "access",
       "value": "C",
       "url": "https://resend.com/llms.txt",
-      "excerpt": "for agents](https://resend.com/setup.md) ## Command line tool Install and use the Resend CLI from the terminal. - [Install](https://resend.com/install.sh)",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "rest",
       "url": "https://resend.com/llms.txt",
-      "excerpt": "AWS Lambda. Any other language can call the REST API over HTTPS. ### Can I write emails with React? Yes. Resend created React Email, an open",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "cli",
       "url": "https://resend.com/llms.txt",
-      "excerpt": "I spec below), use an official SDK, use the [CLI](https://github.com/resend/resend-cli), or connect to the [MCP server](https://mcp.resend.com/",
       "status": "candidate"
     },
     {
       "field": "mcp",
       "value": "Y",
       "url": "https://resend.com/llms.txt",
-      "excerpt": "b.com/resend/resend-cli), or connect to the [MCP server](https://mcp.resend.com/mcp). Do not use Resend for scraping inboxes or sending unsolicited bu",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "K",
       "url": "https://resend.com/docs/create-an-api-key",
-      "excerpt": "Create an API key - Resend Documentation Index Fetch the complete documentation index at: /docs/llms.txt Use thi",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "S",
       "url": "https://resend.com/docs/create-an-api-key",
-      "excerpt": "impressionData\":false},{\"name\":\"revalidation-jwt\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressi",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "rest",
       "url": "https://resend.com/docs/create-an-api-key",
-      "excerpt": "for developers. The documentation covers the REST API, official SDKs, the CLI, the MCP server, webhooks, deliverability guides, and step-by-step",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "cli",
       "url": "https://resend.com/docs/create-an-api-key",
-      "excerpt": "de (e.g., SDKs, API, command-line interface (CLI), or AI tools). Create an API Key You can create API keys in four ways: in the API keys Dashbo",
       "status": "candidate"
     },
     {
       "field": "mcp",
       "value": "Y",
       "url": "https://resend.com/docs/create-an-api-key",
-      "excerpt": "PI with a Resend CLI command with the Resend MCP server To create a new API Key from the Resend Dashboard: 1 In your Resend Dashboard, navigate to the",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "O",
       "url": "https://resend.com/docs/mcp-server",
-      "excerpt": "to log in to Resend and approve access using OAuth. The Resend plugin follows the Agent Plugins spec. On clients that install that plugin, it add",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "K",
       "url": "https://resend.com/docs/mcp-server",
-      "excerpt": "ver, CI, or a headless agent), pass a Resend API key as a Bearer token instead of using OAuth. Claude Code JSON config claude mcp add --transport h",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "T",
       "url": "https://resend.com/docs/mcp-server",
-      "excerpt": "headless agent), pass a Resend API key as a Bearer token instead of using OAuth. Claude Code JSON config claude mcp add --transport http resend https:/",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "S",
       "url": "https://resend.com/docs/mcp-server",
-      "excerpt": "impressionData\":false},{\"name\":\"revalidation-jwt\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressi",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "rest",
       "url": "https://resend.com/docs/mcp-server",
-      "excerpt": "for developers. The documentation covers the REST API, official SDKs, the CLI, the MCP server, webhooks, deliverability guides, and step-by-step",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "cli",
       "url": "https://resend.com/docs/mcp-server",
-      "excerpt": "rok Bot OpenClaw OpenCode Antigravity Gemini CLI Devin Zed Warp fx Connect Resend in one click from the connector directory . The connector ins",
       "status": "candidate"
     },
     {
       "field": "mcp",
       "value": "Y",
       "url": "https://resend.com/docs/mcp-server",
-      "excerpt": "MCP Server - Resend Documentation Index Fetch the complete documentation index at: /docs/llms.txt Use thi",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "O",
       "url": "https://resend.com/docs/api-reference/introduction",
-      "excerpt": "ference/usage/retrieve-usage\"}]}]},{\"group\":\"OAuth\",\"pages\":[{\"group\":\"Authorization\",\"expanded\":false,\"pages\":[{\"title\":\"Register Client\",\"api\":",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "K",
       "url": "https://resend.com/docs/api-reference/introduction",
-      "excerpt": "arer re_xxxxxxxxx where re_xxxxxxxxx is your API Key . Authorization: Bearer re_xxxxxxxxx User-Agent All API requests must include a User-Agent hea",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "S",
       "url": "https://resend.com/docs/api-reference/introduction",
-      "excerpt": "impressionData\":false},{\"name\":\"revalidation-jwt\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressi",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "rest",
       "url": "https://resend.com/docs/api-reference/introduction",
-      "excerpt": "project. Base URL The Resend API is built on REST principles. HTTPS is enforced in every request to improve data security, integrity, and privac",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "cli",
       "url": "https://resend.com/docs/api-reference/introduction",
-      "excerpt": "TP clients, all Resend SDKs , and the Resend CLI include this header automatically, but if you\u2019re making direct HTTP requests, make sure to set",
       "status": "candidate"
     },
     {
       "field": "mcp",
       "value": "Y",
       "url": "https://resend.com/docs/api-reference/introduction",
-      "excerpt": "rs the REST API, official SDKs, the CLI, the MCP server, webhooks, deliverability guides, and step-by-step quickstarts for every major language and fr",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "K",
       "url": "https://resend.com/pricing",
-      "excerpt": "utomated backups Multi-factor authentication API key permissions Signed webhook endpoints Customer support Free Pro Scale Enterprise Ticket support",
       "status": "candidate"
     },
     {
       "field": "access",
       "value": "F",
       "url": "https://resend.com/pricing",
-      "excerpt": "We accept all major credit cards. Is there a free trial available? No, but we provide a free-forever plan. Who can I contact about a custom plan? Plea",
       "status": "candidate"
     },
     {
       "field": "access",
       "value": "P",
       "url": "https://resend.com/pricing",
-      "excerpt": "han your plan includes, pay-as-you-go lets a paid plan keep sending past its monthly quota at the plan's overage rate. It's an option on paid plans,",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "O",
       "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
-      "excerpt": "ference/usage/retrieve-usage\"}]}]},{\"group\":\"OAuth\",\"pages\":[{\"group\":\"Authorization\",\"expanded\":false,\"pages\":[{\"title\":\"Register Client\",\"api\":",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "K",
       "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
-      "excerpt": "Create API key - Resend Documentation Index Fetch the complete documentation index at: /docs/llms.txt Use thi",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "S",
       "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
-      "excerpt": "impressionData\":false},{\"name\":\"revalidation-jwt\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressi",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "rest",
       "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
-      "excerpt": "for developers. The documentation covers the REST API, official SDKs, the CLI, the MCP server, webhooks, deliverability guides, and step-by-step",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "cli",
       "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
-      "excerpt": "de.js PHP Python Ruby Go Rust Java .NET cURL CLI import { Resend } from 'resend' ; const resend = new Resend ( 're_xxxxxxxxx' ); const { data ,",
       "status": "candidate"
     },
     {
       "field": "mcp",
       "value": "Y",
       "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
-      "excerpt": "rs the REST API, official SDKs, the CLI, the MCP server, webhooks, deliverability guides, and step-by-step quickstarts for every major language and fr",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "O",
       "url": "https://resend.com/docs/dashboard/api-keys/introduction",
-      "excerpt": "d-react-email-editor\"},{\"title\":\"Building an OAuth client for Resend\",\"href\":\"/guides/building-a-resend-oauth-client\"},{\"title\":\"Vercel Marketpla",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "K",
       "url": "https://resend.com/docs/dashboard/api-keys/introduction",
-      "excerpt": "Manage API keys - Resend Documentation Index Fetch the complete documentation index at: /docs/llms.txt Use thi",
       "status": "candidate"
     },
     {
       "field": "auth",
       "value": "S",
       "url": "https://resend.com/docs/dashboard/api-keys/introduction",
-      "excerpt": "impressionData\":false},{\"name\":\"revalidation-jwt\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressi",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "rest",
       "url": "https://resend.com/docs/dashboard/api-keys/introduction",
-      "excerpt": "for developers. The documentation covers the REST API, official SDKs, the CLI, the MCP server, webhooks, deliverability guides, and step-by-step",
       "status": "candidate"
     },
     {
       "field": "surface",
       "value": "cli",
       "url": "https://resend.com/docs/dashboard/api-keys/introduction",
-      "excerpt": "programmatically using the API or the Resend CLI : Create a new API key with a name, permission, and optional domain restriction List all API k",
       "status": "candidate"
     },
     {
       "field": "mcp",
       "value": "Y",
       "url": "https://resend.com/docs/dashboard/api-keys/introduction",
-      "excerpt": "rs the REST API, official SDKs, the CLI, the MCP server, webhooks, deliverability guides, and step-by-step quickstarts for every major language and fr",
       "status": "candidate"
     }
   ],
@@ -435,5 +379,998 @@
       "sha256": "f0abe269cc9b1bf185cb1228a91ac097ad73aca4053ae46481a3375f6ea0207e",
       "truncated": false
     }
-  ]
+  ],
+  "verification": {
+    "method": "Deterministic scope and textual-support checks; no model or independent reviewer",
+    "scoped_fields": {
+      "api": {
+        "auth": [
+          "K"
+        ],
+        "access": [],
+        "surface": [
+          "cli",
+          "rest"
+        ],
+        "mcp": []
+      },
+      "mcp": {
+        "auth": [
+          "K",
+          "O",
+          "T"
+        ],
+        "access": [],
+        "surface": [
+          "cli"
+        ],
+        "mcp": []
+      },
+      "webhook": {
+        "auth": [
+          "K"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "unknown": {
+        "auth": [],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      }
+    },
+    "evidence": [
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/introduction",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:57:54.144159+00:00",
+        "document_sha256": "ed0604c6d3c99482fa0d8cc9f48f6f341d21f787f94be7f19a4c3271fa027304"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "unknown",
+        "url": "https://resend.com/docs/introduction",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:57:54.144159+00:00",
+        "document_sha256": "ed0604c6d3c99482fa0d8cc9f48f6f341d21f787f94be7f19a4c3271fa027304"
+      },
+      {
+        "field": "auth",
+        "value": "O",
+        "scope": "api",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "access",
+        "value": "F",
+        "scope": "unknown",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "access",
+        "value": "R",
+        "scope": "unknown",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "access",
+        "value": "C",
+        "scope": "unknown",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "access",
+        "value": "C",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "surface",
+        "value": "rest",
+        "scope": "api",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "unknown",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/create-an-api-key",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300101+00:00",
+        "document_sha256": "5329df8f1a85657bdacd1ea555c4fd7b495203981e2637534ececcc2c8f26241"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/create-an-api-key",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300101+00:00",
+        "document_sha256": "5329df8f1a85657bdacd1ea555c4fd7b495203981e2637534ececcc2c8f26241"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/create-an-api-key",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300101+00:00",
+        "document_sha256": "5329df8f1a85657bdacd1ea555c4fd7b495203981e2637534ececcc2c8f26241"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "api",
+        "url": "https://resend.com/docs/create-an-api-key",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300101+00:00",
+        "document_sha256": "5329df8f1a85657bdacd1ea555c4fd7b495203981e2637534ececcc2c8f26241"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/create-an-api-key",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300101+00:00",
+        "document_sha256": "5329df8f1a85657bdacd1ea555c4fd7b495203981e2637534ececcc2c8f26241"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/create-an-api-key",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:58:08.300101+00:00",
+        "document_sha256": "5329df8f1a85657bdacd1ea555c4fd7b495203981e2637534ececcc2c8f26241"
+      },
+      {
+        "field": "auth",
+        "value": "O",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "O",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "O",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "T",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "T",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "T",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/introduction",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.301045+00:00",
+        "document_sha256": "736efd48152c90162ef84431a03649dc49ef28f0ebe8d1d5553d82b1bb0f1623"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/introduction",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.301045+00:00",
+        "document_sha256": "736efd48152c90162ef84431a03649dc49ef28f0ebe8d1d5553d82b1bb0f1623"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/introduction",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.301045+00:00",
+        "document_sha256": "736efd48152c90162ef84431a03649dc49ef28f0ebe8d1d5553d82b1bb0f1623"
+      },
+      {
+        "field": "surface",
+        "value": "rest",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/introduction",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.301045+00:00",
+        "document_sha256": "736efd48152c90162ef84431a03649dc49ef28f0ebe8d1d5553d82b1bb0f1623"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/introduction",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.301045+00:00",
+        "document_sha256": "736efd48152c90162ef84431a03649dc49ef28f0ebe8d1d5553d82b1bb0f1623"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "webhook",
+        "url": "https://resend.com/pricing",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:08.302159+00:00",
+        "document_sha256": "033b539c88e3ff9abcf1044b4963efee4d9c01ad61f2c6c08ed1e7f272b0ab4c"
+      },
+      {
+        "field": "access",
+        "value": "F",
+        "scope": "unknown",
+        "url": "https://resend.com/pricing",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:58:08.302159+00:00",
+        "document_sha256": "033b539c88e3ff9abcf1044b4963efee4d9c01ad61f2c6c08ed1e7f272b0ab4c"
+      },
+      {
+        "field": "access",
+        "value": "F",
+        "scope": "unknown",
+        "url": "https://resend.com/pricing",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:58:08.302159+00:00",
+        "document_sha256": "033b539c88e3ff9abcf1044b4963efee4d9c01ad61f2c6c08ed1e7f272b0ab4c"
+      },
+      {
+        "field": "access",
+        "value": "P",
+        "scope": "unknown",
+        "url": "https://resend.com/pricing",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:58:08.302159+00:00",
+        "document_sha256": "033b539c88e3ff9abcf1044b4963efee4d9c01ad61f2c6c08ed1e7f272b0ab4c"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/dashboard/api-keys/introduction",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:14.364089+00:00",
+        "document_sha256": "f0abe269cc9b1bf185cb1228a91ac097ad73aca4053ae46481a3375f6ea0207e"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/dashboard/api-keys/introduction",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.364089+00:00",
+        "document_sha256": "f0abe269cc9b1bf185cb1228a91ac097ad73aca4053ae46481a3375f6ea0207e"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/dashboard/api-keys/introduction",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:14.364089+00:00",
+        "document_sha256": "f0abe269cc9b1bf185cb1228a91ac097ad73aca4053ae46481a3375f6ea0207e"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "api",
+        "url": "https://resend.com/docs/dashboard/api-keys/introduction",
+        "status": "supported",
+        "reason": "Exact source context contains a scoped affirmative statement; rule-supported, not independently verified.",
+        "checked_at": "2026-11-23T12:58:14.364089+00:00",
+        "document_sha256": "f0abe269cc9b1bf185cb1228a91ac097ad73aca4053ae46481a3375f6ea0207e"
+      }
+    ],
+    "review_queue": [
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/introduction",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:57:54.144159+00:00",
+        "document_sha256": "ed0604c6d3c99482fa0d8cc9f48f6f341d21f787f94be7f19a4c3271fa027304"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "unknown",
+        "url": "https://resend.com/docs/introduction",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:57:54.144159+00:00",
+        "document_sha256": "ed0604c6d3c99482fa0d8cc9f48f6f341d21f787f94be7f19a4c3271fa027304"
+      },
+      {
+        "field": "auth",
+        "value": "O",
+        "scope": "api",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "access",
+        "value": "F",
+        "scope": "unknown",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "access",
+        "value": "R",
+        "scope": "unknown",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "access",
+        "value": "C",
+        "scope": "unknown",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "access",
+        "value": "C",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "surface",
+        "value": "rest",
+        "scope": "api",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "unknown",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "Documentation index is a discovery source, not an assertion.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/llms.txt",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:57:54.144479+00:00",
+        "document_sha256": "654f290658070b3530222b9af638bccea6b04fe2b21dd194ce8fd8a245ee0eda"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/create-an-api-key",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:58:08.300101+00:00",
+        "document_sha256": "5329df8f1a85657bdacd1ea555c4fd7b495203981e2637534ececcc2c8f26241"
+      },
+      {
+        "field": "auth",
+        "value": "O",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "O",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "mcp",
+        "value": "Y",
+        "scope": "mcp",
+        "url": "https://resend.com/docs/mcp-server",
+        "status": "insufficient evidence",
+        "reason": "A protocol mention does not establish a vendor-maintained server; confirm ownership and direction.",
+        "checked_at": "2026-11-23T12:58:08.300381+00:00",
+        "document_sha256": "a717f7c533f761ecb5b5b043176484fd3ec96cc2d2117a1d50c1a81c1d9ff7d3"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/introduction",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:08.301045+00:00",
+        "document_sha256": "736efd48152c90162ef84431a03649dc49ef28f0ebe8d1d5553d82b1bb0f1623"
+      },
+      {
+        "field": "access",
+        "value": "F",
+        "scope": "unknown",
+        "url": "https://resend.com/pricing",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:58:08.302159+00:00",
+        "document_sha256": "033b539c88e3ff9abcf1044b4963efee4d9c01ad61f2c6c08ed1e7f272b0ab4c"
+      },
+      {
+        "field": "access",
+        "value": "F",
+        "scope": "unknown",
+        "url": "https://resend.com/pricing",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:58:08.302159+00:00",
+        "document_sha256": "033b539c88e3ff9abcf1044b4963efee4d9c01ad61f2c6c08ed1e7f272b0ab4c"
+      },
+      {
+        "field": "access",
+        "value": "P",
+        "scope": "unknown",
+        "url": "https://resend.com/pricing",
+        "status": "insufficient evidence",
+        "reason": "Plan and sandbox mentions do not establish API credential entitlement; manual review required.",
+        "checked_at": "2026-11-23T12:58:08.302159+00:00",
+        "document_sha256": "033b539c88e3ff9abcf1044b4963efee4d9c01ad61f2c6c08ed1e7f272b0ab4c"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "surface",
+        "value": "cli",
+        "scope": "api",
+        "url": "https://resend.com/docs/api-reference/api-keys/create-api-key",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.363466+00:00",
+        "document_sha256": "bfce4216ca6ee5c291bb77841827131af75ed1b277fa4992d42ae0be9c8a2b0a"
+      },
+      {
+        "field": "auth",
+        "value": "K",
+        "scope": "api",
+        "url": "https://resend.com/docs/dashboard/api-keys/introduction",
+        "status": "insufficient evidence",
+        "reason": "No clear scoped assertion; inspect the source context.",
+        "checked_at": "2026-11-23T12:58:14.364089+00:00",
+        "document_sha256": "f0abe269cc9b1bf185cb1228a91ac097ad73aca4053ae46481a3375f6ea0207e"
+      }
+    ],
+    "counts": {
+      "supported": 22,
+      "conflicting": 0,
+      "insufficient evidence": 35
+    }
+  },
+  "candidate_fields": {
+    "auth": [
+      "K",
+      "O",
+      "S",
+      "T"
+    ],
+    "access": [
+      "C",
+      "F",
+      "P",
+      "R"
+    ],
+    "surface": [
+      "cli",
+      "rest"
+    ],
+    "mcp": [
+      "Y"
+    ]
+  },
+  "verification_note": "Rules applied to saved text from the recorded run; no new network access implied."
 }

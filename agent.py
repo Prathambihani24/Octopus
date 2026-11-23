@@ -15,6 +15,7 @@ import time
 from urllib.parse import urljoin, urlsplit, urldefrag
 import urllib.request
 from research import extract_signals, SIGNALS
+from verify import verify_documents
 
 class Document(HTMLParser):
     def __init__(self):
@@ -121,12 +122,14 @@ def run(app, website, out, max_pages=10, refresh=False):
         for doc in fresh:
             pending.extend(u for u in doc.get('links',[]) if allowed(u) and priority(u)>0 and u not in visited)
     evidence = [e for doc in records for e in extract_evidence(doc)]
-    fields = {f:sorted({e['value'] for e in evidence if e['field']==f}) for f in SIGNALS}
+    candidate_fields = {f:sorted({e['value'] for e in evidence if e['field']==f}) for f in SIGNALS}
+    verification = verify_documents(records)
+    fields = verification['scoped_fields']['api']
     readable = sum(r['status']=='read' for r in records)
-    result = {'app':app,'website':website,'method':'bounded official-domain discovery; deterministic candidate extraction',
+    result = {'app':app,'website':website,'method':'bounded official-domain discovery; scoped evidence checks with conservative abstention',
         'checked_at':datetime.now(timezone.utc).isoformat(),'budget_pages':max_pages,'pages_attempted':len(records),
         'pages_read':readable,'elapsed_seconds':round(time.monotonic()-start,2),'model_tokens':0,
-        'fields':fields,'evidence':evidence,
+        'fields':fields,'candidate_fields':candidate_fields,'evidence':evidence,'verification':verification,
         'prototype':'Needs review' if readable else 'Blocked: documentation unavailable',
         'production':'Unconfirmed; verify credentials, scopes, plan and distribution approval',
         'blockers':[f+' evidence missing' for f,values in fields.items() if not values],
@@ -137,8 +140,9 @@ def run(app, website, out, max_pages=10, refresh=False):
     # Preserve fetched document text locally for reproducibility; do not deploy full vendor documents.
     (out/'documents.json').write_text(json.dumps(records,ensure_ascii=False))
     escape = html.escape
+    verified_rows = ''.join('<tr>'+''.join('<td>'+escape(str(e[k]))+'</td>' for k in ('scope','field','value','status','reason','url'))+'</tr>' for e in verification['evidence'])
     rows = ''.join('<tr>'+''.join('<td>'+escape(str(e[k]))+'</td>' for k in ('field','value','excerpt','url'))+'</tr>' for e in evidence)
-    (out/'report.html').write_text('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>'+escape(app)+' research</title><style>body{max-width:1100px;margin:40px auto;padding:20px;font:16px/1.6 sans-serif}td,th{padding:12px;border-bottom:1px solid #ccc;text-align:left;overflow-wrap:anywhere}table{width:100%;table-layout:fixed}</style><h1>'+escape(app)+' — research candidates</h1><p>'+str(readable)+' pages read. Model tokens: 0. All findings need scope and entitlement review.</p><p>Production: '+escape(result['production'])+'</p><table><tr><th>Field</th><th>Candidate</th><th>Evidence excerpt</th><th>Source</th></tr>'+rows+'</table>')
+    (out/'report.html').write_text('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>'+escape(app)+' research</title><style>body{max-width:1100px;margin:40px auto;padding:20px;font:16px/1.6 sans-serif}td,th{padding:12px;border-bottom:1px solid #ccc;text-align:left;overflow-wrap:anywhere}table{width:100%;table-layout:fixed}</style><h1>'+escape(app)+' — research candidates</h1><p>'+str(readable)+' pages read. Model tokens: 0. All findings need scope and entitlement review.</p><p>Production: '+escape(result['production'])+'</p><table><tr><th>Field</th><th>Candidate</th><th>Evidence excerpt</th><th>Source</th></tr>'+rows+'</table><h2>Scoped verification</h2><p>Supported means a rule found an affirmative context. It is not independent fact verification. Access and vendor MCP ownership require review.</p><table><tr><th>Scope</th><th>Field</th><th>Value</th><th>Status</th><th>Reason</th><th>Source</th></tr>'+verified_rows+'</table>')
     return result
 
 def main():

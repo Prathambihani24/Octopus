@@ -1,0 +1,1614 @@
+{
+  "method": "A live refresh from previously identified documentation URLs, capped at three pages per app. Network policy interrupted the run. These are the saved results; the original search pass covered all 100 apps.",
+  "apps": [
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "checked_at": "2026-11-23T14:46:06.508716+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 19.92,
+      "fields": {
+        "auth": [
+          "T"
+        ],
+        "access": [],
+        "surface": [
+          "rest"
+        ],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 6,
+        "conflicting": 3,
+        "insufficient evidence": 4
+      },
+      "documents": [
+        {
+          "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+          "checked_at": "2026-11-23T14:45:46.592830+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+          "sha256": "de3fe192614e35ac59a780c9055cd89dc1aba97a00df7bb6816b04799145564b",
+          "truncated": false
+        },
+        {
+          "url": "https://developer.salesforce.com/llms.txt",
+          "checked_at": "2026-11-23T14:45:46.593009+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.salesforce.com/llms.txt",
+          "sha256": "e452eed7d792e405793623a1b763adcefe7b0783f1e5c7654d456ccfa0968f44",
+          "truncated": false
+        },
+        {
+          "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_dev_org.htm",
+          "checked_at": "2026-11-23T14:45:54.382091+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html",
+          "sha256": "b8e5b170726de70e16e272295f0d6b5ba3e94e4f95f4d617f0f36e198fc361a4",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "app": "HubSpot",
+      "checked_at": "2026-11-23T14:46:10.012042+00:00",
+      "pages_attempted": 3,
+      "pages_read": 2,
+      "elapsed_seconds": 23.42,
+      "fields": {
+        "auth": [
+          "K",
+          "O",
+          "T"
+        ],
+        "access": [],
+        "surface": [
+          "graphql",
+          "rest"
+        ],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 17,
+        "conflicting": 0,
+        "insufficient evidence": 4
+      },
+      "documents": [
+        {
+          "url": "https://developers.hubspot.com/blog/a-newbies-perspective-on-becoming-a-crm-developer",
+          "checked_at": "2026-11-23T14:45:46.593422+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.hubspot.com/blog/a-newbies-perspective-on-becoming-a-crm-developer",
+          "sha256": "e6980b9ef434ffce9ccd27f3c559f14cbcdba28240e98677d51bb318fdbd291a",
+          "truncated": false
+        },
+        {
+          "url": "https://developers.hubspot.com/llms.txt",
+          "checked_at": "2026-11-23T14:45:46.593798+00:00",
+          "cached": false,
+          "status": "unavailable",
+          "error": "HTTPError"
+        },
+        {
+          "url": "https://developers.hubspot.com/docs/api/oauth/tokens",
+          "checked_at": "2026-11-23T14:45:52.920118+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.hubspot.com/docs/api-reference/legacy/authentication/oauth-tokens/v1/guide",
+          "sha256": "2c832e739b5df2c035492924e7f9971a58d1ff5daae709dafdf5857de99dfd43",
+          "truncated": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "app": "Pipedrive",
+      "checked_at": "2026-11-23T14:46:02.080013+00:00",
+      "pages_attempted": 3,
+      "pages_read": 2,
+      "elapsed_seconds": 15.49,
+      "fields": {
+        "auth": [],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "auth evidence missing",
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 0,
+        "conflicting": 0,
+        "insufficient evidence": 3
+      },
+      "documents": [
+        {
+          "url": "https://support.pipedrive.com/en/article/what-is-the-api-key-for",
+          "checked_at": "2026-11-23T14:45:46.595531+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://support.pipedrive.com/en/article/what-is-the-api-key-for",
+          "sha256": "6d8630ace91c00216cabb43ffd4d5660fcf7f6fa586e1caac814ce74640d772c",
+          "truncated": false
+        },
+        {
+          "url": "https://support.pipedrive.com/llms.txt",
+          "checked_at": "2026-11-23T14:45:46.595978+00:00",
+          "cached": false,
+          "status": "unavailable",
+          "error": "HTTPError"
+        },
+        {
+          "url": "https://support.pipedrive.com/cs/article/what-is-the-api-key-for",
+          "checked_at": "2026-11-23T14:45:57.555502+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://support.pipedrive.com/cs/article/what-is-the-api-key-for",
+          "sha256": "8322417b620bb0c05467214cbc3a66e6302b2410d104b9a88195aa99cc25297b",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "app": "Attio",
+      "checked_at": "2026-11-23T14:46:12.238921+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 10.16,
+      "fields": {
+        "auth": [
+          "B",
+          "K",
+          "O",
+          "T"
+        ],
+        "access": [],
+        "surface": [
+          "rest"
+        ],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 11,
+        "conflicting": 0,
+        "insufficient evidence": 18
+      },
+      "documents": [
+        {
+          "url": "https://docs.attio.com/rest-api/overview",
+          "checked_at": "2026-11-23T14:46:02.081493+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.attio.com/rest-api/overview",
+          "sha256": "993ddb306ff5abdad7b883adb8d65b9ddc6c1abad987722d3b3cbdc3787a7060",
+          "truncated": false
+        },
+        {
+          "url": "https://docs.attio.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:02.081624+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.attio.com/llms.txt",
+          "sha256": "67aa98b75ebf8970f3ea22aec938673c816bcae61223eeee02a4586ab2d6731f",
+          "truncated": false
+        },
+        {
+          "url": "https://docs.attio.com/rest-api/guides/authentication",
+          "checked_at": "2026-11-23T14:46:06.260448+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.attio.com/rest-api/guides/authentication",
+          "sha256": "73797fe7404f5c039ecd628855d6291ca0d9bc4c60e110a5870b80b319182a01",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "app": "Twenty",
+      "checked_at": "2026-11-23T14:46:17.949287+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 11.44,
+      "fields": {
+        "auth": [
+          "B",
+          "O",
+          "S",
+          "T"
+        ],
+        "access": [],
+        "surface": [
+          "cli",
+          "rest"
+        ],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 13,
+        "conflicting": 0,
+        "insufficient evidence": 24
+      },
+      "documents": [
+        {
+          "url": "https://github.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:06.510101+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://github.com/llms.txt",
+          "sha256": "71d217ec3186152052ca1050932c0e6e48e766d3bc5a1359b50aa140436d297f",
+          "truncated": false
+        },
+        {
+          "url": "https://github.com/twentyhq/twenty",
+          "checked_at": "2026-11-23T14:46:06.510915+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://github.com/twentyhq/twenty",
+          "sha256": "964b7bb21e99b89f2b4784fe232e520c7bc3b1cb865055c85ed9f258a436ab9f",
+          "truncated": false
+        },
+        {
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "checked_at": "2026-11-23T14:46:12.011701+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "sha256": "31df7e874eba119c9ae948f4d16d028bc72d135f41d83f911ec03f61112bb9cf",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "app": "Podio",
+      "checked_at": "2026-11-23T14:46:19.876096+00:00",
+      "pages_attempted": 3,
+      "pages_read": 2,
+      "elapsed_seconds": 9.86,
+      "fields": {
+        "auth": [
+          "K",
+          "O",
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 10,
+        "conflicting": 0,
+        "insufficient evidence": 0
+      },
+      "documents": [
+        {
+          "url": "https://developers.podio.com/authentication",
+          "checked_at": "2026-11-23T14:46:10.014298+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.podio.com/authentication",
+          "sha256": "498f6143511392c5c745d143ddef9bc0def7c98dc25be5b5809a91126006bcd2",
+          "truncated": false
+        },
+        {
+          "url": "https://developers.podio.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:10.015048+00:00",
+          "cached": false,
+          "status": "unavailable",
+          "error": "HTTPError"
+        },
+        {
+          "url": "https://developers.podio.com/api-key",
+          "checked_at": "2026-11-23T14:46:15.300102+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.podio.com/api-key",
+          "sha256": "e68dc831664a70ce0c28c9154d13d2e7b72f635e66006838f98b341a1f68f845",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "app": "Zoho CRM",
+      "checked_at": "2026-11-23T14:46:20.148707+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 7.91,
+      "fields": {
+        "auth": [
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 3,
+        "conflicting": 3,
+        "insufficient evidence": 10
+      },
+      "documents": [
+        {
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+          "checked_at": "2026-11-23T14:46:12.242133+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+          "sha256": "1247cf8f6b22bbf47fb4b148a14fef347c9cba5046770f191fb6f4e9d96931a0",
+          "truncated": false
+        },
+        {
+          "url": "https://www.zoho.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:12.243042+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.zoho.com/llms.txt",
+          "sha256": "d8621b81ff5cbf317a2cd8df0948ca5d74708a7b2271ed8502c59e714023a725",
+          "truncated": false
+        },
+        {
+          "url": "https://www.zoho.com/mcp/llms.txt",
+          "checked_at": "2026-11-23T14:46:16.201016+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.zoho.com/mcp/llms.txt",
+          "sha256": "8d294f17c6c00b233ea6452c44102e7af7695ab44556f9da32b05e170492622a",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "app": "Close",
+      "checked_at": "2026-11-23T14:46:29.940379+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 11.99,
+      "fields": {
+        "auth": [
+          "B",
+          "K",
+          "O"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 13,
+        "conflicting": 0,
+        "insufficient evidence": 9
+      },
+      "documents": [
+        {
+          "url": "https://developer.close.com/api/overview/api-key-authentication",
+          "checked_at": "2026-11-23T14:46:17.952290+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.close.com/api/overview/api-key-authentication",
+          "sha256": "b49e0913e8d5e42a46f29bd5c6a35b0439f07c357210e955b77f478bd3734294",
+          "truncated": false
+        },
+        {
+          "url": "https://developer.close.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:17.953178+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.close.com/llms.txt",
+          "sha256": "e6e5415caa56628648aac4cd5ae853406a5271e36ad63c89144b5b394fa249a8",
+          "truncated": false
+        },
+        {
+          "url": "https://developer.close.com/api/overview/oauth-authentication",
+          "checked_at": "2026-11-23T14:46:24.119570+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.close.com/api/overview/oauth-authentication",
+          "sha256": "0d51a9b10f98452c412c1c2200464f352c70225c07569c5f5df0da1ddb38647e",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "app": "Copper",
+      "checked_at": "2026-11-23T14:46:28.428095+00:00",
+      "pages_attempted": 3,
+      "pages_read": 2,
+      "elapsed_seconds": 8.55,
+      "fields": {
+        "auth": [
+          "K",
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 4,
+        "conflicting": 0,
+        "insufficient evidence": 4
+      },
+      "documents": [
+        {
+          "url": "https://developer.copper.com/introduction/authentication.html",
+          "checked_at": "2026-11-23T14:46:19.878013+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.copper.com/introduction/authentication.html",
+          "sha256": "6ff3724d8c2e11333642988e093c0dfd863f3149cb4b95b890a215f4324da805",
+          "truncated": false
+        },
+        {
+          "url": "https://developer.copper.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:19.878322+00:00",
+          "cached": false,
+          "status": "unavailable",
+          "error": "HTTPError"
+        },
+        {
+          "url": "https://developer.copper.com/introduction/oauth/quickstart.html",
+          "checked_at": "2026-11-23T14:46:24.148345+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.copper.com/introduction/oauth/quickstart.html",
+          "sha256": "14aed1479d4131d9abe0076c700a66648555649d893577cac5d8b1cbb3cd7406",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "app": "DealCloud",
+      "checked_at": "2026-11-23T14:46:28.648608+00:00",
+      "pages_attempted": 3,
+      "pages_read": 2,
+      "elapsed_seconds": 8.5,
+      "fields": {
+        "auth": [
+          "K"
+        ],
+        "access": [],
+        "surface": [
+          "rest"
+        ],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 10,
+        "conflicting": 0,
+        "insufficient evidence": 1
+      },
+      "documents": [
+        {
+          "url": "https://api.docs.dealcloud.com/docs/apikeys",
+          "checked_at": "2026-11-23T14:46:20.150875+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://api.docs.dealcloud.com/docs/apikeys",
+          "sha256": "b330feaebea9db5efe83b4881a3bca613f2b342aabd0cc496d216e2645471a02",
+          "truncated": false
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:20.151654+00:00",
+          "cached": false,
+          "status": "unavailable",
+          "error": "HTTPError"
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/mcp/authentication",
+          "checked_at": "2026-11-23T14:46:24.892029+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://api.docs.dealcloud.com/mcp/authentication",
+          "sha256": "85c3b0ef771630d5bd58ecc3996fbf818a8c498dcc17935277ad367ddb0db078",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "checked_at": "2026-11-23T14:46:44.012522+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 15.58,
+      "fields": {
+        "auth": [
+          "B",
+          "O",
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 14,
+        "conflicting": 0,
+        "insufficient evidence": 16
+      },
+      "documents": [
+        {
+          "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "checked_at": "2026-11-23T14:46:28.430717+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "sha256": "2283fcb693f1de64123414a4a405dad4d34213a94c12ebcfb7c2dde3337a1bc8",
+          "truncated": false
+        },
+        {
+          "url": "https://developer.zendesk.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:28.430604+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.zendesk.com/llms.txt",
+          "sha256": "a7d3c5bf654f11910a934a60725816819ece29f2a20dbe9552b1cab50dd2f22b",
+          "truncated": false
+        },
+        {
+          "url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth.md",
+          "checked_at": "2026-11-23T14:46:39.672362+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth.md",
+          "sha256": "e11ec3a397cd34c8171633c5a8a0e16a885d6c49fbd31c72e9cd42a9b609ed95",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "app": "Intercom",
+      "checked_at": "2026-11-23T14:46:37.811786+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 9.16,
+      "fields": {
+        "auth": [
+          "K",
+          "O",
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 9,
+        "conflicting": 0,
+        "insufficient evidence": 16
+      },
+      "documents": [
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "checked_at": "2026-11-23T14:46:28.650078+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "sha256": "3d3d126122ca04e77889b945b05a0a7277834bc06de2a70e4f48df7ce5e43476",
+          "truncated": false
+        },
+        {
+          "url": "https://developers.intercom.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:28.650567+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.intercom.com/llms.txt",
+          "sha256": "15597bf11fc8f9f01d8dbf17ac7b00837e917c61bf42adeb40bb19240cfd9cba",
+          "truncated": false
+        },
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/oauth-scopes",
+          "checked_at": "2026-11-23T14:46:33.468959+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/oauth-scopes",
+          "sha256": "c70e51a1e91b4d6cab375d323b97602409111dcf2b6eacd8efadb668d5e3643f",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "app": "Freshdesk",
+      "checked_at": "2026-11-23T14:46:42.028922+00:00",
+      "pages_attempted": 3,
+      "pages_read": 2,
+      "elapsed_seconds": 12.09,
+      "fields": {
+        "auth": [
+          "K",
+          "O",
+          "S",
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 10,
+        "conflicting": 0,
+        "insufficient evidence": 2
+      },
+      "documents": [
+        {
+          "url": "https://developers.freshdesk.com/api/",
+          "checked_at": "2026-11-23T14:46:29.945035+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.freshdesk.com/api/",
+          "sha256": "46f47e1525fbea81a1283145346fa4518f8f107aba799448f478adaa9c77896b",
+          "truncated": true
+        },
+        {
+          "url": "https://developers.freshdesk.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:29.944913+00:00",
+          "cached": false,
+          "status": "unavailable",
+          "error": "HTTPError"
+        },
+        {
+          "url": "https://developers.freshdesk.com/web-chat-api/",
+          "checked_at": "2026-11-23T14:46:35.979969+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.freshdesk.com/web-chat-api/",
+          "sha256": "905658a994e09cb1f21b7d95c4c02636bc34ba70bf9b7e9cd45666e233998461",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "app": "Front",
+      "checked_at": "2026-11-23T14:46:47.756020+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 9.94,
+      "fields": {
+        "auth": [
+          "O",
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 9,
+        "conflicting": 0,
+        "insufficient evidence": 11
+      },
+      "documents": [
+        {
+          "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+          "checked_at": "2026-11-23T14:46:37.820842+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+          "sha256": "940d38408ba0140f88cfaa20849f707c665187aac89f56074bc5c9a8e2028282",
+          "truncated": false
+        },
+        {
+          "url": "https://dev.frontapp.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:37.821579+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://dev.frontapp.com/llms.txt",
+          "sha256": "c42c532f6c40128848c81315133770b8d44277885164e7de282b4c8e80655c0f",
+          "truncated": false
+        },
+        {
+          "url": "https://dev.frontapp.com/docs/core-api-getting-started",
+          "checked_at": "2026-11-23T14:46:42.033978+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://dev.frontapp.com/docs/core-api-getting-started",
+          "sha256": "6e25115660d7fbcaf5068fe4268146360ae1d0990ada0deb9137982d59792bfb",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "app": "Pylon",
+      "checked_at": "2026-11-23T14:46:54.570330+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 12.54,
+      "fields": {
+        "auth": [
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 6,
+        "conflicting": 0,
+        "insufficient evidence": 5
+      },
+      "documents": [
+        {
+          "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+          "checked_at": "2026-11-23T14:46:42.036026+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+          "sha256": "fc520bb5222547bf5986b113aae0a439e43a3bd81e372f448883cf3b527490dd",
+          "truncated": false
+        },
+        {
+          "url": "https://docs.usepylon.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:42.036404+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.usepylon.com/pylon-docs/llms.txt",
+          "sha256": "63d495e924e9e784d5f2aa4ec598dbcd89276a08fb34c54522bd9f5051100405",
+          "truncated": false
+        },
+        {
+          "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication.md",
+          "checked_at": "2026-11-23T14:46:49.542421+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication.md",
+          "sha256": "fc520bb5222547bf5986b113aae0a439e43a3bd81e372f448883cf3b527490dd",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "app": "LiveAgent",
+      "checked_at": "2026-11-23T14:46:55.008678+00:00",
+      "pages_attempted": 3,
+      "pages_read": 2,
+      "elapsed_seconds": 10.99,
+      "fields": {
+        "auth": [],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "auth evidence missing",
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 0,
+        "conflicting": 3,
+        "insufficient evidence": 0
+      },
+      "documents": [
+        {
+          "url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+          "checked_at": "2026-11-23T14:46:44.016502+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+          "sha256": "d2fba46a4ad6d5716ab09fc0d9a1c12cb4058258662b1a2b5d3fb1055753e997",
+          "truncated": false
+        },
+        {
+          "url": "https://faq.liveagent.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:44.017847+00:00",
+          "cached": false,
+          "status": "unavailable",
+          "error": "HTTPError"
+        },
+        {
+          "url": "https://faq.liveagent.com/355680-Why-are-some-API-endpoints-available-in-API-v1-but-not-in-v3-and-vice-versa",
+          "checked_at": "2026-11-23T14:46:50.882489+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://faq.liveagent.com/355680-Why-are-some-API-endpoints-available-in-API-v1-but-not-in-v3-and-vice-versa",
+          "sha256": "7213914243790a03a0585fe4ae139bfec53ca466f6d60d25fe6bbb09315b2289",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "app": "Plain",
+      "checked_at": "2026-11-23T14:47:03.232071+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 15.47,
+      "fields": {
+        "auth": [],
+        "access": [],
+        "surface": [
+          "graphql"
+        ],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "auth evidence missing",
+        "access evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 1,
+        "conflicting": 0,
+        "insufficient evidence": 10
+      },
+      "documents": [
+        {
+          "url": "https://www.plain.com/docs",
+          "checked_at": "2026-11-23T14:46:47.758180+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.plain.com/docs/product/what-is-plain",
+          "sha256": "c6d824be93a82a27aa1e04e5854c4422f41d5eb38299bcba8f913425db2e9856",
+          "truncated": false
+        },
+        {
+          "url": "https://www.plain.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:47.758743+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.plain.com/llms.txt",
+          "sha256": "45fcfadd207c5d454cacd6150831a44d931e23ded3061b3a84a89ae699745dc9",
+          "truncated": false
+        },
+        {
+          "url": "https://www.plain.com/docs/product/billing/pricing",
+          "checked_at": "2026-11-23T14:46:59.134437+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.plain.com/docs/product/billing/pricing",
+          "sha256": "d842c028f98a086f77b67cb4ee79560012ad912fe737298e1ddf5e65be613673",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "app": "Help Scout",
+      "checked_at": "2026-11-23T14:47:00.557753+00:00",
+      "pages_attempted": 2,
+      "pages_read": 2,
+      "elapsed_seconds": 5.99,
+      "fields": {
+        "auth": [],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "auth evidence missing",
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 0,
+        "conflicting": 0,
+        "insufficient evidence": 15
+      },
+      "documents": [
+        {
+          "url": "https://developer.helpscout.com/docs-api/",
+          "checked_at": "2026-11-23T14:46:54.572298+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.helpscout.com/docs-api/",
+          "sha256": "ce6ab6d7d57950a09c125e3e3c9c3039d205101d182ff7742fbe367a65a10ed1",
+          "truncated": false
+        },
+        {
+          "url": "https://developer.helpscout.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:54.572129+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developer.helpscout.com/llms.txt",
+          "sha256": "b71c7c2c9c47acd8bb9c706b660c481af527ca3411940c852d1b0f44e35aebe0",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "app": "Gorgias",
+      "checked_at": "2026-11-23T14:47:03.872379+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 8.86,
+      "fields": {
+        "auth": [
+          "O"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 2,
+        "conflicting": 5,
+        "insufficient evidence": 7
+      },
+      "documents": [
+        {
+          "url": "https://developers.gorgias.com/reference/authentication",
+          "checked_at": "2026-11-23T14:46:55.010213+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.gorgias.com/reference/authentication",
+          "sha256": "c225bba28654eb871aa86a94248f18049ca3adb7ad782eaf79173481019dd5d9",
+          "truncated": false
+        },
+        {
+          "url": "https://developers.gorgias.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:55.010120+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.gorgias.com/llms.txt",
+          "sha256": "22b8ff1f08aaee2a84b29e5c8bcce2a3f1e372add3b21dadfbca621c22aa094f",
+          "truncated": false
+        },
+        {
+          "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias.md",
+          "checked_at": "2026-11-23T14:46:59.165781+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias.md",
+          "sha256": "18732cb47c47f7095366285f1513d060edf50dfea5d2cae69ff2475f4a72ee8d",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "app": "Gladly",
+      "checked_at": "2026-11-23T14:47:12.392570+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 11.83,
+      "fields": {
+        "auth": [
+          "B",
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 4,
+        "conflicting": 0,
+        "insufficient evidence": 16
+      },
+      "documents": [
+        {
+          "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+          "checked_at": "2026-11-23T14:47:00.559955+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+          "sha256": "62e95591feec3d2a3c91a2b81569c1866d4ac7f5342cd168cd6af3538012e945",
+          "truncated": false
+        },
+        {
+          "url": "https://help.gladly.com/llms.txt",
+          "checked_at": "2026-11-23T14:47:00.559870+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://help.gladly.com/llms.txt",
+          "sha256": "00825afa45a7aac34487ee03d7b2787026b1aef8055ae603cf3a2a195c3fb803",
+          "truncated": false
+        },
+        {
+          "url": "https://help.gladly.com/developer-tutorials/docs/authentication.md",
+          "checked_at": "2026-11-23T14:47:06.672019+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://help.gladly.com/developer-tutorials/docs/authentication.md",
+          "sha256": "9696fe67ccc2a7f1bf7901eb5c0e98ff2c311ca8838c6bff2e3e6949e324e87d",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "checked_at": "2026-11-23T14:47:17.829552+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 14.59,
+      "fields": {
+        "auth": [
+          "O",
+          "S",
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 10,
+        "conflicting": 0,
+        "insufficient evidence": 15
+      },
+      "documents": [
+        {
+          "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+          "checked_at": "2026-11-23T14:47:03.235730+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+          "sha256": "c4fd45092faa9a5add3086dc7b83e8ac218d921eacb6576efede925cb8122189",
+          "truncated": false
+        },
+        {
+          "url": "https://docs.slack.dev/llms.txt",
+          "checked_at": "2026-11-23T14:47:03.235875+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.slack.dev/llms.txt",
+          "sha256": "0a4b6b4ed244a18f003905f6b4b296a995786135564d400f50d1f5a9310ba073",
+          "truncated": false
+        },
+        {
+          "url": "https://docs.slack.dev/authentication/enterprise-managed-authorization",
+          "checked_at": "2026-11-23T14:47:08.876966+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://docs.slack.dev/authentication/enterprise-managed-authorization/",
+          "sha256": "c93536a81537c021390cfded050163e039b84ed629e5570a394fc18b2bf0d861",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "app": "Twilio",
+      "checked_at": "2026-11-23T14:47:13.173640+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 9.3,
+      "fields": {
+        "auth": [
+          "K",
+          "T"
+        ],
+        "access": [],
+        "surface": [
+          "cli",
+          "rest"
+        ],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 16,
+        "conflicting": 0,
+        "insufficient evidence": 29
+      },
+      "documents": [
+        {
+          "url": "https://www.twilio.com/docs/iam/api-keys",
+          "checked_at": "2026-11-23T14:47:03.874106+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.twilio.com/docs/iam/api-keys",
+          "sha256": "f423acb685b68d3940126617f294617457a5317aab9ebd88de534d6a5baf8b95",
+          "truncated": false
+        },
+        {
+          "url": "https://www.twilio.com/llms.txt",
+          "checked_at": "2026-11-23T14:47:03.874658+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.twilio.com/llms.txt",
+          "sha256": "222bac34b7eade9c464cdbd2e81af11861a015efd822f1196c675e0223731201",
+          "truncated": true
+        },
+        {
+          "url": "https://www.twilio.com/en-us/blog/better-twilio-authentication-csharp-twilio-api-keys.md",
+          "checked_at": "2026-11-23T14:47:08.511910+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.twilio.com/en-us/blog/better-twilio-authentication-csharp-twilio-api-keys.md",
+          "sha256": "0d8a883975e744f347a2a39a4303aace604bf617b81ec4815827be1c21393a81",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "app": "Zoho Cliq",
+      "checked_at": "2026-11-23T14:47:22.190006+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 9.79,
+      "fields": {
+        "auth": [
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 5,
+        "conflicting": 4,
+        "insufficient evidence": 9
+      },
+      "documents": [
+        {
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+          "checked_at": "2026-11-23T14:47:12.396111+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+          "sha256": "5dddc81465282037b37a86181ea9fc7f57826c8a0146c083a91e3fe5efc72205",
+          "truncated": false
+        },
+        {
+          "url": "https://www.zoho.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:12.243042+00:00",
+          "cached": true,
+          "status": "read",
+          "resolved_url": "https://www.zoho.com/llms.txt",
+          "sha256": "d8621b81ff5cbf317a2cd8df0948ca5d74708a7b2271ed8502c59e714023a725",
+          "truncated": false
+        },
+        {
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "checked_at": "2026-11-23T14:47:18.081658+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "sha256": "54396575f3e137f74c95307ddee8a6d596cbd93dd92305751ba574449ed244ce",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "app": "Lark",
+      "checked_at": "2026-11-23T14:47:23.749283+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 10.53,
+      "fields": {
+        "auth": [],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "auth evidence missing",
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 0,
+        "conflicting": 0,
+        "insufficient evidence": 2
+      },
+      "documents": [
+        {
+          "url": "https://open.larksuite.com/",
+          "checked_at": "2026-11-23T14:47:13.216647+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://open.larksuite.com/",
+          "sha256": "d3bd580d6c066327b50d0d76481467d53b44679fb3a1d11e5bc89d5f358da98d",
+          "truncated": false
+        },
+        {
+          "url": "https://open.larksuite.com/llms.txt",
+          "checked_at": "2026-11-23T14:47:13.216830+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://open.larksuite.com/llms.txt",
+          "sha256": "dcaa5ddddcf76434e43405d8b3cfaca4a5bfd921a67c44481db3d360895f48ab",
+          "truncated": false
+        },
+        {
+          "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+          "checked_at": "2026-11-23T14:47:19.146366+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+          "sha256": "9b2fade37b0499297a2d3eaadd6d916d86e525878240c2cbd4267539f50f2b01",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "app": "Pumble",
+      "checked_at": "2026-11-23T14:47:33.163073+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 15.33,
+      "fields": {
+        "auth": [
+          "K"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 3,
+        "conflicting": 0,
+        "insufficient evidence": 12
+      },
+      "documents": [
+        {
+          "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+          "checked_at": "2026-11-23T14:47:17.832108+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+          "sha256": "afbf8b4898baf2f077cf1c5c06e7ca1bb5e0adc8792f79c46e27c9b87b657d0e",
+          "truncated": false
+        },
+        {
+          "url": "https://pumble.com/llms.txt",
+          "checked_at": "2026-11-23T14:47:17.832795+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://pumble.com/llms.txt",
+          "sha256": "c90841c5f9ae24994684f727cd3efaeaedcfd5916c4776928efefdc8a6571a02",
+          "truncated": false
+        },
+        {
+          "url": "https://pumble.com/help/getting-started/overview-of-roles-and-permissions/roles-permissions/",
+          "checked_at": "2026-11-23T14:47:25.793757+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://pumble.com/help/getting-started/overview-of-roles-and-permissions/roles-permissions/",
+          "sha256": "f57dd1dd8baec5bbbaf2117cb243cbb4cc04c8f40db0224558bdf86509eccd8e",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "app": "Discord",
+      "checked_at": "2026-11-23T14:47:27.578049+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 5.39,
+      "fields": {
+        "auth": [
+          "B",
+          "O",
+          "S",
+          "T"
+        ],
+        "access": [],
+        "surface": [
+          "cli",
+          "rest"
+        ],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 15,
+        "conflicting": 0,
+        "insufficient evidence": 24
+      },
+      "documents": [
+        {
+          "url": "https://github.com/discord/discord-api-docs/blob/main/developers/reference.mdx",
+          "checked_at": "2026-11-23T14:47:22.192563+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://github.com/discord/discord-api-docs/blob/main/developers/reference.mdx",
+          "sha256": "375acdcf59f3e74386861deb189b1a03d89e5610b762e7c9351bacf193594cb2",
+          "truncated": false
+        },
+        {
+          "url": "https://github.com/llms.txt",
+          "checked_at": "2026-11-23T14:46:06.510101+00:00",
+          "cached": true,
+          "status": "read",
+          "resolved_url": "https://github.com/llms.txt",
+          "sha256": "71d217ec3186152052ca1050932c0e6e48e766d3bc5a1359b50aa140436d297f",
+          "truncated": false
+        },
+        {
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "checked_at": "2026-11-23T14:46:12.011701+00:00",
+          "cached": true,
+          "status": "read",
+          "resolved_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "sha256": "31df7e874eba119c9ae948f4d16d028bc72d135f41d83f911ec03f61112bb9cf",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "app": "Telegram",
+      "checked_at": "2026-11-23T14:47:33.023083+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 9.27,
+      "fields": {
+        "auth": [
+          "T"
+        ],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 1,
+        "conflicting": 0,
+        "insufficient evidence": 3
+      },
+      "documents": [
+        {
+          "url": "https://core.telegram.org/bots/tutorial",
+          "checked_at": "2026-11-23T14:47:23.750900+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://core.telegram.org/bots/tutorial",
+          "sha256": "9802ce0936ccc05c2dc04754ec9c921e86268e673c5066841c3588d2440fefc7",
+          "truncated": false
+        },
+        {
+          "url": "https://core.telegram.org/llms.txt",
+          "checked_at": "2026-11-23T14:47:23.751411+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://core.telegram.org/llms.txt",
+          "sha256": "17f2da8b43dfc79b64338bf119ed1f6923445b95b2e54059e91f9344457c2d30",
+          "truncated": false
+        },
+        {
+          "url": "https://core.telegram.org/api",
+          "checked_at": "2026-11-23T14:47:29.073754+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://core.telegram.org/api",
+          "sha256": "662b9ef58147e8aab33dea23f822e86cfb092b8b4f176b7abc702f3f758af3f3",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "app": "WhatsApp Business",
+      "checked_at": "2026-11-23T14:47:41.431607+00:00",
+      "pages_attempted": 3,
+      "pages_read": 3,
+      "elapsed_seconds": 13.85,
+      "fields": {
+        "auth": [],
+        "access": [],
+        "surface": [],
+        "mcp": []
+      },
+      "prototype": "Needs review",
+      "production": "Unconfirmed; verify credentials, scopes, plan and distribution approval",
+      "blockers": [
+        "auth evidence missing",
+        "access evidence missing",
+        "surface evidence missing",
+        "mcp evidence missing"
+      ],
+      "verification_counts": {
+        "supported": 0,
+        "conflicting": 0,
+        "insufficient evidence": 2
+      },
+      "documents": [
+        {
+          "url": "https://developers.facebook.com/docs/whatsapp",
+          "checked_at": "2026-11-23T14:47:27.581199+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+          "sha256": "a5e456c1e22805a62acc5ac82967ca754c9c5bca99cf146973f59524367289b1",
+          "truncated": false
+        },
+        {
+          "url": "https://developers.facebook.com/llms.txt",
+          "checked_at": "2026-11-23T14:47:27.581335+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.facebook.com/llms.txt",
+          "sha256": "fc98bed87f818e2cf2f0bbec5c880fe97011a1bd33738e940ffcaf1dce70d3ab",
+          "truncated": false
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/authentication-international-rates",
+          "checked_at": "2026-11-23T14:47:37.401163+00:00",
+          "cached": false,
+          "status": "read",
+          "resolved_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/authentication-international-rates",
+          "sha256": "e003332c3224283ad74aaebd7a27fefc4c6a6c654ececb07c90c951268b76438",
+          "truncated": false
+        }
+      ]
+    }
+  ],
+  "planned": 100,
+  "status": "interrupted"
+}
