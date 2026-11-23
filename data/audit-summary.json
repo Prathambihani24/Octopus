@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-23T17:26:24.364617+00:00",
+  "scope": "AI-assisted documentation review; applicant manual checks remain pending.",
+  "apps_checked": 100,
+  "fields_checked": 600,
+  "outcomes": {
+    "confirmed_unchanged": 486,
+    "corrected_with_cited_evidence": 50,
+    "insufficient_evidence": 38,
+    "source_unavailable": 26
+  },
+  "direct_source_urls_captured": 587,
+  "open_fields": 64
+}
