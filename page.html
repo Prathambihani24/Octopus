@@ -74,19 +74,29 @@ code{font-family:var(--mono);font-size:.87em;overflow-wrap:anywhere}
 footer{padding:22px 0;color:var(--muted);font-size:.9rem}
 @media(max-width:780px){.wrap{width:calc(100% - 34px)}.hero,.split{grid-template-columns:1fr;gap:17px}.hero{padding:38px 0 32px}.metrics{grid-template-columns:1fr 1fr}.metric{padding-left:14px}.metric:nth-child(odd){border-left:0;padding-left:0}.metric:nth-child(n+3){border-top:1px solid var(--rule)}.workflow{grid-template-columns:1fr}.filter label{flex:1}.filter select{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:root{--paper:#fafbfc;--ink:#172333;--muted:#526174;--rule:#dce2e9;--green:#244bc2;--deep:#172b59;--wash:#edf2ff}
+.wrap{width:min(1120px,calc(100% - 64px))}header{background:white}.head{padding:22px 0}nav a{text-decoration:none;font-weight:600}
+.hero{padding:76px 0 48px;gap:64px}h1{font-size:clamp(3.4rem,6.4vw,5.8rem);line-height:1.03}h2{font-size:clamp(2rem,3.4vw,3rem)}.lead{font-size:1.12rem;line-height:1.65}
+.priority{background:transparent;color:var(--ink);border-left:3px solid var(--green);padding:0 0 0 24px}.priority .kicker{color:var(--green)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.hero-actions a{padding:11px 19px;background:var(--green);color:white;text-decoration:none;font-weight:600}.hero-actions a+a{background:white;color:var(--ink);border:1px solid var(--rule)}
+.metrics{background:white}.metric{padding:24px!important}.num{font-size:2.8rem}section{padding:52px 0}.split{gap:60px}.facts li{padding:16px 0}.facts strong{display:block;margin-bottom:4px}
+.workflow{background:transparent;border:0;gap:24px}.workflow div{background:white;border-top:3px solid var(--green);padding:24px 20px}
+details{background:white;border:1px solid var(--rule);padding:18px 22px;margin:14px 0}summary{width:100%;font-size:1rem}details[open]>summary{margin-bottom:20px}details details{background:var(--paper)}.audit-top{border-left:3px solid var(--green)}
+.review-note{padding:18px 22px;border:1px solid #d9c399;background:#fff9ef;margin:22px 0}.table-wrap{max-height:560px}pre{padding:20px;background:var(--deep);color:white}footer{padding:30px 0}
+@media(max-width:780px){.wrap{width:calc(100% - 36px)}.hero{padding:42px 0 32px;gap:30px}.split{gap:28px}.metric{padding:18px!important}section{padding:36px 0}details{padding:16px}.workflow{gap:14px}}
 </style>
 </head>
 <body>
 <header><div class="wrap head"><div class="byline">PRATHAM BIHANI · COMPOSIO PRODUCT OPS TAKE-HOME</div><nav aria-label="Page sections"><a href="#findings">Findings</a><a href="#matrix">App matrix</a><a href="#verification">Verification</a><a href="#run">Run it</a></nav></div></header>
 <main class="wrap">
 <div class="hero">
-  <div><div class="kicker">Integration research · November 2026</div><h1>Which connectors can we build first?</h1><p class="lead" id="headline"></p></div>
+  <div><div class="kicker">100 apps. One integration decision.</div><h1>Know what’s<br>ready to build.</h1><p class="lead" id="headline"></p><div class="hero-actions"><a href="#findings">Read the findings</a><a href="#run">Try the research agent</a></div></div>
   <aside class="priority"><h3 class="kicker">Recommended first builds</h3><p>Start with one read action each: GitHub issues, Linear issue search, and Notion page retrieval. Validate permissions and check existing tool coverage before adding anything new.</p></aside>
 </div>
 <div class="metrics" aria-label="Study totals" id="metrics"></div>
 <section id="findings" class="split">
   <div><div class="kicker">Findings</div><h2>Access determines the first build</h2><ul class="facts" id="facts"></ul></div>
-  <div><h3>Apps with a free or test route</h3><p class="subtle">Each category contains 10 apps. Production requirements are shown in the matrix.</p><div id="bars"></div></div>
+  <div><h3>The product decision</h3><p class="lead">Prototype where access is clear. Resolve credentials before committing engineering time.</p><p style="margin-top:20px">A documented starting path does not establish production readiness. No authenticated vendor integration has been tested.</p><details><summary>Compare the 10 categories</summary><p class="subtle">Apps with a free or test route, out of 10 in each category.</p><div id="bars"></div></details></div>
 </section>
 <section id="decisions">
 <div class="kicker">Decision brief</div><h2>Prototype, clear access, or investigate</h2>
@@ -116,7 +126,7 @@ footer{padding:22px 0;color:var(--muted);font-size:.9rem}
 <div class="audit-top" id="second-score"></div>
 <details><summary>Second audit — ten previously unsampled apps</summary><p class="subtle" id="second-method"></p><div class="table-wrap" tabindex="0" role="region" aria-label="Second audit"><table><thead><tr><th>App</th><th>Frozen original auth</th><th>Corrected auth</th><th>Evidence and finding</th></tr></thead><tbody id="second-audit"></tbody></table></div></details>
 <h3>Three failures that changed the review process</h3><div class="workflow" id="error-stories"></div>
-  <details open><summary>Inspect the sample and corrections</summary><div class="table-wrap" role="region" aria-label="Scrollable audit results" tabindex="0"><table><thead><tr><th scope="col">App / field</th><th scope="col">First pass</th><th scope="col">After review</th><th scope="col">Why / evidence</th></tr></thead><tbody id="audit"></tbody></table></div></details>
+  <details><summary>Inspect the sample and corrections</summary><div class="table-wrap" role="region" aria-label="Scrollable audit results" tabindex="0"><table><thead><tr><th scope="col">App / field</th><th scope="col">First pass</th><th scope="col">After review</th><th scope="col">Why / evidence</th></tr></thead><tbody id="audit"></tbody></table></div></details>
 </section>
 <section id="run">
   <div class="kicker">Workflow and runnable proof</div><h2>Research an app beyond the list</h2>
@@ -282,6 +292,31 @@ for (const check of data.human_review_plan || []) {
 }
 if(data.batch_run){const b=data.batch_run,read=b.apps.filter(r=>r.pages_read>0).length;el("batch-proof").append(node("strong",b.apps.length+"/"+(b.planned||apps.length)+" saved live refresh results"),node("p",read+" apps returned at least one readable document; "+(b.apps.length-read)+" returned none. "+b.method),link("batch-run.json","Inspect per-app run outcomes"));}
 if (source_repo) el("repo-links").prepend(link(source_repo,"Source repository"));
+// A short reading path, with full evidence available on demand.
+el("headline").textContent = "A research pipeline mapped authentication, access and API evidence across 100 apps. " + (free+local) + " have a documented free, test or local starting path.";
+function foldNodes(parent, title, nodes) {
+  const disclosure = node("details", null);
+  disclosure.append(node("summary", title));
+  parent.insertBefore(disclosure, nodes[0]);
+  for (const child of nodes) disclosure.append(child);
+  return disclosure;
+}
+const matrix = el("matrix");
+foldNodes(matrix, "Explore all 100 apps and their evidence", [...matrix.children].slice(3));
+matrix.parentElement.append(matrix);
+const verification = el("verification");
+const note = node("p", "Human spot checks are pending. Browser and assistant checks are recorded separately; no overall accuracy percentage is claimed.", "review-note");
+verification.insertBefore(note, el("audit-top"));
+foldNodes(verification, "See verification methods, mistakes and audit records", [...verification.children].slice([...verification.children].indexOf(el("human"))));
+const run = el("run");
+const workflowTitle = [...run.children].find(x => x.tagName === "H3");
+const workflow = workflowTitle.nextElementSibling;
+const method = node("section", null); method.id = "method";
+method.append(node("div", "The agent", "kicker"), node("h2", "Find evidence. Flag uncertainty."), node("p", "The pipeline gathers documentation and extracts candidate claims. Reviewers resolve scope, credential eligibility and conflicting evidence before updating the matrix.", "subtle"), workflow);
+verification.parentElement.insertBefore(method, verification);
+workflowTitle.remove();
+const runChildren = [...run.children];
+foldNodes(run, "Inspect recorded runs and reproduction details", runChildren.slice(runChildren.indexOf(el("demo-proof"))));
 </script>
 </body>
 </html>
