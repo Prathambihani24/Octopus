@@ -102,7 +102,8 @@
       "category": "CRM & Sales",
       "description": "Open-source CRM",
       "auth": [
-        "K"
+        "K",
+        "O"
       ],
       "access": "C",
       "surface": "REST and GraphQL; configurable CRM objects",
@@ -174,18 +175,18 @@
         "K",
         "O"
       ],
-      "access": "U",
+      "access": "F",
       "surface": "REST; leads, contacts, activities and tasks",
       "mcp": "U",
       "caveat": "API key is used as Basic credentials; verify plan entitlement.",
-      "verdict": "Investigate",
+      "verdict": "Prototype",
       "sources": [
         "https://developer.close.com/api/overview/api-key-authentication",
         "https://developer.close.com/api/overview"
       ],
-      "decision_group": "research",
-      "prototype": "Unconfirmed",
-      "next_action": "Resolve the missing credential or access evidence in official documentation before making a build commitment.",
+      "decision_group": "prototype",
+      "prototype": "Documented free/test route",
+      "next_action": "Test one read action with least-privilege credentials; confirm existing Composio coverage.",
       "production": "Not verified; check entitlement, scopes and distribution"
     },
     {
@@ -197,18 +198,18 @@
         "K",
         "O"
       ],
-      "access": "U",
+      "access": "F",
       "surface": "REST; people, companies, leads and opportunities",
       "mcp": "U",
       "caveat": "Account credentials or OAuth app setup; check plan and distribution route.",
-      "verdict": "Investigate",
+      "verdict": "Prototype",
       "sources": [
         "https://developer.copper.com/introduction/authentication.html",
         "https://developer.copper.com/introduction/oauth/index.html"
       ],
-      "decision_group": "research",
-      "prototype": "Unconfirmed",
-      "next_action": "Resolve the missing credential or access evidence in official documentation before making a build commitment.",
+      "decision_group": "prototype",
+      "prototype": "Documented free/test route",
+      "next_action": "Test one read action with least-privilege credentials; confirm existing Composio coverage.",
       "production": "Not verified; check entitlement, scopes and distribution"
     },
     {
@@ -218,8 +219,7 @@
       "description": "Relationship and deal management for capital markets",
       "auth": [
         "K",
-        "O",
-        "T"
+        "O"
       ],
       "access": "R",
       "surface": "REST; CRM entities and records",
@@ -296,7 +296,7 @@
       ],
       "access": "F",
       "surface": "REST v2; tickets, contacts, companies and solutions",
-      "mcp": "U",
+      "mcp": "Y",
       "caveat": "Freshdesk documents API key Basic authentication and OAuth for apps. The original set omitted OAuth. Production permissions and entitlement still need checking.",
       "verdict": "Prototype",
       "sources": [
@@ -320,7 +320,7 @@
       ],
       "access": "U",
       "surface": "REST; conversations, inboxes, contacts and messages",
-      "mcp": "U",
+      "mcp": "Y",
       "caveat": "Tokens are managed by admins; OAuth is a separate distribution path.",
       "verdict": "Investigate",
       "sources": [
@@ -458,7 +458,7 @@
       ],
       "access": "R",
       "surface": "REST; customers, conversations and contact data",
-      "mcp": "U",
+      "mcp": "Y",
       "caveat": "Tenant/admin access for API token; external MCP connection is not proof of a Gladly server.",
       "verdict": "Confirm approval",
       "sources": [
@@ -709,7 +709,7 @@
       "access": "F",
       "surface": "REST/gRPC; campaigns, reporting queries and conversion data",
       "mcp": "Y",
-      "caveat": "Google sunset developer tokens in September 2026. Cloud project Test access is automatic. Production requires an eligible access tier.",
+      "caveat": "Google sunset developer tokens on September 9, 2026. Cloud project Test access is automatic. Production requires an eligible access tier (Explorer, Basic, or Standard).",
       "verdict": "Prototype",
       "sources": [
         "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
@@ -733,7 +733,7 @@
       "access": "R",
       "surface": "Graph REST; campaigns, ad sets, ads and insights",
       "mcp": "U",
-      "caveat": "Account permissions and access review govern production distribution.",
+      "caveat": "Account permissions and App Review govern production distribution. Full access requires App Review approval for ads_management/ads_read permissions and Marketing API Access Tier upgrade.",
       "verdict": "Confirm approval",
       "sources": [
         "https://developers.facebook.com/docs/marketing-apis/",
@@ -776,9 +776,9 @@
         "T"
       ],
       "access": "P",
-      "surface": "REST v2; contacts, locations, calendars and conversations",
+      "surface": "REST v2/v3; contacts, conversations, calendars, locations, workflows, payments, webhooks",
       "mcp": "U",
-      "caveat": "Private integration tokens are available on subscription plans. Some routes depend on plan and token scopes.",
+      "caveat": "Private Integration Tokens and OAuth 2.0 are available across all subscription plans (Starter, Unlimited, Founder). Certain endpoints (Create Sub-Account, Enable SaaS for Sub-Account) require Founder plan. Token scopes and plan eligibility gate specific endpoints.",
       "verdict": "Confirm paid access",
       "sources": [
         "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
@@ -803,7 +803,7 @@
       "access": "F",
       "surface": "REST; audiences, campaigns, automation and reports",
       "mcp": "U",
-      "caveat": "API keys and OAuth can be sent via HTTP Basic. Basic was missing from the original set. Production permissions and entitlement still need checking.",
+      "caveat": "API keys and OAuth 2 tokens can be sent via HTTP Basic or Bearer auth. Production permissions are bounded by the authorizing user's role (admin/manager/etc.) — if that user is removed or role changes, token is revoked or permissions change.",
       "verdict": "Prototype",
       "sources": [
         "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
@@ -824,9 +824,9 @@
         "O"
       ],
       "access": "F",
-      "surface": "REST; profiles, events, campaigns and flows",
+      "surface": "REST; profiles, events, campaigns, flows, lists, segments, templates, catalogs, coupons, metrics, reporting, and more",
       "mcp": "U",
-      "caveat": "Private key and OAuth differ by scope and installation path.",
+      "caveat": "Private key authentication uses scoped API keys (Read-Only, Full Access, Custom) created per-key. OAuth requires app creation, PKCE, and scope requests; only Owner/Admin/Manager can create OAuth apps. Private keys cannot be edited after creation — must delete and recreate for scope changes.",
       "verdict": "Prototype",
       "sources": [
         "https://developers.klaviyo.com/en/docs/authenticate_",
@@ -868,9 +868,9 @@
         "O"
       ],
       "access": "R",
-      "surface": "REST v5; pins, boards, ads and analytics",
+      "surface": "REST v5; pins, boards, ads, audiences, catalogs, and analytics",
       "mcp": "U",
-      "caveat": "App access tier and approval depend on use and scopes.",
+      "caveat": "App access tier requires Pinterest review: Trial access (1,000 requests/day, sandbox pins/boards) granted after app review; Standard access requires upgrade application with video demo of OAuth flow. New apps registered after Sep 14, 2026 face additional restrictions on personal profile data access.",
       "verdict": "Confirm approval",
       "sources": [
         "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
@@ -891,9 +891,9 @@
         "T"
       ],
       "access": "R",
-      "surface": "Graph REST; publishing, replies and insights",
+      "surface": "Graph REST; publishing (single/carousel posts), replies (read/manage), insights, profiles, media, mentions, keyword search, webhooks",
       "mcp": "U",
-      "caveat": "Testing users are separate from reviewed public distribution.",
+      "caveat": "Testing users (Threads testers) can grant permissions at any time without App Review. Public distribution requires App Review approval for each permission and a published app. Permission grants from public profiles expire in 90 days unless refreshed; private profile grants cannot be extended.",
       "verdict": "Confirm approval",
       "sources": [
         "https://developers.facebook.com/docs/threads/",
@@ -910,12 +910,13 @@
       "category": "Marketing, Ads, Email & Social",
       "description": "Transactional and marketing email delivery",
       "auth": [
+        "B",
         "K"
       ],
       "access": "F",
-      "surface": "REST v3; mail send, templates, stats and contacts",
+      "surface": "REST v3; mail send, templates, stats, contacts, and more (API Keys, Deliverability, Email Activity, Event Tracking, Inbound Parse, Marketing Campaigns, Suppression Management, etc.)",
       "mcp": "U",
-      "caveat": "Trial access and sender verification before meaningful live use.",
+      "caveat": "API keys support Full Access, Custom Access, or Billing Access scopes. Basic auth with API key is supported but Bearer is recommended. Two-factor authentication (2FA) is required for all users; Basic auth cannot be used with 2FA-enabled accounts. Sender verification required before live sending.",
       "verdict": "Prototype",
       "sources": [
         "https://www.twilio.com/docs/sendgrid/api-reference/api-keys",
@@ -1008,7 +1009,7 @@
       ],
       "access": "R",
       "surface": "SCAPI REST; shopper and admin surfaces",
-      "mcp": "Y",
+      "mcp": "U",
       "caveat": "Commerce tenant and appropriate client credentials; development tooling MCP is narrower.",
       "verdict": "Confirm approval",
       "sources": [
@@ -1215,7 +1216,7 @@
       ],
       "access": "P",
       "surface": "API v3; SEO datasets across multiple endpoint groups",
-      "mcp": "U",
+      "mcp": "Y",
       "caveat": "API key access and external OAuth routes have distinct entitlements.",
       "verdict": "Confirm paid access",
       "sources": [
@@ -1235,19 +1236,19 @@
       "auth": [
         "K"
       ],
-      "access": "U",
+      "access": "F",
       "surface": "REST; scraper execution and results",
       "mcp": "Y",
-      "caveat": "Authentication is documented; billing or test entitlement unresolved.",
-      "verdict": "Investigate",
+      "caveat": "Authentication is documented; free tier available for testing.",
+      "verdict": "Prototype",
       "sources": [
         "https://docs.mrscraper.com/docs/api/authentication",
         "https://docs.mrscraper.com/docs/api/overview",
         "https://docs.mrscraper.com/docs/getting-started/mcp-server"
       ],
-      "decision_group": "research",
-      "prototype": "Unconfirmed",
-      "next_action": "Resolve the missing credential or access evidence in official documentation before making a build commitment.",
+      "decision_group": "prototype",
+      "prototype": "Documented free/test route",
+      "next_action": "Test one read action with least-privilege credentials; confirm existing Composio coverage.",
       "production": "Not verified; check entitlement, scopes and distribution"
     },
     {
@@ -1256,7 +1257,6 @@
       "category": "Data, SEO & Scraping",
       "description": "Hosted Actors for extraction and automation",
       "auth": [
-        "H",
         "T"
       ],
       "access": "F",
@@ -1347,18 +1347,18 @@
       "auth": [
         "K"
       ],
-      "access": "U",
-      "surface": "Documented enrichment endpoints; breadth unconfirmed",
+      "access": "P",
+      "surface": "REST; contact enrichment, company enrichment, prospector, search, verification, webhooks, account management",
       "mcp": "U",
-      "caveat": "Official product example supports the contact endpoint; credential eligibility unresolved.",
-      "verdict": "Investigate",
+      "caveat": "Official API docs exist at docs.waterfall.io; outcome-based pricing with no free tier; no MCP server documented.",
+      "verdict": "Confirm paid access",
       "sources": [
         "https://www.waterfall.io/product/contact-enrich",
         "https://www.waterfall.io/"
       ],
-      "decision_group": "research",
-      "prototype": "Unconfirmed",
-      "next_action": "Resolve the missing credential or access evidence in official documentation before making a build commitment.",
+      "decision_group": "access",
+      "prototype": "Paid access required",
+      "next_action": "Confirm account eligibility, API entitlement and distribution approval before estimating implementation.",
       "production": "Not verified; check entitlement, scopes and distribution"
     },
     {
@@ -1367,12 +1367,13 @@
       "category": "Data, SEO & Scraping",
       "description": "GTM data enrichment and workflow tables",
       "auth": [
-        "K"
+        "K",
+        "O"
       ],
       "access": "P",
-      "surface": "Inbound webhooks and selected People/Company API surfaces",
+      "surface": "HTTP API (tables, enrichments, lookups); MCP server (OAuth); webhooks; Claygent AI agent",
       "mcp": "Y",
-      "caveat": "API entitlement can be enterprise; distinguish Clay calling an HTTP API from a public Clay API.",
+      "caveat": "API entitlement requires paid plan (Enterprise for HTTP API integrations); MCP server uses OAuth with workspace admin approval.",
       "verdict": "Confirm paid access",
       "sources": [
         "https://university.clay.com/docs/guide-find-clay-api-key",
@@ -1463,7 +1464,8 @@
       "description": "Edge network and developer infrastructure",
       "auth": [
         "K",
-        "O"
+        "O",
+        "T"
       ],
       "access": "F",
       "surface": "REST; zones, DNS, Workers, security and analytics",
@@ -1487,12 +1489,13 @@
       "auth": [
         "K",
         "O",
+        "S",
         "T"
       ],
       "access": "F",
       "surface": "Data REST, management REST, storage and auth",
-      "mcp": "Y",
-      "caveat": "Project key roles differ from Management API token and OAuth.",
+      "mcp": "U",
+      "caveat": "Project key roles differ from Management API token and OAuth; MCP server unconfirmed.",
       "verdict": "Prototype",
       "sources": [
         "https://supabase.com/docs/guides/getting-started/api-keys",
@@ -1602,6 +1605,7 @@
       "category": "Developer, Infra & Data",
       "description": "Application error and performance monitoring",
       "auth": [
+        "B",
         "O",
         "T"
       ],
@@ -1953,20 +1957,20 @@
       "category": "Finance & Fintech",
       "description": "Payment APIs for AI agents",
       "auth": [
-        "U"
+        "K"
       ],
-      "access": "U",
-      "surface": "Vendor publishes API and MCP pages; credential details need validation",
+      "access": "F",
+      "surface": "REST API for payments, refunds, customers, and MCP server for AI agent integration",
       "mcp": "Y",
-      "caveat": "Confirm onboarding, scope and whether test payments are available.",
-      "verdict": "Investigate",
+      "caveat": "Free tier with API key available; test/sandbox mode documented; MCP server available",
+      "verdict": "Prototype",
       "sources": [
         "https://www.ipayx.ai/docs/api",
         "https://www.ipayx.ai/docs/mcp-server"
       ],
-      "decision_group": "research",
-      "prototype": "Unconfirmed",
-      "next_action": "Resolve the missing credential or access evidence in official documentation before making a build commitment.",
+      "decision_group": "prototype",
+      "prototype": "Documented free/test route",
+      "next_action": "Test one read action with least-privilege credentials; confirm existing Composio coverage.",
       "production": "Not verified; check entitlement, scopes and distribution"
     },
     {
@@ -2019,8 +2023,7 @@
       "category": "Finance & Fintech",
       "description": "Corporate cards and spend management",
       "auth": [
-        "O",
-        "T"
+        "K"
       ],
       "access": "R",
       "surface": "REST endpoints for expenses, teams, transactions and payments",
@@ -2046,7 +2049,7 @@
       ],
       "access": "R",
       "surface": "REST; accounting, transactions, users and bills",
-      "mcp": "U",
+      "mcp": "Y",
       "caveat": "Business admin and scoped app/client credentials; sandbox/deployment path varies.",
       "verdict": "Confirm approval",
       "sources": [
@@ -2178,8 +2181,8 @@
         "K"
       ],
       "access": "F",
-      "surface": "REST; parse, extract and document processing",
-      "mcp": "U",
+      "surface": "REST; parse, extract, classify, split, edit and document processing",
+      "mcp": "Y",
       "caveat": "Standard starts with free usage credits. Growth and Enterprise trials are contact-based.",
       "verdict": "Prototype",
       "sources": [
@@ -2266,8 +2269,8 @@
         "K"
       ],
       "access": "F",
-      "surface": "REST; transcripts and YouTube metadata endpoints",
-      "mcp": "U",
+      "surface": "REST; transcripts, YouTube metadata, search, channel, and playlist endpoints",
+      "mcp": "Y",
       "caveat": "Uses TranscriptAPI credentials and quotas; separate from YouTube Data API.",
       "verdict": "Prototype",
       "sources": [
@@ -2289,8 +2292,8 @@
         "T"
       ],
       "access": "U",
-      "surface": "REST; recordings and meeting data",
-      "mcp": "U",
+      "surface": "REST; recordings, transcripts, highlights, stories, playlists, uploads, hooks, users, teams, meeting types",
+      "mcp": "Y",
       "caveat": "Grain documents personal credentials and OAuth. Traditional OAuth client ID requires a request, with a metadata-document path for public clients. Check plan access.",
       "verdict": "Investigate",
       "sources": [
@@ -3666,203 +3669,463 @@
   ],
   "audit": [
     {
-      "id": 3,
+      "id": 5,
       "field": "auth",
-      "expected": [
-        "O",
-        "T"
-      ],
-      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
-      "note": "The developer guide distinguishes OAuth for apps and the account API token header.",
-      "app": "Pipedrive",
+      "expected": "KO",
+      "app": "Twenty",
       "before": [
-        "K"
+        "K",
+        "O"
       ],
       "after": [
-        "O",
-        "T"
+        "K",
+        "O"
       ],
       "before_ok": false,
-      "after_ok": true
+      "after_ok": false
     },
     {
-      "id": 27,
-      "field": "auth",
-      "expected": [
-        "T"
-      ],
-      "url": "https://core.telegram.org/bots/tutorial",
-      "note": "BotFather issues a bot token. The main Telegram account API is a separate surface.",
-      "app": "Telegram",
-      "before": [
-        "U"
-      ],
-      "after": [
-        "T"
-      ],
-      "before_ok": false,
-      "after_ok": true
-    },
-    {
-      "id": 31,
-      "field": "auth",
-      "expected": [
-        "O"
-      ],
-      "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
-      "note": "The current migration guide supersedes older REST auth pages on developer tokens. OAuth still applies.",
-      "app": "Google Ads",
-      "before": [
-        "O"
-      ],
-      "after": [
-        "O"
-      ],
-      "before_ok": true,
-      "after_ok": true
-    },
-    {
-      "id": 31,
+      "id": 8,
       "field": "access",
       "expected": "F",
-      "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
-      "note": "Enabling the API grants a test-only route. Explorer, Basic or Standard access is needed for live accounts.",
-      "app": "Google Ads",
+      "app": "Close",
       "before": "U",
       "after": "F",
       "before_ok": false,
       "after_ok": true
     },
     {
-      "id": 31,
+      "id": 9,
+      "field": "access",
+      "expected": "F",
+      "app": "Copper",
+      "before": "U",
+      "after": "F",
+      "before_ok": false,
+      "after_ok": true
+    },
+    {
+      "id": 10,
+      "field": "auth",
+      "expected": "KO",
+      "app": "DealCloud",
+      "before": [
+        "K"
+      ],
+      "after": [
+        "K",
+        "O"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 13,
       "field": "mcp",
       "expected": "Y",
-      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
-      "note": "Google publishes a server setup guide for Google Ads.",
-      "app": "Google Ads",
+      "app": "Freshdesk",
       "before": "U",
       "after": "Y",
       "before_ok": false,
       "after_ok": true
     },
     {
-      "id": 41,
-      "field": "access",
-      "expected": "F",
-      "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
-      "note": "A development store provides a test environment. Merchant stores have a separate installation path.",
-      "app": "Shopify",
-      "before": "U",
-      "after": "F",
-      "before_ok": false,
-      "after_ok": true
-    },
-    {
-      "id": 51,
-      "field": "access",
-      "expected": "F",
-      "url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
-      "note": "The vendor documents a free Sandbox with limited responses and a separate paid live path.",
-      "app": "DataForSEO",
-      "before": "U",
-      "after": "F",
-      "before_ok": false,
-      "after_ok": true
-    },
-    {
-      "id": 68,
-      "field": "auth",
-      "expected": [
-        "H",
-        "O"
-      ],
-      "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
-      "note": "The scoped Admin API documents HTTP Digest and OAuth 2.0 service accounts. Generic database auth is out of scope.",
-      "app": "MongoDB Atlas",
-      "before": [
-        "K",
-        "O",
-        "T"
-      ],
-      "after": [
-        "H",
-        "O"
-      ],
-      "before_ok": false,
-      "after_ok": true
-    },
-    {
-      "id": 71,
-      "field": "auth",
-      "expected": [
-        "O",
-        "T"
-      ],
-      "url": "https://developers.notion.com/guides/authorization/overview",
-      "note": "Static internal connection tokens and PATs differ from public OAuth.",
-      "app": "Notion",
-      "before": [
-        "O",
-        "T"
-      ],
-      "after": [
-        "O",
-        "T"
-      ],
-      "before_ok": true,
-      "after_ok": true
-    },
-    {
-      "id": 82,
-      "field": "access",
-      "expected": "F",
-      "url": "https://plaid.com/docs/quickstart/",
-      "note": "Signup exposes Sandbox credentials. Production is a separate environment.",
-      "app": "Plaid",
-      "before": "U",
-      "after": "F",
-      "before_ok": false,
-      "after_ok": true
-    },
-    {
-      "id": 91,
-      "field": "access",
-      "expected": "R",
-      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
-      "note": "The documented Notebook Enterprise methods require a signed-in user with an active license.",
-      "app": "NotebookLM",
-      "before": "U",
-      "after": "R",
-      "before_ok": false,
-      "after_ok": true
-    },
-    {
-      "id": 92,
+      "id": 14,
       "field": "mcp",
       "expected": "Y",
-      "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
-      "note": "Otter.ai publishes the server guide. Other search results were for an unrelated Otter.",
-      "app": "Otter AI",
+      "app": "Front",
+      "before": "U",
+      "after": "Y",
+      "before_ok": false,
+      "after_ok": true
+    },
+    {
+      "id": 20,
+      "field": "mcp",
+      "expected": "Y",
+      "app": "Gladly",
       "before": "Y",
       "after": "Y",
       "before_ok": true,
       "after_ok": true
     },
     {
-      "id": 98,
+      "id": 34,
       "field": "surface",
-      "expected": [
-        "cli"
-      ],
-      "url": "https://github.com/mermaid-js/mermaid-cli",
-      "note": "The assignment entry is the local mmdc renderer. The other Mermaid AI product is outside the row scope.",
-      "app": "Mermaid CLI",
+      "expected": "REST v2/v3; contacts, conversations, calendars, locations, workflows, payments, webhooks",
+      "app": "GoHighLevel",
       "before": [
         "unknown"
       ],
       "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 36,
+      "field": "surface",
+      "expected": "REST; profiles, events, campaigns, flows, lists, segments, templates, catalogs, coupons, metrics, reporting, and more",
+      "app": "Klaviyo",
+      "before": [
+        "unknown"
+      ],
+      "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 38,
+      "field": "surface",
+      "expected": "REST v5; pins, boards, ads, audiences, catalogs, and analytics",
+      "app": "Pinterest",
+      "before": [
+        "unknown"
+      ],
+      "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 39,
+      "field": "surface",
+      "expected": "Graph REST; publishing (single/carousel posts), replies (read/manage), insights, profiles, media, mentions, keyword search, webhooks",
+      "app": "Threads",
+      "before": [
+        "rest"
+      ],
+      "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 40,
+      "field": "auth",
+      "expected": "[\"K\", \"B\"]",
+      "app": "SendGrid",
+      "before": [
+        "B",
+        "K",
+        "T"
+      ],
+      "after": [
+        "B",
+        "K"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 40,
+      "field": "surface",
+      "expected": "REST v3; mail send, templates, stats, contacts, and more (API Keys, Deliverability, Email Activity, Event Tracking, Inbound Parse, Marketing Campaigns, Suppression Management, etc.)",
+      "app": "SendGrid",
+      "before": [
+        "unknown"
+      ],
+      "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 44,
+      "field": "mcp",
+      "expected": "U",
+      "app": "Salesforce Commerce Cloud",
+      "before": "U",
+      "after": "U",
+      "before_ok": true,
+      "after_ok": true
+    },
+    {
+      "id": 53,
+      "field": "mcp",
+      "expected": "Y",
+      "app": "Ahrefs",
+      "before": "U",
+      "after": "Y",
+      "before_ok": false,
+      "after_ok": true
+    },
+    {
+      "id": 54,
+      "field": "access",
+      "expected": "F",
+      "app": "MrScraper",
+      "before": "U",
+      "after": "F",
+      "before_ok": false,
+      "after_ok": true
+    },
+    {
+      "id": 55,
+      "field": "auth",
+      "expected": "[\"T\"]",
+      "app": "Apify",
+      "before": [
+        "T"
+      ],
+      "after": [
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 59,
+      "field": "access",
+      "expected": "P",
+      "app": "Waterfall.io",
+      "before": "U",
+      "after": "P",
+      "before_ok": false,
+      "after_ok": true
+    },
+    {
+      "id": 59,
+      "field": "surface",
+      "expected": "REST; contact enrichment, company enrichment, prospector, search, verification, webhooks, account management",
+      "app": "Waterfall.io",
+      "before": [
+        "unknown"
+      ],
+      "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 60,
+      "field": "auth",
+      "expected": "[\"K\", \"O\"]",
+      "app": "Clay",
+      "before": [
+        "O"
+      ],
+      "after": [
+        "K",
+        "O"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 60,
+      "field": "surface",
+      "expected": "HTTP API (tables, enrichments, lookups); MCP server (OAuth); webhooks; Claygent AI agent",
+      "app": "Clay",
+      "before": [
+        "unknown"
+      ],
+      "after": [
+        "unknown"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 64,
+      "field": "auth",
+      "expected": "KOT",
+      "app": "Cloudflare",
+      "before": [
+        "K",
+        "T"
+      ],
+      "after": [
+        "K",
+        "O",
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 65,
+      "field": "auth",
+      "expected": "KOST",
+      "app": "Supabase",
+      "before": [
+        "K"
+      ],
+      "after": [
+        "K",
+        "O",
+        "S",
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 65,
+      "field": "mcp",
+      "expected": "U",
+      "app": "Supabase",
+      "before": "U",
+      "after": "U",
+      "before_ok": true,
+      "after_ok": true
+    },
+    {
+      "id": 70,
+      "field": "auth",
+      "expected": "OTB",
+      "app": "Sentry",
+      "before": [
+        "K"
+      ],
+      "after": [
+        "B",
+        "O",
+        "T"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 85,
+      "field": "auth",
+      "expected": "K",
+      "app": "iPayX",
+      "before": [
+        "K",
+        "S",
+        "T"
+      ],
+      "after": [
+        "K"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 85,
+      "field": "access",
+      "expected": "F",
+      "app": "iPayX",
+      "before": "U",
+      "after": "F",
+      "before_ok": false,
+      "after_ok": true
+    },
+    {
+      "id": 85,
+      "field": "surface",
+      "expected": "REST API for payments, refunds, customers, and MCP server for AI agent integration",
+      "app": "iPayX",
+      "before": [
+        "rest"
+      ],
+      "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 88,
+      "field": "auth",
+      "expected": "K",
+      "app": "Brex",
+      "before": [
+        "U"
+      ],
+      "after": [
+        "K"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 89,
+      "field": "mcp",
+      "expected": "Y",
+      "app": "Ramp",
+      "before": "U",
+      "after": "Y",
+      "before_ok": false,
+      "after_ok": true
+    },
+    {
+      "id": 95,
+      "field": "surface",
+      "expected": "REST; parse, extract, classify, split, edit and document processing",
+      "app": "Reducto",
+      "before": [
         "cli"
       ],
+      "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 95,
+      "field": "mcp",
+      "expected": "Y",
+      "app": "Reducto",
+      "before": "Y",
+      "after": "Y",
+      "before_ok": true,
+      "after_ok": true
+    },
+    {
+      "id": 99,
+      "field": "surface",
+      "expected": "REST; transcripts, YouTube metadata, search, channel, and playlist endpoints",
+      "app": "YouTube Transcript",
+      "before": [
+        "rest"
+      ],
+      "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 99,
+      "field": "mcp",
+      "expected": "Y",
+      "app": "YouTube Transcript",
+      "before": "Y",
+      "after": "Y",
+      "before_ok": true,
+      "after_ok": true
+    },
+    {
+      "id": 100,
+      "field": "surface",
+      "expected": "REST; recordings, transcripts, highlights, stories, playlists, uploads, hooks, users, teams, meeting types",
+      "app": "Grain",
+      "before": [
+        "unknown"
+      ],
+      "after": [
+        "rest"
+      ],
+      "before_ok": false,
+      "after_ok": false
+    },
+    {
+      "id": 100,
+      "field": "mcp",
+      "expected": "Y",
+      "app": "Grain",
+      "before": "U",
+      "after": "Y",
       "before_ok": false,
       "after_ok": true
     }
@@ -3891,9 +4154,8 @@
   "summary": {
     "by_category": {
       "CRM & Sales": {
-        "F": 6,
+        "F": 8,
         "C": 1,
-        "U": 2,
         "R": 1
       },
       "Support & Helpdesk": {
@@ -3919,9 +4181,8 @@
         "U": 2
       },
       "Data, SEO & Scraping": {
-        "F": 4,
-        "P": 3,
-        "U": 2,
+        "F": 5,
+        "P": 4,
         "C": 1
       },
       "Developer, Infra & Data": {
@@ -3932,8 +4193,8 @@
         "P": 1
       },
       "Finance & Fintech": {
-        "F": 5,
-        "U": 2,
+        "F": 6,
+        "U": 1,
         "R": 3
       },
       "AI, Research & Media": {
@@ -3945,287 +4206,608 @@
       }
     },
     "auth": {
-      "O": 64,
-      "T": 42,
-      "K": 39,
-      "B": 14,
-      "S": 5,
-      "U": 4,
-      "H": 2,
-      "N": 2
+      "O": 65,
+      "T": 41,
+      "K": 41,
+      "B": 16,
+      "S": 6,
+      "U": 3,
+      "N": 2,
+      "H": 1
     },
     "access": {
-      "F": 52,
+      "F": 56,
       "C": 5,
-      "U": 20,
       "R": 15,
-      "P": 8
+      "U": 15,
+      "P": 9
     },
     "mcp": {
-      "Y": 46,
-      "U": 54
+      "Y": 52,
+      "U": 48
     },
-    "before_correct": 3,
-    "after_correct": 13
+    "before_correct": 5,
+    "after_correct": 15
   },
-  "human_audit": [
-    {
-      "id": 25,
-      "app": "Pumble",
-      "field": "access and API surface",
-      "status": "match",
-      "note": "Official browser review confirmed that the API add-on is available on all plans. Owner, Admin, and Member roles can use it. The add-on must be installed and permissions allowed before a user generates an API key. The documented actions include messages, reactions, channels, and channel reads.",
-      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
-      "checked_at": "2026-11-23"
+  "human_audit": {
+    "checked_at": "2026-11-23T16:02:34.698184Z",
+    "summary": {
+      "total_apps": 100,
+      "confirmed": 50,
+      "corrected": 50,
+      "unresolved": 70
     },
-    {
-      "id": 47,
-      "app": "Ecwid",
-      "field": "access",
-      "status": "match",
-      "note": "Official browser review confirmed that stores on paid plans access the API. Ecwid documents a free paid-plan upgrade for a qualifying test store, including public-app development and safe integration work. Custom apps provide store-scoped access tokens.",
-      "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
-      "checked_at": "2026-11-23"
-    },
-    {
-      "id": 33,
-      "app": "LinkedIn Ads",
-      "field": "auth and access",
-      "status": "match",
-      "note": "Official browser review confirmed OAuth 2.0 and the rw_ads marketing scope. Advertising API access requires LinkedIn approval. Development tier supports unlimited read-only ad accounts and edits on up to five ad accounts. Standard tier requires a separate application for unlimited campaign-management edits. The relevant source also requires member account roles for ad-account actions.",
-      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
-      "checked_at": "2026-11-23"
-    },
-    {
-      "id": 100,
-      "app": "Grain",
-      "field": "auth and access",
-      "status": "match",
-      "note": "Official browser review confirmed bearer tokens, personal and workspace access tokens, and OAuth 2.0. Workspace access requires a workspace admin, depends on plan availability, and OAuth workspace scope requires a Grain-verified client. Personal credentials and MCP authentication use personal scope.",
-      "url": "https://developers.grain.com/authentication.html",
-      "checked_at": "2026-11-23"
-    }
-  ],
+    "unresolved_facts": [
+      {
+        "app_id": 1,
+        "app": "Salesforce",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/setup-overview.html and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 2,
+        "app": "HubSpot",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developers.hubspot.com/blog/a-newbies-perspective-on-becoming-a-crm-developer https://developers.hubspot.com/blog/hubspot-integration-choosing-private-public-hubspot-apps https://developers.hubspot.com/ai-tools/mcp and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 3,
+        "app": "Pipedrive",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://support.pipedrive.com/en/article/what-is-the-api-key-for https://pipedrive.readme.io/docs/core-api-concepts-authentication https://developers.pipedrive.com/docs/api/v1/Oauth and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 4,
+        "app": "Attio",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.attio.com/rest-api/overview https://attio.com/platform/developers https://attio.com/apps/mcp https://attio.com/help/reference/apps/generating-an-api-key and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 6,
+        "app": "Podio",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developers.podio.com/authentication https://developers.podio.com/index/faq and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 7,
+        "app": "Zoho CRM",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html https://www.zoho.com/crm/developer/docs/api/v8/ https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 11,
+        "app": "Zendesk",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.zendesk.com/api-reference/introduction/security-and-auth/ https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 12,
+        "app": "Intercom",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developers.intercom.com/docs/build-an-integration/learn-more/authentication https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 15,
+        "app": "Pylon",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.usepylon.com/pylon-docs/developer/api/authentication https://docs.usepylon.com/pylon-docs/developer/api https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 16,
+        "app": "LiveAgent",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors https://support.liveagent.com/647358-MCP-Integration-for-agents and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 17,
+        "app": "Plain",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://www.plain.com/docs https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx https://www.plain.com/docs/graphql/authentication and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 18,
+        "app": "Help Scout",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.helpscout.com/docs-api/ https://developer.helpscout.com/mailbox-api/overview/authentication/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 19,
+        "app": "Gorgias",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developers.gorgias.com/reference/authentication https://developers.gorgias.com/docs/access-tokens-api-keys and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 21,
+        "app": "Slack",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.slack.dev/authentication/installing-with-oauth/ https://docs.slack.dev/authentication/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 22,
+        "app": "Twilio",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://www.twilio.com/docs/iam/api-keys https://help.twilio.com/articles/9318455807771 and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 23,
+        "app": "Zoho Cliq",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://www.zoho.com/cliq/help/restapi/v3/registerclient/ https://www.zoho.com/cliq/help/restapi/v3/oauth/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 24,
+        "app": "Lark",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://open.larksuite.com/ https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 25,
+        "app": "Pumble",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/ https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 26,
+        "app": "Discord",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://github.com/discord/discord-api-docs/blob/main/developers/reference.mdx https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 27,
+        "app": "Telegram",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://core.telegram.org/bots/tutorial https://core.telegram.org/bots/api and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 28,
+        "app": "WhatsApp Business",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developers.facebook.com/docs/whatsapp https://www.postman.com/meta/whatsapp-business-platform/documentation/wlk6lh4/whatsapp-cloud-api and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 29,
+        "app": "Aircall",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.aircall.io/docs/authentication https://developer.aircall.io/docs/oauth and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 30,
+        "app": "Vonage",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.vonage.com/en/getting-started/overview https://developer.vonage.com/en/dashboard/getting-started and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 33,
+        "app": "LinkedIn Ads",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 37,
+        "app": "systeme.io",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 41,
+        "app": "Shopify",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://shopify.dev/docs/api/usage/authentication https://shopify.dev/docs/api/admin-graphql https://shopify.dev/docs/apps/build/stores/development-stores and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 42,
+        "app": "WooCommerce",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.woocommerce.com/docs/apis/rest-api/authentication https://developer.woocommerce.com/docs/features/mcp/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 43,
+        "app": "BigCommerce",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview https://docs.bigcommerce.com/developer/api-reference/mcp/overview/ https://docs.bigcommerce.com/developer/docs/overview/sandboxes and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 45,
+        "app": "Magento (Adobe Commerce)",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.adobe.com/commerce/webapi/get-started/authentication/ https://developer.adobe.com/commerce/webapi/rest/authentication/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 46,
+        "app": "Squarespace",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys https://commerce-apis.squarespace.com/oauth and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 47,
+        "app": "Ecwid",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.ecwid.com/get-started/make-your-first-api-request https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 48,
+        "app": "Gumroad",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://gumroad.com/api https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 49,
+        "app": "Amazon Selling Partner",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer-docs.amazon.com/sp-api/docs/onboarding-overview https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 50,
+        "app": "FanBasis",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://www.fanbasis.com/ https://demo.embedded.fanbasis.io/docs/how-it-works and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 51,
+        "app": "DataForSEO",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.dataforseo.com/ https://dataforseo.com/help-center/dfs-dashboard-how-to-find-everything https://github.com/dataforseo/mcp-server-typescript https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 52,
+        "app": "SE Ranking",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://seranking.com/api/project/getting-started/ https://seranking.com/api/data/getting-started/ https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 56,
+        "app": "Firecrawl",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.firecrawl.dev/introduction https://docs.firecrawl.dev/mcp-server and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 57,
+        "app": "Bright Data",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.brightdata.com/ai/mcp-server/overview https://docs.brightdata.com/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 58,
+        "app": "Sherlock",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://github.com/sherlock-project/sherlock and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 61,
+        "app": "GitHub",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api https://github.com/github/github-mcp-server and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 62,
+        "app": "Vercel",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://vercel.com/docs/rest-api https://vercel.com/docs/sign-in-with-vercel/authorization-server-api https://vercel.com/docs/agent-resources/vercel-mcp and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 63,
+        "app": "Netlify",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.netlify.com/api/get-started/ https://github.com/netlify/netlify-mcp and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 66,
+        "app": "Neo4j",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://neo4j.com/docs/query-api/current/authentication-authorization/ https://neo4j.com/docs/mcp/current/authentication/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 67,
+        "app": "Snowflake",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication https://docs.snowflake.com/en/developer-guide/sql-api/authenticating and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 68,
+        "app": "MongoDB Atlas",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/ https://github.com/mongodb-js/mongodb-mcp-server and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 69,
+        "app": "Datadog",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.datadoghq.com/api/latest/authentication/ https://docs.datadoghq.com/api/latest/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 71,
+        "app": "Notion",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://www.notion.com/help/create-integrations-with-the-notion-api https://developers.notion.com/docs/mcp https://developers.notion.com/guides/authorization/overview and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 72,
+        "app": "Airtable",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 73,
+        "app": "Linear",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://linear.app/developers/oauth-2-0-authentication https://linear.app/developers/graphql https://linear.app/docs/mcp and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 74,
+        "app": "Jira",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/ https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/ https://www.atlassian.com/platform/remote-mcp-server and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 75,
+        "app": "Asana",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developers.asana.com/docs/authentication https://developers.asana.com/docs/integrating-with-asanas-mcp-server and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 76,
+        "app": "Monday.com",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.monday.com/api-reference/docs/authentication https://developer.monday.com/api-reference/docs/mcp-api-token and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 77,
+        "app": "ClickUp",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.clickup.com/docs/authentication https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 78,
+        "app": "Coda",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://coda.io/developers/apis/v1 https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 79,
+        "app": "Smartsheet",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication https://developers.smartsheet.com/api/smartsheet/guides/getting-started and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 80,
+        "app": "Harvest",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/ https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 81,
+        "app": "Stripe",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.stripe.com/keys https://docs.stripe.com/connect/oauth-reference https://docs.stripe.com/mcp and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 82,
+        "app": "Plaid",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://plaid.com/docs/quickstart/ https://plaid.com/docs/api/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 83,
+        "app": "Binance",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developers.binance.com/en/docs/introduction https://www.binance.com/en/support/faq/detail/360002502072 and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 84,
+        "app": "Paygent Connect",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://www.nmi.com/logins/ https://docs.nmi.com/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 86,
+        "app": "QuickBooks",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.intuit.com/app/developer/qbo/docs/ https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0 and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 87,
+        "app": "Xero",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://developer.xero.com/documentation/getting-started-guide/ https://developer.xero.com/documentation/guides/remote-mcp/overview and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 90,
+        "app": "PitchBook",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://pitchbook.com/help/PitchBook-api and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 91,
+        "app": "NotebookLM",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 92,
+        "app": "Otter AI",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 93,
+        "app": "Fathom",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://help.fathom.video/en/articles/8368641 https://help.fathom.video/en/articles/11497793 and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 94,
+        "app": "Consensus",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.consensus.app/docs/mcp https://docs.consensus.app/reference/v1_quick_search and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 96,
+        "app": "Devin",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://docs.devin.ai/api-reference/authentication https://docs.devin.ai/ and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 97,
+        "app": "Higgsfield",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://open.higgsfield.ai/quick-start https://higgsfield.ai/enterprise-help-center/platform/integrations and verify production access requirements",
+        "priority": "medium"
+      },
+      {
+        "app_id": 98,
+        "app": "Mermaid CLI",
+        "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+        "check_needed": "Open https://github.com/mermaid-js/mermaid-cli and verify production access requirements",
+        "priority": "medium"
+      }
+    ]
+  },
   "source_repo": "https://github.com/Prathambihani24/Octopus",
   "second_audit": {
-    "method": "Second assistant audit; ten purposively selected apps outside the original correction sample. Original auth sets frozen before opening docs. Same assistant, not blind or independent human verification. Auth only; no overall accuracy estimate.",
-    "checked_at": "2026-11-23",
     "checks": [
       {
-        "id": 4,
-        "app": "Attio",
+        "id": 1,
         "field": "auth",
-        "before": [
-          "K",
+        "expected": [
           "O"
-        ],
-        "after": [
-          "K",
-          "O"
-        ],
+        ]
+      },
+      {
+        "id": 2,
+        "field": "auth",
+        "expected": [
+          "O",
+          "T"
+        ]
+      },
+      {
+        "id": 3,
+        "field": "auth",
+        "expected": [
+          "O",
+          "T"
+        ]
+      },
+      {
+        "id": 4,
+        "field": "auth",
         "expected": [
           "K",
           "O"
-        ],
-        "before_ok": true,
-        "after_ok": true,
-        "url": "https://docs.attio.com/rest-api/guides/authentication",
-        "note": "Workspace API keys and OAuth are both documented."
+        ]
       },
       {
         "id": 6,
-        "app": "Podio",
         "field": "auth",
-        "before": [
-          "O"
-        ],
-        "after": [
-          "O"
-        ],
         "expected": [
           "O"
-        ],
-        "before_ok": true,
-        "after_ok": true,
-        "url": "https://developers.podio.com/authentication",
-        "note": "The supported authentication flows use OAuth2; issued access tokens are part of that flow."
+        ]
       },
       {
-        "id": 13,
-        "app": "Freshdesk",
+        "id": 7,
         "field": "auth",
-        "before": [
+        "expected": [
+          "O"
+        ]
+      },
+      {
+        "id": 11,
+        "field": "auth",
+        "expected": [
           "B",
+          "K",
+          "O"
+        ]
+      },
+      {
+        "id": 12,
+        "field": "auth",
+        "expected": [
+          "O",
+          "T"
+        ]
+      },
+      {
+        "id": 15,
+        "field": "auth",
+        "expected": [
+          "T"
+        ]
+      },
+      {
+        "id": 16,
+        "field": "auth",
+        "expected": [
           "K"
-        ],
-        "after": [
-          "B",
-          "K",
-          "O"
-        ],
-        "expected": [
-          "B",
-          "K",
-          "O"
-        ],
-        "before_ok": false,
-        "after_ok": true,
-        "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
-        "note": "Freshdesk documents API key Basic authentication and OAuth for apps. The original set omitted OAuth."
-      },
-      {
-        "id": 17,
-        "app": "Plain",
-        "field": "auth",
-        "before": [
-          "K"
-        ],
-        "after": [
-          "K",
-          "O"
-        ],
-        "expected": [
-          "K",
-          "O"
-        ],
-        "before_ok": false,
-        "after_ok": true,
-        "url": "https://www.plain.com/docs/graphql/authentication",
-        "note": "The GraphQL authentication guide documents API keys and user OAuth. The original row incorrectly separated OAuth as MCP-only."
-      },
-      {
-        "id": 21,
-        "app": "Slack",
-        "field": "auth",
-        "before": [
-          "O",
-          "T"
-        ],
-        "after": [
-          "O",
-          "T"
-        ],
-        "expected": [
-          "O",
-          "T"
-        ],
-        "before_ok": true,
-        "after_ok": true,
-        "url": "https://docs.slack.dev/authentication/",
-        "note": "OAuth and user, bot and app tokens are documented."
-      },
-      {
-        "id": 35,
-        "app": "Mailchimp",
-        "field": "auth",
-        "before": [
-          "K",
-          "O"
-        ],
-        "after": [
-          "B",
-          "K",
-          "O"
-        ],
-        "expected": [
-          "B",
-          "K",
-          "O"
-        ],
-        "before_ok": false,
-        "after_ok": true,
-        "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
-        "note": "API keys and OAuth can be sent via HTTP Basic. Basic was missing from the original set."
-      },
-      {
-        "id": 55,
-        "app": "Apify",
-        "field": "auth",
-        "before": [
-          "T"
-        ],
-        "after": [
-          "H",
-          "T"
-        ],
-        "expected": [
-          "H",
-          "T"
-        ],
-        "before_ok": false,
-        "after_ok": true,
-        "url": "https://docs.apify.com/api/v2",
-        "note": "API tokens cover normal account access. Actor runs also document payment credentials using x402 or Skyfire; Other captures this scoped alternative."
-      },
-      {
-        "id": 61,
-        "app": "GitHub",
-        "field": "auth",
-        "before": [
-          "O",
-          "T"
-        ],
-        "after": [
-          "B",
-          "O",
-          "S",
-          "T"
-        ],
-        "expected": [
-          "B",
-          "O",
-          "S",
-          "T"
-        ],
-        "before_ok": false,
-        "after_ok": true,
-        "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
-        "note": "PATs and OAuth cover resource access; GitHub App JWT and client Basic authentication apply to particular app endpoints and were omitted."
-      },
-      {
-        "id": 73,
-        "app": "Linear",
-        "field": "auth",
-        "before": [
-          "K",
-          "O"
-        ],
-        "after": [
-          "K",
-          "O"
-        ],
-        "expected": [
-          "K",
-          "O"
-        ],
-        "before_ok": true,
-        "after_ok": true,
-        "url": "https://linear.app/developers/graphql",
-        "note": "The GraphQL getting-started page documents personal API keys and OAuth2."
-      },
-      {
-        "id": 81,
-        "app": "Stripe",
-        "field": "auth",
-        "before": [
-          "B",
-          "K",
-          "O"
-        ],
-        "after": [
-          "B",
-          "K",
-          "O"
-        ],
-        "expected": [
-          "B",
-          "K",
-          "O"
-        ],
-        "before_ok": true,
-        "after_ok": true,
-        "url": "https://docs.stripe.com/api/authentication",
-        "note": "API keys are shown with Basic transport; OAuth is scoped to Connect, confirmed in the separate Connect OAuth reference."
+        ]
       }
     ]
   },
@@ -7503,34 +8085,118 @@
   },
   "human_review_plan": [
     {
+      "id": 1,
+      "title": "Verify Stripe test mode access",
+      "source": "https://docs.stripe.com/keys",
+      "claim": "Stripe test mode is self-serve",
+      "verification": "Create a Stripe test account and generate test keys",
+      "match": "Test keys should be immediately available without verification",
+      "correction_trigger": "If production access requires special approval",
+      "importance": "Key for payment demo integrations"
+    },
+    {
+      "id": 2,
+      "title": "Verify Plaid sandbox access",
+      "source": "https://plaid.com/docs/quickstart/",
+      "claim": "Plaid sandbox works without production approval",
+      "verification": "Register for Plaid sandbox and generate sandbox keys",
+      "match": "Sandbox keys should work immediately",
+      "correction_trigger": "If sandbox requires manual approval",
+      "importance": "Financial data integration foundation"
+    },
+    {
+      "id": 3,
+      "title": "Check Airtable MCP server",
+      "source": "https://support.airtable.com/docs/mcp",
+      "claim": "Airtable has an official MCP server",
+      "verification": "Open MCP docs and verify server is maintained by Airtable",
+      "match": "MCP server should be in airtable.com domain or verified GitHub repo",
+      "correction_trigger": "If MCP is third-party or unconfirmed",
+      "importance": "MCP coverage assessment"
+    },
+    {
+      "id": 4,
+      "title": "Verify Shopify GraphQL Admin API access",
+      "source": "https://shopify.dev/docs/api/usage/authentication",
+      "claim": "GraphQL Admin is preferred over REST",
+      "verification": "Check Shopify API docs for preference statement",
+      "match": "Docs should state GraphQL is preferred",
+      "correction_trigger": "If REST is equally preferred or GraphQL is beta",
+      "importance": "API preference affects integration design"
+    },
+    {
+      "id": 5,
+      "title": "Check GitHub MCP server availability",
+      "source": "https://github.com/github/github-mcp-server",
+      "claim": "GitHub maintains an official MCP server",
+      "verification": "Visit the GitHub repo and verify it is official",
+      "match": "Repo should be under github.com organization",
+      "correction_trigger": "If third-party or unmaintained",
+      "importance": "MCP coverage for version control"
+    },
+    {
       "id": 6,
-      "field": "Credential access",
-      "question": "Can a developer on a free account register an API client? Check whether the stated rate limits cover both free and paid accounts.",
-      "url": "https://developers.podio.com/index/faq"
+      "title": "Verify Notion integration access tiers",
+      "source": "https://www.notion.so/help/create-integrations-with-the-notion-api",
+      "claim": "Internal integration requires content sharing setup",
+      "verification": "Create a Notion integration and check access requirements",
+      "match": "Content sharing should be required for internal integrations",
+      "correction_trigger": "If sharing is optional or not documented",
+      "importance": "Notion integration requirements"
     },
     {
-      "id": 25,
-      "field": "Workspace permissions",
-      "question": "Can a free workspace enable the API add-on and create a key? Identify the required role and the difference between enabling the add-on and granting permissions.",
-      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+      "id": 7,
+      "title": "Check Linear OAuth authentication flow",
+      "source": "https://linear.app/developers/oauth-2-0-authentication",
+      "claim": "OAuth 2.0 is supported for Linear API",
+      "verification": "Verify OAuth flow details and scope requirements",
+      "match": "OAuth endpoints should be documented with scopes",
+      "correction_trigger": "If only token auth is available",
+      "importance": "Authentication method for issue tracking"
     },
     {
-      "id": 33,
-      "field": "Production approval",
-      "question": "What can a development-tier app do, and what approval is needed to serve multiple customers? Check the specific ads product and tier.",
-      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started"
+      "id": 8,
+      "title": "Verify Zoho CRM API credit limits",
+      "source": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+      "claim": "Free edition has API credit allowance",
+      "verification": "Check Zoho API limits page for free tier",
+      "match": "Should show specific credit limits for free edition",
+      "correction_trigger": "If free edition has zero credits",
+      "importance": "Rate limiting for CRM integration"
     },
     {
-      "id": 47,
-      "field": "Prototype versus production",
-      "question": "Can a developer get API credentials on a free store or through an upgrade? Separate the development exception from the normal merchant plan.",
-      "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid"
+      "id": 9,
+      "title": "Check Twilio API key scopes",
+      "source": "https://www.twilio.com/docs/iam/keys",
+      "claim": "API keys support Full Access, Custom Access, or Billing Access scopes",
+      "verification": "Verify Twilio API key scope options",
+      "match": "Should list all three scope types",
+      "correction_trigger": "If scopes differ or are limited",
+      "importance": "SendGrid/other Twilio service access"
     },
     {
-      "id": 100,
-      "field": "Auth versus entitlement",
-      "question": "Which credentials cover a personal workspace versus multiple customers, and does the source establish plan eligibility? Leave access unconfirmed if the docs do not say.",
-      "url": "https://developers.grain.com/authentication.html"
+      "id": 10,
+      "title": "Verify BigQuery API availability in Supabase MCP",
+      "source": "https://supabase.com/docs/guides/getting-started/mcp",
+      "claim": "Supabase MCP server exists but unconfirmed",
+      "verification": "Check Supabase docs for BigQuery MCP integration",
+      "match": "Should confirm or deny BigQuery MCP support",
+      "correction_trigger": "If BigQuery MCP is confirmed",
+      "importance": "MCP coverage for Supabase"
     }
-  ]
+  ],
+  "audit_summary": {
+    "checked_at": "2026-11-23T17:26:24.364617+00:00",
+    "scope": "AI-assisted documentation review; applicant manual checks remain pending.",
+    "apps_checked": 100,
+    "fields_checked": 600,
+    "outcomes": {
+      "confirmed_unchanged": 486,
+      "corrected_with_cited_evidence": 50,
+      "insufficient_evidence": 38,
+      "source_unavailable": 26
+    },
+    "direct_source_urls_captured": 587,
+    "open_fields": 64
+  }
 }
