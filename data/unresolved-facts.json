@@ -1,492 +1,595 @@
 [
   {
-    "app_id": 1,
-    "app": "Salesforce",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/setup-overview.html and verify production access requirements",
-    "priority": "medium"
+    "id": 8,
+    "app": "Close",
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "Close integrations page mentions 'MCP server' but no dedicated MCP documentation page found to confirm vendor-hosted server for this product.",
+    "source_url": "https://developer.close.com/integrations",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 2,
-    "app": "HubSpot",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developers.hubspot.com/blog/a-newbies-perspective-on-becoming-a-crm-developer https://developers.hubspot.com/blog/hubspot-integration-choosing-private-public-hubspot-apps https://developers.hubspot.com/ai-tools/mcp and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 3,
-    "app": "Pipedrive",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://support.pipedrive.com/en/article/what-is-the-api-key-for https://pipedrive.readme.io/docs/core-api-concepts-authentication https://developers.pipedrive.com/docs/api/v1/Oauth and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 4,
-    "app": "Attio",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.attio.com/rest-api/overview https://attio.com/platform/developers https://attio.com/apps/mcp https://attio.com/help/reference/apps/generating-an-api-key and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 6,
-    "app": "Podio",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developers.podio.com/authentication https://developers.podio.com/index/faq and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 7,
-    "app": "Zoho CRM",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html https://www.zoho.com/crm/developer/docs/api/v8/ https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 11,
-    "app": "Zendesk",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.zendesk.com/api-reference/introduction/security-and-auth/ https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/ and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 12,
-    "app": "Intercom",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developers.intercom.com/docs/build-an-integration/learn-more/authentication https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 15,
-    "app": "Pylon",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.usepylon.com/pylon-docs/developer/api/authentication https://docs.usepylon.com/pylon-docs/developer/api https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 16,
-    "app": "LiveAgent",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors https://support.liveagent.com/647358-MCP-Integration-for-agents and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 17,
-    "app": "Plain",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://www.plain.com/docs https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx https://www.plain.com/docs/graphql/authentication and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 18,
-    "app": "Help Scout",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.helpscout.com/docs-api/ https://developer.helpscout.com/mailbox-api/overview/authentication/ and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 19,
-    "app": "Gorgias",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developers.gorgias.com/reference/authentication https://developers.gorgias.com/docs/access-tokens-api-keys and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 21,
+    "id": 21,
     "app": "Slack",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.slack.dev/authentication/installing-with-oauth/ https://docs.slack.dev/authentication/ and verify production access requirements",
-    "priority": "medium"
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "The provided documentation shows Slack does not host a vendor-maintained MCP server. No official MCP server documentation was found for Slack.",
+    "source_url": "https://docs.slack.dev/authentication/",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 22,
+    "id": 22,
     "app": "Twilio",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://www.twilio.com/docs/iam/api-keys https://help.twilio.com/articles/9318455807771 and verify production access requirements",
-    "priority": "medium"
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "No official MCP server documentation was found for Twilio. The vendor does not appear to host a self-maintained MCP server for Twilio.",
+    "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 23,
+    "id": 23,
     "app": "Zoho Cliq",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://www.zoho.com/cliq/help/restapi/v3/registerclient/ https://www.zoho.com/cliq/help/restapi/v3/oauth/ and verify production access requirements",
-    "priority": "medium"
+    "field": "access",
+    "current_value": "U",
+    "issue": "No official documentation found that confirms whether there is a free/trial route or if all access requires account registration and approval.",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 24,
+    "id": 23,
+    "app": "Zoho Cliq",
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "No official MCP server documentation was found for Zoho Cliq. The vendor does not appear to maintain a self-hosted MCP server.",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 23,
+    "app": "Zoho Cliq",
+    "field": "blocker_and_verdict",
+    "current_value": "Login and OAuth client with scopes; plan conditions unverified.",
+    "issue": "While OAuth flow and scopes are confirmed, the documentation does not explicitly cover plan conditions or any specific blockers for API access.",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 24,
     "app": "Lark",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://open.larksuite.com/ https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md and verify production access requirements",
-    "priority": "medium"
+    "field": "access",
+    "current_value": "U",
+    "issue": "No official documentation found about free/test route availability for Lark API access. Requires app registration with App ID and Secret.",
+    "source_url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 25,
-    "app": "Pumble",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/ https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/ and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 26,
+    "id": 26,
     "app": "Discord",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://github.com/discord/discord-api-docs/blob/main/developers/reference.mdx https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx and verify production access requirements",
-    "priority": "medium"
+    "field": "access",
+    "current_value": "U",
+    "issue": "Discord's documentation does not explicitly cover free/test access routes. All applications require registration but do not have explicit pricing tiers documented for API access.",
+    "source_url": "https://discord.com/developers/docs/topics/oauth2",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 27,
+    "id": 26,
+    "app": "Discord",
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "No official MCP server documentation was found for Discord. The vendor does not appear to maintain a self-hosted MCP server integration.",
+    "source_url": "https://discord.com/developers/docs/topics/oauth2",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 27,
     "app": "Telegram",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://core.telegram.org/bots/tutorial https://core.telegram.org/bots/api and verify production access requirements",
-    "priority": "medium"
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "No official MCP server documentation was found for Telegram. The vendor does not appear to maintain a self-hosted MCP server integration.",
+    "source_url": "https://core.telegram.org/bots/api",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 28,
-    "app": "WhatsApp Business",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developers.facebook.com/docs/whatsapp https://www.postman.com/meta/whatsapp-business-platform/documentation/wlk6lh4/whatsapp-cloud-api and verify production access requirements",
-    "priority": "medium"
+    "id": 28,
+    "app": "WhatsApp Cloud API",
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "No official MCP server documentation was found for WhatsApp Cloud API. Meta does not appear to host a self-maintained MCP server integration.",
+    "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 29,
+    "id": 29,
     "app": "Aircall",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.aircall.io/docs/authentication https://developer.aircall.io/docs/oauth and verify production access requirements",
-    "priority": "medium"
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "No official MCP server documentation was found for Aircall. The vendor does not appear to maintain a self-hosted MCP server integration.",
+    "source_url": "https://developer.aircall.io/",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 30,
+    "id": 30,
     "app": "Vonage",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.vonage.com/en/getting-started/overview https://developer.vonage.com/en/dashboard/getting-started and verify production access requirements",
-    "priority": "medium"
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "No official MCP server documentation was found for Vonage. The vendor does not appear to maintain a self-hosted MCP server integration.",
+    "source_url": "https://developer.vonage.com/api/authentication",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 33,
-    "app": "LinkedIn Ads",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 37,
+    "id": 37,
     "app": "systeme.io",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp and verify production access requirements",
-    "priority": "medium"
+    "field": "identity",
+    "current_value": "Funnels, email automation and courses",
+    "issue": "The official help center pages for API key creation and MCP server failed to load (JavaScript-rendered, content not accessible via browser_exec). Cannot verify product scope from official docs.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 41,
-    "app": "Shopify",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://shopify.dev/docs/api/usage/authentication https://shopify.dev/docs/api/admin-graphql https://shopify.dev/docs/apps/build/stores/development-stores and verify production access requirements",
-    "priority": "medium"
+    "id": 37,
+    "app": "systeme.io",
+    "field": "auth",
+    "current_value": "[\"K\"]",
+    "issue": "The official help center page for creating a public API key (https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io) failed to load \u2014 only shows 'Loading' text. Cannot verify authentication methods from official docs.",
+    "source_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 42,
-    "app": "WooCommerce",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.woocommerce.com/docs/apis/rest-api/authentication https://developer.woocommerce.com/docs/features/mcp/ and verify production access requirements",
-    "priority": "medium"
+    "id": 37,
+    "app": "systeme.io",
+    "field": "access",
+    "current_value": "U",
+    "issue": "The API key page failed to load; cannot confirm whether API access is free, paid, or approval-gated.",
+    "source_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 43,
-    "app": "BigCommerce",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview https://docs.bigcommerce.com/developer/api-reference/mcp/overview/ https://docs.bigcommerce.com/developer/docs/overview/sandboxes and verify production access requirements",
-    "priority": "medium"
+    "id": 37,
+    "app": "systeme.io",
+    "field": "surface",
+    "current_value": "Public API; contacts and marketing operations",
+    "issue": "The API documentation page failed to load; cannot verify surface coverage.",
+    "source_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 45,
-    "app": "Magento (Adobe Commerce)",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.adobe.com/commerce/webapi/get-started/authentication/ https://developer.adobe.com/commerce/webapi/rest/authentication/ and verify production access requirements",
-    "priority": "medium"
+    "id": 37,
+    "app": "systeme.io",
+    "field": "mcp",
+    "current_value": "Y",
+    "issue": "The official MCP server page (https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp) failed to load \u2014 only shows 'Loading' text. Cannot confirm vendor MCP server existence from official docs.",
+    "source_url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 46,
-    "app": "Squarespace",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys https://commerce-apis.squarespace.com/oauth and verify production access requirements",
-    "priority": "medium"
+    "id": 37,
+    "app": "systeme.io",
+    "field": "blocker_and_verdict",
+    "current_value": "API key is documented; plan/operation breadth needs separate verification.",
+    "issue": "Both source URLs return only 'Loading' content; the browser cannot extract the rendered page text. No official documentation could be read.",
+    "source_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 47,
-    "app": "Ecwid",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.ecwid.com/get-started/make-your-first-api-request https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 48,
+    "id": 48,
     "app": "Gumroad",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://gumroad.com/api https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad and verify production access requirements",
-    "priority": "medium"
+    "field": "auth",
+    "current_value": [
+      "O",
+      "T"
+    ],
+    "issue": "Gumroad MCP connector uses OAuth-style authorization flow (user signs in and grants permissions), but the underlying REST API authentication method is not documented in the public help article. The MCP connection flow implies OAuth but API docs are not publicly available.",
+    "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 49,
-    "app": "Amazon Selling Partner",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer-docs.amazon.com/sp-api/docs/onboarding-overview https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api and verify production access requirements",
-    "priority": "medium"
+    "id": 48,
+    "app": "Gumroad",
+    "field": "access",
+    "current_value": "U",
+    "issue": "The help article does not specify whether API access requires a paid plan or has a free tier; it only describes MCP connector setup.",
+    "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 50,
+    "id": 48,
+    "app": "Gumroad",
+    "field": "surface",
+    "current_value": "REST; products, sales, subscribers and licenses",
+    "issue": "MCP connector exposes products, sales, payouts, and product creation/editing, but the underlying REST API surface is not documented publicly.",
+    "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 50,
     "app": "FanBasis",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://www.fanbasis.com/ https://demo.embedded.fanbasis.io/docs/how-it-works and verify production access requirements",
-    "priority": "medium"
+    "field": "identity",
+    "current_value": "Creator commerce and payment infrastructure",
+    "issue": "Main site returns 403; embedded docs describe a payment/checkout SDK for accepting payments on own website, not a merchant API for store operations. No official merchant API documentation found.",
+    "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 51,
-    "app": "DataForSEO",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.dataforseo.com/ https://dataforseo.com/help-center/dfs-dashboard-how-to-find-everything https://github.com/dataforseo/mcp-server-typescript https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work and verify production access requirements",
-    "priority": "medium"
+    "id": 50,
+    "app": "FanBasis",
+    "field": "auth",
+    "current_value": [
+      "U"
+    ],
+    "issue": "No official merchant API documentation found. Embedded checkout SDK uses session secrets for client-side payment initialization, not a documented merchant API authentication scheme.",
+    "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 52,
-    "app": "SE Ranking",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://seranking.com/api/project/getting-started/ https://seranking.com/api/data/getting-started/ https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API and verify production access requirements",
-    "priority": "medium"
+    "id": 50,
+    "app": "FanBasis",
+    "field": "access",
+    "current_value": "U",
+    "issue": "No official merchant API documentation found to determine access requirements. Embedded SDK appears to require FanBasis account but merchant onboarding process not documented.",
+    "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 56,
-    "app": "Firecrawl",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.firecrawl.dev/introduction https://docs.firecrawl.dev/mcp-server and verify production access requirements",
-    "priority": "medium"
+    "id": 50,
+    "app": "FanBasis",
+    "field": "surface",
+    "current_value": "Embedded product docs exist; public merchant API scope unresolved",
+    "issue": "Embedded checkout SDK documentation exists for client-side payment acceptance, but no public merchant REST/API documentation found for store operations (products, orders, customers).",
+    "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 57,
-    "app": "Bright Data",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.brightdata.com/ai/mcp-server/overview https://docs.brightdata.com/ and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 58,
-    "app": "Sherlock",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://github.com/sherlock-project/sherlock and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 61,
-    "app": "GitHub",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api https://github.com/github/github-mcp-server and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 62,
-    "app": "Vercel",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://vercel.com/docs/rest-api https://vercel.com/docs/sign-in-with-vercel/authorization-server-api https://vercel.com/docs/agent-resources/vercel-mcp and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 63,
-    "app": "Netlify",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.netlify.com/api/get-started/ https://github.com/netlify/netlify-mcp and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 66,
-    "app": "Neo4j",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://neo4j.com/docs/query-api/current/authentication-authorization/ https://neo4j.com/docs/mcp/current/authentication/ and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 67,
-    "app": "Snowflake",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication https://docs.snowflake.com/en/developer-guide/sql-api/authenticating and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 68,
-    "app": "MongoDB Atlas",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/ https://github.com/mongodb-js/mongodb-mcp-server and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 69,
-    "app": "Datadog",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.datadoghq.com/api/latest/authentication/ https://docs.datadoghq.com/api/latest/ and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 71,
-    "app": "Notion",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://www.notion.com/help/create-integrations-with-the-notion-api https://developers.notion.com/docs/mcp https://developers.notion.com/guides/authorization/overview and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 72,
-    "app": "Airtable",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 73,
-    "app": "Linear",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://linear.app/developers/oauth-2-0-authentication https://linear.app/developers/graphql https://linear.app/docs/mcp and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 74,
-    "app": "Jira",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/ https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/ https://www.atlassian.com/platform/remote-mcp-server and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 75,
-    "app": "Asana",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developers.asana.com/docs/authentication https://developers.asana.com/docs/integrating-with-asanas-mcp-server and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 76,
-    "app": "Monday.com",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.monday.com/api-reference/docs/authentication https://developer.monday.com/api-reference/docs/mcp-api-token and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 77,
-    "app": "ClickUp",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.clickup.com/docs/authentication https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 78,
+    "id": 78,
     "app": "Coda",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://coda.io/developers/apis/v1 https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP and verify production access requirements",
-    "priority": "medium"
+    "field": "mcp",
+    "current_value": "Y",
+    "issue": "API reference mentions 'Superhuman Docs MCP server' but the dedicated help article (help.coda.io) is blocked by Cloudflare; no details on MCP server capabilities, setup, or availability could be verified from accessible official sources.",
+    "source_url": "https://coda.io/developers/apis/v1",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 79,
-    "app": "Smartsheet",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication https://developers.smartsheet.com/api/smartsheet/guides/getting-started and verify production access requirements",
-    "priority": "medium"
+    "id": 78,
+    "app": "Coda",
+    "field": "blocker_and_verdict",
+    "current_value": "Free Coda makers have a limited MCP route. Paid makers get the full tool surface. REST uses an account token.",
+    "issue": "The MCP help article is blocked by Cloudflare; the API reference only mentions the MCP server exists but provides no tier details. Cannot verify the claimed free vs paid maker MCP tier differentiation from accessible official sources.",
+    "source_url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 80,
+    "id": 80,
     "app": "Harvest",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/ https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API and verify production access requirements",
-    "priority": "medium"
+    "field": "access",
+    "current_value": "F",
+    "issue": "Authentication page describes PAT creation but does not explicitly state whether free or trial accounts have API access; plan gating for API credentials is not documented on the accessible pages.",
+    "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 81,
-    "app": "Stripe",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.stripe.com/keys https://docs.stripe.com/connect/oauth-reference https://docs.stripe.com/mcp and verify production access requirements",
-    "priority": "medium"
+    "id": 80,
+    "app": "Harvest",
+    "field": "mcp",
+    "current_value": "Y",
+    "issue": "The Harvest MCP help article (support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP) is blocked by Cloudflare; the authentication page does not mention MCP. Cannot verify vendor MCP server documentation from accessible official sources.",
+    "source_url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 82,
-    "app": "Plaid",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://plaid.com/docs/quickstart/ https://plaid.com/docs/api/ and verify production access requirements",
-    "priority": "medium"
+    "id": 80,
+    "app": "Harvest",
+    "field": "blocker_and_verdict",
+    "current_value": "Free and trial accounts include API access. Provide a token or OAuth credentials plus account ID.",
+    "issue": "Account ID requirement confirmed (Harvest-Account-Id header or account_id query param); however, the claim that free and trial accounts include API access is not explicitly confirmed or denied in the accessible authentication documentation.",
+    "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 83,
-    "app": "Binance",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developers.binance.com/en/docs/introduction https://www.binance.com/en/support/faq/detail/360002502072 and verify production access requirements",
-    "priority": "medium"
-  },
-  {
-    "app_id": 84,
+    "id": 84,
     "app": "Paygent Connect",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://www.nmi.com/logins/ https://docs.nmi.com/ and verify production access requirements",
-    "priority": "medium"
+    "field": "identity",
+    "current_value": "Payment integration identified as NMI-powered in the brief",
+    "issue": "NMI's public docs site (docs.nmi.com) is a minimal landing page with no API reference, authentication details, or product documentation accessible. The logins page only shows sandbox/merchant portal links. Cannot confirm Paygent Connect's identity or mapping to NMI.",
+    "source_url": "https://docs.nmi.com/",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 86,
+    "id": 84,
+    "app": "Paygent Connect",
+    "field": "auth",
+    "current_value": [
+      "U"
+    ],
+    "issue": "No public API documentation found on docs.nmi.com to determine authentication methods. The site appears to require login for actual API docs.",
+    "source_url": "https://docs.nmi.com/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 84,
+    "app": "Paygent Connect",
+    "field": "access",
+    "current_value": "U",
+    "issue": "Cannot determine if there is a free/test route for API credentials. The logins page shows sandbox access but requires existing merchant credentials.",
+    "source_url": "https://www.nmi.com/logins/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 84,
+    "app": "Paygent Connect",
+    "field": "surface",
+    "current_value": "NMI docs describe an upstream platform; direct mapping unresolved",
+    "issue": "Public NMI documentation does not describe API surface, endpoints, or protocols. Mapping to Paygent Connect cannot be verified.",
+    "source_url": "https://docs.nmi.com/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 86,
     "app": "QuickBooks",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.intuit.com/app/developer/qbo/docs/ https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0 and verify production access requirements",
-    "priority": "medium"
+    "field": "identity",
+    "current_value": "Online accounting and bookkeeping",
+    "issue": "Intuit developer site is a JavaScript SPA that does not render content without JavaScript execution. The page content could not be extracted via web_extract or browser_exec.",
+    "source_url": "https://developer.intuit.com/app/developer/qbo/docs/",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 87,
+    "id": 86,
+    "app": "QuickBooks",
+    "field": "auth",
+    "current_value": [
+      "O"
+    ],
+    "issue": "Cannot verify OAuth 2.0 details from the Intuit developer site due to SPA rendering. Official docs are known to use OAuth 2.0 but source unavailable for direct quote.",
+    "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 86,
+    "app": "QuickBooks",
+    "field": "access",
+    "current_value": "F",
+    "issue": "Cannot verify sandbox/free access from the rendered pages. Intuit is known to have a sandbox but source unavailable.",
+    "source_url": "https://developer.intuit.com/app/developer/qbo/docs/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 86,
+    "app": "QuickBooks",
+    "field": "surface",
+    "current_value": "REST; invoices, accounts, customers and reports",
+    "issue": "Cannot verify API surface from the rendered pages.",
+    "source_url": "https://developer.intuit.com/app/developer/qbo/docs/api",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 86,
+    "app": "QuickBooks",
+    "field": "blocker_and_verdict",
+    "current_value": "Intuit sandbox is separate from production app requirements.",
+    "issue": "Cannot verify from the official documentation due to SPA rendering blocking content extraction.",
+    "source_url": "https://developer.intuit.com/app/developer/qbo/docs/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 87,
     "app": "Xero",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://developer.xero.com/documentation/getting-started-guide/ https://developer.xero.com/documentation/guides/remote-mcp/overview and verify production access requirements",
-    "priority": "medium"
+    "field": "identity",
+    "current_value": "Accounting and business finance software",
+    "issue": "Xero developer site is a JavaScript SPA that does not render content without JavaScript execution. Page content could not be extracted.",
+    "source_url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 90,
+    "id": 87,
+    "app": "Xero",
+    "field": "auth",
+    "current_value": [
+      "O"
+    ],
+    "issue": "Cannot verify OAuth 2.0 details from the Xero developer site due to SPA rendering. Xero is known to use OAuth 2.0 but source unavailable for direct quote.",
+    "source_url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 87,
+    "app": "Xero",
+    "field": "access",
+    "current_value": "F",
+    "issue": "Cannot verify free/sandbox access from the rendered pages. Xero is known to have a demo company but source unavailable.",
+    "source_url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 87,
+    "app": "Xero",
+    "field": "surface",
+    "current_value": "REST; accounting, payroll and related APIs",
+    "issue": "Cannot verify API surface from the rendered pages.",
+    "source_url": "https://developer.xero.com/documentation/api/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 87,
+    "app": "Xero",
+    "field": "mcp",
+    "current_value": "Y",
+    "issue": "The remote-mcp page exists but content could not be extracted due to SPA rendering. Cannot confirm if it documents a vendor server for Xero specifically.",
+    "source_url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 87,
+    "app": "Xero",
+    "field": "blocker_and_verdict",
+    "current_value": "Demo organization and connection tiers differ from production scale.",
+    "issue": "Cannot verify from the official documentation due to SPA rendering blocking content extraction.",
+    "source_url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 90,
     "app": "PitchBook",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://pitchbook.com/help/PitchBook-api and verify production access requirements",
-    "priority": "medium"
+    "field": "identity",
+    "current_value": "Private market and company data",
+    "issue": "The PitchBook help page (pitchbook.com/help/PitchBook-api) is blocked by Cloudflare bot protection. platform.pitchbook.com and developers.pitchbook.com do not resolve. No official public API documentation accessible.",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 91,
-    "app": "NotebookLM",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing and verify production access requirements",
-    "priority": "medium"
+    "id": 90,
+    "app": "PitchBook",
+    "field": "auth",
+    "current_value": [
+      "U"
+    ],
+    "issue": "Cannot access official documentation to determine authentication methods. Page blocked by Cloudflare.",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 92,
+    "id": 90,
+    "app": "PitchBook",
+    "field": "access",
+    "current_value": "R",
+    "issue": "Cannot verify access requirements from official docs. PitchBook is known to require licensed access but source unavailable.",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 90,
+    "app": "PitchBook",
+    "field": "surface",
+    "current_value": "Licensed research data API",
+    "issue": "Cannot verify API surface from official docs. Page blocked by Cloudflare.",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 90,
+    "app": "PitchBook",
+    "field": "mcp",
+    "current_value": "U",
+    "issue": "Cannot verify MCP server existence from official docs. Page blocked by Cloudflare.",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 90,
+    "app": "PitchBook",
+    "field": "blocker_and_verdict",
+    "current_value": "Sales and license entitlement before implementation; auth unresolved.",
+    "issue": "Cannot verify from official documentation due to Cloudflare blocking the help page and no alternative public developer docs found.",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 92,
     "app": "Otter AI",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server and verify production access requirements",
-    "priority": "medium"
+    "field": "identity",
+    "current_value": "Meeting transcription and notes",
+    "issue": "Both Otter AI help center URLs return Cloudflare challenge pages that cannot be bypassed via curl. Official documentation could not be retrieved.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 93,
-    "app": "Fathom",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://help.fathom.video/en/articles/8368641 https://help.fathom.video/en/articles/11497793 and verify production access requirements",
-    "priority": "medium"
+    "id": 92,
+    "app": "Otter AI",
+    "field": "auth",
+    "current_value": [
+      "K"
+    ],
+    "issue": "Could not access Otter AI Public API documentation to verify API key authentication.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 94,
+    "id": 92,
+    "app": "Otter AI",
+    "field": "access",
+    "current_value": "R",
+    "issue": "Could not access documentation to verify workspace enablement and product entitlement requirements.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 92,
+    "app": "Otter AI",
+    "field": "surface",
+    "current_value": "Public API documentation; conversation data and workspace features",
+    "issue": "Could not access Otter AI Public API documentation to verify surface coverage.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 92,
+    "app": "Otter AI",
+    "field": "mcp",
+    "current_value": "Y",
+    "issue": "Could not access Otter MCP Server documentation to verify vendor MCP server existence.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 92,
+    "app": "Otter AI",
+    "field": "blocker_and_verdict",
+    "current_value": "Check workspace enablement and product entitlement; exclude unrelated Otter brands.",
+    "issue": "Could not access official documentation to verify the stated caveat.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 94,
     "app": "Consensus",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.consensus.app/docs/mcp https://docs.consensus.app/reference/v1_quick_search and verify production access requirements",
-    "priority": "medium"
+    "field": "identity",
+    "current_value": "Academic paper search and synthesis",
+    "issue": "Both Consensus documentation URLs (docs.consensus.app) return Cloudflare challenge pages that cannot be bypassed via curl. Official documentation could not be retrieved.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 96,
-    "app": "Devin",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://docs.devin.ai/api-reference/authentication https://docs.devin.ai/ and verify production access requirements",
-    "priority": "medium"
+    "id": 94,
+    "app": "Consensus",
+    "field": "auth",
+    "current_value": [
+      "K"
+    ],
+    "issue": "Could not access Consensus API documentation to verify API key authentication.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 97,
-    "app": "Higgsfield",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://open.higgsfield.ai/quick-start https://higgsfield.ai/enterprise-help-center/platform/integrations and verify production access requirements",
-    "priority": "medium"
+    "id": 94,
+    "app": "Consensus",
+    "field": "access",
+    "current_value": "U",
+    "issue": "Could not access documentation to verify access requirements.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
   },
   {
-    "app_id": 98,
-    "app": "Mermaid CLI",
-    "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
-    "check_needed": "Open https://github.com/mermaid-js/mermaid-cli and verify production access requirements",
-    "priority": "medium"
+    "id": 94,
+    "app": "Consensus",
+    "field": "surface",
+    "current_value": "Search API; current endpoint and access need confirmation",
+    "issue": "Could not access Consensus API reference documentation.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 94,
+    "app": "Consensus",
+    "field": "mcp",
+    "current_value": "Y",
+    "issue": "Could not access Consensus MCP documentation to verify vendor MCP server.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
+  },
+  {
+    "id": 94,
+    "app": "Consensus",
+    "field": "blocker_and_verdict",
+    "current_value": "OAuth request in brief does not establish OAuth support for the REST API.",
+    "issue": "Could not access official documentation to verify the stated caveat.",
+    "source_url": null,
+    "human_check": "Review official documentation for credential eligibility"
   }
 ]
