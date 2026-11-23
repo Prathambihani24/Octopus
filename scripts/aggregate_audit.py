@@ -4,9 +4,9 @@ import json
 from pathlib import Path
 from datetime import datetime, timezone
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 BATCH_DIR = ROOT / "data" / "audit-batches"
-OUTPUT_DIR = ROOT / "output"
+DATA_DIR = ROOT / "data"
 
 # Schema for full audit
 AUDIT_SCHEMA = {
@@ -126,15 +126,35 @@ def main():
     """Run aggregation and write output files."""
     audit, corrections, unresolved, summary = aggregate_batches()
     
-    # Write full audit
-    OUTPUT_DIR.mkdir(exist_ok=True)
-    (OUTPUT_DIR / "full-fact-audit.json").write_text(json.dumps(audit, indent=2))
+    # The published files contain only structured source metadata and review
+    # outcomes. They deliberately omit raw crawler text and private reasoning.
+    DATA_DIR.mkdir(exist_ok=True)
+    (DATA_DIR / "full-fact-audit.json").write_text(json.dumps(audit, indent=2))
     
     # Write corrections
-    (OUTPUT_DIR / "fact-corrections.json").write_text(json.dumps(corrections, indent=2))
+    (DATA_DIR / "fact-corrections.json").write_text(json.dumps(corrections, indent=2))
     
     # Write unresolved
-    (OUTPUT_DIR / "unresolved-facts.json").write_text(json.dumps(unresolved, indent=2))
+    (DATA_DIR / "unresolved-facts.json").write_text(json.dumps(unresolved, indent=2))
+
+    status = {
+        "checked_at": audit["checked_at"],
+        "scope": "AI-assisted documentation review; applicant manual checks remain pending.",
+        "apps_checked": summary["apps_checked"],
+        "fields_checked": summary["fields_checked"],
+        "outcomes": {
+            "confirmed_unchanged": summary["confirmed"],
+            "corrected_with_cited_evidence": summary["corrected"],
+            "insufficient_evidence": summary["insufficient_evidence"],
+            "source_unavailable": summary["source_unavailable"],
+        },
+        "direct_source_urls_captured": sum(
+            bool(check["source_url"])
+            for app in audit["apps"] for check in app["checks"]
+        ),
+        "open_fields": summary["insufficient_evidence"] + summary["source_unavailable"],
+    }
+    (DATA_DIR / "audit-summary.json").write_text(json.dumps(status, indent=2))
     
     # Print summary
     print("\n=== AGGREGATION COMPLETE ===\n")
