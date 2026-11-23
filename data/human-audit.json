@@ -1,0 +1,38 @@
+[
+  {
+    "id": 25,
+    "app": "Pumble",
+    "field": "access and API surface",
+    "status": "match",
+    "note": "Official browser review confirmed that the API add-on is available on all plans. Owner, Admin, and Member roles can use it. The add-on must be installed and permissions allowed before a user generates an API key. The documented actions include messages, reactions, channels, and channel reads.",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 47,
+    "app": "Ecwid",
+    "field": "access",
+    "status": "match",
+    "note": "Official browser review confirmed that stores on paid plans access the API. Ecwid documents a free paid-plan upgrade for a qualifying test store, including public-app development and safe integration work. Custom apps provide store-scoped access tokens.",
+    "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 33,
+    "app": "LinkedIn Ads",
+    "field": "auth and access",
+    "status": "match",
+    "note": "Official browser review confirmed OAuth 2.0 and the rw_ads marketing scope. Advertising API access requires LinkedIn approval. Development tier supports unlimited read-only ad accounts and edits on up to five ad accounts. Standard tier requires a separate application for unlimited campaign-management edits. The relevant source also requires member account roles for ad-account actions.",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 100,
+    "app": "Grain",
+    "field": "auth and access",
+    "status": "match",
+    "note": "Official browser review confirmed bearer tokens, personal and workspace access tokens, and OAuth 2.0. Workspace access requires a workspace admin, depends on plan availability, and OAuth workspace scope requires a Grain-verified client. Personal credentials and MCP authentication use personal scope.",
+    "url": "https://developers.grain.com/authentication.html",
+    "checked_at": "2026-11-23"
+  }
+]

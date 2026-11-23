@@ -239,7 +239,7 @@ function auditLabel(field,value) {
   return value.join(", ");
 }
 el("audit-top").append(node("strong",summary.before_correct+"/"+audit.length+" → "+summary.after_correct+"/"+audit.length),node("div","Exact field matches in the targeted documentation comparison."));
-el("human").textContent = human_audit.length ? "Applicant cross-checks: "+human_audit.map(x=>x.note).join(" ") : "Independent applicant spot checks are pending. The table below records assistant checks against vendor documentation.";
+el("human").textContent = human_audit.length ? "Browser documentation cross-checks: "+human_audit.map(x=>x.note).join(" ")+" Applicant-performed checks remain pending." : "Independent applicant spot checks are pending. The table below records assistant checks against vendor documentation.";
 for (const check of audit) {
   const row = node("tr",null);
   const app = node("th",check.app);
