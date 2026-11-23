@@ -247,7 +247,7 @@ function auditLabel(field,value) {
   if (field==="auth") return value.map(x=>auth_labels[x]).join(", ");
   if (field==="access") return access_labels[value];
   if (field==="mcp") return mcp_labels[value];
-  return value.join(", ");
+  return Array.isArray(value) ? value.join(", ") : String(value ?? "Not recorded");
 }
 el("audit-top").append(node("strong",summary.before_correct+"/"+audit.length+" → "+summary.after_correct+"/"+audit.length),node("div","Exact field matches in the targeted documentation comparison."));
 if (audit_summary) {
@@ -255,7 +255,7 @@ if (audit_summary) {
   el("audit-overall").append(
     node("strong",(o.confirmed_unchanged + o.corrected_with_cited_evidence)+"/"+audit_summary.fields_checked+" fields have a recorded review outcome"),
     node("div",o.confirmed_unchanged+" unchanged; "+o.corrected_with_cited_evidence+" corrected with cited evidence; "+audit_summary.open_fields+" remain open ("+o.insufficient_evidence+" insufficient evidence, "+o.source_unavailable+" source unavailable). "+audit_summary.direct_source_urls_captured+" records include a source URL."),
-    link("unresolved-facts.json","Inspect unresolved fields")
+    link("https://github.com/Prathambihani24/Octopus/blob/main/data/unresolved-facts.json","Inspect unresolved fields")
   );
 }
 el("human").textContent = human_audit.length ? "Browser documentation cross-checks: "+human_audit.map(x=>x.note).join(" ")+" Applicant-performed checks remain pending." : "Independent applicant spot checks are pending. The table below records assistant checks against vendor documentation.";
@@ -293,9 +293,9 @@ if(data.demo && data.demo.verification){const v=data.demo.verification;for(const
 for (const check of data.human_review_plan || []) {
   const app=apps.find(row=>row.id===check.id);
   const item=node("div",null,"audit-top");
-  item.append(node("h3",app.app+" · "+check.field),node("p",check.question),link(check.url,"Review official source"));
+  item.append(node("h3",check.title || app.app+" · "+check.field),node("p",check.question || check.claim),link(check.url || check.source,"Review official source"));
   const recorded=node("details",null);
-  recorded.append(node("summary","Reveal published row after checking"),node("p",access_labels[app.access]+". "+app.caveat));
+  recorded.append(node("summary","Review instructions"),node("p",check.verification || check.question));
   item.append(recorded);
   el("applicant-sample").append(item);
 }
