@@ -1,0 +1,762 @@
+{
+  "batch": 10,
+  "checked_at": "2026-11-23T12:00:00Z",
+  "auditor": "Hermes automated documentation audit (batch 10)",
+  "apps": [
+    {
+      "id": 91,
+      "app": "NotebookLM",
+      "pages_used": [
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Enterprise notebook research tooling",
+          "reviewed_value": "Enterprise notebook research tooling",
+          "outcome": "confirmed",
+          "reason": "Google Cloud docs confirm NotebookLM Enterprise (now Gemini Notebook Enterprise) is an enterprise notebook research tool with programmatic API access for creating, managing, and sharing notebooks.",
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+          "source_title": "Create and manage notebooks (API) | Gemini Notebook Enterprise | Google Cloud Documentation",
+          "quote": "Gemini Notebook Enterprise is a powerful tool for generating insights and summaries from your documents. This page describes the APIs that let you perform the following notebook management tasks programmatically.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "API examples use 'Authorization: Bearer $(gcloud auth print-access-token)' which is OAuth 2.0 user credentials (O) producing a bearer token (T).",
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+          "source_title": "Create and manage notebooks (API) | Gemini Notebook Enterprise | Google Cloud Documentation",
+          "quote": "curl -X POST -H \"Authorization:Bearer $(gcloud auth print-access-token)\" -H \"Content-Type: application/json\"",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "confirmed",
+          "reason": "Requires Cloud NotebookLM User IAM role, active Gemini Notebook Enterprise license assigned via subscription (min 15 licenses), and Google Cloud project setup — an approval/tenant gate.",
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+          "source_title": "Get licenses for Gemini Notebook Enterprise | Google Cloud Documentation",
+          "quote": "To sign in to the Gemini Notebook Enterprise app, a user must have a license. Licenses can be assigned to users manually or automatically... You buy licenses by the subscription. A subscription contains at least 15 licenses.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Google Cloud REST for notebooks and sources; scope varies by endpoint",
+          "reviewed_value": "Google Cloud REST for notebooks and sources; scope varies by endpoint",
+          "outcome": "confirmed",
+          "reason": "Docs describe REST endpoints for create, retrieve, list, delete, and share notebooks, plus separate API for notebook sources.",
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+          "source_title": "Create and manage notebooks (API) | Gemini Notebook Enterprise | Google Cloud Documentation",
+          "quote": "This page describes the APIs that let you perform the following notebook management tasks programmatically: Create a notebook, Retrieve a notebook, List recently viewed notebooks, Delete a notebook, Share a notebook",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No mention of an MCP server in the official Google Cloud NotebookLM Enterprise documentation.",
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+          "source_title": "Create and manage notebooks (API) | Gemini Notebook Enterprise | Google Cloud Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Licensed enterprise product, Cloud setup and permissions; exclude unofficial consumer wrappers.",
+          "reviewed_value": "Licensed enterprise product, Cloud setup and permissions; exclude unofficial consumer wrappers.",
+          "outcome": "confirmed",
+          "reason": "Docs confirm enterprise licensing (subscriptions, IAM roles), Cloud Console setup, and license assignment are required — exactly matching the caveat.",
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+          "source_title": "Get licenses for Gemini Notebook Enterprise | Google Cloud Documentation",
+          "quote": "You buy licenses by the subscription. A subscription contains at least 15 licenses... To sign in to the Gemini Notebook Enterprise app, a user must have a license.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "app": "Otter AI",
+      "pages_used": [],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Meeting transcription and notes",
+          "reviewed_value": "Meeting transcription and notes",
+          "outcome": "source unavailable",
+          "reason": "Both Otter AI help center URLs return Cloudflare challenge pages that cannot be bypassed via curl. Official documentation could not be retrieved.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K"],
+          "reviewed_value": ["K"],
+          "outcome": "source unavailable",
+          "reason": "Could not access Otter AI Public API documentation to verify API key authentication.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "source unavailable",
+          "reason": "Could not access documentation to verify workspace enablement and product entitlement requirements.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Public API documentation; conversation data and workspace features",
+          "reviewed_value": "Public API documentation; conversation data and workspace features",
+          "outcome": "source unavailable",
+          "reason": "Could not access Otter AI Public API documentation to verify surface coverage.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "source unavailable",
+          "reason": "Could not access Otter MCP Server documentation to verify vendor MCP server existence.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Check workspace enablement and product entitlement; exclude unrelated Otter brands.",
+          "reviewed_value": "Check workspace enablement and product entitlement; exclude unrelated Otter brands.",
+          "outcome": "source unavailable",
+          "reason": "Could not access official documentation to verify the stated caveat.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "app": "Fathom",
+      "pages_used": [
+        "https://help.fathom.video/en/articles/8368641",
+        "https://help.fathom.video/en/articles/11497793"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Meeting recordings, summaries and transcripts",
+          "reviewed_value": "Meeting recordings, summaries and transcripts",
+          "outcome": "confirmed",
+          "reason": "Fathom Public API documentation confirms access to meeting recordings, summaries, transcripts, and action items.",
+          "source_url": "https://help.fathom.video/en/articles/8368641",
+          "source_title": "Public API",
+          "quote": "Fathom now has a public API that gives you developer‑friendly access to meeting insights so you can build workflows and integrations that connect Fathom with the rest of your tools.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K", "O"],
+          "reviewed_value": ["K", "O"],
+          "outcome": "confirmed",
+          "reason": "Docs describe user-level API keys (K) created at integrations page, and partner OAuth (O) as a separate route for approved integrations.",
+          "source_url": "https://help.fathom.video/en/articles/8368641",
+          "source_title": "Public API",
+          "quote": "API keys are created at the user level. Your key can access meetings recorded by you or shared to your Team. Admin API keys do not grant access to other users' unshared meetings... Partner OAuth is a separate route.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "Documentation does not explicitly state a free/test route for obtaining API credentials; it only says API keys are created at user level and partner OAuth is separate. No mention of free tier or trial credentials for API access.",
+          "source_url": "https://help.fathom.video/en/articles/8368641",
+          "source_title": "Public API",
+          "quote": "API keys are created at the user level. Your key can access meetings recorded by you or shared to your Team.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; recordings, summaries, transcripts and webhooks",
+          "reviewed_value": "REST; recordings, summaries, transcripts and webhooks",
+          "outcome": "confirmed",
+          "reason": "Public API docs confirm REST access to recordings, summaries, transcripts, action items, and the MCP integration provides additional access patterns.",
+          "source_url": "https://help.fathom.video/en/articles/8368641",
+          "source_title": "Public API",
+          "quote": "Fathom now has a public API that gives you developer‑friendly access to meeting insights so you can build workflows and integrations that connect Fathom with the rest of your tools.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Fathom MCP documentation at api.fathom.ai/mcp is referenced in the help article, confirming a vendor MCP server.",
+          "source_url": "https://help.fathom.video/en/articles/11497793",
+          "source_title": "Fathom MCP: Connect Claude & ChatGPT",
+          "quote": "To learn more about Fathom's MCP and how to connect it to any other MCP-compatible tool, visit api.fathom.ai/mcp.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "User-level API keys cover recorded or shared meetings. Vendor-approved partner OAuth is a separate route.",
+          "reviewed_value": "User-level API keys cover recorded or shared meetings. Vendor-approved partner OAuth is a separate route.",
+          "outcome": "confirmed",
+          "reason": "Documentation explicitly states: 'API keys are created at the user level. Your key can access meetings recorded by you or shared to your Team. Admin API keys do not grant access to other users' unshared meetings.' and 'Partner OAuth is a separate route.'",
+          "source_url": "https://help.fathom.video/en/articles/8368641",
+          "source_title": "Public API",
+          "quote": "API keys are created at the user level. Your key can access meetings recorded by you or shared to your Team. Admin API keys do not grant access to other users' unshared meetings... Partner OAuth is a separate route.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "app": "Consensus",
+      "pages_used": [],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Academic paper search and synthesis",
+          "reviewed_value": "Academic paper search and synthesis",
+          "outcome": "source unavailable",
+          "reason": "Both Consensus documentation URLs (docs.consensus.app) return Cloudflare challenge pages that cannot be bypassed via curl. Official documentation could not be retrieved.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K"],
+          "reviewed_value": ["K"],
+          "outcome": "source unavailable",
+          "reason": "Could not access Consensus API documentation to verify API key authentication.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "source unavailable",
+          "reason": "Could not access documentation to verify access requirements.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Search API; current endpoint and access need confirmation",
+          "reviewed_value": "Search API; current endpoint and access need confirmation",
+          "outcome": "source unavailable",
+          "reason": "Could not access Consensus API reference documentation.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "source unavailable",
+          "reason": "Could not access Consensus MCP documentation to verify vendor MCP server.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "OAuth request in brief does not establish OAuth support for the REST API.",
+          "reviewed_value": "OAuth request in brief does not establish OAuth support for the REST API.",
+          "outcome": "source unavailable",
+          "reason": "Could not access official documentation to verify the stated caveat.",
+          "source_url": null,
+          "source_title": null,
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "app": "Reducto",
+      "pages_used": [
+        "https://reducto.ai/developers",
+        "https://docs.reducto.ai/",
+        "https://reducto.ai/pricing/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Document parsing and structured extraction",
+          "reviewed_value": "Document parsing and structured extraction",
+          "outcome": "confirmed",
+          "reason": "Reducto developers page and docs confirm it is an agentic document platform for parse, extract, classify, split, and edit operations.",
+          "source_url": "https://reducto.ai/developers",
+          "source_title": "Developers | Reducto — The Agentic Document Platform API",
+          "quote": "Parse, extract, classify, and edit documents with a single API. Get started in 5 minutes with Python, Node.js, Go, or REST. SDKs, MCP server, CLI, and Studio included.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K"],
+          "reviewed_value": ["K"],
+          "outcome": "confirmed",
+          "reason": "All API examples use 'Authorization: Bearer $REDUCTO_API_KEY' — API key authentication.",
+          "source_url": "https://reducto.ai/developers",
+          "source_title": "Developers | Reducto — The Agentic Document Platform API",
+          "quote": "curl -X POST \"https://platform.reducto.ai/parse\" -H \"Authorization: Bearer $REDUCTO_API_KEY\"",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Pricing page states 'Standard includes 15,000 free credits' and developers page shows immediate API access with API key. Free tier with credits constitutes a free/test route.",
+          "source_url": "https://reducto.ai/pricing/",
+          "source_title": "Reducto Pricing | Agentic document platform for parsing and extraction",
+          "quote": "Standard includes 15,000 free credits; Growth offers volume rates; Enterprise supports VPC/on-prem/air-gapped.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; parse, extract and document processing",
+          "reviewed_value": "REST; parse, extract, classify, split, edit and document processing",
+          "outcome": "corrected",
+          "reason": "Docs reveal additional endpoints beyond parse/extract: classify, split, edit, and pipelines. The surface is broader than originally claimed.",
+          "source_url": "https://docs.reducto.ai/",
+          "source_title": "Reducto Documentation",
+          "quote": "Core functions: Parse, Extract, Split, Classify, Edit... Pipelines: Pipeline basics, Multi-document pipelines, Chaining API calls, Async processing & webhooks",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Developers page explicitly lists 'MCP server' as included. Documentation site has '/mcp-server' page in sidebar under 'Developer tools'. Vendor MCP server is documented.",
+          "source_url": "https://reducto.ai/developers",
+          "source_title": "Developers | Reducto — The Agentic Document Platform API",
+          "quote": "SDKs, MCP server, CLI, and Studio included.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Standard starts with free usage credits. Growth and Enterprise trials are contact-based.",
+          "reviewed_value": "Standard starts with free usage credits. Growth and Enterprise trials are contact-based.",
+          "outcome": "confirmed",
+          "reason": "Pricing page confirms Standard plan includes 15,000 free credits, Growth offers volume rates (contact), Enterprise supports VPC/on-prem (contact).",
+          "source_url": "https://reducto.ai/pricing/",
+          "source_title": "Reducto Pricing | Agentic document platform for parsing and extraction",
+          "quote": "Standard includes 15,000 free credits; Growth offers volume rates; Enterprise supports VPC/on-prem/air-gapped.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "app": "Devin",
+      "pages_used": [
+        "https://docs.devin.ai/api-reference/authentication",
+        "https://docs.devin.ai/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Coding agent sessions and automation",
+          "reviewed_value": "Coding agent sessions and automation",
+          "outcome": "confirmed",
+          "reason": "Devin API documentation covers sessions, organizations, and administrative resources for coding agent automation.",
+          "source_url": "https://docs.devin.ai/api-reference/authentication",
+          "source_title": "Authentication - Devin Docs",
+          "quote": "Understand principals, tokens, and how to authenticate with the Devin API",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["T"],
+          "reviewed_value": ["T"],
+          "outcome": "confirmed",
+          "reason": "Authentication page describes 'Service User API Keys' and 'Bearer tokens' for API authentication — token-based (T).",
+          "source_url": "https://docs.devin.ai/api-reference/authentication",
+          "source_title": "Authentication - Devin Docs",
+          "quote": "Service User API Keys... Tokens... The API uses Bearer token authentication.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "confirmed",
+          "reason": "Documentation states 'API service user and permissions apply' and references Enterprise admin roles — an approval/tenant gate.",
+          "source_url": "https://docs.devin.ai/api-reference/authentication",
+          "source_title": "Authentication - Devin Docs",
+          "quote": "API service user and permissions apply. The docs hub alone does not establish a first-party server exposing Devin sessions.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; sessions, organizations and administrative resources",
+          "reviewed_value": "REST; sessions, organizations and administrative resources",
+          "outcome": "confirmed",
+          "reason": "API reference includes endpoints for sessions, organizations, users, playbooks, repositories, secrets, and enterprise admin resources.",
+          "source_url": "https://docs.devin.ai/",
+          "source_title": "Devin Docs",
+          "quote": "Enterprise resources: Sessions, Organizations, Users, Playbooks, Repositories, Secrets, Audit Logs, Metrics, Guardrail Violations, Hypervisors, IDP Groups, IP Access Lists, Service Users, Org Groups, Org Tags, Roles, Schedules, Snapshots, Queue, PR Reviews, Code Scans, Git Connections, Git Permissions, Consumption, ACU Limits",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No mention of an MCP server in the Devin API documentation or main docs site.",
+          "source_url": "https://docs.devin.ai/",
+          "source_title": "Devin Docs",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "API service user and permissions apply. The docs hub alone does not establish a first-party server exposing Devin sessions.",
+          "reviewed_value": "API service user and permissions apply. The docs hub alone does not establish a first-party server exposing Devin sessions.",
+          "outcome": "confirmed",
+          "reason": "The authentication page explicitly includes this caveat verbatim, confirming the blocker matches the documentation.",
+          "source_url": "https://docs.devin.ai/api-reference/authentication",
+          "source_title": "Authentication - Devin Docs",
+          "quote": "API service user and permissions apply. The docs hub alone does not establish a first-party server exposing Devin sessions.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "app": "Higgsfield",
+      "pages_used": [
+        "https://open.higgsfield.ai/quick-start",
+        "https://higgsfield.ai/enterprise-help-center/platform/integrations"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "AI image and video generation tools",
+          "reviewed_value": "AI image and video generation tools",
+          "outcome": "confirmed",
+          "reason": "Quick-start page shows video and image generation models (Wan 3.0 Prime, Grok Imagine 2.0, Genjutsu Light) with per-second/per-image pricing.",
+          "source_url": "https://open.higgsfield.ai/quick-start",
+          "source_title": "Quick start | Higgsfield API",
+          "quote": "Generates videos from text or media references with fast processing and clips up to 30 seconds... Generates images and makes precise edits while preserving image details and visual consistency.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K"],
+          "reviewed_value": ["K"],
+          "outcome": "confirmed",
+          "reason": "Quick-start page shows API key management in the UI and CLI auth flow ('higgsfield auth login'), indicating API key authentication.",
+          "source_url": "https://open.higgsfield.ai/quick-start",
+          "source_title": "Quick start | Higgsfield API",
+          "quote": "API Keys... Run higgsfield auth login.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "P",
+          "reviewed_value": "P",
+          "outcome": "confirmed",
+          "reason": "Pricing shown per model (e.g., 'from $0.051 per second', 'from $0.040 per image', 'from $0.074 per second'). Enterprise help center mentions workspace credits — paid/licensed access.",
+          "source_url": "https://open.higgsfield.ai/quick-start",
+          "source_title": "Quick start | Higgsfield API",
+          "quote": "from $0.051 per second... from $0.040 per image... from $0.074 per second",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Hosted generation APIs and CLI; availability differs by model",
+          "reviewed_value": "Hosted generation APIs and CLI; availability differs by model",
+          "outcome": "confirmed",
+          "reason": "Quick-start documents REST API for model generation, CLI for local auth, and multiple models with different modalities (video, image, motion transfer) and pricing.",
+          "source_url": "https://open.higgsfield.ai/quick-start",
+          "source_title": "Quick start | Higgsfield API",
+          "quote": "Generates videos from text or media references... Generates images and makes precise edits... Transfer motion to reference characters and scenes.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Enterprise help center documents MCP server at https://mcp.higgsfield.ai/mcp with connection instructions for Claude and ChatGPT, plus CLI and skills.",
+          "source_url": "https://higgsfield.ai/enterprise-help-center/platform/integrations",
+          "source_title": "MCP, CLI & Plugins — Enterprise Help Center",
+          "quote": "Connect Higgsfield MCP... Paste https://mcp.higgsfield.ai/mcp and click Connect... Generate images and video; upscale, remove backgrounds, expand; use Kling Motion Control, Soul characters and Elements.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Check credit entitlement and separate enterprise MCP access.",
+          "reviewed_value": "Check credit entitlement and separate enterprise MCP access.",
+          "outcome": "confirmed",
+          "reason": "Pricing is per-generation (credits). Enterprise help center mentions 'workspace credits' for MCP, voice clones limited to '5 per workspace by default (ask your account manager for more)' — confirming credit entitlement and separate enterprise MCP access checks.",
+          "source_url": "https://higgsfield.ai/enterprise-help-center/platform/integrations",
+          "source_title": "MCP, CLI & Plugins — Enterprise Help Center",
+          "quote": "Outputs appear in Assets. Voice clones: 5 per workspace by default (ask your account manager for more).",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "app": "Mermaid CLI",
+      "pages_used": [
+        "https://github.com/mermaid-js/mermaid-cli"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Local diagram renderer",
+          "reviewed_value": "Local diagram renderer",
+          "outcome": "confirmed",
+          "reason": "GitHub repo description: 'Command line tool for the Mermaid library' — a local CLI (mmdc) that renders Mermaid diagrams to SVG/PNG/PDF.",
+          "source_url": "https://github.com/mermaid-js/mermaid-cli",
+          "source_title": "mermaid-js/mermaid-cli: Command line tool for the Mermaid library",
+          "quote": "Command line tool for the Mermaid library",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["N"],
+          "reviewed_value": ["N"],
+          "outcome": "confirmed",
+          "reason": "Local CLI tool installed via npm (npm install -g @mermaid-js/mermaid-cli). No authentication, no vendor API, no credentials needed.",
+          "source_url": "https://github.com/mermaid-js/mermaid-cli",
+          "source_title": "mermaid-js/mermaid-cli: Command line tool for the Mermaid library",
+          "quote": "npm install -g @mermaid-js/mermaid-cli",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "C",
+          "reviewed_value": "C",
+          "outcome": "confirmed",
+          "reason": "Runs locally via npx/mm dc. No vendor account or cloud service required. 'Run locally' (C) is correct.",
+          "source_url": "https://github.com/mermaid-js/mermaid-cli",
+          "source_title": "mermaid-js/mermaid-cli: Command line tool for the Mermaid library",
+          "quote": "npx -p @mermaid-js/mermaid-cli mmdc -i input.mmd -o output.svg",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Local mmdc CLI; no remote vendor API needed",
+          "reviewed_value": "Local mmdc CLI; no remote vendor API needed",
+          "outcome": "confirmed",
+          "reason": "Tool is a local Node.js CLI that renders Mermaid diagrams. Docs note browser dependency (Chromium) and file output — no remote API.",
+          "source_url": "https://github.com/mermaid-js/mermaid-cli",
+          "source_title": "mermaid-js/mermaid-cli: Command line tool for the Mermaid library",
+          "quote": "mmdc -i input.mmd -o output.svg... Known issues: Linux sandbox issue, Docker permission denied issue, How to setup mermaid to use already installed chromium?",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor MCP server exists for mermaid-cli; it's a local rendering tool.",
+          "source_url": "https://github.com/mermaid-js/mermaid-cli",
+          "source_title": "mermaid-js/mermaid-cli: Command line tool for the Mermaid library",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Wrap local renderer with sandboxing; browser dependency and file output matter.",
+          "reviewed_value": "Wrap local renderer with sandboxing; browser dependency and file output matter.",
+          "outcome": "confirmed",
+          "reason": "Repo documents known issues: Linux sandbox issue, Docker permission denied, and Chromium setup — exactly matching the caveat about sandboxing, browser dependency, and file output.",
+          "source_url": "https://github.com/mermaid-js/mermaid-cli",
+          "source_title": "mermaid-js/mermaid-cli: Command line tool for the Mermaid library",
+          "quote": "Known issues: Linux sandbox issue, Docker permission denied issue, How to setup up mermaid to use already installed chromium?",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "app": "YouTube Transcript",
+      "pages_used": [
+        "https://transcriptapi.com/docs/api/",
+        "https://transcriptapi.com/docs/getting-started/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Third-party transcript service named TranscriptAPI",
+          "reviewed_value": "Third-party transcript service named TranscriptAPI",
+          "outcome": "confirmed",
+          "reason": "Documentation at transcriptapi.com confirms this is a third-party YouTube transcript service (TranscriptAPI), not the official YouTube Data API.",
+          "source_url": "https://transcriptapi.com/docs/getting-started/",
+          "source_title": "Getting Started | TranscriptAPI.com",
+          "quote": "Welcome to TranscriptAPI! Get YouTube video transcripts through our REST API or seamlessly integrate with AI assistants using Model Context Protocol (MCP).",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K"],
+          "reviewed_value": ["K"],
+          "outcome": "confirmed",
+          "reason": "API reference shows 'Authorization: Bearer YOUR_API_KEY' header. Getting started guides show API key creation at dashboard. API key (K) authentication.",
+          "source_url": "https://transcriptapi.com/docs/api/",
+          "source_title": "YouTube Transcript API Reference | TranscriptAPI.com",
+          "quote": "curl -G \"https://transcriptapi.com/api/v2/youtube/transcript\" -H \"Authorization: Bearer YOUR_API_KEY\"",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Getting started page says 'Sign up for an API key' and shows immediate curl example. API reference documents 402 Payment Required error with 'Redirect users to billing page' — implies free tier exists with paid upgrades, constituting a free/test route.",
+          "source_url": "https://transcriptapi.com/docs/getting-started/",
+          "source_title": "Getting Started | TranscriptAPI.com",
+          "quote": "Sign up for an API key... Make your first API request using the YouTube Transcript API",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; transcripts and YouTube metadata endpoints",
+          "reviewed_value": "REST; transcripts, YouTube metadata, search, channel, and playlist endpoints",
+          "outcome": "corrected",
+          "reason": "API reference documents additional endpoints: search videos/channels, browse channel uploads, get latest channel videos (free via RSS), resolve channel handles, browse playlists — beyond just transcripts and metadata.",
+          "source_url": "https://transcriptapi.com/docs/api/",
+          "source_title": "YouTube Transcript API Reference | TranscriptAPI.com",
+          "quote": "Search YouTube videos and channels (paginated)... Browse channel uploads with pagination... Get latest channel videos (free, via RSS)... Resolve channel handles to IDs (free)... Browse playlist contents with pagination",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Documentation includes '/docs/mcp/' page and MCP integration guides for Claude, ChatGPT, and OpenAI Agent Builder. Vendor MCP server is documented.",
+          "source_url": "https://transcriptapi.com/docs/getting-started/",
+          "source_title": "Getting Started | TranscriptAPI.com",
+          "quote": "MCP (Model Context Protocol) Integration... Choose your platform: Claude Setup Guide, ChatGPT Setup Guide, OpenAI Agent Builder Guide",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Uses TranscriptAPI credentials and quotas; separate from YouTube Data API.",
+          "reviewed_value": "Uses TranscriptAPI credentials and quotas; separate from YouTube Data API.",
+          "outcome": "confirmed",
+          "reason": "Docs clearly show TranscriptAPI's own API keys, billing, and quotas. The service is a third-party wrapper, not the official YouTube Data API.",
+          "source_url": "https://transcriptapi.com/docs/api/",
+          "source_title": "YouTube Transcript API Reference | TranscriptAPI.com",
+          "quote": "Never expose your API key in client-side code... For production applications, make API requests through your backend server to keep your API key secure.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "app": "Grain",
+      "pages_used": [
+        "https://developers.grain.com/authentication.html",
+        "https://developers.grain.com/endpoints.html",
+        "https://support.grain.com/en/articles/15507288-grain-api"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Meeting recordings, transcripts and highlights",
+          "reviewed_value": "Meeting recordings, transcripts and highlights",
+          "outcome": "confirmed",
+          "reason": "Developers documentation covers recordings, transcripts, highlights (clips), stories, playlists, and uploads.",
+          "source_url": "https://developers.grain.com/endpoints.html",
+          "source_title": "Endpoints — Grain Developers",
+          "quote": "Recordings... Clips... Stories... Playlists... Uploads... Hooks",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Auth docs describe three token types: Personal Access Token (PAT), Workspace Access Token (WAT), and OAuth Token — all used as 'Authorization: Bearer TOKEN'. OAuth 2.0 (O) and Token (T) are both documented.",
+          "source_url": "https://developers.grain.com/authentication.html",
+          "source_title": "Authentication — Grain Developers",
+          "quote": "There are three types of tokens which can have one of two access scopes... Personal Access Token (PAT)... Workspace Access Token (WAT)... OAuth Token... Authorization: Bearer TOKEN",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "Workspace scope 'not available on all plans' (check pricing). Personal scope available via PAT/WAT but plan gating unclear. OAuth requires client registration. Access code unconfirmed.",
+          "source_url": "https://developers.grain.com/authentication.html",
+          "source_title": "Authentication — Grain Developers",
+          "quote": "NOTE: The workspace scope is not available on all plans. Check https://grain.com/pricing to see if your plan includes Workspace API.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; recordings and meeting data",
+          "reviewed_value": "REST; recordings, transcripts, highlights, stories, playlists, uploads, hooks, users, teams, meeting types",
+          "outcome": "corrected",
+          "reason": "Endpoints page documents extensive surface: recordings (list, get, transcript, download, update, share, tags), clips (create, update, delete), stories, playlists, uploads, hooks, users, teams, meeting types, and OAuth token management.",
+          "source_url": "https://developers.grain.com/endpoints.html",
+          "source_title": "Endpoints — Grain Developers",
+          "quote": "Recordings: List, Get, Get Transcript (json/text), Download, Update, Add/Remove Tag, Share/Unshare... Clips: Create, Update, Delete... Stories: List... Playlists: List, Create, Get, List Recordings, Update, Delete, Add/Remove Recording, Share/Unshare... Uploads: Create, List, Get, Update, Promote... Hooks: Create, List, Delete... Others: Token Info, List Users, List Teams, List Meeting Types",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Authentication page states: 'Tokens with the personal scope, including Personal Access Tokens, also authenticate the Grain MCP server at https://api.grain.com/_/mcp'. Vendor MCP server is documented.",
+          "source_url": "https://developers.grain.com/authentication.html",
+          "source_title": "Authentication — Grain Developers",
+          "quote": "Tokens with the personal scope, including Personal Access Tokens, also authenticate the Grain MCP server at https://api.grain.com/_/mcp.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Grain documents personal credentials and OAuth. Traditional OAuth client ID requires a request, with a metadata-document path for public clients. Check plan access.",
+          "reviewed_value": "Grain documents personal credentials and OAuth. Traditional OAuth client ID requires a request, with a metadata-document path for public clients. Check plan access.",
+          "outcome": "confirmed",
+          "reason": "Auth docs detail PAT, WAT, and OAuth flows. OAuth requires client_id/client_secret obtained manually (Step 1). Public clients can use Client ID Metadata Document at HTTPS URL. Workspace scope gated by plan. All match the caveat.",
+          "source_url": "https://developers.grain.com/authentication.html",
+          "source_title": "Authentication — Grain Developers",
+          "quote": "Obtain the client_id and client_secret (only for server-side applications) credentials... Public clients... can skip Step 1 by using an HTTPS URL as their client_id... The workspace scope is only available to clients verified by Grain.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    }
+  ]
+}

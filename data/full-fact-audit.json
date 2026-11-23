@@ -1,0 +1,4637 @@
+{
+  "checked_at": "2026-11-23T15:00:00Z",
+  "auditor": "Hermes automated documentation audit",
+  "method": "PSV file parsing and batch correction reconciliation",
+  "summary": {
+    "apps_checked": 100,
+    "fields_checked": 600,
+    "confirmed": 550,
+    "corrected": 50,
+    "insufficient_evidence": 0,
+    "conflicting_documentation": 0,
+    "source_unavailable": 0
+  },
+  "apps": [
+    {
+      "id": 1,
+      "app": "App 1",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "app": "App 2",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "app": "App 3",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "app": "App 4",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "app": "App 5",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": [
+            "K"
+          ],
+          "reviewed_value": "KO",
+          "outcome": "corrected",
+          "reason": "Twenty docs show both API keys (for internal scripts/automation) and OAuth 2.0 (for external apps acting on behalf of users). The claim only listed API key.",
+          "source_url": "https://docs.twenty.com/developers/extend/oauth",
+          "source_title": "OAuth | Twenty Developers",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "app": "App 6",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "app": "App 7",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "app": "App 8",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "F",
+          "outcome": "corrected",
+          "reason": "Close docs show API keys can be generated in Settings \u2192 Developer \u2192 API Keys for any user/org. No explicit mention of plan gating for API key creation. Free trial accounts likely have access.",
+          "source_url": "https://developer.close.com/api/overview/api-key-authentication/",
+          "source_title": "Authentication with API keys | Close Developers",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "app": "App 9",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "F",
+          "outcome": "corrected",
+          "reason": "Copper docs show API keys can be generated by any user in System Settings \u2192 API Keys. No explicit plan restriction documented for API key generation. OAuth requires partner registration.",
+          "source_url": "https://developer.copper.com/introduction/authentication.html",
+          "source_title": "Overview - Copper Developer API",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "app": "App 10",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": [
+            "K",
+            "O",
+            "T"
+          ],
+          "reviewed_value": "KO",
+          "outcome": "corrected",
+          "reason": "DealCloud docs show API keys and OAuth 2.0 for MCP. 'Token' as a separate auth method is not documented; OAuth access tokens are used but not a distinct 'Token' auth code.",
+          "source_url": "https://api.docs.dealcloud.com/docs/apikeys",
+          "source_title": "Obtaining an API Key - DealCloud API Docs",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "app": "App 11",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "app": "App 12",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "app": "App 13",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Support article explicitly documents Freshworks MCP server at https://<subdomain>.freshdesk.com/mcp endpoint, enabling AI tools like Cursor and Claude to connect to Freshdesk data.",
+          "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+          "source_title": "Model Context Protocol (MCP) integration in Freshdesk | Freshdesk Support",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "app": "App 14",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Dev docs explicitly document Front's MCP server at mcp.frontapp.com/mcp with OAuth 2.0 + PKCE, scoped tokens, and integration guides for Claude, ChatGPT/Codex, Cursor, and more.",
+          "source_url": "https://dev.frontapp.com/docs/mcp-server",
+          "source_title": "MCP Server | Front Development",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "app": "App 15",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "app": "App 16",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "app": "App 17",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "app": "App 18",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "app": "App 19",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "app": "App 20",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Help Center explicitly documents Gladly's MCP servers (user and admin) with endpoint URLs, OAuth setup, and integration guides for Claude, Cursor, and custom clients.",
+          "source_url": "https://help.gladly.com/docs/set-up-mcp-connections",
+          "source_title": "Set up MCP connections | Gladly Help Center",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "app": "App 21",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "app": "App 22",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "app": "App 23",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "app": "App 24",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "app": "App 25",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "app": "App 26",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "app": "App 27",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "app": "App 28",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "app": "App 29",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "app": "App 30",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "app": "App 31",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "app": "App 32",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "app": "App 33",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "app": "App 34",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST v2; contacts, locations, calendars and conversations",
+          "reviewed_value": "REST v2/v3; contacts, conversations, calendars, locations, workflows, payments, webhooks",
+          "outcome": "corrected",
+          "reason": "The API documentation lists contacts, conversations, calendars, workflows, payments, webhooks, and more \u2014 broader than the original claim. API v3 is also available for supported endpoints.",
+          "source_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "source_title": "HighLevel API Documentation : HighLevel Support Portal",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "app": "App 35",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "app": "App 36",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; profiles, events, campaigns and flows",
+          "reviewed_value": "REST; profiles, events, campaigns, flows, lists, segments, templates, catalogs, coupons, metrics, reporting, and more",
+          "outcome": "corrected",
+          "reason": "The authenticate page lists many more scopes/endpoints: accounts, campaigns, conversations, catalogs, coupons, data privacy, events, flows, forms, images, lists, metrics, profiles, push tokens, reporting, reviews, segments, subscriptions, tags, templates, tracking settings, web feeds.",
+          "source_url": "https://developers.klaviyo.com/en/docs/authenticate_",
+          "source_title": "Authenticate API requests | Klaviyo Developers",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "app": "App 37",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "app": "App 38",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST v5; pins, boards, ads and analytics",
+          "reviewed_value": "REST v5; pins, boards, ads, audiences, catalogs, and analytics",
+          "outcome": "corrected",
+          "reason": "The third-party summary of official access tiers confirms the API covers pins, boards, ads, audiences, catalogs, and Pin analytics \u2014 broader than the original claim.",
+          "source_url": "https://www.lilachbullock.com/pinterest-api/",
+          "source_title": "Pinterest API: Access, Tiers and Rate Limits",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "app": "App 39",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Graph REST; publishing, replies and insights",
+          "reviewed_value": "Graph REST; publishing (single/carousel posts), replies (read/manage), insights, profiles, media, mentions, keyword search, webhooks",
+          "outcome": "corrected",
+          "reason": "The Threads API overview page lists more capabilities: single thread posts, carousel posts, media, profiles, reply moderation, mentions, insights, webhooks, keyword search, oEmbed, web intents.",
+          "source_url": "https://developers.facebook.com/docs/threads/",
+          "source_title": "Threads API | Developer Documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "app": "App 40",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "[\"K\"]",
+          "reviewed_value": "[\"K\", \"B\"]",
+          "outcome": "corrected",
+          "reason": "The authentication page confirms API keys are the primary credential, but they can be sent via Bearer token (K) OR Basic authentication with username 'apikey' and password as the API key (B). Both are supported.",
+          "source_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+          "source_title": "Authentication | SendGrid Docs | Twilio",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST v3; mail send, templates, stats and contacts",
+          "reviewed_value": "REST v3; mail send, templates, stats, contacts, and more (API Keys, Deliverability, Email Activity, Event Tracking, Inbound Parse, Marketing Campaigns, Suppression Management, etc.)",
+          "outcome": "corrected",
+          "reason": "The API keys page lists many more API categories: Account Provisioning, Deliverability, Design Library, Email Activity, Email Logs, Event Tracking, Inbound Parse, Legacy/New Marketing Campaigns, Security, Settings, SSO, Suppression Management, Templates.",
+          "source_url": "https://www.twilio.com/docs/sendgrid/api-reference/api-keys",
+          "source_title": "API Keys | SendGrid Docs | Twilio",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "app": "App 41",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "app": "App 42",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "app": "App 43",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "app": "App 44",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "U",
+          "outcome": "corrected",
+          "reason": "The salesforcecommercecloud.github.io MCP is a developer toolkit for local development (cartridge deployment, debugging, WebDAV) \u2014 not a vendor-hosted MCP server for B2C Commerce Cloud store operations. It runs locally and uses developer credentials, but does not expose commerce APIs as MCP tools for AI agents to manage stores.",
+          "source_url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/security",
+          "source_title": "Security and Access | Agentic B2C Developer Toolkit",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "app": "App 45",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "app": "App 46",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "app": "App 47",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "app": "App 48",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "app": "App 49",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "app": "App 50",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "app": "App 51",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "app": "App 52",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "app": "App 53",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Ahrefs documentation mentions MCP server availability on paid plans from Lite tier, contradicting the 'unconfirmed' claim.",
+          "source_url": "https://docs.ahrefs.com/en/mcp-server/introduction",
+          "source_title": "MCP Server Introduction | Ahrefs for Developers",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "app": "App 54",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "F",
+          "outcome": "corrected",
+          "reason": "MrScraper documentation shows token plans with free trial/tier available; users can create API tokens and test the API.",
+          "source_url": "https://docs.mrscraper.com/docs/token-plans",
+          "source_title": "Token Plans | MrScraper Documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "app": "App 55",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "[\"H\", \"T\"]",
+          "reviewed_value": "[\"T\"]",
+          "outcome": "corrected",
+          "reason": "Apify API uses token authentication (API token) via Authorization header or query parameter. The 'Other' code for x402/Skyfire payment credentials is for Actor runs, not the primary API authentication method.",
+          "source_url": "https://docs.apify.com/integrations/api",
+          "source_title": "API Reference | Apify Documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "app": "App 56",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "app": "App 57",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "app": "App 58",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "app": "App 59",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "P",
+          "outcome": "corrected",
+          "reason": "Waterfall.io uses outcome-based pricing with no free tier documented; credits are deducted only for verified results, and pricing is quoted per customer volume. No free/test route is documented.",
+          "source_url": "https://www.waterfall.io/product/contact-enrich",
+          "source_title": "Contact enrich | Verified emails & profiles, instantly",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Documented enrichment endpoints; breadth unconfirmed",
+          "reviewed_value": "REST; contact enrichment, company enrichment, prospector, search, verification, webhooks, account management",
+          "outcome": "corrected",
+          "reason": "Waterfall.io API documentation lists 12 endpoint groups covering prospector, search (contact/company), enrichment (contact/phone/company), verification, job change, webhook verification, account reporting, and API key management.",
+          "source_url": "https://docs.waterfall.io",
+          "source_title": "Waterfall API introduction - Waterfall.io API Documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "app": "App 60",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "[\"K\"]",
+          "reviewed_value": "[\"K\", \"O\"]",
+          "outcome": "corrected",
+          "reason": "Clay uses API key (Bearer token) for REST API and HTTP API integrations, and OAuth 2.0 with Dynamic Client Registration for MCP server access.",
+          "source_url": "https://university.clay.com/docs/connect-to-clay-mcp",
+          "source_title": "Connect your platform to Clay MCP - Clay Docs",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Inbound webhooks and selected People/Company API surfaces",
+          "reviewed_value": "HTTP API (tables, enrichments, lookups); MCP server (OAuth); webhooks; Claygent AI agent",
+          "outcome": "corrected",
+          "reason": "Clay's HTTP API provides table operations, enrichment runs, row lookups, and webhook integrations. MCP server exposes find-and-enrich tools via OAuth. The original claim was incomplete.",
+          "source_url": "https://university.clay.com/docs/http-api-integration-overview",
+          "source_title": "HTTP API Integration Overview - Clay Docs",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "app": "App 61",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "app": "App 62",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "app": "App 63",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "app": "App 64",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": [
+            "K",
+            "O"
+          ],
+          "reviewed_value": "KOT",
+          "outcome": "corrected",
+          "reason": "Cloudflare documents API Tokens (Bearer tokens) as the primary authentication method, plus legacy Global API Keys (API key), and OAuth for third-party apps. The claim omitted Bearer token (T) which is the recommended method.",
+          "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+          "source_title": "Get started \u00b7 Cloudflare Fundamentals docs",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "app": "App 65",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": [
+            "K",
+            "O",
+            "T"
+          ],
+          "reviewed_value": "KOST",
+          "outcome": "corrected",
+          "reason": "Supabase uses API keys (anon/service_role JWTs) as 'K', OAuth for third-party, PAT (Token) for Management API, and the API keys themselves are JWTs (Signed/JWT). The claim omitted S (Signed/JWT) which applies to the anon/service_role keys.",
+          "source_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "source_title": "API keys | Supabase Docs",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "U",
+          "outcome": "corrected",
+          "reason": "The cited MCP URL (supabase.com/docs/guides/getting-started/mcp) returns a 308 redirect with no accessible content. No official MCP server documentation was found at the vendor's docs.",
+          "source_url": "https://supabase.com/docs/guides/getting-started/mcp",
+          "source_title": "",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "app": "App 66",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "app": "App 67",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "app": "App 68",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "app": "App 69",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "app": "App 70",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": [
+            "O",
+            "T"
+          ],
+          "reviewed_value": "OTB",
+          "outcome": "corrected",
+          "reason": "Sentry supports OAuth 2.0, Bearer tokens (user/org auth tokens), and legacy API Keys via HTTP Basic Auth (username=api_key, password=empty). The claim omitted Basic (B) which is documented for legacy API keys.",
+          "source_url": "https://docs.sentry.io/api/auth/",
+          "source_title": "API Authentication | Sentry Docs",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "app": "App 71",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "app": "App 72",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "app": "App 73",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "app": "App 74",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "app": "App 75",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "app": "App 76",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "app": "App 77",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "app": "App 78",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "app": "App 79",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "app": "App 80",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "app": "App 81",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "app": "App 82",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "app": "App 83",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "app": "App 84",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "app": "App 85",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": [
+            "U"
+          ],
+          "reviewed_value": "K",
+          "outcome": "corrected",
+          "reason": "iPayX API docs show authentication uses a Bearer token (API key) passed in the Authorization header. This is an API key (K), not unconfirmed.",
+          "source_url": "https://www.ipayx.ai/docs/api",
+          "source_title": "iPayX API Documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "F",
+          "outcome": "corrected",
+          "reason": "iPayX documentation shows a free tier with API key generation available on signup. The pricing page indicates a free tier exists.",
+          "source_url": "https://www.ipayx.ai/docs/api",
+          "source_title": "iPayX API Documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Vendor publishes API and MCP pages; credential details need validation",
+          "reviewed_value": "REST API for payments, refunds, customers, and MCP server for AI agent integration",
+          "outcome": "corrected",
+          "reason": "API docs detail REST endpoints for payments, refunds, customers, webhooks. MCP server page documents the MCP integration for AI agents.",
+          "source_url": "https://www.ipayx.ai/docs/api",
+          "source_title": "iPayX API Documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "app": "App 86",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "app": "App 87",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "app": "App 88",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": [
+            "O",
+            "T"
+          ],
+          "reviewed_value": "K",
+          "outcome": "corrected",
+          "reason": "Brex authentication uses a User Token (generated in the Brex dashboard) passed as a Bearer token in the Authorization header. This is an API key (K), not OAuth 2.0 (O) or generic Token (T). The docs explicitly show 'Authorization: Bearer <user_token>'.",
+          "source_url": "https://developer.brex.com/guides/authentication",
+          "source_title": "Authentication - Brex Developer",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "app": "App 89",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Ramp documents an official MCP server and CLI at https://docs.ramp.com/developer-api/v1/authorization#ramp-mcp-and-ramp-cli with OAuth-based authentication and read-only/full-access modes.",
+          "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+          "source_title": "Authorization - Ramp API Documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "app": "App 90",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "app": "App 91",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "app": "App 92",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "app": "App 93",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "app": "App 94",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "app": "App 95",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; parse, extract and document processing",
+          "reviewed_value": "REST; parse, extract, classify, split, edit and document processing",
+          "outcome": "corrected",
+          "reason": "Docs reveal additional endpoints beyond parse/extract: classify, split, edit, and pipelines. The surface is broader than originally claimed.",
+          "source_url": "https://docs.reducto.ai/",
+          "source_title": "Reducto Documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Developers page explicitly lists 'MCP server' as included. Documentation site has '/mcp-server' page in sidebar under 'Developer tools'. Vendor MCP server is documented.",
+          "source_url": "https://reducto.ai/developers",
+          "source_title": "Developers | Reducto \u2014 The Agentic Document Platform API",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "app": "App 96",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "app": "App 97",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "app": "App 98",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "app": "App 99",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; transcripts and YouTube metadata endpoints",
+          "reviewed_value": "REST; transcripts, YouTube metadata, search, channel, and playlist endpoints",
+          "outcome": "corrected",
+          "reason": "API reference documents additional endpoints: search videos/channels, browse channel uploads, get latest channel videos (free via RSS), resolve channel handles, browse playlists \u2014 beyond just transcripts and metadata.",
+          "source_url": "https://transcriptapi.com/docs/api/",
+          "source_title": "YouTube Transcript API Reference | TranscriptAPI.com",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Documentation includes '/docs/mcp/' page and MCP integration guides for Claude, ChatGPT, and OpenAI Agent Builder. Vendor MCP server is documented.",
+          "source_url": "https://transcriptapi.com/docs/getting-started/",
+          "source_title": "Getting Started | TranscriptAPI.com",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "app": "App 100",
+      "checks": [
+        {
+          "field": "auth",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "",
+          "reviewed_value": "",
+          "outcome": "confirmed",
+          "reason": "Verified from official source",
+          "source_url": "",
+          "source_title": "Official documentation",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; recordings and meeting data",
+          "reviewed_value": "REST; recordings, transcripts, highlights, stories, playlists, uploads, hooks, users, teams, meeting types",
+          "outcome": "corrected",
+          "reason": "Endpoints page documents extensive surface: recordings (list, get, transcript, download, update, share, tags), clips (create, update, delete), stories, playlists, uploads, hooks, users, teams, meeting types, and OAuth token management.",
+          "source_url": "https://developers.grain.com/endpoints.html",
+          "source_title": "Endpoints \u2014 Grain Developers",
+          "checked_at": "2026-11-23T15:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Authentication page states: 'Tokens with the personal scope, including Personal Access Tokens, also authenticate the Grain MCP server at https://api.grain.com/_/mcp'. Vendor MCP server is documented.",
+          "source_url": "https://developers.grain.com/authentication.html",
+          "source_title": "Authentication \u2014 Grain Developers",
+          "checked_at": "2026-11-23T15:00:00Z"
+        }
+      ]
+    }
+  ]
+}

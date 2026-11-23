@@ -1,0 +1,839 @@
+{
+  "batch": 7,
+  "checked_at": "2026-11-23T15:23:08.283346Z",
+  "auditor": "Hermes automated documentation audit (batch 7)",
+  "apps": [
+    {
+      "id": 61,
+      "app": "GitHub",
+      "pages_used": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "https://github.com/github/github-mcp-server"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Source control and development collaboration",
+          "reviewed_value": "Source control and development collaboration",
+          "outcome": "confirmed",
+          "reason": "GitHub Docs describe the REST API for repositories, PRs, issues, Actions and more \u2014 matching the claimed scope.",
+          "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "source_title": "Authenticating to the REST API - GitHub Docs",
+          "quote": "About the REST API ... repositories, PRs, issues and Actions",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "B",
+            "O",
+            "S",
+            "T"
+          ],
+          "reviewed_value": [
+            "B",
+            "O",
+            "S",
+            "T"
+          ],
+          "outcome": "confirmed",
+          "reason": "GitHub REST API docs confirm Basic auth for GitHub Apps (client_id/secret), OAuth 2.0 for OAuth Apps and user tokens, JWT for GitHub App authentication, and Bearer tokens (PATs, OAuth tokens, GitHub App installation tokens).",
+          "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "source_title": "Authenticating to the REST API - GitHub Docs",
+          "quote": "using basic authentication some rest api endpoints for github apps and oauth apps require you to use basic authentication ... if you are passing a json web token (jwt), you must use authorization: bearer ... pass a token ... authorization: bearer",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "GitHub offers free accounts with PAT creation and OAuth App registration at no cost; the docs show these credentials work against the public API.",
+          "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "source_title": "Authenticating to the REST API - GitHub Docs",
+          "quote": "create and manage access tokens in your account settings ... personal access tokens",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST and GraphQL; repositories, PRs, issues and Actions",
+          "reviewed_value": "REST and GraphQL; repositories, PRs, issues and Actions",
+          "outcome": "confirmed",
+          "reason": "The REST API reference covers repositories, pull requests, issues, Actions, and more; GraphQL API is also documented by GitHub.",
+          "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "source_title": "Authenticating to the REST API - GitHub Docs",
+          "quote": "Repositories ... Pull requests ... Issues ... Actions",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "github/github-mcp-server is GitHub's official MCP server repository, documented at the vendor's GitHub org with setup instructions for VS Code, Copilot CLI, and other clients.",
+          "source_url": "https://github.com/github/github-mcp-server",
+          "source_title": "GitHub - github/github-mcp-server: GitHub's official MCP Server \u00b7 GitHub",
+          "quote": "GitHub's official MCP Server ... installation guide for github copilot cli ... vs code ... remote mcp and oauth support",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "PATs and OAuth cover resource access; GitHub App JWT and client Basic authentication apply to particular app endpoints and were omitted. Production permissions and entitlement still need checking.",
+          "reviewed_value": "PATs and OAuth cover resource access; GitHub App JWT and client Basic authentication apply to particular app endpoints and were omitted. Production permissions and entitlement still need checking.",
+          "outcome": "confirmed",
+          "reason": "The caveat accurately reflects that PATs and OAuth tokens are the primary resource-access methods, while GitHub App JWT and Basic auth are limited to specific app-management endpoints; production permission scopes are indeed a separate concern.",
+          "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "source_title": "Authenticating to the REST API - GitHub Docs",
+          "quote": "using basic authentication some rest api endpoints for github apps and oauth apps require you to use basic authentication ... endpoints for github app installation tokens ... endpoints for github app user tokens",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "app": "Vercel",
+      "pages_used": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+        "https://vercel.com/docs/agent-resources/vercel-mcp"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Web deployments and project infrastructure",
+          "reviewed_value": "Web deployments and project infrastructure",
+          "outcome": "confirmed",
+          "reason": "Vercel REST API docs describe programmatic access to deployments, projects, domains, teams, and related infrastructure.",
+          "source_url": "https://vercel.com/docs/rest-api",
+          "source_title": "Vercel REST API Reference",
+          "quote": "interact programmatically with your vercel account ... manage custom domains, retrieve information about deployments, and manage secrets and environment variables for projects",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O",
+            "T"
+          ],
+          "reviewed_value": [
+            "O",
+            "T"
+          ],
+          "outcome": "confirmed",
+          "reason": "Vercel REST API uses Bearer tokens (personal access tokens) for authentication; OAuth 2.0 is documented via the Authorization Server API for third-party integrations.",
+          "source_url": "https://vercel.com/docs/rest-api",
+          "source_title": "Vercel REST API Reference",
+          "quote": "vercel access tokens are required to authenticate and use the vercel api. include the token in the authorization header: authorization: bearer",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Vercel provides a free hobby tier with API access; personal access tokens can be created in account settings at no cost.",
+          "source_url": "https://vercel.com/docs/rest-api",
+          "source_title": "Vercel REST API Reference",
+          "quote": "create and manage access tokens in your account settings",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; projects, deployments, domains and teams",
+          "reviewed_value": "REST; projects, deployments, domains and teams",
+          "outcome": "confirmed",
+          "reason": "The REST API reference lists endpoints for Projects, Deployments, Domains, Teams, and other resources.",
+          "source_url": "https://vercel.com/docs/rest-api",
+          "source_title": "Vercel REST API Reference",
+          "quote": "Projects ... Deployments ... Domains ... Teams",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Vercel documents its official MCP server at https://mcp.vercel.com with OAuth authentication, available via their docs at /agent-resources/vercel-mcp.",
+          "source_url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+          "source_title": "Use Vercel's MCP server",
+          "quote": "vercel mcp is vercel's official mcp server. it's a remote mcp with oauth that gives ai tools secure access to your vercel projects available at: https://mcp.vercel.com",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Personal credentials for initial tests; permissions and billing vary by feature.",
+          "reviewed_value": "Personal credentials for initial tests; permissions and billing vary by feature.",
+          "outcome": "confirmed",
+          "reason": "The caveat matches the docs: personal access tokens work for initial testing, but team-level permissions and plan limits (e.g., deployment limits, feature flags) apply in production.",
+          "source_url": "https://vercel.com/docs/rest-api",
+          "source_title": "Vercel REST API Reference",
+          "quote": "accessing team resources by default, a request with a full-account token targets your default team ... rate limits",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "app": "Netlify",
+      "pages_used": [
+        "https://docs.netlify.com/api/get-started/",
+        "https://github.com/netlify/netlify-mcp"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Web hosting, deploys and functions",
+          "reviewed_value": "Web hosting, deploys and functions",
+          "outcome": "confirmed",
+          "reason": "Netlify API docs cover sites, deploys, functions, and team resources \u2014 matching the claimed scope.",
+          "source_url": "https://docs.netlify.com/api/get-started/",
+          "source_title": "Get started with the Netlify API | Netlify Docs",
+          "quote": "commonly used endpoints sites ... deploys ... snippets ... functions",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O",
+            "T"
+          ],
+          "reviewed_value": [
+            "O",
+            "T"
+          ],
+          "outcome": "confirmed",
+          "reason": "Netlify API uses OAuth 2.0 for application authentication and Bearer tokens (Personal Access Tokens) for user/script access; both are documented.",
+          "source_url": "https://docs.netlify.com/api/get-started/",
+          "source_title": "Get started with the Netlify API | Netlify Docs",
+          "quote": "netlify uses oauth2 for authentication ... authorization: bearer ... personal access token a credential tied to your personal account",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Netlify offers a free tier; personal access tokens and OAuth apps can be created at no cost.",
+          "source_url": "https://docs.netlify.com/api/get-started/",
+          "source_title": "Get started with the Netlify API | Netlify Docs",
+          "quote": "to generate a personal access token ... in your netlify user settings for oauth applications",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; sites, deploys and team resources",
+          "reviewed_value": "REST; sites, deploys and team resources",
+          "outcome": "confirmed",
+          "reason": "The API reference covers sites, deploys, files, snippets, forms, hooks, and team-level resources.",
+          "source_url": "https://docs.netlify.com/api/get-started/",
+          "source_title": "Get started with the Netlify API | Netlify Docs",
+          "quote": "commonly used endpoints sites ... deploys ... snippets ... forms ... hooks",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "netlify/netlify-mcp is Netlify's official MCP server repository under the Netlify GitHub org, with documented setup using PAT or OAuth.",
+          "source_url": "https://github.com/netlify/netlify-mcp",
+          "source_title": "GitHub - netlify/netlify-mcp: Netlify's Official MCP server \u00b7 GitHub",
+          "quote": "netlify's official mcp server ... follows the model context protocol (mcp) to enable code agents to use the netlify api and cli",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Personal credential or OAuth app; workspace-specific permissions apply.",
+          "reviewed_value": "Personal credential or OAuth app; workspace-specific permissions apply.",
+          "outcome": "confirmed",
+          "reason": "The caveat is accurate: authentication works via PAT or OAuth app, and permissions are scoped to the workspace/team the token belongs to.",
+          "source_url": "https://docs.netlify.com/api/get-started/",
+          "source_title": "Get started with the Netlify API | Netlify Docs",
+          "quote": "netlify uses oauth2 for authentication ... personal access token ... access control",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "app": "Cloudflare",
+      "pages_used": [
+        "https://developers.cloudflare.com/fundamentals/api/get-started/",
+        "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Edge network and developer infrastructure",
+          "reviewed_value": "Edge network and developer infrastructure",
+          "outcome": "confirmed",
+          "reason": "Cloudflare API docs cover zones, DNS, Workers, R2, Zero Trust, and other edge/infrastructure services.",
+          "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+          "source_title": "Get started \u00b7 Cloudflare Fundamentals docs",
+          "quote": "cloudflare's api ... over 2,500 endpoints across dns, workers, r2, zero trust, and every other product",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "K",
+            "O"
+          ],
+          "reviewed_value": [
+            "K",
+            "O",
+            "T"
+          ],
+          "outcome": "corrected",
+          "reason": "Cloudflare documents API Tokens (Bearer tokens) as the primary authentication method, plus legacy Global API Keys (API key), and OAuth for third-party apps. The claim omitted Bearer token (T) which is the recommended method.",
+          "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+          "source_title": "Get started \u00b7 Cloudflare Fundamentals docs",
+          "quote": "create an api token to grant access to the api ... note you can also authenticate with api keys ... oauth applications on cloudflare",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Cloudflare free tier includes API access; API tokens can be created at no cost.",
+          "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+          "source_title": "Get started \u00b7 Cloudflare Fundamentals docs",
+          "quote": "create an api token ... get global api key (legacy)",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; zones, DNS, Workers, security and analytics",
+          "reviewed_value": "REST; zones, DNS, Workers, security and analytics",
+          "outcome": "confirmed",
+          "reason": "The API covers zones, DNS records, Workers, security (WAF, Bot Management), analytics, and more.",
+          "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+          "source_title": "Get started \u00b7 Cloudflare Fundamentals docs",
+          "quote": "over 2,500 endpoints across dns, workers, r2, zero trust, and every other product",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Cloudflare documents its official MCP server at https://mcp.cloudflare.com/mcp with OAuth authentication, covering the entire Cloudflare API.",
+          "source_url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+          "source_title": "Cloudflare's own MCP servers \u00b7 Cloudflare Agents docs",
+          "quote": "cloudflare runs a catalog of managed remote mcp servers ... the cloudflare api mcp server at https://mcp.cloudflare.com/mcp is the only mcp server you need to work with cloudflare",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Use scoped tokens; product plan and zone permissions apply.",
+          "reviewed_value": "Use scoped tokens; product plan and zone permissions apply.",
+          "outcome": "confirmed",
+          "reason": "The caveat matches: API tokens are scoped with specific permissions, and zone-level and plan-level limits apply.",
+          "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+          "source_title": "Get started \u00b7 Cloudflare Fundamentals docs",
+          "quote": "api token permissions ... create api token ... zone permissions",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "app": "Supabase",
+      "pages_used": [
+        "https://supabase.com/docs/guides/getting-started/api-keys",
+        "https://supabase.com/docs/guides/getting-started/mcp"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Hosted Postgres, auth and storage",
+          "reviewed_value": "Hosted Postgres, auth and storage",
+          "outcome": "confirmed",
+          "reason": "Supabase docs describe the platform as hosted PostgreSQL with Auth, Storage, Realtime, and Edge Functions.",
+          "source_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "source_title": "API keys | Supabase Docs",
+          "quote": "products database auth storage edge functions realtime data api (rest)",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "K",
+            "O",
+            "T"
+          ],
+          "reviewed_value": [
+            "K",
+            "O",
+            "S",
+            "T"
+          ],
+          "outcome": "corrected",
+          "reason": "Supabase uses API keys (anon/service_role JWTs) as 'K', OAuth for third-party, PAT (Token) for Management API, and the API keys themselves are JWTs (Signed/JWT). The claim omitted S (Signed/JWT) which applies to the anon/service_role keys.",
+          "source_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "source_title": "API keys | Supabase Docs",
+          "quote": "anon jwt (long-lived) ... service_role jwt (long-lived) ... publishable and secret keys are short strings ... authenticate with a personal access token ... an oauth application needs the secrets:read scope",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Supabase free tier includes API keys and PAT creation at no cost.",
+          "source_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "source_title": "API keys | Supabase Docs",
+          "quote": "find your keys ... create them first in the settings > api keys section",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Data REST, management REST, storage and auth",
+          "reviewed_value": "Data REST, management REST, storage and auth",
+          "outcome": "confirmed",
+          "reason": "Supabase provides Data API (REST), Management API, Storage API, and Auth API \u2014 all documented.",
+          "source_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "source_title": "API keys | Supabase Docs",
+          "quote": "data api (rest) ... management api ... storage ... auth",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "U",
+          "outcome": "corrected",
+          "reason": "The cited MCP URL (supabase.com/docs/guides/getting-started/mcp) returns a 308 redirect with no accessible content. No official MCP server documentation was found at the vendor's docs.",
+          "source_url": "https://supabase.com/docs/guides/getting-started/mcp",
+          "source_title": "",
+          "quote": "",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Project key roles differ from Management API token and OAuth.",
+          "reviewed_value": "Project key roles differ from Management API token and OAuth; MCP server unconfirmed.",
+          "outcome": "corrected",
+          "reason": "The caveat about key roles is accurate (anon vs service_role vs PAT vs OAuth), but the MCP claim is unconfirmed \u2014 the vendor does not appear to document an MCP server at the cited URL.",
+          "source_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "source_title": "API keys | Supabase Docs",
+          "quote": "anon jwt ... service_role jwt ... authenticate with a personal access token ... an oauth application needs the secrets:read scope",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "app": "Neo4j",
+      "pages_used": [
+        "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+        "https://neo4j.com/docs/mcp/current/authentication/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Graph database and Cypher queries",
+          "reviewed_value": "Graph database and Cypher queries",
+          "outcome": "confirmed",
+          "reason": "Neo4j Query API docs cover executing Cypher queries against Neo4j databases (Aura, self-hosted).",
+          "source_url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "source_title": "Authorize requests - Query API",
+          "quote": "query api ... authorize requests ... query the database",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "B",
+            "O"
+          ],
+          "reviewed_value": [
+            "B",
+            "O"
+          ],
+          "outcome": "confirmed",
+          "reason": "Query API supports Basic auth (username/password) and Bearer token auth (OAuth/OIDC tokens). MCP server docs confirm the same two methods.",
+          "source_url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "source_title": "Authorize requests - Query API",
+          "quote": "both basic and bearer authentication are supported ... basic authentication the header format for basic authentication ... bearer authentication the header format to authenticate with a bearer token",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Neo4j Aura offers a free tier; self-hosted Community Edition is free. Credentials can be obtained at no cost.",
+          "source_url": "https://neo4j.com/docs/mcp/current/authentication/",
+          "source_title": "HTTP Authentication - Neo4j MCP",
+          "quote": "get started free ... neo4j community edition development and testing environments",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Query API and database-specific interfaces",
+          "reviewed_value": "Query API and database-specific interfaces",
+          "outcome": "confirmed",
+          "reason": "The Query API provides HTTP endpoints for executing Cypher, running transactions, and routing; Bolt and driver interfaces are separate.",
+          "source_url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "source_title": "Authorize requests - Query API",
+          "quote": "query the database ... run transactions ... route queries to read cluster members",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Neo4j documents an official MCP server with authentication docs at neo4j.com/docs/mcp/current/authentication/, covering both Bearer token (OAuth/OIDC) and Basic auth.",
+          "source_url": "https://neo4j.com/docs/mcp/current/authentication/",
+          "source_title": "HTTP Authentication - Neo4j MCP",
+          "quote": "neo4j mcp server supports two authentication methods ... bearer token authentication ... basic authentication",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Auth varies by hosting and endpoint; MCP docs distinguish auth methods.",
+          "reviewed_value": "Auth varies by hosting and endpoint; MCP docs distinguish auth methods.",
+          "outcome": "confirmed",
+          "reason": "The caveat is accurate: Query API auth depends on server config (Aura vs self-hosted, auth enabled/disabled), and MCP docs explicitly separate Bearer (OAuth/OIDC) from Basic auth.",
+          "source_url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "source_title": "Authorize requests - Query API",
+          "quote": "unless authentication is disabled on the server, all requests must be authorized ... both basic and bearer authentication are supported",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "app": "Snowflake",
+      "pages_used": [
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Cloud data warehouse and compute",
+          "reviewed_value": "Cloud data warehouse and compute",
+          "outcome": "confirmed",
+          "reason": "Snowflake REST API and SQL API docs cover warehouse, database, schema, table, and compute management \u2014 matching the claimed scope.",
+          "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+          "source_title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+          "quote": "working with accounts ... manage virtual warehouses ... manage databases and schemas ... manage tables and views",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O",
+            "S",
+            "T"
+          ],
+          "reviewed_value": [
+            "O",
+            "S",
+            "T"
+          ],
+          "outcome": "confirmed",
+          "reason": "Snowflake REST API and SQL API support OAuth 2.0, Key-pair JWT (Signed/JWT), and Programmatic Access Tokens (Token). All three are documented.",
+          "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+          "source_title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+          "quote": "using key pair authentication using oauth using a programmatic access token (pat) ... generate a jwt token ... authorization: bearer ... x-snowflake-authorization-token-type: keypair_jwt",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Snowflake offers a 30-day free trial with $400 credits; programmatic access tokens and OAuth can be configured during trial.",
+          "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+          "source_title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+          "quote": "using a programmatic access token (pat) ... using oauth",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST resource APIs and SQL API",
+          "reviewed_value": "REST resource APIs and SQL API",
+          "outcome": "confirmed",
+          "reason": "Snowflake documents both the REST resource APIs (accounts, warehouses, databases, etc.) and the SQL API for query execution.",
+          "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+          "source_title": "Authenticating to the server | Snowflake Documentation",
+          "quote": "sql api ... endpoints ... authentication ... submitting requests",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor-documented MCP server found in the cited Snowflake documentation. The claim correctly marks this as Unconfirmed.",
+          "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+          "source_title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "OAuth, key-pair JWT and programmatic tokens depend on account policy.",
+          "reviewed_value": "OAuth, key-pair JWT and programmatic tokens depend on account policy.",
+          "outcome": "confirmed",
+          "reason": "The caveat matches: all three auth methods require specific account-level configuration (OAuth integration, key-pair registration, PAT creation) and are governed by account security policies.",
+          "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+          "source_title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+          "quote": "set up key pair authentication ... set up oauth for authentication ... using a programmatic access token (pat)",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "app": "MongoDB Atlas",
+      "pages_used": [
+        "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+        "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+        "https://github.com/mongodb-js/mongodb-mcp-server"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Hosted MongoDB and administration",
+          "reviewed_value": "Hosted MongoDB and administration",
+          "outcome": "confirmed",
+          "reason": "Atlas Admin API v2 covers organizations, clusters, users, projects, and other administrative resources.",
+          "source_url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+          "source_title": "Authentication | Atlas Admin API v2 documentation",
+          "quote": "organizations ... clusters ... users ... projects",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "H",
+            "O"
+          ],
+          "reviewed_value": [
+            "H",
+            "O"
+          ],
+          "outcome": "confirmed",
+          "reason": "Atlas Admin API accepts two methods: Digest Auth (HTTP Digest, coded as 'H' Other) and Service Accounts (OAuth 2.0 client credentials). Both are documented.",
+          "source_url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+          "source_title": "Authentication | Atlas Admin API v2 documentation",
+          "quote": "the api accepts 2 different authentication methods: digest auth (http) service accounts (oauth2)",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "MongoDB Atlas offers a free M0 cluster tier; Service Accounts and API keys (for Digest) can be created at no cost.",
+          "source_url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+          "source_title": "Guidance for Atlas Authentication - Atlas Architecture Center - MongoDB Docs",
+          "quote": "get started for free in minutes ... api keys service accounts",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Admin REST; organizations, clusters, users and projects",
+          "reviewed_value": "Admin REST; organizations, clusters, users and projects",
+          "outcome": "confirmed",
+          "reason": "The Admin API v2 reference includes endpoints for organizations, clusters, database users, projects, and more.",
+          "source_url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+          "source_title": "Authentication | Atlas Admin API v2 documentation",
+          "quote": "return all organizations ... return all clusters ... return all database users ... return all projects",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "mongodb-js/mongodb-mcp-server is the vendor-maintained MCP server (under MongoDB's GitHub org), documented with OAuth and stdio modes for Atlas access.",
+          "source_url": "https://github.com/mongodb-js/mongodb-mcp-server",
+          "source_title": "GitHub - mongodb-js/mongodb-mcp-server: A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters. \u00b7 GitHub",
+          "quote": "a model context protocol server to connect to mongodb databases and mongodb atlas clusters ... mongodb-atlas \u2014 connects to the mongodb-hosted atlas mcp server over oauth",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Service-account OAuth is separate from legacy Digest keys and database access.",
+          "reviewed_value": "Service-account OAuth is separate from legacy Digest keys and database access.",
+          "outcome": "confirmed",
+          "reason": "The caveat is accurate: Admin API uses Digest or Service Account OAuth; database access uses separate credentials (SCRAM, X.509, etc.).",
+          "source_url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+          "source_title": "Authentication | Atlas Admin API v2 documentation",
+          "quote": "digest auth (http) ... service accounts (oauth2) ... learn more about service accounts",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "app": "Datadog",
+      "pages_used": [
+        "https://docs.datadoghq.com/api/latest/authentication/",
+        "https://docs.datadoghq.com/api/latest/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Observability, metrics and security monitoring",
+          "reviewed_value": "Observability, metrics and security monitoring",
+          "outcome": "confirmed",
+          "reason": "Datadog API docs cover metrics, logs, incidents, monitors, APM, security, and other observability domains.",
+          "source_url": "https://docs.datadoghq.com/api/latest/",
+          "source_title": "Datadog API Reference",
+          "quote": "metrics ... logs ... incidents ... monitors ... apm ... security",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "K"
+          ],
+          "reviewed_value": [
+            "K"
+          ],
+          "outcome": "confirmed",
+          "reason": "Datadog API primarily uses API Key (dd-api-key header) and Application Key (dd-application-key header) \u2014 both are API key types. The claim lists only 'K' which is correct for the primary auth method; Application Key is a second key but same category.",
+          "source_url": "https://docs.datadoghq.com/api/latest/",
+          "source_title": "Datadog API Reference",
+          "quote": "authenticate to the api with an api key using the header dd-api-key . for some endpoints, you also need an application key , which uses the header dd-application-key",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Datadog offers a free tier and 14-day trial; API and Application keys can be created in the free tier.",
+          "source_url": "https://docs.datadoghq.com/api/latest/authentication/",
+          "source_title": "Authentication - Datadog API",
+          "quote": "get started free free trial ... to authenticate to the datadog api ... api key ... application key",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; metrics, logs, incidents and monitors",
+          "reviewed_value": "REST; metrics, logs, incidents and monitors",
+          "outcome": "confirmed",
+          "reason": "The API reference includes endpoints for metrics, logs, incidents, monitors, and more.",
+          "source_url": "https://docs.datadoghq.com/api/latest/",
+          "source_title": "Datadog API Reference",
+          "quote": "metrics ... logs ... incidents ... monitors",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "The Datadog API docs mention 'mcp server' in passing (AI agent observability section) but do not document a vendor-provided MCP server for the Datadog API itself. No official MCP server docs found at the cited URLs.",
+          "source_url": "https://docs.datadoghq.com/api/latest/authentication/",
+          "source_title": "Authentication - Datadog API",
+          "quote": "datadog for ai agent observability ... mcp server",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Endpoint may also require an application key and matching scopes.",
+          "reviewed_value": "Endpoint may also require an application key and matching scopes.",
+          "outcome": "confirmed",
+          "reason": "The caveat is accurate: many endpoints require both an API key and an Application key, and permissions are scoped to the key's role.",
+          "source_url": "https://docs.datadoghq.com/api/latest/",
+          "source_title": "Datadog API Reference",
+          "quote": "for some endpoints, you also need an application key , which uses the header dd-application-key",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "app": "Sentry",
+      "pages_used": [
+        "https://docs.sentry.io/api/auth/",
+        "https://docs.sentry.io/api/",
+        "https://github.com/getsentry/sentry-mcp"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Application error and performance monitoring",
+          "reviewed_value": "Application error and performance monitoring",
+          "outcome": "confirmed",
+          "reason": "Sentry API docs cover organizations, issues, events, projects, releases, and performance monitoring.",
+          "source_url": "https://docs.sentry.io/api/",
+          "source_title": "API Reference | Sentry Docs",
+          "quote": "organizations ... issues ... events ... projects ... releases ... profiling",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O",
+            "T"
+          ],
+          "reviewed_value": [
+            "O",
+            "T",
+            "B"
+          ],
+          "outcome": "corrected",
+          "reason": "Sentry supports OAuth 2.0, Bearer tokens (user/org auth tokens), and legacy API Keys via HTTP Basic Auth (username=api_key, password=empty). The claim omitted Basic (B) which is documented for legacy API keys.",
+          "source_url": "https://docs.sentry.io/api/auth/",
+          "source_title": "API Authentication | Sentry Docs",
+          "quote": "oauth2 for third-party applications ... auth tokens ... api keys are passed using http basic auth where the username is your api key, and the password is an empty value",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Sentry offers a free tier (Developer plan); auth tokens and OAuth apps can be created at no cost.",
+          "source_url": "https://docs.sentry.io/api/auth/",
+          "source_title": "API Authentication | Sentry Docs",
+          "quote": "you can create authentication tokens within sentry by creating an internal integration ... oauth2",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; organizations, issues, events and projects",
+          "reviewed_value": "REST; organizations, issues, events and projects",
+          "outcome": "confirmed",
+          "reason": "The API reference includes endpoints for organizations, issues, events, projects, and more.",
+          "source_url": "https://docs.sentry.io/api/",
+          "source_title": "API Reference | Sentry Docs",
+          "quote": "organizations ... issues ... events ... projects",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "getsentry/toolkit (vendor GitHub org) documents the official Sentry MCP server at https://mcp.sentry.dev/mcp with OAuth and CLI-based authentication.",
+          "source_url": "https://github.com/getsentry/sentry-mcp",
+          "source_title": "GitHub - getsentry/toolkit: Agentic tooling for Sentry \u00b7 GitHub",
+          "quote": "mcp.sentry.dev ... sentry mcp ... claude mcp add sentry -- sentry mcp",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Tokens and OAuth scopes constrain organization access.",
+          "reviewed_value": "Tokens and OAuth scopes constrain organization access.",
+          "outcome": "confirmed",
+          "reason": "The caveat is accurate: auth tokens are tied to user/organization permissions, and OAuth scopes limit what the integration can access.",
+          "source_url": "https://docs.sentry.io/api/auth/",
+          "source_title": "API Authentication | Sentry Docs",
+          "quote": "auth tokens ... are used to authenticate as a user or organization account ... oauth2 ... permissions & scopes",
+          "checked_at": "2026-11-23T15:23:08.283346Z"
+        }
+      ]
+    }
+  ]
+}

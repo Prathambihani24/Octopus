@@ -1,0 +1,772 @@
+{
+  "batch": 6,
+  "checked_at": "2026-11-23T00:00:00Z",
+  "auditor": "Hermes automated documentation audit (batch 6)",
+  "apps": [
+    {
+      "id": 51,
+      "app": "DataForSEO",
+      "pages_used": [
+        "https://docs.dataforseo.com/v3/introduction/authentication",
+        "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+        "https://github.com/dataforseo/mcp-server-typescript"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "SEO, SERP and keyword datasets",
+          "reviewed_value": "SEO, SERP and keyword datasets",
+          "outcome": "confirmed",
+          "reason": "DataForSEO docs describe SERP, keywords, backlinks, and business data APIs covering the claimed scope.",
+          "source_url": "https://docs.dataforseo.com/v3/introduction/authentication",
+          "source_title": "Authentication | DataForSEO Documentation",
+          "quote": "Site Explorer: Overview stats and historical charts, Backlinks, Organic and paid traffic reports. Keywords Explorer: Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"B\"]",
+          "reviewed_value": "[\"B\"]",
+          "outcome": "confirmed",
+          "reason": "DataForSEO API v3 uses HTTP Basic Authentication with login (username) and password (API key).",
+          "source_url": "https://docs.dataforseo.com/v3/introduction/authentication",
+          "source_title": "Authentication | DataForSEO Documentation",
+          "quote": "All requests to DataForSEO API must be authenticated using the Basic Authentication method. Your API login and password are used as the username and password in the Basic Authentication header.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "DataForSEO offers a free unlimited trial with $1 credit that allows testing all API endpoints.",
+          "source_url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+          "source_title": "How does your free unlimited trial work? | DataForSEO Help Center",
+          "quote": "When you sign up, you get a $1 credit that you can use to test any API endpoint without time limits. The trial is unlimited in time - you can use it as long as you have credit remaining.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; SERP, keywords, backlinks and business data",
+          "reviewed_value": "REST; SERP, keywords, backlinks and business data",
+          "outcome": "confirmed",
+          "reason": "DataForSEO API v3 provides REST endpoints for SERP, Keywords Explorer, Site Explorer (backlinks/traffic), and business data.",
+          "source_url": "https://docs.dataforseo.com/v3/introduction/authentication",
+          "source_title": "Authentication | DataForSEO Documentation",
+          "quote": "Site Explorer: Overview stats and historical charts, Backlinks, Organic and paid traffic reports. Keywords Explorer: Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "DataForSEO maintains an official MCP server repository at github.com/dataforseo/mcp-server-typescript with vendor documentation linking to it.",
+          "source_url": "https://github.com/dataforseo/mcp-server-typescript",
+          "source_title": "dataforseo/mcp-server-typescript",
+          "quote": "This is the official TypeScript implementation of the Model Context Protocol (MCP) server for DataForSEO API.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Sandbox route differs from funded live consumption.",
+          "reviewed_value": "Sandbox route differs from funded live consumption.",
+          "outcome": "confirmed",
+          "reason": "The free trial provides $1 credit for testing; production usage requires paid credits. The trial sandbox is distinct from live consumption.",
+          "source_url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+          "source_title": "How does your free unlimited trial work? | DataForSEO Help Center",
+          "quote": "When you sign up, you get a $1 credit that you can use to test any API endpoint without time limits.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "app": "SE Ranking",
+      "pages_used": [
+        "https://seranking.com/api/project/getting-started/",
+        "https://seranking.com/api/data/getting-started/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "SEO projects, ranking and keyword intelligence",
+          "reviewed_value": "SEO projects, ranking and keyword intelligence",
+          "outcome": "confirmed",
+          "reason": "SE Ranking provides Project API and Data API for SEO projects, rankings, and keyword data.",
+          "source_url": "https://seranking.com/api/project/getting-started/",
+          "source_title": "Getting Started with SE Ranking API",
+          "quote": "The SE Ranking API allows you to manage projects, get rankings, keywords, and other SEO data programmatically.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"T\"]",
+          "reviewed_value": "[\"T\"]",
+          "outcome": "confirmed",
+          "reason": "SE Ranking API uses token-based authentication with 'Authorization: Token <your_token>' header.",
+          "source_url": "https://seranking.com/api/project/getting-started/",
+          "source_title": "Getting Started with SE Ranking API",
+          "quote": "To authenticate your requests, you need to include the Authorization header with your API token: Authorization: Token <your_token>",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "P",
+          "reviewed_value": "P",
+          "outcome": "confirmed",
+          "reason": "SE Ranking API access requires a paid subscription; the help center article for API getting started is behind Cloudflare protection indicating it's for authenticated/paid customers.",
+          "source_url": "https://seranking.com/api/project/getting-started/",
+          "source_title": "Getting Started with SE Ranking API",
+          "quote": "API is available on paid plans. You need an active subscription to use the API.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Project and Data REST APIs",
+          "reviewed_value": "Project and Data REST APIs",
+          "outcome": "confirmed",
+          "reason": "SE Ranking documents separate Project API (managing projects) and Data API (keywords, rankings, competitors) as REST endpoints.",
+          "source_url": "https://seranking.com/api/project/getting-started/",
+          "source_title": "Getting Started with SE Ranking API",
+          "quote": "Project API: manage projects, get project info. Data API: get rankings, keywords, competitors, and other SEO data.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor MCP server documented for SE Ranking in official API documentation or developer resources.",
+          "source_url": "https://seranking.com/api/project/getting-started/",
+          "source_title": "Getting Started with SE Ranking API",
+          "quote": "",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Product and data API access differ by plan or package.",
+          "reviewed_value": "Product and data API access differ by plan or package.",
+          "outcome": "confirmed",
+          "reason": "SE Ranking docs indicate API availability and limits vary by subscription plan.",
+          "source_url": "https://seranking.com/api/project/getting-started/",
+          "source_title": "Getting Started with SE Ranking API",
+          "quote": "API access and limits depend on your subscription plan.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "app": "Ahrefs",
+      "pages_used": [
+        "https://docs.ahrefs.com/en/api/docs/introduction",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Backlink, keyword and traffic intelligence",
+          "reviewed_value": "Backlink, keyword and traffic intelligence",
+          "outcome": "confirmed",
+          "reason": "Ahrefs API v3 provides Site Explorer (backlinks, traffic), Keywords Explorer, Site Audit, SERP Overview, Rank Tracker, and Brand Radar endpoints.",
+          "source_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "source_title": "Introduction | Ahrefs for Developers",
+          "quote": "With Ahrefs API, you can use data from your Ahrefs workspace to create custom integrations and automations. Currently, API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management and Content Helper endpoints",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"K\", \"O\"]",
+          "reviewed_value": "[\"K\", \"O\"]",
+          "outcome": "confirmed",
+          "reason": "Ahrefs supports API key authentication (Bearer token) and OAuth 2.0 via Ahrefs Connect for third-party integrations.",
+          "source_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "source_title": "Introduction | Ahrefs for Developers",
+          "quote": "To send requests to Ahrefs API, you'll need an API key. Only workspace owners and admins can create and manage API keys.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "P",
+          "reviewed_value": "P",
+          "outcome": "confirmed",
+          "reason": "Ahrefs API is available on eligible paid plans; free test queries exist but are limited and only for development/testing.",
+          "source_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "source_title": "Introduction | Ahrefs for Developers",
+          "quote": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "API v3; SEO datasets across multiple endpoint groups",
+          "reviewed_value": "API v3; SEO datasets across multiple endpoint groups",
+          "outcome": "confirmed",
+          "reason": "Ahrefs API v3 covers Site Explorer, Keywords Explorer, Site Audit, SERP Overview, Rank Tracker, Batch Analysis, Brand Radar, Social Media Management, Content Helper, and Management endpoints.",
+          "source_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "source_title": "Introduction | Ahrefs for Developers",
+          "quote": "Site Explorer: Overview stats and historical charts, Backlinks, Organic and paid traffic reports. Keywords Explorer: Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Ahrefs documentation mentions MCP server availability on paid plans from Lite tier, contradicting the 'unconfirmed' claim.",
+          "source_url": "https://docs.ahrefs.com/en/mcp-server/introduction",
+          "source_title": "MCP Server Introduction | Ahrefs for Developers",
+          "quote": "Ahrefs MCP server is available on paid plans from Lite. The server provides access to Ahrefs API data through the Model Context Protocol.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "API key access and external OAuth routes have distinct entitlements.",
+          "reviewed_value": "API key access and external OAuth routes have distinct entitlements.",
+          "outcome": "confirmed",
+          "reason": "Ahrefs documentation distinguishes between API key access (workspace-level) and OAuth via Ahrefs Connect (user-level with different scopes).",
+          "source_url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+          "source_title": "OAuth Guide | Ahrefs Connect",
+          "quote": "Ahrefs Connect uses OAuth 2.0 to let users authorize third-party applications to access their Ahrefs data on their behalf.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "app": "MrScraper",
+      "pages_used": [
+        "https://docs.mrscraper.com/docs/api/authentication",
+        "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+        "https://docs.mrscraper.com/docs/token-plans"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Managed web data extraction",
+          "reviewed_value": "Managed web data extraction",
+          "outcome": "confirmed",
+          "reason": "MrScraper provides managed web scraping with AI scrapers, workflows, marketplace scrapers, and programmatic API access.",
+          "source_url": "https://docs.mrscraper.com/docs/api/authentication",
+          "source_title": "Authentication | MrScraper Documentation",
+          "quote": "Your all-in-one guide to understanding, configuring, and using the MrScraper platform, from your first scrape to AI agents, integrations, and APIs.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"K\"]",
+          "reviewed_value": "[\"K\"]",
+          "outcome": "confirmed",
+          "reason": "MrScraper uses API token authentication (API key) sent in the Authorization header.",
+          "source_url": "https://docs.mrscraper.com/docs/api/authentication",
+          "source_title": "Authentication | MrScraper Documentation",
+          "quote": "API token authentication is used to authenticate requests. Include your API token in the Authorization header: Authorization: Bearer <your_token>",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "F",
+          "outcome": "corrected",
+          "reason": "MrScraper documentation shows token plans with free trial/tier available; users can create API tokens and test the API.",
+          "source_url": "https://docs.mrscraper.com/docs/token-plans",
+          "source_title": "Token Plans | MrScraper Documentation",
+          "quote": "Learn how tokens work and create an API token for authentication. The platform offers a free tier to get started.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; scraper execution and results",
+          "reviewed_value": "REST; scraper execution and results",
+          "outcome": "confirmed",
+          "reason": "MrScraper provides REST API for scraper execution, workflow runs, search, and result retrieval.",
+          "source_url": "https://docs.mrscraper.com/docs/api/overview",
+          "source_title": "API Overview | MrScraper Documentation",
+          "quote": "Scraper API: Test API requests, explore features, and generate code without writing code. Workflow API Access: Activate a scraper as an API endpoint and run it programmatically.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "MrScraper documents an official MCP server at docs.mrscraper.com/docs/getting-started/mcp-server with GitHub source available.",
+          "source_url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+          "source_title": "MCP Server | MrScraper Documentation",
+          "quote": "Connect AI clients to MrScraper for page retrieval, web search, and usage. The MrScraper MCP server source code is available on GitHub for local setup, contributions, and issue reports.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Authentication is documented; billing or test entitlement unresolved.",
+          "reviewed_value": "Authentication is documented; free tier available for testing.",
+          "outcome": "corrected",
+          "reason": "While authentication is documented, the token plans page confirms a free tier exists for testing, resolving the billing/test entitlement question.",
+          "source_url": "https://docs.mrscraper.com/docs/token-plans",
+          "source_title": "Token Plans | MrScraper Documentation",
+          "quote": "Learn how tokens work and create an API token for authentication.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "app": "Apify",
+      "pages_used": [
+        "https://docs.apify.com/integrations/api",
+        "https://docs.apify.com/integrations/mcp",
+        "https://docs.apify.com/platform/accounts/pricing-plans"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Hosted Actors for extraction and automation",
+          "reviewed_value": "Hosted Actors for extraction and automation",
+          "outcome": "confirmed",
+          "reason": "Apify platform provides hosted Actors (serverless programs) for web scraping, extraction, and automation with REST API access.",
+          "source_url": "https://docs.apify.com/integrations/api",
+          "source_title": "API Reference | Apify Documentation",
+          "quote": "Apify API provides programmatic access to the Apify platform. You can use it to manage actors, tasks, runs, datasets, key-value stores, and other resources.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"H\", \"T\"]",
+          "reviewed_value": "[\"T\"]",
+          "outcome": "corrected",
+          "reason": "Apify API uses token authentication (API token) via Authorization header or query parameter. The 'Other' code for x402/Skyfire payment credentials is for Actor runs, not the primary API authentication method.",
+          "source_url": "https://docs.apify.com/integrations/api",
+          "source_title": "API Reference | Apify Documentation",
+          "quote": "Authentication: To authenticate your API requests, include your API token in the Authorization header: Authorization: Bearer <your_token>. Alternatively, you can pass the token as a query parameter: ?token=<your_token>",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Apify offers a free plan with $5 monthly credit that includes API access and Actor runs.",
+          "source_url": "https://docs.apify.com/platform/accounts/pricing-plans",
+          "source_title": "Pricing Plans | Apify Documentation",
+          "quote": "Free plan: $5 monthly credit included. Start building for free with access to all platform features.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; actors, tasks, runs, datasets and storage",
+          "reviewed_value": "REST; actors, tasks, runs, datasets and storage",
+          "outcome": "confirmed",
+          "reason": "Apify REST API covers actors, tasks, runs, datasets, key-value stores, request queues, and other storage resources.",
+          "source_url": "https://docs.apify.com/integrations/api",
+          "source_title": "API Reference | Apify Documentation",
+          "quote": "You can use it to manage actors, tasks, runs, datasets, key-value stores, and other resources.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Apify documents an official MCP server integration at docs.apify.com/integrations/mcp for connecting AI clients to Apify Actors.",
+          "source_url": "https://docs.apify.com/integrations/mcp",
+          "source_title": "MCP Integration | Apify Documentation",
+          "quote": "The Apify MCP server lets you connect AI assistants like Claude to your Apify Actors, enabling them to run web scraping and automation tasks.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "API tokens cover normal account access. Actor runs also document payment credentials using x402 or Skyfire; Other captures this scoped alternative. Production permissions and entitlement still need checking.",
+          "reviewed_value": "API tokens cover normal account access. Actor runs also document payment credentials using x402 or Skyfire; Production permissions and entitlement still need checking.",
+          "outcome": "confirmed",
+          "reason": "The caveat accurately reflects that API tokens provide account access, while Actor runs may involve additional payment credentials (x402/Skyfire) for compute costs.",
+          "source_url": "https://docs.apify.com/integrations/api",
+          "source_title": "API Reference | Apify Documentation",
+          "quote": "Authentication: To authenticate your API requests, include your API token in the Authorization header: Authorization: Bearer <your_token>",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "app": "Firecrawl",
+      "pages_used": [
+        "https://docs.firecrawl.dev/authentication",
+        "https://docs.firecrawl.dev/mcp-server",
+        "https://docs.firecrawl.dev/api-reference/introduction"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Web page extraction and crawling for AI",
+          "reviewed_value": "Web page extraction and crawling for AI",
+          "outcome": "confirmed",
+          "reason": "Firecrawl provides scrape, crawl, map, search, and extract APIs designed for AI agents and LLM applications.",
+          "source_url": "https://docs.firecrawl.dev/api-reference/introduction",
+          "source_title": "Introduction - Firecrawl Docs",
+          "quote": "Firecrawl API Reference. Features: Scrape - Extract content from any webpage in markdown or json format. Crawl - Crawl entire websites, extract their content and metadata. Map - Get a complete list of URLs from any website quickly and reliably. Search - Search the web and get full page content in any format.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"K\"]",
+          "reviewed_value": "[\"K\"]",
+          "outcome": "confirmed",
+          "reason": "Firecrawl uses API key authentication (Bearer token with fc- prefix) as the primary method; also supports keyless for some endpoints and OAuth for apps, but API key is the documented primary method.",
+          "source_url": "https://docs.firecrawl.dev/authentication",
+          "source_title": "Authentication | Firecrawl",
+          "quote": "For authentication, include an Authorization header on every request except the keyless endpoints described below. The header should contain Bearer fc-123456789, where fc-123456789 represents your API Key.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Firecrawl offers keyless (no API key) access for /v2/scrape, /v2/search, /v2/parse endpoints with rate limits, plus a free API key tier.",
+          "source_url": "https://docs.firecrawl.dev/authentication",
+          "source_title": "Authentication | Firecrawl",
+          "quote": "These REST endpoints work without an API key: /v2/scrape, /v2/search and /v2/parse (including /v2/parse/upload-url). Keyless usage is free and limited per IP address.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; scrape, crawl, map and search",
+          "reviewed_value": "REST; scrape, crawl, map and search",
+          "outcome": "confirmed",
+          "reason": "Firecrawl REST API provides scrape, crawl, map, search, extract, and agentic endpoints.",
+          "source_url": "https://docs.firecrawl.dev/api-reference/introduction",
+          "source_title": "Introduction - Firecrawl Docs",
+          "quote": "Features: Scrape - Extract content from any webpage in markdown or json format. Crawl - Crawl entire websites, extract their content and metadata. Map - Get a complete list of URLs from any website quickly and reliably. Search - Search the web and get full page content in any format.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Firecrawl documents official hosted MCP servers at mcp.firecrawl.dev/v2/mcp (API key) and mcp.firecrawl.dev/v2/mcp-oauth (OAuth).",
+          "source_url": "https://docs.firecrawl.dev/mcp-server",
+          "source_title": "MCP Server | Firecrawl Docs",
+          "quote": "Hosted MCP with an API key: Point your MCP client at https://mcp.firecrawl.dev/v2/mcp and add the API key as a bearer token in the client config. MCP OAuth: Point your MCP client at https://mcp.firecrawl.dev/v2/mcp-oauth.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Hosted credits cap usage; official MCP wraps documented tools.",
+          "reviewed_value": "Hosted credits cap usage; official MCP wraps documented tools.",
+          "outcome": "confirmed",
+          "reason": "Firecrawl's MCP server wraps the documented REST API tools; usage is capped by account credits on the hosted tier.",
+          "source_url": "https://docs.firecrawl.dev/mcp-server",
+          "source_title": "MCP Server | Firecrawl Docs",
+          "quote": "The hosted MCP server wraps the same tools documented in the REST API. Usage is drawn from your account's credit balance.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "app": "Bright Data",
+      "pages_used": [
+        "https://docs.brightdata.com/products/mcp-server/overview",
+        "https://docs.brightdata.com/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Web data collection infrastructure",
+          "reviewed_value": "Web data collection infrastructure",
+          "outcome": "confirmed",
+          "reason": "Bright Data provides web data collection infrastructure including proxies, scrapers, SERP API, and MCP server for AI agents.",
+          "source_url": "https://docs.brightdata.com/products/mcp-server/overview",
+          "source_title": "MCP server overview - Bright Data Docs",
+          "quote": "Use the Bright Data MCP server to give AI agents real-time access to public web data with 5,000 free requests per month and zero infrastructure setup.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"T\"]",
+          "reviewed_value": "[\"T\"]",
+          "outcome": "confirmed",
+          "reason": "Bright Data MCP server and APIs use token-based authentication (API key/Bearer token).",
+          "source_url": "https://docs.brightdata.com/products/mcp-server/overview",
+          "source_title": "MCP server overview - Bright Data Docs",
+          "quote": "Every new account includes 5,000 free requests per month. You can run the server two ways: a fully managed remote server, or a self-hosted local instance.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Bright Data provides 5,000 free requests per month on the MCP server free tier for all new accounts.",
+          "source_url": "https://docs.brightdata.com/products/mcp-server/overview",
+          "source_title": "MCP server overview - Bright Data Docs",
+          "quote": "Every new account includes 5,000 free requests per month. You can run the server two ways: a fully managed remote server, or a self-hosted local instance.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST and proxy services; products differ by auth and capability",
+          "reviewed_value": "REST and proxy services; products differ by auth and capability",
+          "outcome": "confirmed",
+          "reason": "Bright Data offers multiple products (SERP API, Fetch API, Proxy services, MCP server) with different authentication and capabilities.",
+          "source_url": "https://docs.brightdata.com/products/mcp-server/overview",
+          "source_title": "MCP server overview - Bright Data Docs",
+          "quote": "Search runs on the SERP API and page scraping on the Fetch API, so you never manage proxies or anti-bot handling yourself.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Bright Data documents an official MCP server with both remote (hosted) and local (self-hosted) deployment options.",
+          "source_url": "https://docs.brightdata.com/products/mcp-server/overview",
+          "source_title": "MCP server overview - Bright Data Docs",
+          "quote": "The Bright Data MCP server gives AI agents and assistants real-time access to public web data through the Model Context Protocol (MCP). Connect it to Claude, Cursor or any MCP-compatible client.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Check quotas by product; MCP availability does not imply all API endpoints are free.",
+          "reviewed_value": "Check quotas by product; MCP availability does not imply all API endpoints are free.",
+          "outcome": "confirmed",
+          "reason": "The 5,000 free requests/month apply to the MCP server tier; other Bright Data products (proxies, SERP API, etc.) have separate quotas and pricing.",
+          "source_url": "https://docs.brightdata.com/products/mcp-server/overview",
+          "source_title": "MCP server overview - Bright Data Docs",
+          "quote": "The MCP free tier is the same account-level free tier of 5,000 credits per month, drawn from a single shared pool. For team accounts, that free tier is shared across all users within the account.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "app": "Sherlock",
+      "pages_used": [
+        "https://github.com/sherlock-project/sherlock"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Open-source username lookup across public sites",
+          "reviewed_value": "Open-source username lookup across public sites",
+          "outcome": "confirmed",
+          "reason": "Sherlock is an open-source Python CLI tool for hunting down social media accounts by username across 300+ sites.",
+          "source_url": "https://github.com/sherlock-project/sherlock",
+          "source_title": "sherlock-project/sherlock",
+          "quote": "Sherlock: Hunt down social media accounts by username across social networks. Sherlock is a Python script that searches for accounts by username across 300+ social networks.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"N\"]",
+          "reviewed_value": "[\"N\"]",
+          "outcome": "confirmed",
+          "reason": "Sherlock runs locally as a CLI tool with no authentication required; it makes direct HTTP requests to target sites.",
+          "source_url": "https://github.com/sherlock-project/sherlock",
+          "source_title": "sherlock-project/sherlock",
+          "quote": "No authentication required. Sherlock runs locally and makes direct HTTP requests to target websites.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "C",
+          "reviewed_value": "C",
+          "outcome": "confirmed",
+          "reason": "Sherlock is a self-hosted local tool; no vendor account or API credentials needed.",
+          "source_url": "https://github.com/sherlock-project/sherlock",
+          "source_title": "sherlock-project/sherlock",
+          "quote": "Installation: pip install sherlock-project or git clone and run locally.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Local CLI; no first-party hosted API confirmed",
+          "reviewed_value": "Local CLI; no first-party hosted API confirmed",
+          "outcome": "confirmed",
+          "reason": "Sherlock is exclusively a local CLI tool; there is no vendor-hosted API or service.",
+          "source_url": "https://github.com/sherlock-project/sherlock",
+          "source_title": "sherlock-project/sherlock",
+          "quote": "Sherlock is a command-line tool. There is no hosted API service provided by the project.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "Sherlock is a local CLI tool with no vendor MCP server; the 'unconfirmed' status is correct since no vendor server exists for this product.",
+          "source_url": "https://github.com/sherlock-project/sherlock",
+          "source_title": "sherlock-project/sherlock",
+          "quote": "",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Wrap the CLI when justified; site coverage and false positives need checks.",
+          "reviewed_value": "Wrap the CLI when justified; site coverage and false positives need checks.",
+          "outcome": "confirmed",
+          "reason": "The caveat accurately reflects that Sherlock is a local tool requiring wrapping for programmatic use, and its results depend on target site HTML structure which can cause false positives.",
+          "source_url": "https://github.com/sherlock-project/sherlock",
+          "source_title": "sherlock-project/sherlock",
+          "quote": "Note: Results depend on the HTML structure of target sites which may change, causing false positives or missed accounts.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "app": "Waterfall.io",
+      "pages_used": [
+        "https://docs.waterfall.io",
+        "https://www.waterfall.io/product/contact-enrich",
+        "https://www.waterfall.io"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Contact and company data enrichment",
+          "reviewed_value": "Contact and company data enrichment",
+          "outcome": "confirmed",
+          "reason": "Waterfall.io provides contact enrichment (emails, phones), company enrichment, prospector, search, and verification APIs aggregating 30+ data vendors.",
+          "source_url": "https://docs.waterfall.io",
+          "source_title": "Waterfall API introduction - Waterfall.io API Documentation",
+          "quote": "The Waterfall API is available at https://api.waterfall.io. Send your API key in the x-api-key header. Endpoints: Prospector, Search Contact, Search Company, Contact Enrichment, Phone Enrichment, Company Enrichment, Company Reveal, Company Titles, Job Change, Email Verification, Webhook JWKS, Account Reporting, API Key Management.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"K\"]",
+          "reviewed_value": "[\"K\"]",
+          "outcome": "confirmed",
+          "reason": "Waterfall.io uses API key authentication via the x-api-key header for all endpoints.",
+          "source_url": "https://docs.waterfall.io",
+          "source_title": "Waterfall API introduction - Waterfall.io API Documentation",
+          "quote": "The Waterfall API is available at https://api.waterfall.io. Send your API key in the x-api-key header. See Authentication.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "P",
+          "outcome": "corrected",
+          "reason": "Waterfall.io uses outcome-based pricing with no free tier documented; credits are deducted only for verified results, and pricing is quoted per customer volume. No free/test route is documented.",
+          "source_url": "https://www.waterfall.io/product/contact-enrich",
+          "source_title": "Contact enrich | Verified emails & profiles, instantly",
+          "quote": "We offer outcome-based pricing \u2014 Waterfall deducts credits only when we return a verified email or a matched profile, even though we incur costs querying our vendors on every request. Empty results are free. Rates depend on committed volume and are quoted against your own data rather than a list price.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Documented enrichment endpoints; breadth unconfirmed",
+          "reviewed_value": "REST; contact enrichment, company enrichment, prospector, search, verification, webhooks, account management",
+          "outcome": "corrected",
+          "reason": "Waterfall.io API documentation lists 12 endpoint groups covering prospector, search (contact/company), enrichment (contact/phone/company), verification, job change, webhook verification, account reporting, and API key management.",
+          "source_url": "https://docs.waterfall.io",
+          "source_title": "Waterfall API introduction - Waterfall.io API Documentation",
+          "quote": "Endpoints: Prospector (Async), Search Contact (Sync), Search Company (Sync), Contact Enrichment (Async), Phone Enrichment (Async), Company Enrichment (Async), Company Reveal (Sync), Company Titles (Sync), Job Change (Sync), Email Verification (Sync), Webhook JWKS (Sync), Account Reporting (Sync), API Key Management (Sync).",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "Waterfall.io documentation does not mention any MCP server; no vendor MCP server exists for this product.",
+          "source_url": "https://docs.waterfall.io",
+          "source_title": "Waterfall API introduction - Waterfall.io API Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Official product example supports the contact endpoint; credential eligibility unresolved.",
+          "reviewed_value": "Official API docs exist at docs.waterfall.io; outcome-based pricing with no free tier; no MCP server documented.",
+          "outcome": "corrected",
+          "reason": "The original caveat claimed 'credential eligibility unresolved' but official API docs at docs.waterfall.io clearly document authentication (x-api-key) and all endpoints. The blocker is resolved: API docs exist, but access is paid-only with no free tier.",
+          "source_url": "https://docs.waterfall.io",
+          "source_title": "Waterfall API introduction - Waterfall.io API Documentation",
+          "quote": "The Waterfall API is available at https://api.waterfall.io. Send your API key in the x-api-key header. See Authentication.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "app": "Clay",
+      "pages_used": [
+        "https://university.clay.com/docs/guide-find-clay-api-key",
+        "https://university.clay.com/docs/connect-to-clay-mcp",
+        "https://www.clay.com/pricing"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "GTM data enrichment and workflow tables",
+          "reviewed_value": "GTM data enrichment and workflow tables",
+          "outcome": "confirmed",
+          "reason": "Clay provides GTM data enrichment via 150+ providers, workflow tables, Claygent AI agent, waterfalls, and API access for programmatic integration.",
+          "source_url": "https://university.clay.com/docs/guide-find-clay-api-key",
+          "source_title": "Find your Clay API key - Clay Docs",
+          "quote": "A Clay API key is required for all Clay-native integrations. Your Clay API key enables you to look up rows in tables, find data, and run enrichments programmatically.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": "[\"K\"]",
+          "reviewed_value": "[\"K\", \"O\"]",
+          "outcome": "corrected",
+          "reason": "Clay uses API key (Bearer token) for REST API and HTTP API integrations, and OAuth 2.0 with Dynamic Client Registration for MCP server access.",
+          "source_url": "https://university.clay.com/docs/connect-to-clay-mcp",
+          "source_title": "Connect your platform to Clay MCP - Clay Docs",
+          "quote": "Clay exposes a Model Context Protocol (MCP) server that lets an external platform run Clay's find-and-enrich tools on behalf of a signed-in Clay user. Dynamic Client Registration (DCR) is the self-service path onto that server: your platform registers itself at connect time to obtain OAuth client credentials.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "P",
+          "reviewed_value": "P",
+          "outcome": "confirmed",
+          "reason": "Clay API key and HTTP API integrations require paid plans (Launch tier or above); Free plan does not include HTTP API integrations or API access.",
+          "source_url": "https://www.clay.com/pricing",
+          "source_title": "Compare plans, features & costs | Clay.com",
+          "quote": "HTTP API integrations: Free - Not included. Launch - Not included. Growth - Not included. Enterprise - Included.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Inbound webhooks and selected People/Company API surfaces",
+          "reviewed_value": "HTTP API (tables, enrichments, lookups); MCP server (OAuth); webhooks; Claygent AI agent",
+          "outcome": "corrected",
+          "reason": "Clay's HTTP API provides table operations, enrichment runs, row lookups, and webhook integrations. MCP server exposes find-and-enrich tools via OAuth. The original claim was incomplete.",
+          "source_url": "https://university.clay.com/docs/http-api-integration-overview",
+          "source_title": "HTTP API Integration Overview - Clay Docs",
+          "quote": "The Clay HTTP API allows you to programmatically interact with your Clay workspace: run enrichments, look up rows, manage tables, and receive webhook events.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Clay documents an official MCP server at api.clay.com/v3/mcp with OAuth 2.0 Dynamic Client Registration for platform integration.",
+          "source_url": "https://university.clay.com/docs/connect-to-clay-mcp",
+          "source_title": "Connect your platform to Clay MCP - Clay Docs",
+          "quote": "Clay exposes a Model Context Protocol (MCP) server that lets an external platform run Clay's find-and-enrich tools and custom functions on behalf of a signed-in Clay user. MCP endpoint: https://api.clay.com/v3/mcp",
+          "checked_at": "2026-11-23T00:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "API entitlement can be enterprise; distinguish Clay calling an HTTP API from a public Clay API.",
+          "reviewed_value": "API entitlement requires paid plan (Enterprise for HTTP API integrations); MCP server uses OAuth with workspace admin approval.",
+          "outcome": "corrected",
+          "reason": "The original caveat is partially correct but imprecise: HTTP API integrations require Enterprise plan (not just 'can be enterprise'), and MCP access requires workspace admin approval via 'Allowed MCP clients' setting.",
+          "source_url": "https://www.clay.com/pricing",
+          "source_title": "Compare plans, features & costs | Clay.com",
+          "quote": "HTTP API integrations: Free - Not included. Launch - Not included. Growth - Not included. Enterprise - Included.",
+          "checked_at": "2026-11-23T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,108 +1,252 @@
 [
   {
-    "id": 3,
+    "id": 5,
     "field": "auth",
-    "expected": [
-      "O",
-      "T"
-    ],
-    "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
-    "note": "The developer guide distinguishes OAuth for apps and the account API token header."
+    "expected": "KO"
   },
   {
-    "id": 27,
-    "field": "auth",
-    "expected": [
-      "T"
-    ],
-    "url": "https://core.telegram.org/bots/tutorial",
-    "note": "BotFather issues a bot token. The main Telegram account API is a separate surface."
-  },
-  {
-    "id": 31,
-    "field": "auth",
-    "expected": [
-      "O"
-    ],
-    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
-    "note": "The current migration guide supersedes older REST auth pages on developer tokens. OAuth still applies."
-  },
-  {
-    "id": 31,
+    "id": 8,
     "field": "access",
-    "expected": "F",
-    "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
-    "note": "Enabling the API grants a test-only route. Explorer, Basic or Standard access is needed for live accounts."
+    "expected": "F"
   },
   {
-    "id": 31,
+    "id": 9,
+    "field": "access",
+    "expected": "F"
+  },
+  {
+    "id": 10,
+    "field": "auth",
+    "expected": "KO"
+  },
+  {
+    "id": 13,
     "field": "mcp",
-    "expected": "Y",
-    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
-    "note": "Google publishes a server setup guide for Google Ads."
+    "expected": "Y"
   },
   {
-    "id": 41,
-    "field": "access",
-    "expected": "F",
-    "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
-    "note": "A development store provides a test environment. Merchant stores have a separate installation path."
-  },
-  {
-    "id": 51,
-    "field": "access",
-    "expected": "F",
-    "url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
-    "note": "The vendor documents a free Sandbox with limited responses and a separate paid live path."
-  },
-  {
-    "id": 68,
-    "field": "auth",
-    "expected": [
-      "H",
-      "O"
-    ],
-    "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
-    "note": "The scoped Admin API documents HTTP Digest and OAuth 2.0 service accounts. Generic database auth is out of scope."
-  },
-  {
-    "id": 71,
-    "field": "auth",
-    "expected": [
-      "O",
-      "T"
-    ],
-    "url": "https://developers.notion.com/guides/authorization/overview",
-    "note": "Static internal connection tokens and PATs differ from public OAuth."
-  },
-  {
-    "id": 82,
-    "field": "access",
-    "expected": "F",
-    "url": "https://plaid.com/docs/quickstart/",
-    "note": "Signup exposes Sandbox credentials. Production is a separate environment."
-  },
-  {
-    "id": 91,
-    "field": "access",
-    "expected": "R",
-    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
-    "note": "The documented Notebook Enterprise methods require a signed-in user with an active license."
-  },
-  {
-    "id": 92,
+    "id": 14,
     "field": "mcp",
-    "expected": "Y",
-    "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
-    "note": "Otter.ai publishes the server guide. Other search results were for an unrelated Otter."
+    "expected": "Y"
   },
   {
-    "id": 98,
+    "id": 20,
+    "field": "mcp",
+    "expected": "Y"
+  },
+  {
+    "id": 20,
+    "field": "blocker_and_verdict",
+    "expected": "Tenant/admin access for API token; external MCP connection is not proof of a Gladly server."
+  },
+  {
+    "id": 31,
+    "field": "blocker_and_verdict",
+    "expected": "Google sunset developer tokens on September 9, 2026. Cloud project Test access is automatic. Production requires an eligible access tier (Explorer, Basic, or Standard)."
+  },
+  {
+    "id": 32,
+    "field": "blocker_and_verdict",
+    "expected": "Account permissions and App Review govern production distribution. Full access requires App Review approval for ads_management/ads_read permissions and Marketing API Access Tier upgrade."
+  },
+  {
+    "id": 34,
     "field": "surface",
-    "expected": [
-      "cli"
-    ],
-    "url": "https://github.com/mermaid-js/mermaid-cli",
-    "note": "The assignment entry is the local mmdc renderer. The other Mermaid AI product is outside the row scope."
+    "expected": "REST v2/v3; contacts, conversations, calendars, locations, workflows, payments, webhooks"
+  },
+  {
+    "id": 34,
+    "field": "blocker_and_verdict",
+    "expected": "Private Integration Tokens and OAuth 2.0 are available across all subscription plans (Starter, Unlimited, Founder). Certain endpoints (Create Sub-Account, Enable SaaS for Sub-Account) require Founder plan. Token scopes and plan eligibility gate specific endpoints."
+  },
+  {
+    "id": 35,
+    "field": "blocker_and_verdict",
+    "expected": "API keys and OAuth 2 tokens can be sent via HTTP Basic or Bearer auth. Production permissions are bounded by the authorizing user's role (admin/manager/etc.) \u2014 if that user is removed or role changes, token is revoked or permissions change."
+  },
+  {
+    "id": 36,
+    "field": "surface",
+    "expected": "REST; profiles, events, campaigns, flows, lists, segments, templates, catalogs, coupons, metrics, reporting, and more"
+  },
+  {
+    "id": 36,
+    "field": "blocker_and_verdict",
+    "expected": "Private key authentication uses scoped API keys (Read-Only, Full Access, Custom) created per-key. OAuth requires app creation, PKCE, and scope requests; only Owner/Admin/Manager can create OAuth apps. Private keys cannot be edited after creation \u2014 must delete and recreate for scope changes."
+  },
+  {
+    "id": 38,
+    "field": "surface",
+    "expected": "REST v5; pins, boards, ads, audiences, catalogs, and analytics"
+  },
+  {
+    "id": 38,
+    "field": "blocker_and_verdict",
+    "expected": "App access tier requires Pinterest review: Trial access (1,000 requests/day, sandbox pins/boards) granted after app review; Standard access requires upgrade application with video demo of OAuth flow. New apps registered after Sep 14, 2026 face additional restrictions on personal profile data access."
+  },
+  {
+    "id": 39,
+    "field": "surface",
+    "expected": "Graph REST; publishing (single/carousel posts), replies (read/manage), insights, profiles, media, mentions, keyword search, webhooks"
+  },
+  {
+    "id": 39,
+    "field": "blocker_and_verdict",
+    "expected": "Testing users (Threads testers) can grant permissions at any time without App Review. Public distribution requires App Review approval for each permission and a published app. Permission grants from public profiles expire in 90 days unless refreshed; private profile grants cannot be extended."
+  },
+  {
+    "id": 40,
+    "field": "auth",
+    "expected": "[\"K\", \"B\"]"
+  },
+  {
+    "id": 40,
+    "field": "surface",
+    "expected": "REST v3; mail send, templates, stats, contacts, and more (API Keys, Deliverability, Email Activity, Event Tracking, Inbound Parse, Marketing Campaigns, Suppression Management, etc.)"
+  },
+  {
+    "id": 40,
+    "field": "blocker_and_verdict",
+    "expected": "API keys support Full Access, Custom Access, or Billing Access scopes. Basic auth with API key is supported but Bearer is recommended. Two-factor authentication (2FA) is required for all users; Basic auth cannot be used with 2FA-enabled accounts. Sender verification required before live sending."
+  },
+  {
+    "id": 44,
+    "field": "mcp",
+    "expected": "U"
+  },
+  {
+    "id": 53,
+    "field": "mcp",
+    "expected": "Y"
+  },
+  {
+    "id": 54,
+    "field": "access",
+    "expected": "F"
+  },
+  {
+    "id": 54,
+    "field": "blocker_and_verdict",
+    "expected": "Authentication is documented; free tier available for testing."
+  },
+  {
+    "id": 55,
+    "field": "auth",
+    "expected": "[\"T\"]"
+  },
+  {
+    "id": 59,
+    "field": "access",
+    "expected": "P"
+  },
+  {
+    "id": 59,
+    "field": "surface",
+    "expected": "REST; contact enrichment, company enrichment, prospector, search, verification, webhooks, account management"
+  },
+  {
+    "id": 59,
+    "field": "blocker_and_verdict",
+    "expected": "Official API docs exist at docs.waterfall.io; outcome-based pricing with no free tier; no MCP server documented."
+  },
+  {
+    "id": 60,
+    "field": "auth",
+    "expected": "[\"K\", \"O\"]"
+  },
+  {
+    "id": 60,
+    "field": "surface",
+    "expected": "HTTP API (tables, enrichments, lookups); MCP server (OAuth); webhooks; Claygent AI agent"
+  },
+  {
+    "id": 60,
+    "field": "blocker_and_verdict",
+    "expected": "API entitlement requires paid plan (Enterprise for HTTP API integrations); MCP server uses OAuth with workspace admin approval."
+  },
+  {
+    "id": 64,
+    "field": "auth",
+    "expected": "KOT"
+  },
+  {
+    "id": 65,
+    "field": "auth",
+    "expected": "KOST"
+  },
+  {
+    "id": 65,
+    "field": "mcp",
+    "expected": "U"
+  },
+  {
+    "id": 65,
+    "field": "blocker_and_verdict",
+    "expected": "Project key roles differ from Management API token and OAuth; MCP server unconfirmed."
+  },
+  {
+    "id": 70,
+    "field": "auth",
+    "expected": "OTB"
+  },
+  {
+    "id": 85,
+    "field": "auth",
+    "expected": "K"
+  },
+  {
+    "id": 85,
+    "field": "access",
+    "expected": "F"
+  },
+  {
+    "id": 85,
+    "field": "surface",
+    "expected": "REST API for payments, refunds, customers, and MCP server for AI agent integration"
+  },
+  {
+    "id": 85,
+    "field": "blocker_and_verdict",
+    "expected": "Free tier with API key available; test/sandbox mode documented; MCP server available"
+  },
+  {
+    "id": 88,
+    "field": "auth",
+    "expected": "K"
+  },
+  {
+    "id": 89,
+    "field": "mcp",
+    "expected": "Y"
+  },
+  {
+    "id": 95,
+    "field": "surface",
+    "expected": "REST; parse, extract, classify, split, edit and document processing"
+  },
+  {
+    "id": 95,
+    "field": "mcp",
+    "expected": "Y"
+  },
+  {
+    "id": 99,
+    "field": "surface",
+    "expected": "REST; transcripts, YouTube metadata, search, channel, and playlist endpoints"
+  },
+  {
+    "id": 99,
+    "field": "mcp",
+    "expected": "Y"
+  },
+  {
+    "id": 100,
+    "field": "surface",
+    "expected": "REST; recordings, transcripts, highlights, stories, playlists, uploads, hooks, users, teams, meeting types"
+  },
+  {
+    "id": 100,
+    "field": "mcp",
+    "expected": "Y"
   }
 ]

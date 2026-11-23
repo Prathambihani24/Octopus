@@ -1,0 +1,315 @@
+{
+  "batch": 4,
+  "apps_checked": 10,
+  "apps": [
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Campaign management and advertising reports",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST/gRPC; campaigns, reporting queries and conversion data",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Google sunset developer tokens in September 2026. Cloud project Test access is automatic. Production requires an eligible access tier."
+      },
+      "source_urls": [
+        "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+        "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+      ]
+    },
+    {
+      "id": 32,
+      "app": "Meta Ads",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Facebook and Instagram ad management",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "Graph REST; campaigns, ad sets, ads and insights",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Account permissions and access review govern production distribution."
+      },
+      "source_urls": [
+        "https://developers.facebook.com/docs/marketing-apis/",
+        "https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens"
+      ]
+    },
+    {
+      "id": 33,
+      "app": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Campaign and reporting integrations",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "REST; ad accounts, campaigns, creatives and reporting",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Marketing Developer Platform access and use-case approval."
+      },
+      "source_urls": [
+        "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started"
+      ]
+    },
+    {
+      "id": 34,
+      "app": "GoHighLevel",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Agency CRM and marketing automation",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "P",
+        "access_label": "Paid / licensed",
+        "surface": "REST v2; contacts, locations, calendars and conversations",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Private integration tokens are available on subscription plans. Some routes depend on plan and token scopes."
+      },
+      "source_urls": [
+        "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+        "https://marketplace.gohighlevel.com/docs/intro/index.html",
+        "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know"
+      ]
+    },
+    {
+      "id": 35,
+      "app": "Mailchimp",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Email campaigns and audience management",
+        "auth_codes": [
+          "B",
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "HTTP Basic",
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; audiences, campaigns, automation and reports",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "API keys and OAuth can be sent via HTTP Basic. Basic was missing from the original set. Production permissions and entitlement still need checking."
+      },
+      "source_urls": [
+        "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+        "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app"
+      ]
+    },
+    {
+      "id": 36,
+      "app": "Klaviyo",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Marketing automation for commerce brands",
+        "auth_codes": [
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; profiles, events, campaigns and flows",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Private key and OAuth differ by scope and installation path."
+      },
+      "source_urls": [
+        "https://developers.klaviyo.com/en/docs/authenticate_",
+        "https://developers.klaviyo.com/en/docs/set_up_oauth"
+      ]
+    },
+    {
+      "id": 37,
+      "app": "systeme.io",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Funnels, email automation and courses",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "Public API; contacts and marketing operations",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "API key is documented; plan/operation breadth needs separate verification."
+      },
+      "source_urls": [
+        "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+        "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp"
+      ]
+    },
+    {
+      "id": 38,
+      "app": "Pinterest",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Visual discovery, publishing and ads",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "REST v5; pins, boards, ads and analytics",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "App access tier and approval depend on use and scopes."
+      },
+      "source_urls": [
+        "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://developers.pinterest.com/docs/"
+      ]
+    },
+    {
+      "id": 39,
+      "app": "Threads",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Text-based social publishing",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "Graph REST; publishing, replies and insights",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Testing users are separate from reviewed public distribution."
+      },
+      "source_urls": [
+        "https://developers.facebook.com/docs/threads/",
+        "https://www.postman.com/meta/threads/documentation/dht3nzz/threads-api"
+      ]
+    },
+    {
+      "id": 40,
+      "app": "SendGrid",
+      "category": "Marketing, Ads, Email & Social",
+      "claim": {
+        "identity_description": "Transactional and marketing email delivery",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST v3; mail send, templates, stats and contacts",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Trial access and sender verification before meaningful live use."
+      },
+      "source_urls": [
+        "https://www.twilio.com/docs/sendgrid/api-reference/api-keys",
+        "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication"
+      ]
+    }
+  ],
+  "instructions": {
+    "role": "Fact-verification subagent for the Composio Product Ops take-home (row audit)",
+    "rules": [
+      "VERIFY ONLY USING OFFICIAL SOURCES: vendor developer docs, official API/auth docs, official pricing/plan pages, official MCP docs, vendor-maintained GitHub repos.",
+      "web_search may only be used LOCATE an official doc page, never as evidence itself.",
+      "Primary tool: web_extract on the official URL. If web_extract fails/403, retry once with browser (browser_exec, read page_info/js to read text). If that fails too, outcome = 'source unavailable'.",
+      "For each field assign exactly ONE of: confirmed | corrected | insufficient evidence | conflicting documentation | source unavailable",
+      "'corrected' REQUIRES a direct quote or precise section from the official doc, plus the corrected value.",
+      "Row auth codes: O=OAuth 2.0, K=API key, T=Token, B=HTTP Basic, S=Signed/JWT, H=Other (e.g. digest), N=None/local, U=Unconfirmed. Use the SET that covers all documented primary API auth methods for the API/CLI in the surface field.",
+      "Row access codes: F=Free/test route (documented free/developer/sandbox route to obtain credentials), C=Run locally (self-host/local tool, no vendor account), P=Paid/licensed, R=Approval/tenant gate, U=Unconfirmed.",
+      "A free plan is NOT proof of API credential access. A mention of a product in docs is NOT proof of a vendor MCP server. The vendor must document/provide the server for THIS product (a generic vendor platform MCP page does not count if it does not cover this product).",
+      "If a credential/access requirement is documented only in a way that needs reading between the lines, prefer 'insufficient evidence' over guessing.",
+      "If docs directly contradict (e.g. one page says free-plan API access, another says paid-only): 'conflicting documentation' with both URLs.",
+      "Do NOT change values you cannot verify. 'insufficient evidence' is a valid, correct outcome.",
+      "source_url must be the exact official page you verified against; source_title is that page's <title>.",
+      "checked_at: ISO timestamp (UTC)."
+    ],
+    "fields_to_check": [
+      "identity (is the product scope/one-line description correct for what the row covers)",
+      "auth (set of auth codes)",
+      "access (access code)",
+      "surface (protocol + major object/action coverage)",
+      "mcp (vendor server Y/U)",
+      "blocker_and_verdict (does the stated caveat/main blocker match what the docs say)"
+    ],
+    "output_schema": {
+      "batch": "int, must equal 'batch' in input",
+      "checked_at": "ISO string",
+      "auditor": "string, e.g. 'Hermes automated documentation audit (batch N)'",
+      "apps": [
+        {
+          "id": "int, the row id",
+          "app": "string, must match input",
+          "pages_used": [
+            "list of official URLs actually read"
+          ],
+          "checks": [
+            {
+              "field": "identity|auth|access|surface|mcp|blocker_and_verdict",
+              "original_value": "string or list, copied verbatim from the row's claim",
+              "reviewed_value": "string or list, the value that should stand (same as original if confirmed)",
+              "outcome": "confirmed|corrected|insufficient evidence|conflicting documentation|source unavailable",
+              "reason": "1-3 plain sentences: what the official source establishes",
+              "source_url": "official URL (or null if unavailable)",
+              "source_title": "page title (or null)",
+              "quote": "short verbatim quote from the official page supporting the outcome (empty string if none)",
+              "checked_at": "ISO string"
+            }
+          ]
+        }
+      ]
+    },
+    "output_path": "ABSOLUTE path to write the final JSON: see your task message",
+    "write_and_verify": "After writing the JSON, re-read it and print: json valid, N apps, M checks, counts per outcome. If any file is missing or invalid, the batch FAILS."
+  }
+}

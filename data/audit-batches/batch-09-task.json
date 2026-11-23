@@ -1,0 +1,311 @@
+{
+  "batch": 9,
+  "apps_checked": 10,
+  "apps": [
+    {
+      "id": 81,
+      "app": "Stripe",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Payments, billing and subscriptions",
+        "auth_codes": [
+          "B",
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "HTTP Basic",
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; payments, invoices, subscriptions and account data",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Test mode is self-serve; live payments require activated accounts and suitable permissions."
+      },
+      "source_urls": [
+        "https://docs.stripe.com/keys",
+        "https://docs.stripe.com/connect/oauth-reference",
+        "https://docs.stripe.com/mcp"
+      ]
+    },
+    {
+      "id": 82,
+      "app": "Plaid",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Financial account linking and data access",
+        "auth_codes": [
+          "K",
+          "T"
+        ],
+        "auth_label": [
+          "API key",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST-style products for accounts, transactions, identity and more",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Sandbox works without production approval; live products require additional access."
+      },
+      "source_urls": [
+        "https://plaid.com/docs/quickstart/",
+        "https://plaid.com/docs/api/"
+      ]
+    },
+    {
+      "id": 83,
+      "app": "Binance",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Crypto exchange and market data",
+        "auth_codes": [
+          "K",
+          "S"
+        ],
+        "auth_label": [
+          "API key",
+          "Signed / JWT"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST and WebSocket; public market data and account endpoints",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Signed private operations and live account eligibility differ from public reads and testnet."
+      },
+      "source_urls": [
+        "https://developers.binance.com/en/docs/introduction",
+        "https://www.binance.com/en/support/faq/detail/360002502072"
+      ]
+    },
+    {
+      "id": 84,
+      "app": "Paygent Connect",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Payment integration identified as NMI-powered in the brief",
+        "auth_codes": [
+          "U"
+        ],
+        "auth_label": [
+          "Unconfirmed"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "NMI docs describe an upstream platform; direct mapping unresolved",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Confirm the product identity and dedicated merchant credentials before classifying."
+      },
+      "source_urls": [
+        "https://www.nmi.com/logins/",
+        "https://docs.nmi.com/"
+      ]
+    },
+    {
+      "id": 85,
+      "app": "iPayX",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Payment APIs for AI agents",
+        "auth_codes": [
+          "U"
+        ],
+        "auth_label": [
+          "Unconfirmed"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "Vendor publishes API and MCP pages; credential details need validation",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Confirm onboarding, scope and whether test payments are available."
+      },
+      "source_urls": [
+        "https://www.ipayx.ai/docs/api",
+        "https://www.ipayx.ai/docs/mcp-server"
+      ]
+    },
+    {
+      "id": 86,
+      "app": "QuickBooks",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Online accounting and bookkeeping",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; invoices, accounts, customers and reports",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Intuit sandbox is separate from production app requirements."
+      },
+      "source_urls": [
+        "https://developer.intuit.com/app/developer/qbo/docs/",
+        "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0"
+      ]
+    },
+    {
+      "id": 87,
+      "app": "Xero",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Accounting and business finance software",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; accounting, payroll and related APIs",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Demo organization and connection tiers differ from production scale."
+      },
+      "source_urls": [
+        "https://developer.xero.com/documentation/getting-started-guide/",
+        "https://developer.xero.com/documentation/guides/remote-mcp/overview"
+      ]
+    },
+    {
+      "id": 88,
+      "app": "Brex",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Corporate cards and spend management",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "REST endpoints for expenses, teams, transactions and payments",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Customer credentials and partner / product access vary."
+      },
+      "source_urls": [
+        "https://developer.brex.com/guides/authentication",
+        "https://developer.brex.com/guides/quickstart"
+      ]
+    },
+    {
+      "id": 89,
+      "app": "Ramp",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Business spend and finance operations",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "REST; accounting, transactions, users and bills",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Business admin and scoped app/client credentials; sandbox/deployment path varies."
+      },
+      "source_urls": [
+        "https://docs.ramp.com/developer-api/v1/authorization",
+        "https://docs.ramp.com/developer-api/v1/guides/getting-started"
+      ]
+    },
+    {
+      "id": 90,
+      "app": "PitchBook",
+      "category": "Finance & Fintech",
+      "claim": {
+        "identity_description": "Private market and company data",
+        "auth_codes": [
+          "U"
+        ],
+        "auth_label": [
+          "Unconfirmed"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "Licensed research data API",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Sales and license entitlement before implementation; auth unresolved."
+      },
+      "source_urls": [
+        "https://pitchbook.com/help/PitchBook-api"
+      ]
+    }
+  ],
+  "instructions": {
+    "role": "Fact-verification subagent for the Composio Product Ops take-home (row audit)",
+    "rules": [
+      "VERIFY ONLY USING OFFICIAL SOURCES: vendor developer docs, official API/auth docs, official pricing/plan pages, official MCP docs, vendor-maintained GitHub repos.",
+      "web_search may only be used LOCATE an official doc page, never as evidence itself.",
+      "Primary tool: web_extract on the official URL. If web_extract fails/403, retry once with browser (browser_exec, read page_info/js to read text). If that fails too, outcome = 'source unavailable'.",
+      "For each field assign exactly ONE of: confirmed | corrected | insufficient evidence | conflicting documentation | source unavailable",
+      "'corrected' REQUIRES a direct quote or precise section from the official doc, plus the corrected value.",
+      "Row auth codes: O=OAuth 2.0, K=API key, T=Token, B=HTTP Basic, S=Signed/JWT, H=Other (e.g. digest), N=None/local, U=Unconfirmed. Use the SET that covers all documented primary API auth methods for the API/CLI in the surface field.",
+      "Row access codes: F=Free/test route (documented free/developer/sandbox route to obtain credentials), C=Run locally (self-host/local tool, no vendor account), P=Paid/licensed, R=Approval/tenant gate, U=Unconfirmed.",
+      "A free plan is NOT proof of API credential access. A mention of a product in docs is NOT proof of a vendor MCP server. The vendor must document/provide the server for THIS product (a generic vendor platform MCP page does not count if it does not cover this product).",
+      "If a credential/access requirement is documented only in a way that needs reading between the lines, prefer 'insufficient evidence' over guessing.",
+      "If docs directly contradict (e.g. one page says free-plan API access, another says paid-only): 'conflicting documentation' with both URLs.",
+      "Do NOT change values you cannot verify. 'insufficient evidence' is a valid, correct outcome.",
+      "source_url must be the exact official page you verified against; source_title is that page's <title>.",
+      "checked_at: ISO timestamp (UTC)."
+    ],
+    "fields_to_check": [
+      "identity (is the product scope/one-line description correct for what the row covers)",
+      "auth (set of auth codes)",
+      "access (access code)",
+      "surface (protocol + major object/action coverage)",
+      "mcp (vendor server Y/U)",
+      "blocker_and_verdict (does the stated caveat/main blocker match what the docs say)"
+    ],
+    "output_schema": {
+      "batch": "int, must equal 'batch' in input",
+      "checked_at": "ISO string",
+      "auditor": "string, e.g. 'Hermes automated documentation audit (batch N)'",
+      "apps": [
+        {
+          "id": "int, the row id",
+          "app": "string, must match input",
+          "pages_used": [
+            "list of official URLs actually read"
+          ],
+          "checks": [
+            {
+              "field": "identity|auth|access|surface|mcp|blocker_and_verdict",
+              "original_value": "string or list, copied verbatim from the row's claim",
+              "reviewed_value": "string or list, the value that should stand (same as original if confirmed)",
+              "outcome": "confirmed|corrected|insufficient evidence|conflicting documentation|source unavailable",
+              "reason": "1-3 plain sentences: what the official source establishes",
+              "source_url": "official URL (or null if unavailable)",
+              "source_title": "page title (or null)",
+              "quote": "short verbatim quote from the official page supporting the outcome (empty string if none)",
+              "checked_at": "ISO string"
+            }
+          ]
+        }
+      ]
+    },
+    "output_path": "ABSOLUTE path to write the final JSON: see your task message",
+    "write_and_verify": "After writing the JSON, re-read it and print: json valid, N apps, M checks, counts per outcome. If any file is missing or invalid, the batch FAILS."
+  }
+}

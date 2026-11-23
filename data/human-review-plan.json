@@ -1,7 +1,102 @@
 [
-  {"id":6,"field":"Credential access","question":"Can a developer on a free account register an API client? Check whether the stated rate limits cover both free and paid accounts.","url":"https://developers.podio.com/index/faq"},
-  {"id":25,"field":"Workspace permissions","question":"Can a free workspace enable the API add-on and create a key? Identify the required role and the difference between enabling the add-on and granting permissions.","url":"https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"},
-  {"id":33,"field":"Production approval","question":"What can a development-tier app do, and what approval is needed to serve multiple customers? Check the specific ads product and tier.","url":"https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started"},
-  {"id":47,"field":"Prototype versus production","question":"Can a developer get API credentials on a free store or through an upgrade? Separate the development exception from the normal merchant plan.","url":"https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid"},
-  {"id":100,"field":"Auth versus entitlement","question":"Which credentials cover a personal workspace versus multiple customers, and does the source establish plan eligibility? Leave access unconfirmed if the docs do not say.","url":"https://developers.grain.com/authentication.html"}
+  {
+    "id": 1,
+    "title": "Verify Stripe test mode access",
+    "source": "https://docs.stripe.com/keys",
+    "claim": "Stripe test mode is self-serve",
+    "verification": "Create a Stripe test account and generate test keys",
+    "match": "Test keys should be immediately available without verification",
+    "correction_trigger": "If production access requires special approval",
+    "importance": "Key for payment demo integrations"
+  },
+  {
+    "id": 2,
+    "title": "Verify Plaid sandbox access",
+    "source": "https://plaid.com/docs/quickstart/",
+    "claim": "Plaid sandbox works without production approval",
+    "verification": "Register for Plaid sandbox and generate sandbox keys",
+    "match": "Sandbox keys should work immediately",
+    "correction_trigger": "If sandbox requires manual approval",
+    "importance": "Financial data integration foundation"
+  },
+  {
+    "id": 3,
+    "title": "Check Airtable MCP server",
+    "source": "https://support.airtable.com/docs/mcp",
+    "claim": "Airtable has an official MCP server",
+    "verification": "Open MCP docs and verify server is maintained by Airtable",
+    "match": "MCP server should be in airtable.com domain or verified GitHub repo",
+    "correction_trigger": "If MCP is third-party or unconfirmed",
+    "importance": "MCP coverage assessment"
+  },
+  {
+    "id": 4,
+    "title": "Verify Shopify GraphQL Admin API access",
+    "source": "https://shopify.dev/docs/api/usage/authentication",
+    "claim": "GraphQL Admin is preferred over REST",
+    "verification": "Check Shopify API docs for preference statement",
+    "match": "Docs should state GraphQL is preferred",
+    "correction_trigger": "If REST is equally preferred or GraphQL is beta",
+    "importance": "API preference affects integration design"
+  },
+  {
+    "id": 5,
+    "title": "Check GitHub MCP server availability",
+    "source": "https://github.com/github/github-mcp-server",
+    "claim": "GitHub maintains an official MCP server",
+    "verification": "Visit the GitHub repo and verify it is official",
+    "match": "Repo should be under github.com organization",
+    "correction_trigger": "If third-party or unmaintained",
+    "importance": "MCP coverage for version control"
+  },
+  {
+    "id": 6,
+    "title": "Verify Notion integration access tiers",
+    "source": "https://www.notion.so/help/create-integrations-with-the-notion-api",
+    "claim": "Internal integration requires content sharing setup",
+    "verification": "Create a Notion integration and check access requirements",
+    "match": "Content sharing should be required for internal integrations",
+    "correction_trigger": "If sharing is optional or not documented",
+    "importance": "Notion integration requirements"
+  },
+  {
+    "id": 7,
+    "title": "Check Linear OAuth authentication flow",
+    "source": "https://linear.app/developers/oauth-2-0-authentication",
+    "claim": "OAuth 2.0 is supported for Linear API",
+    "verification": "Verify OAuth flow details and scope requirements",
+    "match": "OAuth endpoints should be documented with scopes",
+    "correction_trigger": "If only token auth is available",
+    "importance": "Authentication method for issue tracking"
+  },
+  {
+    "id": 8,
+    "title": "Verify Zoho CRM API credit limits",
+    "source": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+    "claim": "Free edition has API credit allowance",
+    "verification": "Check Zoho API limits page for free tier",
+    "match": "Should show specific credit limits for free edition",
+    "correction_trigger": "If free edition has zero credits",
+    "importance": "Rate limiting for CRM integration"
+  },
+  {
+    "id": 9,
+    "title": "Check Twilio API key scopes",
+    "source": "https://www.twilio.com/docs/iam/keys",
+    "claim": "API keys support Full Access, Custom Access, or Billing Access scopes",
+    "verification": "Verify Twilio API key scope options",
+    "match": "Should list all three scope types",
+    "correction_trigger": "If scopes differ or are limited",
+    "importance": "SendGrid/other Twilio service access"
+  },
+  {
+    "id": 10,
+    "title": "Verify BigQuery API availability in Supabase MCP",
+    "source": "https://supabase.com/docs/guides/getting-started/mcp",
+    "claim": "Supabase MCP server exists but unconfirmed",
+    "verification": "Check Supabase docs for BigQuery MCP integration",
+    "match": "Should confirm or deny BigQuery MCP support",
+    "correction_trigger": "If BigQuery MCP is confirmed",
+    "importance": "MCP coverage for Supabase"
+  }
 ]

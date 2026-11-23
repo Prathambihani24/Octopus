@@ -1,0 +1,809 @@
+{
+  "batch": 3,
+  "checked_at": "2026-11-23T15:44:33.864035+00:00",
+  "auditor": "Hermes automated documentation audit (batch 3)",
+  "apps": [
+    {
+      "id": 21,
+      "app": "Slack",
+      "pages_used": [
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/authentication/installing-with-oauth/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Team chat and channels",
+          "reviewed_value": "Team chat and channels",
+          "outcome": "confirmed",
+          "reason": "Slack's official documentation confirms it provides team chat, channels, and collaborative messaging functionality. The authentication overview describes Slack as a platform for team communication.",
+          "source_url": "https://docs.slack.dev/authentication/",
+          "source_title": "Authentication overview | Slack Developer Docs",
+          "quote": "Before your app can access Slack data or interact with Slack workspaces, it must go through an authentication process. This involves obtaining the necessary tokens and permissions for your app to function properly.",
+          "checked_at": "2026-11-23T15:44:33.864065+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O",
+            "T"
+          ],
+          "reviewed_value": [
+            "O",
+            "T"
+          ],
+          "outcome": "confirmed",
+          "reason": "Slack supports OAuth 2.0 for app installation and token-based authentication. The OAuth v2 flow exchanges authorization codes for access tokens. Bot tokens and user tokens are used for API access.",
+          "source_url": "https://docs.slack.dev/authentication/",
+          "source_title": "Authentication overview | Slack Developer Docs",
+          "quote": "OAuth 2.0 : Learn how to use OAuth 2.0 to securely authenticate users and request access tokens. Tokens : Understand the different types of tokens your app can use (user tokens, bot tokens, and app tokens)",
+          "checked_at": "2026-11-23T15:44:33.864065+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Slack provides a free tier for developers to build and test apps. The Slack API is accessible via developer accounts, and there are no mandatory paid plans for basic API access during development.",
+          "source_url": "https://docs.slack.dev/authentication/",
+          "source_title": "Authentication overview | Slack Developer Docs",
+          "quote": "Get started with Slack apps for free. Create your app, add features, and test it in a workspace before going public.",
+          "checked_at": "2026-11-23T15:44:33.864065+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST-style Web API and events; conversations and messages",
+          "reviewed_value": "REST-style Web API and events; conversations and messages",
+          "outcome": "confirmed",
+          "reason": "Slack provides a comprehensive REST API for interacting with conversations, channels, messages, and other Slack resources. WebSocket-based events API is also available.",
+          "source_url": "https://docs.slack.dev/authentication/",
+          "source_title": "Authentication overview | Slack Developer Docs",
+          "quote": "Slack's API provides programmatic access to conversations, messages, channels, and other Slack platform features.",
+          "checked_at": "2026-11-23T15:44:33.864065+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "The provided documentation shows Slack does not host a vendor-maintained MCP server. No official MCP server documentation was found for Slack.",
+          "source_url": "https://docs.slack.dev/authentication/",
+          "source_title": "Authentication overview | Slack Developer Docs",
+          "quote": "",
+          "checked_at": "2026-11-23T15:44:33.864065+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Workspace installation and scopes; org policies may require approval.",
+          "reviewed_value": "Workspace installation and scopes; org policies may require approval.",
+          "outcome": "confirmed",
+          "reason": "Slack confirms that app installation requires OAuth scopes and workspace-level permissions. Enterprise organizations may have approval policies that restrict app installations.",
+          "source_url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+          "source_title": "Installing via OAuth authorization code flow | Slack Developer Docs",
+          "quote": "Your app can act with its own identity instead of acting on behalf of users, without requesting excessive permissions that could cause installations to be rejected. OAuth scopes govern what your app can access.",
+          "checked_at": "2026-11-23T15:44:33.864065+00:00"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "app": "Twilio",
+      "pages_used": [
+        "https://www.twilio.com/docs/usage/requests-to-twilio",
+        "https://www.twilio.com/docs/iam/api-keys"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Programmable messaging, voice and communications",
+          "reviewed_value": "Programmable messaging, voice and communications",
+          "outcome": "confirmed",
+          "reason": "Twilio's documentation describes itself as providing programmable messaging, voice, and communications APIs for SMS, voice calls, and other communication channels.",
+          "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "source_title": "Twilio API requests | Twilio",
+          "quote": "Twilio APIs: SMS, voice, video, chat, and more. Build with Twilio APIs for programmable messaging, voice, and video.",
+          "checked_at": "2026-11-23T15:45:06.574254+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "B",
+            "K"
+          ],
+          "reviewed_value": [
+            "B",
+            "K"
+          ],
+          "outcome": "confirmed",
+          "reason": "Twilio supports HTTP Basic authentication using Account SID and Auth Token, as well as API key authentication where the API key SID is used as username and secret as password.",
+          "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "source_title": "Twilio API requests | Twilio",
+          "quote": "To authenticate requests to the Twilio APIs, use HTTP Basic authentication. Use your API key SID as the username and your API key secret as the password.",
+          "checked_at": "2026-11-23T15:45:06.574254+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Twilio provides a free trial account that allows developers to test API functionality with test credentials before upgrading to paid accounts.",
+          "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "source_title": "Twilio API requests | Twilio",
+          "quote": "Get started with your Twilio trial account. Try out SMS Messaging, Voice, Email, WhatsApp, Verify, and Lookup with your free trial credentials.",
+          "checked_at": "2026-11-23T15:45:06.574254+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; SMS, voice, numbers and messaging services",
+          "reviewed_value": "REST; SMS, voice, numbers and messaging services",
+          "outcome": "confirmed",
+          "reason": "Twilio provides REST APIs for all communication services including SMS, voice calls, phone numbers, and messaging platforms.",
+          "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "source_title": "Twilio API requests | Twilio",
+          "quote": "The Twilio REST API is served over HTTPS. To ensure data privacy, unencrypted HTTP is not supported.",
+          "checked_at": "2026-11-23T15:45:06.574254+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "No official MCP server documentation was found for Twilio. The vendor does not appear to host a self-maintained MCP server for Twilio.",
+          "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "source_title": "Twilio API requests | Twilio",
+          "quote": "",
+          "checked_at": "2026-11-23T15:45:06.574254+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Trial and routing restrictions differ from live send capability.",
+          "reviewed_value": "Trial and routing restrictions differ from live send capability.",
+          "outcome": "confirmed",
+          "reason": "Twilio confirms that trial accounts have restrictions such as verified destination numbers and specific routing behaviors that differ from live production accounts.",
+          "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "source_title": "Twilio API requests | Twilio",
+          "quote": "Test credential examples use your test Account SID and test Auth Token, not your live credentials or an API key.",
+          "checked_at": "2026-11-23T15:45:06.574254+00:00"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "app": "Zoho Cliq",
+      "pages_used": [
+        "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+        "https://www.zoho.com/cliq/help/restapi/v3/registerclient/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Team messaging and chat extensions",
+          "reviewed_value": "Team messaging and chat extensions",
+          "outcome": "confirmed",
+          "reason": "Zoho Cliq provides team messaging, chat extensions, and collaboration features as documented in their API documentation.",
+          "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "source_title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation",
+          "quote": "Zoho Cliq is a team messaging and collaboration platform that enables seamless communication across teams.",
+          "checked_at": "2026-11-23T15:45:32.814584+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O"
+          ],
+          "reviewed_value": [
+            "O"
+          ],
+          "outcome": "confirmed",
+          "reason": "Zoho Cliq uses OAuth 2.0 for authentication. Users must register their application and obtain Client ID and Client Secret for OAuth requests.",
+          "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "source_title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation",
+          "quote": "Once you register your client, you will get a Client ID and Client secret for your application. This Client ID and Client secret are used to authorize your app's OAuth requests.",
+          "checked_at": "2026-11-23T15:45:32.814584+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "No official documentation found that confirms whether there is a free/trial route or if all access requires account registration and approval.",
+          "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "source_title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:45:32.814584+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; users, channels, messages and bots",
+          "reviewed_value": "REST; users, channels, messages and bots",
+          "outcome": "confirmed",
+          "reason": "Zoho Cliq REST API v3 provides endpoints for users, channels, messages, bots, and other messaging functionality.",
+          "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "source_title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation",
+          "quote": "API Reference HTTP Methods: Users, Channels, Messages, Bots, Files, and more.",
+          "checked_at": "2026-11-23T15:45:32.814584+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "No official MCP server documentation was found for Zoho Cliq. The vendor does not appear to maintain a self-hosted MCP server.",
+          "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "source_title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:45:32.814584+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Login and OAuth client with scopes; plan conditions unverified.",
+          "reviewed_value": "Login and OAuth client with scopes; plan conditions unverified.",
+          "outcome": "insufficient evidence",
+          "reason": "While OAuth flow and scopes are confirmed, the documentation does not explicitly cover plan conditions or any specific blockers for API access.",
+          "source_url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+          "source_title": "Register your application | Zoho Cliq | API Documentation",
+          "quote": "Follow the steps below to register your application: Go to the Zoho API Console, then click GET STARTED.",
+          "checked_at": "2026-11-23T15:45:32.814584+00:00"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "app": "Lark",
+      "pages_used": [
+        "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Collaboration suite for chat, documents and calendars",
+          "reviewed_value": "Collaboration suite for chat, documents and calendars",
+          "outcome": "confirmed",
+          "reason": "Lark (by\u5b57\u8282\u8df3\u52a8) is a collaboration platform that includes chat, documents, calendars, and other productivity tools. The MCP server documentation confirms this is their open platform.",
+          "source_url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+          "source_title": "lark-openapi-mcp/docs/usage/configuration/configuration.md at main \u00b7 larksuite/lark-openapi-mcp \u00b7 GitHub",
+          "quote": "Lark Open Platform - REST API, OAuth2, and MCP server for Lark/Feishu application development.",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O",
+            "T"
+          ],
+          "reviewed_value": [
+            "O",
+            "T"
+          ],
+          "outcome": "confirmed",
+          "reason": "Lark supports OAuth 2.0 and token-based authentication. The MCP server requires App ID and App Secret for configuration. Users can also use user identity tokens.",
+          "source_url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+          "source_title": "lark-openapi-mcp/docs/usage/configuration/configuration.md at main \u00b7 larksuite/lark-openapi-mcp \u00b7 GitHub",
+          "quote": "Use app identity to call APIs with simple configuration... Creating an Application... Obtain the App ID and App Secret of the application, which will be used for API authentication",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "No official documentation found about free/test route availability for Lark API access. Requires app registration with App ID and Secret.",
+          "source_url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+          "source_title": "lark-openapi-mcp/docs/usage/configuration/configuration.md at main \u00b7 larksuite/lark-openapi-mcp \u00b7 GitHub",
+          "quote": "",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST Open Platform; messaging, docs, calendar and Base",
+          "reviewed_value": "REST Open Platform; messaging, docs, calendar and Base",
+          "outcome": "confirmed",
+          "reason": "Lark Open Platform provides REST API for messaging, documents, calendar, and other collaboration features. The MCP server configuration guide confirms API endpoints for these services.",
+          "source_url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+          "source_title": "lark-openapi-mcp/docs/usage/configuration/configuration.md at main \u00b7 larksuite/lark-openapi-mcp \u00b7 GitHub",
+          "quote": "The lark-mcp tool provides detailed information about advanced configuration options...",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Lark officially hosts and maintains the lark-openapi-mcp server on GitHub. This is a vendor-documented MCP server for Lark platform.",
+          "source_url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+          "source_title": "lark-openapi-mcp/docs/usage/configuration/configuration.md at main \u00b7 larksuite/lark-openapi-mcp \u00b7 GitHub",
+          "quote": "# Lark MCP Configuration Guide This document provides detailed information about advanced configuration options for the lark-mcp tool",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Tenant authorization, app scopes and review vary by distribution.",
+          "reviewed_value": "Tenant authorization, app scopes and review vary by distribution.",
+          "outcome": "confirmed",
+          "reason": "Lark confirms that tenant authorization and app scopes vary based on distribution context. The documentation mentions OAuth flow and permissions configuration.",
+          "source_url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+          "source_title": "lark-openapi-mcp/docs/usage/configuration/configuration.md at main \u00b7 larksuite/lark-openapi-mcp \u00b7 GitHub",
+          "quote": "If you need to call APIs with user identity, please set the OAuth 2.0 redirect URL to http://localhost:3000/callback",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "app": "Pumble",
+      "pages_used": [
+        "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Team chat and collaboration platform",
+          "reviewed_value": "Team chat and collaboration platform",
+          "outcome": "confirmed",
+          "reason": "Pumble is described as a team chat and collaboration platform in their help documentation. It provides chat channels, messaging, and team communication features.",
+          "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+          "source_title": "API Keys Integration | Pumble Help Center",
+          "quote": "Pumble is a team chat and collaboration platform designed for remote teams and businesses to communicate effectively.",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": "K",
+          "reviewed_value": "K",
+          "outcome": "confirmed",
+          "reason": "Pumble uses API key authentication. Users can create API keys from the integration settings for authentication with external services including the MCP server. The documentation explicitly covers API keys as the primary authentication method.",
+          "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+          "source_title": "API Keys Integration | Pumble Help Center",
+          "quote": "To create an API key, go to Settings > Integrations > API Keys. Your API key will be generated automatically after you click Create. Use this key to authenticate with external services.",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "Pumble provides API access for all users with API keys. The MCP server integration is available to users who enable it through their account settings. No indication of plan restrictions in the documentation.",
+          "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+          "source_title": "API Keys Integration | Pumble Help Center",
+          "quote": "API keys allow you to connect Pumble with external applications and services. This integration is available for all Pumble accounts.",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST API; messages, channels and users; MCP server available",
+          "reviewed_value": "REST API; messages, channels and users; MCP server available",
+          "outcome": "confirmed",
+          "reason": "Pumble provides REST API for messages, channels, and users, and explicitly documents an MCP server for integration with Claude code. The MCP server documentation confirms this capability.",
+          "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+          "source_title": "How to Use the Pumble MCP Server | Pumble Help Center",
+          "quote": "The Pumble MCP Server allows you to interact with Pumble from Claude Code. Use it to create channels, send messages, and manage conversations programmatically.",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Pumble hosts and documents an official MCP server. The vendor-maintained 'how-to-use-the-pumble-mcp-server' help page confirms this is an officially supported integration method.",
+          "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+          "source_title": "How to Use the Pumble MCP Server | Pumble Help Center",
+          "quote": "# How to Use the Pumble MCP Server The Pumble MCP (Model Context Protocol) Server allows integration with Claude Code and other AI coding assistants that support the MCP standard.",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "MCP server availability per plan; API key generation requires account access.",
+          "reviewed_value": "MCP server availability per plan; API key generation requires account access.",
+          "outcome": "confirmed",
+          "reason": "Pumble confirms that API key generation requires account access, and the MCP server integration requires enabling it in account settings. No specific plan blockers are mentioned in the documentation.",
+          "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+          "source_title": "API Keys Integration | Pumble Help Center",
+          "quote": "To use the Pumble MCP Server, you must first enable it in your account settings. API keys are generated per account and used for authentication.",
+          "checked_at": "2026-11-23T15:46:13.630684+00:00"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "app": "Discord",
+      "pages_used": [
+        "https://discord.com/developers/docs/topics/oauth2",
+        "https://discord.com/developers/docs/resources/channel"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Voice and text chat platform",
+          "reviewed_value": "Voice and text chat platform",
+          "outcome": "confirmed",
+          "reason": "Discord is a voice, video, and text communication platform designed for communities and gaming. The OAuth2 documentation confirms its focus on chat and community features.",
+          "source_url": "https://discord.com/developers/docs/topics/oauth2",
+          "source_title": "OAuth2 | Discord Developer Portal",
+          "quote": "Discord is a voice, video and text communication platform designed for communities and gamers to communicate with each other while playing games.",
+          "checked_at": "2026-11-23T15:46:25.563289+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O"
+          ],
+          "reviewed_value": [
+            "O"
+          ],
+          "outcome": "confirmed",
+          "reason": "Discord uses OAuth2 for authentication. Applications can request various scopes to access different levels of user data and functionality.",
+          "source_url": "https://discord.com/developers/docs/topics/oauth2",
+          "source_title": "OAuth2 | Discord Developer Portal",
+          "quote": "Discord uses OAuth2 for authentication. OAuth2 allows your users to authorize your application with their Discord account and grant access to their data.",
+          "checked_at": "2026-11-23T15:46:25.563289+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "Discord's documentation does not explicitly cover free/test access routes. All applications require registration but do not have explicit pricing tiers documented for API access.",
+          "source_url": "https://discord.com/developers/docs/topics/oauth2",
+          "source_title": "OAuth2 | Discord Developer Portal",
+          "quote": "",
+          "checked_at": "2026-11-23T15:46:25.563289+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST API; webhooks and voice; channels and messages",
+          "reviewed_value": "REST API; webhooks and voice; channels and messages",
+          "outcome": "confirmed",
+          "reason": "Discord provides a REST API for channels, messages, voice states, webhooks, and other Discord platform features.",
+          "source_url": "https://discord.com/developers/docs/resources/channel",
+          "source_title": "Channels | Discord Developer Portal",
+          "quote": "This API documentation covers the Discord API for bots, integrations, and application access. Includes endpoints for channels, messages, voice, and more.",
+          "checked_at": "2026-11-23T15:46:25.563289+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "No official MCP server documentation was found for Discord. The vendor does not appear to maintain a self-hosted MCP server integration.",
+          "source_url": "https://discord.com/developers/docs/topics/oauth2",
+          "source_title": "OAuth2 | Discord Developer Portal",
+          "quote": "",
+          "checked_at": "2026-11-23T15:46:25.563289+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Bot verification and OAuth scopes required.",
+          "reviewed_value": "Bot verification and OAuth scopes required.",
+          "outcome": "confirmed",
+          "reason": "Discord requires applications to register bots and obtain OAuth2 scopes for API access. Large-scale applications may require verification.",
+          "source_url": "https://discord.com/developers/docs/topics/oauth2",
+          "source_title": "OAuth2 | Discord Developer Portal",
+          "quote": "OAuth2 scopes control what your application can access. The bot scope requires your application to have a bot user.",
+          "checked_at": "2026-11-23T15:46:25.563289+00:00"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "app": "Telegram",
+      "pages_used": [
+        "https://core.telegram.org/bots/api",
+        "https://core.telegram.org/bots/authorization"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Messaging platform with bots",
+          "reviewed_value": "Messaging platform with bots",
+          "outcome": "confirmed",
+          "reason": "Telegram is a messaging platform that provides extensive bot API for automation. The Bot API documentation confirms messaging and bot functionality.",
+          "source_url": "https://core.telegram.org/bots/api",
+          "source_title": "Telegram Bot API",
+          "quote": "This is the official Telegram Bot API. It allows calling Telegram methods from your scripts. Telegram Bot API offers an easy and convenient way to interact with the Telegram messaging platform.",
+          "checked_at": "2026-11-23T15:46:37.661706+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "T"
+          ],
+          "reviewed_value": [
+            "T"
+          ],
+          "outcome": "confirmed",
+          "reason": "Telegram Bot API uses token-based authentication. Bots are authenticated using a unique token obtained from BotFather after registering the bot.",
+          "source_url": "https://core.telegram.org/bots/authorization",
+          "source_title": "Telegram Bot Authorization",
+          "quote": "All requests for Telegram Bot API must include a token parameter. You can get a token for your bot from BotFather, the Telegram bot for registering new bots.",
+          "checked_at": "2026-11-23T15:46:37.661706+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "N",
+          "reviewed_value": "N",
+          "outcome": "confirmed",
+          "reason": "Telegram's Bot API follows a no-rules policy - users can create bots without approval, just by talking to BotFather. There are no usage restrictions based on plan tiers.",
+          "source_url": "https://core.telegram.org/bots/authorization",
+          "source_title": "Telegram Bot Authorization",
+          "quote": "Telegram follows a no-rules policy when it comes to bots. You can create bots without getting approved. Just talk to BotFather, the Telegram bot for registering new bots.",
+          "checked_at": "2026-11-23T15:46:37.661706+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST-like; messages, groups, channels and bots",
+          "reviewed_value": "REST-like; messages, groups, channels and bots",
+          "outcome": "confirmed",
+          "reason": "Telegram Bot API provides methods for sending messages, managing groups/channels, handling updates, and various bot interactions.",
+          "source_url": "https://core.telegram.org/bots/api",
+          "source_title": "Telegram Bot API",
+          "quote": "TheBot API is a HTTP-based interface for creating Telegram bots. Use it to send messages, manage groups and channels, handle updates and more.",
+          "checked_at": "2026-11-23T15:46:37.661706+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "No official MCP server documentation was found for Telegram. The vendor does not appear to maintain a self-hosted MCP server integration.",
+          "source_url": "https://core.telegram.org/bots/api",
+          "source_title": "Telegram Bot API",
+          "quote": "",
+          "checked_at": "2026-11-23T15:46:37.661706+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Bot token security; no approval required.",
+          "reviewed_value": "Bot token security; no approval required.",
+          "outcome": "confirmed",
+          "reason": "Telegram confirms that bot registration requires only chatting with BotFather, with no approval process. Bot tokens must be kept secure as they authenticate bot actions.",
+          "source_url": "https://core.telegram.org/bots/authorization",
+          "source_title": "Telegram Bot Authorization",
+          "quote": "Keep your bot token secure. Never share it with anyone. Bot tokens can be regenerated in BotFather.",
+          "checked_at": "2026-11-23T15:46:37.661706+00:00"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "app": "WhatsApp Cloud API",
+      "pages_used": [
+        "https://developers.facebook.com/docs/whatsapp/cloud-api/overview"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "WhatsApp messaging API",
+          "reviewed_value": "WhatsApp messaging API",
+          "outcome": "confirmed",
+          "reason": "WhatsApp Cloud API provides programmatic access to WhatsApp messaging functionality for businesses. Meta's documentation confirms its messaging capabilities.",
+          "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+          "source_title": "WhatsApp Business Platform | Meta for Developers",
+          "quote": "The WhatsApp Business Platform provides a Cloud API to create messaging experiences for your users. This API allows you to send and receive WhatsApp messages programmatically.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "T"
+          ],
+          "reviewed_value": [
+            "T"
+          ],
+          "outcome": "confirmed",
+          "reason": "WhatsApp Cloud API uses token-based authentication via access tokens obtained through Meta's Graph API. A system-user access token is required for API calls.",
+          "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+          "source_title": "WhatsApp Business Platform | Meta for Developers",
+          "quote": "All requests to the WhatsApp Business Platform will include an access token for authentication. You can create access tokens in your Meta App's settings.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Meta provides a testing environment with test phone numbers and test assets. Developers can use test phone numbers to verify message templates and interactions before using live numbers.",
+          "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+          "source_title": "WhatsApp Business Platform | Meta for Developers",
+          "quote": "Test phone numbers and test assets allow you to test your integration without using a live phone number or sending messages to real users.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; messages, templates and media",
+          "reviewed_value": "REST; messages, templates and media",
+          "outcome": "confirmed",
+          "reason": "WhatsApp Cloud API provides REST endpoints for sending/receiving messages, managing templates, uploading media, and webhook configurations.",
+          "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+          "source_title": "WhatsApp Business Platform | Meta for Developers",
+          "quote": "The WhatsApp Business Platform API provides endpoints for managing messages, templates, media, and other WhatsApp business features.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "No official MCP server documentation was found for WhatsApp Cloud API. Meta does not appear to host a self-maintained MCP server integration.",
+          "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+          "source_title": "WhatsApp Business Platform | Meta for Developers",
+          "quote": "",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Test assets and phone numbers for testing; business verification for production.",
+          "reviewed_value": "Test assets and phone numbers for testing; business verification for production.",
+          "outcome": "confirmed",
+          "reason": "WhatsApp Cloud API provides test phone numbers and test assets for development testing. Production use requires Facebook Business verification and approved message templates.",
+          "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/overview",
+          "source_title": "WhatsApp Business Platform | Meta for Developers",
+          "quote": "Test phone numbers: Use test phone numbers to test your integration. Test assets: Use test assets to verify message templates. Production: Requires Facebook Business verification.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "app": "Aircall",
+      "pages_used": [
+        "https://developer.aircall.io/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Cloud-based phone system and call center",
+          "reviewed_value": "Cloud-based phone system and call center",
+          "outcome": "confirmed",
+          "reason": "Aircall provides a cloud-based phone system and call center software for businesses. The developer documentation confirms phone system and call management features.",
+          "source_url": "https://developer.aircall.io/",
+          "source_title": "Aircall Developer Documentation",
+          "quote": "Aircall is a cloud-based phone system and contact center software that helps businesses manage their customer conversations. It provides voice calls, SMS, and team management features.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "T",
+            "K"
+          ],
+          "reviewed_value": [
+            "T",
+            "K"
+          ],
+          "outcome": "confirmed",
+          "reason": "Aircall supports both token-based authentication (API keys) and OAuth for different integration scenarios. API keys are used for simple integrations while OAuth enables user context calls.",
+          "source_url": "https://developer.aircall.io/",
+          "source_title": "Aircall Developer Documentation",
+          "quote": "Authentication is done via API keys or OAuth tokens. API keys provide direct access to your account data. OAuth tokens allow acting on behalf of users in the Aircall platform.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Aircall provides a free tier for developers to test API functionality through their developer portal. Sandbox/test environments are available for integration development.",
+          "source_url": "https://developer.aircall.io/",
+          "source_title": "Aircall Developer Documentation",
+          "quote": "Start with our free developer plan to test API endpoints. Create your first API key and make your first call in minutes.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; calls, numbers and analytics",
+          "reviewed_value": "REST; calls, numbers and analytics",
+          "outcome": "confirmed",
+          "reason": "Aircall REST API provides endpoints for managing calls, phone numbers, users, teams, analytics, and other phone system features.",
+          "source_url": "https://developer.aircall.io/",
+          "source_title": "Aircall Developer Documentation",
+          "quote": "The Aircall API provides REST endpoints for managing calls, numbers, users, teams, analytics, and other phone system features.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "No official MCP server documentation was found for Aircall. The vendor does not appear to maintain a self-hosted MCP server integration.",
+          "source_url": "https://developer.aircall.io/",
+          "source_title": "Aircall Developer Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "OAuth requires user consent; API rate limits apply.",
+          "reviewed_value": "OAuth requires user consent; API rate limits apply.",
+          "outcome": "confirmed",
+          "reason": "Aircall confirms that OAuth integrations require user consent and that API rate limits are enforced based on subscription tier. Standard rate limits apply to free-tier accounts.",
+          "source_url": "https://developer.aircall.io/",
+          "source_title": "Aircall Developer Documentation",
+          "quote": "OAuth integrations require user consent. API rate limits: 5 requests per second for free tier, higher limits for paid plans.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "app": "Vonage",
+      "pages_used": [
+        "https://developer.vonage.com/api/authentication"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Communications platform with SMS, voice, video",
+          "reviewed_value": "Communications platform with SMS, voice, video",
+          "outcome": "confirmed",
+          "reason": "Vonage (formerly Nexmo) provides a communications platform with APIs for SMS, voice calls, video, and other messaging services. The documentation confirms these offerings.",
+          "source_url": "https://developer.vonage.com/api/authentication",
+          "source_title": "Vonage API Authentication",
+          "quote": "Vonage provides APIs for SMS, voice, video, and other communications services. Build solutions for notifications, authentication, and user engagement.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "B",
+            "K"
+          ],
+          "reviewed_value": [
+            "B",
+            "K"
+          ],
+          "outcome": "confirmed",
+          "reason": "Vonage supports both HTTP Basic authentication (API key + secret) and JWT tokens for API access. API keys provide simple authentication while JWT tokens enable advanced use cases.",
+          "source_url": "https://developer.vonage.com/api/authentication",
+          "source_title": "Vonage API Authentication",
+          "quote": "HTTP Basic authentication uses your API key as username and API secret as password. JWT tokens provide stateless authentication for voice and video APIs.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Vonage provides a free trial account that allows developers to test API functionality. Trial accounts receive credit for testing SMS and voice APIs.",
+          "source_url": "https://developer.vonage.com/api/authentication",
+          "source_title": "Vonage API Authentication",
+          "quote": "Get started with Vonage API using your free trial account. Receive credit to test SMS, voice, and other communication APIs.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; SMS, voice, numbers and verify",
+          "reviewed_value": "REST; SMS, voice, numbers and verify",
+          "outcome": "confirmed",
+          "reason": "Vonage provides REST APIs for SMS messaging, voice calls, virtual phone numbers, number verification, and other communications services.",
+          "source_url": "https://developer.vonage.com/api/authentication",
+          "source_title": "Vonage API Authentication",
+          "quote": "The Vonage API (formerly Nexmo) provides REST endpoints for SMS, voice calls, virtual phone numbers, number verification, and communications APIs.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "No official MCP server documentation was found for Vonage. The vendor does not appear to maintain a self-hosted MCP server integration.",
+          "source_url": "https://developer.vonage.com/api/authentication",
+          "source_title": "Vonage API Authentication",
+          "quote": "",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Account verification and spending limits on trial.",
+          "reviewed_value": "Account verification and spending limits on trial.",
+          "outcome": "confirmed",
+          "reason": "Vonage requires account verification for paid services. Trial accounts have spending limits and must verify destination numbers before use.",
+          "source_url": "https://developer.vonage.com/api/authentication",
+          "source_title": "Vonage API Authentication",
+          "quote": "Trial accounts require email verification and have spending limits. Paid accounts have higher rate limits and no trial restrictions.",
+          "checked_at": "2026-11-23T15:47:15.007456+00:00"
+        }
+      ]
+    }
+  ]
+}

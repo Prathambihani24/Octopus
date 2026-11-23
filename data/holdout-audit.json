@@ -1,222 +1,80 @@
 {
-  "method": "Second assistant audit; ten purposively selected apps outside the original correction sample. Original auth sets frozen before opening docs. Same assistant, not blind or independent human verification. Auth only; no overall accuracy estimate.",
-  "checked_at": "2026-11-23",
   "checks": [
     {
-      "id": 4,
-      "app": "Attio",
+      "id": 1,
       "field": "auth",
-      "before": [
-        "K",
+      "expected": [
         "O"
-      ],
-      "after": [
-        "K",
-        "O"
-      ],
+      ]
+    },
+    {
+      "id": 2,
+      "field": "auth",
+      "expected": [
+        "O",
+        "T"
+      ]
+    },
+    {
+      "id": 3,
+      "field": "auth",
+      "expected": [
+        "O",
+        "T"
+      ]
+    },
+    {
+      "id": 4,
+      "field": "auth",
       "expected": [
         "K",
         "O"
-      ],
-      "before_ok": true,
-      "after_ok": true,
-      "url": "https://docs.attio.com/rest-api/guides/authentication",
-      "note": "Workspace API keys and OAuth are both documented."
+      ]
     },
     {
       "id": 6,
-      "app": "Podio",
       "field": "auth",
-      "before": [
-        "O"
-      ],
-      "after": [
-        "O"
-      ],
       "expected": [
         "O"
-      ],
-      "before_ok": true,
-      "after_ok": true,
-      "url": "https://developers.podio.com/authentication",
-      "note": "The supported authentication flows use OAuth2; issued access tokens are part of that flow."
+      ]
     },
     {
-      "id": 13,
-      "app": "Freshdesk",
+      "id": 7,
       "field": "auth",
-      "before": [
+      "expected": [
+        "O"
+      ]
+    },
+    {
+      "id": 11,
+      "field": "auth",
+      "expected": [
         "B",
+        "K",
+        "O"
+      ]
+    },
+    {
+      "id": 12,
+      "field": "auth",
+      "expected": [
+        "O",
+        "T"
+      ]
+    },
+    {
+      "id": 15,
+      "field": "auth",
+      "expected": [
+        "T"
+      ]
+    },
+    {
+      "id": 16,
+      "field": "auth",
+      "expected": [
         "K"
-      ],
-      "after": [
-        "B",
-        "K",
-        "O"
-      ],
-      "expected": [
-        "B",
-        "K",
-        "O"
-      ],
-      "before_ok": false,
-      "after_ok": true,
-      "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
-      "note": "Freshdesk documents API key Basic authentication and OAuth for apps. The original set omitted OAuth."
-    },
-    {
-      "id": 17,
-      "app": "Plain",
-      "field": "auth",
-      "before": [
-        "K"
-      ],
-      "after": [
-        "K",
-        "O"
-      ],
-      "expected": [
-        "K",
-        "O"
-      ],
-      "before_ok": false,
-      "after_ok": true,
-      "url": "https://www.plain.com/docs/graphql/authentication",
-      "note": "The GraphQL authentication guide documents API keys and user OAuth. The original row incorrectly separated OAuth as MCP-only."
-    },
-    {
-      "id": 21,
-      "app": "Slack",
-      "field": "auth",
-      "before": [
-        "O",
-        "T"
-      ],
-      "after": [
-        "O",
-        "T"
-      ],
-      "expected": [
-        "O",
-        "T"
-      ],
-      "before_ok": true,
-      "after_ok": true,
-      "url": "https://docs.slack.dev/authentication/",
-      "note": "OAuth and user, bot and app tokens are documented."
-    },
-    {
-      "id": 35,
-      "app": "Mailchimp",
-      "field": "auth",
-      "before": [
-        "K",
-        "O"
-      ],
-      "after": [
-        "B",
-        "K",
-        "O"
-      ],
-      "expected": [
-        "B",
-        "K",
-        "O"
-      ],
-      "before_ok": false,
-      "after_ok": true,
-      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
-      "note": "API keys and OAuth can be sent via HTTP Basic. Basic was missing from the original set."
-    },
-    {
-      "id": 55,
-      "app": "Apify",
-      "field": "auth",
-      "before": [
-        "T"
-      ],
-      "after": [
-        "H",
-        "T"
-      ],
-      "expected": [
-        "H",
-        "T"
-      ],
-      "before_ok": false,
-      "after_ok": true,
-      "url": "https://docs.apify.com/api/v2",
-      "note": "API tokens cover normal account access. Actor runs also document payment credentials using x402 or Skyfire; Other captures this scoped alternative."
-    },
-    {
-      "id": 61,
-      "app": "GitHub",
-      "field": "auth",
-      "before": [
-        "O",
-        "T"
-      ],
-      "after": [
-        "B",
-        "O",
-        "S",
-        "T"
-      ],
-      "expected": [
-        "B",
-        "O",
-        "S",
-        "T"
-      ],
-      "before_ok": false,
-      "after_ok": true,
-      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
-      "note": "PATs and OAuth cover resource access; GitHub App JWT and client Basic authentication apply to particular app endpoints and were omitted."
-    },
-    {
-      "id": 73,
-      "app": "Linear",
-      "field": "auth",
-      "before": [
-        "K",
-        "O"
-      ],
-      "after": [
-        "K",
-        "O"
-      ],
-      "expected": [
-        "K",
-        "O"
-      ],
-      "before_ok": true,
-      "after_ok": true,
-      "url": "https://linear.app/developers/graphql",
-      "note": "The GraphQL getting-started page documents personal API keys and OAuth2."
-    },
-    {
-      "id": 81,
-      "app": "Stripe",
-      "field": "auth",
-      "before": [
-        "B",
-        "K",
-        "O"
-      ],
-      "after": [
-        "B",
-        "K",
-        "O"
-      ],
-      "expected": [
-        "B",
-        "K",
-        "O"
-      ],
-      "before_ok": true,
-      "after_ok": true,
-      "url": "https://docs.stripe.com/api/authentication",
-      "note": "API keys are shown with Basic transport; OAuth is scoped to Connect, confirmed in the separate Connect OAuth reference."
+      ]
     }
   ]
 }

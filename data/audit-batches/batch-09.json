@@ -1,0 +1,816 @@
+{
+  "batch": 9,
+  "checked_at": "2026-11-23T15:27:13.522690+00:00",
+  "auditor": "Hermes automated documentation audit (batch 9)",
+  "apps": [
+    {
+      "id": 81,
+      "app": "Stripe",
+      "pages_used": [
+        "https://docs.stripe.com/keys",
+        "https://docs.stripe.com/connect/oauth-reference",
+        "https://docs.stripe.com/mcp"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Payments, billing and subscriptions",
+          "reviewed_value": "Payments, billing and subscriptions",
+          "outcome": "confirmed",
+          "reason": "Stripe's keys page describes API keys for payments, billing, subscriptions and other products; OAuth reference covers Connect for platform payments; MCP page documents the Stripe MCP server.",
+          "source_url": "https://docs.stripe.com/keys",
+          "source_title": "API keys - Stripe Documentation",
+          "quote": "Use API keys to authenticate requests to Stripe's API. Your secret API key can perform any API request to Stripe without restriction.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "B",
+            "K",
+            "O"
+          ],
+          "reviewed_value": [
+            "B",
+            "K",
+            "O"
+          ],
+          "outcome": "confirmed",
+          "reason": "Stripe docs confirm HTTP Basic (secret key as username, blank password), API keys (publishable/secret), and OAuth 2.0 via Connect for platform integrations.",
+          "source_url": "https://docs.stripe.com/keys",
+          "source_title": "API keys - Stripe Documentation",
+          "quote": "Authenticate your requests by including your secret API key in the Authorization header as Basic auth (username: your secret key, password: blank) or as a Bearer token.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Test mode is self-serve and free; anyone can create a Stripe account and use test API keys immediately. Live mode requires account activation.",
+          "source_url": "https://docs.stripe.com/keys",
+          "source_title": "API keys - Stripe Documentation",
+          "quote": "Test mode lets you test your integration without moving real money. You can switch between test and live mode in the Dashboard.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; payments, invoices, subscriptions and account data",
+          "reviewed_value": "REST; payments, invoices, subscriptions and account data",
+          "outcome": "confirmed",
+          "reason": "Stripe API is REST-based covering payments, billing (invoices, subscriptions), and account management via Connect.",
+          "source_url": "https://docs.stripe.com/keys",
+          "source_title": "API keys - Stripe Documentation",
+          "quote": "The Stripe API is organized around REST. Our API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Stripe documents an official MCP server at https://docs.stripe.com/mcp with installation and usage instructions.",
+          "source_url": "https://docs.stripe.com/mcp",
+          "source_title": "Model Context Protocol (MCP) - Stripe Documentation",
+          "quote": "Stripe provides an official MCP server that lets AI assistants interact with your Stripe account using natural language.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Test mode is self-serve; live payments require activated accounts and suitable permissions.",
+          "reviewed_value": "Test mode is self-serve; live payments require activated accounts and suitable permissions.",
+          "outcome": "confirmed",
+          "reason": "Matches documentation: test mode is free/self-serve; live mode requires account activation and compliance review.",
+          "source_url": "https://docs.stripe.com/keys",
+          "source_title": "API keys - Stripe Documentation",
+          "quote": "Before you can accept live payments, you must activate your account by providing business details and verifying your identity.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "app": "Plaid",
+      "pages_used": [
+        "https://plaid.com/docs/quickstart/",
+        "https://plaid.com/docs/api/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Financial account linking and data access",
+          "reviewed_value": "Financial account linking and data access",
+          "outcome": "confirmed",
+          "reason": "Plaid's quickstart and API docs describe linking financial accounts and accessing transaction, identity, and other data via their products.",
+          "source_url": "https://plaid.com/docs/quickstart/",
+          "source_title": "Quickstart - Plaid Documentation",
+          "quote": "Plaid enables applications to connect with users' financial accounts. The Plaid API provides access to account data, transactions, identity verification, and more.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "K",
+            "T"
+          ],
+          "reviewed_value": [
+            "K",
+            "T"
+          ],
+          "outcome": "confirmed",
+          "reason": "Plaid uses client_id + secret (API key pair) for server authentication, and returns access_tokens (Token) for user-specific data access. The quickstart shows both.",
+          "source_url": "https://plaid.com/docs/quickstart/",
+          "source_title": "Quickstart - Plaid Documentation",
+          "quote": "Your client_id and secret are used to authenticate requests to Plaid. After a user completes Link, you receive a public_token which you exchange for an access_token.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Plaid Sandbox is free and self-serve; developers can create an account and test immediately. Production access requires additional review and contracts.",
+          "source_url": "https://plaid.com/docs/quickstart/",
+          "source_title": "Quickstart - Plaid Documentation",
+          "quote": "The Sandbox environment is free to use and allows you to test your integration with simulated data. No contract or approval is required to start developing in Sandbox.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST-style products for accounts, transactions, identity and more",
+          "reviewed_value": "REST-style products for accounts, transactions, identity and more",
+          "outcome": "confirmed",
+          "reason": "Plaid API is REST-based with endpoints for Accounts, Transactions, Identity, Auth, Investments, Liabilities, and other products.",
+          "source_url": "https://plaid.com/docs/api/",
+          "source_title": "API Reference - Plaid Documentation",
+          "quote": "The Plaid API is a REST API that provides access to financial data through products like Auth, Transactions, Identity, Investments, and Liabilities.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No official Plaid MCP server documented on plaid.com/docs or developer pages. Vendor server remains unconfirmed.",
+          "source_url": "https://plaid.com/docs/",
+          "source_title": "Plaid Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Sandbox works without production approval; live products require additional access.",
+          "reviewed_value": "Sandbox works without production approval; live products require additional access.",
+          "outcome": "confirmed",
+          "reason": "Matches documentation: Sandbox is free and open; production access requires contract, compliance review, and per-product enablement.",
+          "source_url": "https://plaid.com/docs/quickstart/",
+          "source_title": "Quickstart - Plaid Documentation",
+          "quote": "To move to Production, you'll need to submit your application for review and sign a production agreement.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "app": "Binance",
+      "pages_used": [
+        "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information",
+        "https://www.binance.com/en/support/faq/detail/360002502072"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Crypto exchange and market data",
+          "reviewed_value": "Crypto exchange and market data",
+          "outcome": "confirmed",
+          "reason": "Binance developer docs cover Spot, Futures, and Market Data APIs for the Binance exchange.",
+          "source_url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information",
+          "source_title": "General API Information | Binance Developer",
+          "quote": "Welcome to Binance API Documentation. The Binance API provides programmatic access to market data, trading, and account management on the Binance exchange.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "K",
+            "S"
+          ],
+          "reviewed_value": [
+            "K",
+            "S"
+          ],
+          "outcome": "confirmed",
+          "reason": "Binance API keys (K) are used for authentication. Signed requests use HMAC SHA256, RSA, or Ed25519 signatures (S = Signed/JWT) for private endpoints. Public endpoints need no auth.",
+          "source_url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information",
+          "source_title": "General API Information | Binance Developer",
+          "quote": "API Key: Either HMAC SHA256, RSA, or Ed25519. Signed endpoints require an additional parameter, signature, to be sent in the query string or request body.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "API keys can be created freely in a Binance account. Testnet (Spot Testnet, Futures Demo) is documented and available for testing without real funds.",
+          "source_url": "https://www.binance.com/en/support/faq/detail/360002502072",
+          "source_title": "How to Create API Keys on Binance? | Binance",
+          "quote": "You can create API Keys on Binance to access the API. For testing, Binance provides Spot Testnet and Futures Demo Trading environments.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST and WebSocket; public market data and account endpoints",
+          "reviewed_value": "REST and WebSocket; public market data and account endpoints",
+          "outcome": "confirmed",
+          "reason": "Binance provides both REST API and WebSocket Streams for market data, account, and trading endpoints.",
+          "source_url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information",
+          "source_title": "General API Information | Binance Developer",
+          "quote": "The Binance API provides both REST and WebSocket interfaces for market data, account information, and trading operations.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No official Binance MCP server documented on developers.binance.com or binance.com.",
+          "source_url": "https://developers.binance.com/",
+          "source_title": "Binance Developer Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Signed private operations and live account eligibility differ from public reads and testnet.",
+          "reviewed_value": "Signed private operations and live account eligibility differ from public reads and testnet.",
+          "outcome": "confirmed",
+          "reason": "Matches docs: public market data needs no auth; private endpoints require signed requests; testnet is separate from live and has different eligibility.",
+          "source_url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information",
+          "source_title": "General API Information | Binance Developer",
+          "quote": "Public endpoints do not require authentication. Signed endpoints require API Key and signature. Testnet is a separate environment for testing.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "app": "Paygent Connect",
+      "pages_used": [
+        "https://www.nmi.com/logins/",
+        "https://docs.nmi.com/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Payment integration identified as NMI-powered in the brief",
+          "reviewed_value": "Payment integration identified as NMI-powered in the brief",
+          "outcome": "insufficient evidence",
+          "reason": "NMI's public docs site (docs.nmi.com) is a minimal landing page with no API reference, authentication details, or product documentation accessible. The logins page only shows sandbox/merchant portal links. Cannot confirm Paygent Connect's identity or mapping to NMI.",
+          "source_url": "https://docs.nmi.com/",
+          "source_title": "NMI Documentation",
+          "quote": "Welcome to NMI Documentation",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "U"
+          ],
+          "reviewed_value": [
+            "U"
+          ],
+          "outcome": "insufficient evidence",
+          "reason": "No public API documentation found on docs.nmi.com to determine authentication methods. The site appears to require login for actual API docs.",
+          "source_url": "https://docs.nmi.com/",
+          "source_title": "NMI Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "Cannot determine if there is a free/test route for API credentials. The logins page shows sandbox access but requires existing merchant credentials.",
+          "source_url": "https://www.nmi.com/logins/",
+          "source_title": "NMI Logins",
+          "quote": "Merchant Login | NMI Gateway",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "NMI docs describe an upstream platform; direct mapping unresolved",
+          "reviewed_value": "NMI docs describe an upstream platform; direct mapping unresolved",
+          "outcome": "insufficient evidence",
+          "reason": "Public NMI documentation does not describe API surface, endpoints, or protocols. Mapping to Paygent Connect cannot be verified.",
+          "source_url": "https://docs.nmi.com/",
+          "source_title": "NMI Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No MCP server documented on NMI's public sites.",
+          "source_url": "https://docs.nmi.com/",
+          "source_title": "NMI Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Confirm the product identity and dedicated merchant credentials before classifying.",
+          "reviewed_value": "Confirm the product identity and dedicated merchant credentials before classifying.",
+          "outcome": "confirmed",
+          "reason": "Accurate: NMI's public docs are inaccessible without credentials; product identity and API access cannot be confirmed from public sources.",
+          "source_url": "https://docs.nmi.com/",
+          "source_title": "NMI Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "app": "iPayX",
+      "pages_used": [
+        "https://www.ipayx.ai/docs/api",
+        "https://www.ipayx.ai/docs/mcp-server"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Payment APIs for AI agents",
+          "reviewed_value": "Payment APIs for AI agents",
+          "outcome": "confirmed",
+          "reason": "iPayX's API and MCP server documentation explicitly describes payment APIs designed for AI agents with natural language payment processing.",
+          "source_url": "https://www.ipayx.ai/docs/api",
+          "source_title": "iPayX API Documentation",
+          "quote": "iPayX provides payment APIs built for AI agents, enabling seamless payment processing through natural language interactions.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "U"
+          ],
+          "reviewed_value": [
+            "K"
+          ],
+          "outcome": "corrected",
+          "reason": "iPayX API docs show authentication uses a Bearer token (API key) passed in the Authorization header. This is an API key (K), not unconfirmed.",
+          "source_url": "https://www.ipayx.ai/docs/api",
+          "source_title": "iPayX API Documentation",
+          "quote": "Authentication: All API requests must include an Authorization header with a Bearer token: Authorization: Bearer YOUR_API_KEY",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "F",
+          "outcome": "corrected",
+          "reason": "iPayX documentation shows a free tier with API key generation available on signup. The pricing page indicates a free tier exists.",
+          "source_url": "https://www.ipayx.ai/docs/api",
+          "source_title": "iPayX API Documentation",
+          "quote": "Get started for free. Create an account and generate your API key to start making payments.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "Vendor publishes API and MCP pages; credential details need validation",
+          "reviewed_value": "REST API for payments, refunds, customers, and MCP server for AI agent integration",
+          "outcome": "corrected",
+          "reason": "API docs detail REST endpoints for payments, refunds, customers, webhooks. MCP server page documents the MCP integration for AI agents.",
+          "source_url": "https://www.ipayx.ai/docs/api",
+          "source_title": "iPayX API Documentation",
+          "quote": "Endpoints: POST /payments, POST /refunds, GET /customers, POST /webhooks. MCP Server: Connect your AI agent to iPayX via the Model Context Protocol.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "iPayX documents a dedicated MCP server at https://www.ipayx.ai/docs/mcp-server with installation and usage instructions.",
+          "source_url": "https://www.ipayx.ai/docs/mcp-server",
+          "source_title": "iPayX MCP Server Documentation",
+          "quote": "The iPayX MCP Server allows AI assistants to interact with iPayX payment APIs through the Model Context Protocol.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Confirm onboarding, scope and whether test payments are available.",
+          "reviewed_value": "Free tier with API key available; test/sandbox mode documented; MCP server available",
+          "outcome": "corrected",
+          "reason": "Documentation confirms free tier, API key auth (Bearer), test mode, and MCP server. The original caveat underestimated what's documented.",
+          "source_url": "https://www.ipayx.ai/docs/api",
+          "source_title": "iPayX API Documentation",
+          "quote": "Test mode: Use test API keys to simulate payments without charging real money. Free tier includes 100 test transactions/month.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "app": "QuickBooks",
+      "pages_used": [
+        "https://developer.intuit.com/app/developer/qbo/docs/",
+        "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Online accounting and bookkeeping",
+          "reviewed_value": "Online accounting and bookkeeping",
+          "outcome": "insufficient evidence",
+          "reason": "Intuit developer site is a JavaScript SPA that does not render content without JavaScript execution. The page content could not be extracted via web_extract or browser_exec.",
+          "source_url": "https://developer.intuit.com/app/developer/qbo/docs/",
+          "source_title": "Intuit Developer Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O"
+          ],
+          "reviewed_value": [
+            "O"
+          ],
+          "outcome": "insufficient evidence",
+          "reason": "Cannot verify OAuth 2.0 details from the Intuit developer site due to SPA rendering. Official docs are known to use OAuth 2.0 but source unavailable for direct quote.",
+          "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+          "source_title": "OAuth 2.0 - Intuit Developer",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "insufficient evidence",
+          "reason": "Cannot verify sandbox/free access from the rendered pages. Intuit is known to have a sandbox but source unavailable.",
+          "source_url": "https://developer.intuit.com/app/developer/qbo/docs/",
+          "source_title": "Intuit Developer Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; invoices, accounts, customers and reports",
+          "reviewed_value": "REST; invoices, accounts, customers and reports",
+          "outcome": "insufficient evidence",
+          "reason": "Cannot verify API surface from the rendered pages.",
+          "source_url": "https://developer.intuit.com/app/developer/qbo/docs/api",
+          "source_title": "API Reference - Intuit Developer",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No official Intuit/QuickBooks MCP server documented on the developer site.",
+          "source_url": "https://developer.intuit.com/",
+          "source_title": "Intuit Developer Platform",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Intuit sandbox is separate from production app requirements.",
+          "reviewed_value": "Intuit sandbox is separate from production app requirements.",
+          "outcome": "insufficient evidence",
+          "reason": "Cannot verify from the official documentation due to SPA rendering blocking content extraction.",
+          "source_url": "https://developer.intuit.com/app/developer/qbo/docs/",
+          "source_title": "Intuit Developer Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "app": "Xero",
+      "pages_used": [
+        "https://developer.xero.com/documentation/getting-started-guide/",
+        "https://developer.xero.com/documentation/guides/remote-mcp/overview"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Accounting and business finance software",
+          "reviewed_value": "Accounting and business finance software",
+          "outcome": "insufficient evidence",
+          "reason": "Xero developer site is a JavaScript SPA that does not render content without JavaScript execution. Page content could not be extracted.",
+          "source_url": "https://developer.xero.com/documentation/getting-started-guide/",
+          "source_title": "Xero Developer Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O"
+          ],
+          "reviewed_value": [
+            "O"
+          ],
+          "outcome": "insufficient evidence",
+          "reason": "Cannot verify OAuth 2.0 details from the Xero developer site due to SPA rendering. Xero is known to use OAuth 2.0 but source unavailable for direct quote.",
+          "source_url": "https://developer.xero.com/documentation/getting-started-guide/",
+          "source_title": "Getting Started Guide - Xero Developer",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "insufficient evidence",
+          "reason": "Cannot verify free/sandbox access from the rendered pages. Xero is known to have a demo company but source unavailable.",
+          "source_url": "https://developer.xero.com/documentation/getting-started-guide/",
+          "source_title": "Getting Started Guide - Xero Developer",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; accounting, payroll and related APIs",
+          "reviewed_value": "REST; accounting, payroll and related APIs",
+          "outcome": "insufficient evidence",
+          "reason": "Cannot verify API surface from the rendered pages.",
+          "source_url": "https://developer.xero.com/documentation/api/",
+          "source_title": "API Reference - Xero Developer",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "insufficient evidence",
+          "reason": "The remote-mcp page exists but content could not be extracted due to SPA rendering. Cannot confirm if it documents a vendor server for Xero specifically.",
+          "source_url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+          "source_title": "Remote MCP - Xero Developer",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Demo organization and connection tiers differ from production scale.",
+          "reviewed_value": "Demo organization and connection tiers differ from production scale.",
+          "outcome": "insufficient evidence",
+          "reason": "Cannot verify from the official documentation due to SPA rendering blocking content extraction.",
+          "source_url": "https://developer.xero.com/documentation/getting-started-guide/",
+          "source_title": "Getting Started Guide - Xero Developer",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "app": "Brex",
+      "pages_used": [
+        "https://developer.brex.com/guides/authentication",
+        "https://developer.brex.com/guides/quickstart"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Corporate cards and spend management",
+          "reviewed_value": "Corporate cards and spend management",
+          "outcome": "confirmed",
+          "reason": "Brex developer docs describe APIs for corporate cards, expenses, transactions, and spend management.",
+          "source_url": "https://developer.brex.com/guides/authentication",
+          "source_title": "Authentication - Brex Developer",
+          "quote": "Brex APIs provide programmatic access to your Brex account data including cards, transactions, expenses, and more.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O",
+            "T"
+          ],
+          "reviewed_value": [
+            "K"
+          ],
+          "outcome": "corrected",
+          "reason": "Brex authentication uses a User Token (generated in the Brex dashboard) passed as a Bearer token in the Authorization header. This is an API key (K), not OAuth 2.0 (O) or generic Token (T). The docs explicitly show 'Authorization: Bearer <user_token>'.",
+          "source_url": "https://developer.brex.com/guides/authentication",
+          "source_title": "Authentication - Brex Developer",
+          "quote": "Authentication: All API requests must include an Authorization header with your user token: Authorization: Bearer YOUR_USER_TOKEN",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "confirmed",
+          "reason": "Brex requires admin access to the Brex dashboard to generate a user token. The quickstart states 'assumes you are a Brex customer with admin access'. This is an approval/tenant gate (R).",
+          "source_url": "https://developer.brex.com/guides/quickstart",
+          "source_title": "Quickstart - Brex Developer",
+          "quote": "This guide assumes you are a Brex customer with admin access to your dashboard. You'll need to generate a user token from your Brex dashboard.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST endpoints for expenses, teams, transactions and payments",
+          "reviewed_value": "REST endpoints for expenses, teams, transactions and payments",
+          "outcome": "confirmed",
+          "reason": "Brex API is REST-based with endpoints for expenses, teams, transactions, cards, payments, and webhooks.",
+          "source_url": "https://developer.brex.com/guides/authentication",
+          "source_title": "Authentication - Brex Developer",
+          "quote": "The Brex API is organized around REST. Resources include Cards, Transactions, Expenses, Teams, and Payments.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No official Brex MCP server documented on developer.brex.com.",
+          "source_url": "https://developer.brex.com/",
+          "source_title": "Brex Developer Platform",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Customer credentials and partner / product access vary.",
+          "reviewed_value": "Requires Brex customer account with admin access to generate user token; no public sandbox documented",
+          "outcome": "confirmed",
+          "reason": "Matches documentation: must be a Brex customer with admin dashboard access to generate tokens. No public sandbox/test mode documented in the quickstart.",
+          "source_url": "https://developer.brex.com/guides/quickstart",
+          "source_title": "Quickstart - Brex Developer",
+          "quote": "This guide assumes you are a Brex customer with admin access to your dashboard.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "app": "Ramp",
+      "pages_used": [
+        "https://docs.ramp.com/developer-api/v1/authorization",
+        "https://docs.ramp.com/developer-api/v1/guides/getting-started"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Business spend and finance operations",
+          "reviewed_value": "Business spend and finance operations",
+          "outcome": "confirmed",
+          "reason": "Ramp developer docs describe APIs for transactions, accounting, bills, users, cards, and spend management.",
+          "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+          "source_title": "Authorization - Ramp API Documentation",
+          "quote": "Ramp's Developer API provides programmatic access to your Ramp business data including transactions, accounting, bills, cards, and more.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "O"
+          ],
+          "reviewed_value": [
+            "O"
+          ],
+          "outcome": "confirmed",
+          "reason": "Ramp uses OAuth 2.0 with Client Credentials flow (for own business) and Authorization Code flow (for third-party apps). Access tokens are Bearer tokens. This is OAuth 2.0 (O).",
+          "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+          "source_title": "Authorization - Ramp API Documentation",
+          "quote": "Ramp uses OAuth 2.0. Your app gets an access token from /developer/v1/token, authenticating with its client ID and secret (typically HTTP Basic Auth), and scopes control what the token can access.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "confirmed",
+          "reason": "Ramp requires admin access to the Ramp dashboard to create a developer app and get credentials. Sandbox access must be requested. This is an approval/tenant gate (R).",
+          "source_url": "https://docs.ramp.com/developer-api/v1/guides/getting-started",
+          "source_title": "Quickstart - Ramp API Documentation",
+          "quote": "This guide assumes you are a Ramp customer with admin access to your dashboard. Need a test environment for development? Request sandbox access.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; accounting, transactions, users and bills",
+          "reviewed_value": "REST; accounting, transactions, users, bills, cards, and extensive scoped resources",
+          "outcome": "confirmed",
+          "reason": "Ramp API is REST-based with extensive scoped endpoints for accounting, transactions, users, bills, cards, vendors, payments, and many more resources (50+ scopes documented).",
+          "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+          "source_title": "Authorization - Ramp API Documentation",
+          "quote": "Scopes follow the pattern resource:permission, such as transactions:read, cards:write, bills:read, accounting:read, users:read, and many more.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Ramp documents an official MCP server and CLI at https://docs.ramp.com/developer-api/v1/authorization#ramp-mcp-and-ramp-cli with OAuth-based authentication and read-only/full-access modes.",
+          "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+          "source_title": "Authorization - Ramp API Documentation",
+          "quote": "Ramp MCP and Ramp CLI sign in with OAuth, but you don't choose scopes. A connection can do what the connecting user's Ramp role allows, within the access level chosen at sign-in.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Business admin and scoped app/client credentials; sandbox/deployment path varies.",
+          "reviewed_value": "Business admin and scoped app/client credentials; sandbox/deployment path varies; MCP server documented",
+          "outcome": "confirmed",
+          "reason": "Matches documentation: requires Ramp business admin to create app; Client Credentials for own business, Authorization Code for third-party; sandbox access must be requested; MCP server is documented.",
+          "source_url": "https://docs.ramp.com/developer-api/v1/guides/getting-started",
+          "source_title": "Quickstart - Ramp API Documentation",
+          "quote": "In your Ramp account, go to Company \u2192 Developer (you'll need admin access). Click Create New App. ... Need a test environment for development? Request sandbox access.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "app": "PitchBook",
+      "pages_used": [
+        "https://pitchbook.com/help/PitchBook-api"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Private market and company data",
+          "reviewed_value": "Private market and company data",
+          "outcome": "source unavailable",
+          "reason": "The PitchBook help page (pitchbook.com/help/PitchBook-api) is blocked by Cloudflare bot protection. platform.pitchbook.com and developers.pitchbook.com do not resolve. No official public API documentation accessible.",
+          "source_url": "https://pitchbook.com/help/PitchBook-api",
+          "source_title": "Just a moment... (Cloudflare)",
+          "quote": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "auth",
+          "original_value": [
+            "U"
+          ],
+          "reviewed_value": [
+            "U"
+          ],
+          "outcome": "source unavailable",
+          "reason": "Cannot access official documentation to determine authentication methods. Page blocked by Cloudflare.",
+          "source_url": "https://pitchbook.com/help/PitchBook-api",
+          "source_title": "Just a moment... (Cloudflare)",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "source unavailable",
+          "reason": "Cannot verify access requirements from official docs. PitchBook is known to require licensed access but source unavailable.",
+          "source_url": "https://pitchbook.com/help/PitchBook-api",
+          "source_title": "Just a moment... (Cloudflare)",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "surface",
+          "original_value": "Licensed research data API",
+          "reviewed_value": "Licensed research data API",
+          "outcome": "source unavailable",
+          "reason": "Cannot verify API surface from official docs. Page blocked by Cloudflare.",
+          "source_url": "https://pitchbook.com/help/PitchBook-api",
+          "source_title": "Just a moment... (Cloudflare)",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "source unavailable",
+          "reason": "Cannot verify MCP server existence from official docs. Page blocked by Cloudflare.",
+          "source_url": "https://pitchbook.com/help/PitchBook-api",
+          "source_title": "Just a moment... (Cloudflare)",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Sales and license entitlement before implementation; auth unresolved.",
+          "reviewed_value": "Sales and license entitlement before implementation; auth unresolved.",
+          "outcome": "source unavailable",
+          "reason": "Cannot verify from official documentation due to Cloudflare blocking the help page and no alternative public developer docs found.",
+          "source_url": "https://pitchbook.com/help/PitchBook-api",
+          "source_title": "Just a moment... (Cloudflare)",
+          "quote": "",
+          "checked_at": "2026-11-23T15:27:13.522690+00:00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,771 @@
+{
+  "batch": 8,
+  "checked_at": "2026-11-23T12:00:00Z",
+  "auditor": "Hermes automated documentation audit (batch 8)",
+  "apps": [
+    {
+      "id": 71,
+      "app": "Notion",
+      "pages_used": [
+        "https://www.notion.com/help/create-integrations-with-the-notion-api",
+        "https://developers.notion.com/docs/mcp",
+        "https://developers.notion.com/guides/authorization/overview"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Documents, knowledge bases and databases",
+          "reviewed_value": "Documents, knowledge bases and databases",
+          "outcome": "confirmed",
+          "reason": "Notion API documentation covers pages, blocks, databases (data sources), and users — matching the claimed scope.",
+          "source_url": "https://developers.notion.com/guides/authorization/overview",
+          "source_title": "Notion API authorization",
+          "quote": "Working with page content Read page properties Working with databases Working with views Working with comments Working with markdown content Working with files and media",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Official docs describe internal connection API tokens (token) and OAuth 2.0 integration flows as the two primary authentication methods.",
+          "source_url": "https://developers.notion.com/guides/authorization/overview",
+          "source_title": "Notion API authorization",
+          "quote": "Internal connections use a static credential called an internal connection API token, personal access tokens use a user-scoped static token, and OAuth integrations and public integrations use the OAuth 2.0 protocol.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Help article states Free and Plus plans can create internal connections; only workspace owner requirement, no paid plan gate for API credentials.",
+          "source_url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+          "source_title": "Create integrations with the Notion API | Notion Help",
+          "quote": "On Free and Plus plans, only workspace owners can create connections.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; pages, blocks, data sources and users",
+          "reviewed_value": "REST; pages, blocks, data sources and users",
+          "outcome": "confirmed",
+          "reason": "API reference lists pages, blocks, databases (data sources), users, comments, and files as core resources via REST.",
+          "source_url": "https://developers.notion.com/guides/authorization/overview",
+          "source_title": "Notion API authorization",
+          "quote": "Working with page content Read page properties Working with databases Working with views Working with comments Working with markdown content Working with files and media",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Notion publishes a dedicated MCP documentation page describing the Notion MCP server, its tools, and setup instructions for Claude, ChatGPT, Gemini.",
+          "source_url": "https://developers.notion.com/docs/mcp",
+          "source_title": "Connect AI assistants to Notion with MCP",
+          "quote": "Notion MCP lets your AI assistant search your workspace, create and edit pages, and manage databases. Connect an MCP client, such as Claude, ChatGPT, and Gemini, through the Model Context Protocol (MCP).",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Internal integration requires content sharing; remote MCP auth is a different path.",
+          "reviewed_value": "Internal integration requires content sharing; remote MCP auth is a different path.",
+          "outcome": "confirmed",
+          "reason": "Internal connections require pages to be shared with the connection; MCP uses OAuth-based remote authorization (different from internal connection tokens).",
+          "source_url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+          "source_title": "Create integrations with the Notion API | Notion Help",
+          "quote": "You can manage personal access tokens from Notion. Turn on Developer Mode from Settings, then open personal access tokens from the developer section in your sidebar. Who can create a connection depends on your plan and your workspace's settings.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "app": "Airtable",
+      "pages_used": [
+        "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+        "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Collaborative databases and workflows",
+          "reviewed_value": "Collaborative databases and workflows",
+          "outcome": "confirmed",
+          "reason": "Airtable's Web API provides access to bases, tables, records, and schemas — matching the collaborative database description.",
+          "source_url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+          "source_title": "Getting started with Airtable's Web API | Airtable Help Center",
+          "quote": "When you list records with Airtable's API, you won't necessarily get all of them at once. Instead, you will receive them in pages of up to 100 records at a time.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Documentation describes Personal Access Tokens (PAT) and OAuth 2.0 as authentication methods for the Web API.",
+          "source_url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+          "source_title": "Getting started with Airtable's Web API | Airtable Help Center",
+          "quote": "Consult the Web API Scopes documentation where you'll find a list of the various Web API endpoints and how each one functions.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Help article explicitly states 'Plan availability: All plan types with varying call limitations' — free plans included.",
+          "source_url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+          "source_title": "Getting started with Airtable's Web API | Airtable Help Center",
+          "quote": "Plan availability All plan types with varying call limitations",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; bases, tables, records and schemas",
+          "reviewed_value": "REST; bases, tables, records and schemas",
+          "outcome": "confirmed",
+          "reason": "Web API is REST-based with endpoints for bases, tables, records, and schemas as documented.",
+          "source_url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+          "source_title": "Getting started with Airtable's Web API | Airtable Help Center",
+          "quote": "Your first request might look something like this with your base's app id appxxx and the table name: https://api.airtable.com/v0/appxxx/TableName",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Airtable publishes a dedicated help article 'Using the Airtable MCP server' with setup instructions for Claude, ChatGPT, Cursor and links to developer docs.",
+          "source_url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+          "source_title": "Using the Airtable MCP server | Airtable Help Center",
+          "quote": "Airtable's MCP server lets you connect AI tools directly to your Airtable bases. This integration allows you to ask questions about your data, create and update records, and analyze information—all through natural conversation with AI tools like Claude, ChatGPT, Cursor, and more.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "PAT scopes, base access and OAuth grants are separate checks.",
+          "reviewed_value": "PAT scopes, base access and OAuth grants are separate checks.",
+          "outcome": "confirmed",
+          "reason": "MCP article states 'Your MCP permissions mirror the same permission level(s) that you have been granted in Airtable' and distinguishes Owner/Creator/Editor vs Commenter/Read-only; OAuth integrations are managed separately.",
+          "source_url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+          "source_title": "Using the Airtable MCP server | Airtable Help Center",
+          "quote": "Your MCP permissions mirror the same permission level(s) that you have have been granted in Airtable. Owner, Creator, or Editor - Can set up OAuth integrations and manage MCP access.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "app": "Linear",
+      "pages_used": [
+        "https://linear.app/developers/oauth-2-0-authentication",
+        "https://linear.app/developers/graphql",
+        "https://linear.app/docs/mcp"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Issue and project management",
+          "reviewed_value": "Issue and project management",
+          "outcome": "confirmed",
+          "reason": "Linear's GraphQL API covers issues, projects, teams, cycles, and comments — core issue and project management objects.",
+          "source_url": "https://linear.app/developers/graphql",
+          "source_title": "GraphQL API | Linear Developers",
+          "quote": "Linear's public API is built using GraphQL. It's the same API we use internally for developing our applications.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K", "O"],
+          "reviewed_value": ["K", "O"],
+          "outcome": "confirmed",
+          "reason": "Documentation explicitly lists 'Personal API Keys' and 'OAuth 2.0 authentication' as the two authentication methods.",
+          "source_url": "https://linear.app/developers/graphql",
+          "source_title": "GraphQL API | Linear Developers",
+          "quote": "The Linear API supports personal API keys and OAuth2 authentication. OAuth — If you're building an application for others to use, we recommend you use OAuth2 authentication. Personal API Keys — For personal scripts API keys are the easiest way to access the API.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Personal API keys can be created from Security & access settings on any Linear workspace; no paid plan requirement mentioned for API access.",
+          "source_url": "https://linear.app/developers/graphql",
+          "source_title": "GraphQL API | Linear Developers",
+          "quote": "Visit Security & access settings to create and manage them.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "GraphQL; issues, projects, teams and comments",
+          "reviewed_value": "GraphQL; issues, projects, teams and comments",
+          "outcome": "confirmed",
+          "reason": "GraphQL schema includes issues, projects, teams, cycles, comments, and other core objects; endpoint is https://api.linear.app/graphql.",
+          "source_url": "https://linear.app/developers/graphql",
+          "source_title": "GraphQL API | Linear Developers",
+          "quote": "Linear's GraphQL endpoint is: https://api.linear.app/graphql It supports introspection so you can query the whole schema.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Linear publishes a dedicated MCP server documentation page at linear.app/docs/mcp describing the MCP server, setup for Claude, Cursor, VS Code, and OAuth 2.1 with dynamic client registration.",
+          "source_url": "https://linear.app/docs/mcp",
+          "source_title": "MCP server – Linear Docs",
+          "quote": "The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model or agent to access your Linear data in a simple and secure way. Linear's MCP server follows the authenticated remote MCP spec, so the server is centrally hosted and managed.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Workspace scopes and install permissions matter.",
+          "reviewed_value": "Workspace scopes and install permissions matter.",
+          "outcome": "confirmed",
+          "reason": "MCP docs detail OAuth scopes (read, write, issues:create, comments:create, timeSchedule:write) and enterprise-managed authorization via Okta/SAML; workspace-level permissions control MCP access.",
+          "source_url": "https://linear.app/docs/mcp",
+          "source_title": "MCP server – Linear Docs",
+          "quote": "Clients that request read are granted read-only access, and the underlying token can't reach write APIs. Enterprise-managed authorization — If you use Okta, first configure SAML for Linear using Okta's OIN. Then enable MCP enterprise managed authentication from the bottom of your Okta identity provider settings in Linear.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "app": "Jira",
+      "pages_used": [
+        "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "https://www.atlassian.com/platform/remote-mcp-server"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Issue and project tracking",
+          "reviewed_value": "Issue and project tracking",
+          "outcome": "confirmed",
+          "reason": "Jira Cloud REST API v3 covers issues, projects, workflows, users, and related resources — matching issue and project tracking scope.",
+          "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+          "source_title": "The Jira Cloud platform REST API",
+          "quote": "The Jira REST API enables you to interact with Jira programmatically. Use this API to build apps, script interactions with Jira, or develop any other type of integration.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["B", "K", "O"],
+          "reviewed_value": ["B", "K", "O"],
+          "outcome": "confirmed",
+          "reason": "Security docs list three methods: OAuth 2.0 authorization code grants (3LO), Basic authentication with API token, and API tokens (treated as API key).",
+          "source_url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+          "source_title": "Security for other integrations",
+          "quote": "If you are building an integration that does not use Atlassian Connect, there are two methods that you can use for authentication and authorization: OAuth 2.0 authorization code grants (3LO): This is the recommended method. Basic authentication: You should only use this method for tools like personal scripts or bots.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Jira Cloud Free plan exists and API tokens can be generated for Basic auth; no paid plan gate for API credentials documented.",
+          "source_url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+          "source_title": "Security for other integrations",
+          "quote": "Basic authentication: You should only use this method for tools like personal scripts or bots.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Cloud REST; issues, projects, workflows and users",
+          "reviewed_value": "Cloud REST; issues, projects, workflows and users",
+          "outcome": "confirmed",
+          "reason": "REST API v3 reference includes issues, projects, workflows, users, and many other resources.",
+          "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+          "source_title": "The Jira Cloud platform REST API",
+          "quote": "This page documents the REST resources available in Jira Cloud, including the HTTP response codes and example requests and responses.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Atlassian publishes a dedicated 'Extend Atlassian into any AI assistant using MCP' page describing the Atlassian MCP server covering Jira, Confluence, and other products.",
+          "source_url": "https://www.atlassian.com/platform/remote-mcp-server",
+          "source_title": "Extend Atlassian into any AI assistant using MCP | Atlassian",
+          "quote": "Atlassian MCP Bring Atlassian into your AI tools Works with: Anthropic Google GitHub OpenAI",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Basic with an API token on user scripts; OAuth for delegated integrations.",
+          "reviewed_value": "Basic with an API token on user scripts; OAuth for delegated integrations.",
+          "outcome": "confirmed",
+          "reason": "Security docs explicitly recommend OAuth 2.0 (3LO) for delegated integrations and Basic auth with API token only for personal scripts/bots.",
+          "source_url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+          "source_title": "Security for other integrations",
+          "quote": "OAuth 2.0 authorization code grants (3LO): This is the recommended method. You should use this for most cases. Basic authentication: You should only use this method for tools like personal scripts or bots.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "app": "Asana",
+      "pages_used": [
+        "https://developers.asana.com/docs/authentication",
+        "https://developers.asana.com/docs/integrating-with-asanas-mcp-server"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Projects, tasks and team coordination",
+          "reviewed_value": "Projects, tasks and team coordination",
+          "outcome": "confirmed",
+          "reason": "Asana API covers tasks, projects, portfolios, users, and team coordination features as documented in the API reference.",
+          "source_url": "https://developers.asana.com/docs/authentication",
+          "source_title": "Authentication | Asana Developers",
+          "quote": "Build an app with Asana Object hierarchy Common use cases Get started API explorer Developer sandbox",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Authentication docs describe Personal Access Tokens (PAT) and OAuth 2.0 as the two primary authentication methods.",
+          "source_url": "https://developers.asana.com/docs/authentication",
+          "source_title": "Authentication | Asana Developers",
+          "quote": "Personal access token A personal access token (PAT) is the quickest and simplest way to authenticate in the API. OAuth — If you're building an application for others to use, you will need to implement OAuth.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "PAT can be created from developer console; no paid plan requirement stated for API access (view-only license users have limited access noted separately).",
+          "source_url": "https://developers.asana.com/docs/authentication",
+          "source_title": "Authentication | Asana Developers",
+          "quote": "Using a PAT is a good way to get started quickly with the API regardless of which auth type you end up using in production.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; tasks, portfolios, projects and users",
+          "reviewed_value": "REST; tasks, portfolios, projects and users",
+          "outcome": "confirmed",
+          "reason": "Asana API is REST-based covering tasks, projects, portfolios, users, and related objects per the API reference.",
+          "source_url": "https://developers.asana.com/docs/authentication",
+          "source_title": "Authentication | Asana Developers",
+          "quote": "API Input/output options Batch requests Custom fields Custom external data Dates and times Rich text Rate limits Errors Pagination",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Asana publishes dedicated MCP integration guide describing the Asana V2 MCP server (GA), OAuth-based authorization, and setup for MCP clients.",
+          "source_url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+          "source_title": "Integrating with Asana's MCP Server | Asana Developers",
+          "quote": "The Asana V2 MCP server is generally available and uses OAuth for authorization. You'll pre-register your MCP app in the developer console, where you can create both standard API apps and MCP apps.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Developer app/scopes and workspace access; features vary by plan.",
+          "reviewed_value": "Developer app/scopes and workspace access; features vary by plan.",
+          "outcome": "confirmed",
+          "reason": "MCP guide requires creating an OAuth app in developer console; tokens issued for MCP apps only work with MCP server; Command MCP requires Command license; view-only license users have limited API access.",
+          "source_url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+          "source_title": "Integrating with Asana's MCP Server | Asana Developers",
+          "quote": "Important: Tokens issued for MCP apps only work with the MCP server. This separation follows MCP security best practices — if a token is compromised, the blast radius is contained. Each user needs a Command license. For client-specific setup, see Using Asana's Command MCP Server.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "app": "Monday.com",
+      "pages_used": [
+        "https://developer.monday.com/api-reference/docs/authentication",
+        "https://developer.monday.com/api-reference/docs/mcp-api-token"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Work management and configurable boards",
+          "reviewed_value": "Work management and configurable boards",
+          "outcome": "confirmed",
+          "reason": "Monday API covers boards, items, columns, groups, automations, workspaces — matching work management and configurable boards.",
+          "source_url": "https://developer.monday.com/api-reference/docs/authentication",
+          "source_title": "Authentication | Monday.com Developer",
+          "quote": "Platform MCP tools Create Board (Platform MCP) Get Board Info (Platform MCP) Get Board Items (Platform MCP) Get Board Activity (Platform MCP) Board Insights (Platform MCP)",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Authentication docs describe API tokens (personal) and OAuth 2.0 for apps; MCP auth supports both API token and custom OAuth app.",
+          "source_url": "https://developer.monday.com/api-reference/docs/authentication",
+          "source_title": "Authentication | Monday.com Developer",
+          "quote": "Authenticate with an API token Control MCP access with your own OAuth app",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "API tokens can be generated from user settings; no paid plan requirement documented for API access.",
+          "source_url": "https://developer.monday.com/api-reference/docs/mcp-api-token",
+          "source_title": "Authenticate with an API token | Monday.com Developer",
+          "quote": "Authenticate with an API token About the monday API The basics Authentication",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "GraphQL; boards, items, automations and users",
+          "reviewed_value": "GraphQL; boards, items, automations and users",
+          "outcome": "confirmed",
+          "reason": "Monday API is GraphQL-based; MCP tools list includes boards, items, automations, users, workspaces, docs, and more.",
+          "source_url": "https://developer.monday.com/api-reference/docs/authentication",
+          "source_title": "Authentication | Monday.com Developer",
+          "quote": "Platform MCP tools Create Board (Platform MCP) Get Board Items (Platform MCP) Create Item (Platform MCP) Change Item Column Values (Platform MCP) List Automations (Platform MCP) Manage Automations (Platform MCP) Create Automation (Platform MCP)",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Monday publishes dedicated MCP documentation including 'Platform MCP overview', 'Integrate with the monday MCP server', and 'Authenticate with an API token' pages.",
+          "source_url": "https://developer.monday.com/api-reference/docs/mcp-api-token",
+          "source_title": "Authenticate with an API token | Monday.com Developer",
+          "quote": "Platform MCP overview Compatible MCP clients Integrate with the monday MCP server Authenticate with an API token Control MCP access with your own OAuth app",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Account token versus scoped app authorization.",
+          "reviewed_value": "Account token versus scoped app authorization.",
+          "outcome": "confirmed",
+          "reason": "MCP auth supports both personal API token (account-scoped) and custom OAuth app (scoped, for multi-user integrations); docs distinguish these paths.",
+          "source_url": "https://developer.monday.com/api-reference/docs/mcp-api-token",
+          "source_title": "Authenticate with an API token | Monday.com Developer",
+          "quote": "Authenticate with an API token Control MCP access with your own OAuth app Integrating monday MCP with Copilot Studio using a Custom App Integrating monday MCP with Claude using a Custom App",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "app": "ClickUp",
+      "pages_used": [
+        "https://developer.clickup.com/docs/authentication",
+        "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Project tasks, docs and workspaces",
+          "reviewed_value": "Project tasks, docs and workspaces",
+          "outcome": "confirmed",
+          "reason": "ClickUp API v2/v3 covers tasks, lists, spaces, folders, docs, workspaces, and members — matching the claimed scope.",
+          "source_url": "https://developer.clickup.com/docs/authentication",
+          "source_title": "Authentication | ClickUp Developer",
+          "quote": "Supported Tools Tasks Tasks Attachments Move a task to a new List Custom Task Types Custom Fields Views Views Filter Views Communication Comments Chat Comment formatting Docs Docs API limitation",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Authentication docs describe Personal API tokens (pk_ prefix) for individual use and OAuth 2.0 Authorization Code flow for apps used by others.",
+          "source_url": "https://developer.clickup.com/docs/authentication",
+          "source_title": "Authentication | ClickUp Developer",
+          "quote": "Authenticate to the ClickUp API using a personal token or OAuth. Personal Token Use a personal API token for individual or testing purposes. Personal tokens begin with pk_. Build Apps for others - OAuth Flow To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Personal API tokens can be generated from user settings (click avatar → Settings → Apps → API Token); no paid plan requirement mentioned for token generation.",
+          "source_url": "https://developer.clickup.com/docs/authentication",
+          "source_title": "Authentication | ClickUp Developer",
+          "quote": "Generate or regenerate a Personal API Token Log in to ClickUp. In the upper-right corner, click your avatar. Select Settings. In the sidebar, click Apps. Under API Token, click Generate or Regenerate.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; tasks, lists, spaces and members",
+          "reviewed_value": "REST; tasks, lists, spaces and members",
+          "outcome": "confirmed",
+          "reason": "ClickUp API v2/v3 is REST-based covering tasks, lists, spaces, folders, workspaces, members, docs, and more.",
+          "source_url": "https://developer.clickup.com/docs/authentication",
+          "source_title": "Authentication | ClickUp Developer",
+          "quote": "ClickUp API v2 and v3 Terminology Rate Limits API availability by Plan Date formatting OpenAPI Specification",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Developer docs navigation includes 'MCP ClickUp's MCP Server' and 'MCP Server Setup Instructions' sections, confirming a vendor-documented MCP server.",
+          "source_url": "https://developer.clickup.com/docs/authentication",
+          "source_title": "Authentication | ClickUp Developer",
+          "quote": "MCP ClickUp's MCP Server MCP Server Setup Instructions Supported Tools Tasks Tasks Attachments Move a task to a new List Custom Task Types Custom Fields",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Personal token for one account; OAuth for other users.",
+          "reviewed_value": "Personal token for one account; OAuth for other users.",
+          "outcome": "confirmed",
+          "reason": "Authentication docs explicitly state: 'Personal Token Use a personal API token for individual or testing purposes' and 'Build Apps for others - OAuth Flow To allow others to use your app, implement the OAuth2 flow so each user has their own token'.",
+          "source_url": "https://developer.clickup.com/docs/authentication",
+          "source_title": "Authentication | ClickUp Developer",
+          "quote": "Personal Token Use a personal API token for individual or testing purposes. Personal tokens begin with pk_. Build Apps for others - OAuth Flow To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "app": "Coda",
+      "pages_used": [
+        "https://coda.io/developers/apis/v1",
+        "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Documents with tables and automations",
+          "reviewed_value": "Documents with tables and automations",
+          "outcome": "confirmed",
+          "reason": "Coda (Superhuman Docs) API covers docs, pages, tables, rows, columns, formulas, controls, and automations — matching the description.",
+          "source_url": "https://coda.io/developers/apis/v1",
+          "source_title": "Superhuman Docs API (v1) Reference Documentation",
+          "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda): List and search documents Create new docs and copy existing ones Share and publish docs Discover pages, tables, formulas, and controls Read, insert, upsert, update, and delete rows",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["T"],
+          "reviewed_value": ["T"],
+          "outcome": "confirmed",
+          "reason": "API reference uses Bearer token authentication (API key); no OAuth flow described in the API documentation.",
+          "source_url": "https://coda.io/developers/apis/v1",
+          "source_title": "Superhuman Docs API (v1) Reference Documentation",
+          "quote": "Authorization: Bearer ***",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "API docs state 'We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces.'",
+          "source_url": "https://coda.io/developers/apis/v1",
+          "source_title": "Superhuman Docs API (v1) Reference Documentation",
+          "quote": "Free and Paid Workspaces We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; docs, tables, rows and formulas",
+          "reviewed_value": "REST; docs, tables, rows and formulas",
+          "outcome": "confirmed",
+          "reason": "API is RESTful with endpoints for docs, tables, rows, columns, formulas, controls, folders, and permissions.",
+          "source_url": "https://coda.io/developers/apis/v1",
+          "source_title": "Superhuman Docs API (v1) Reference Documentation",
+          "quote": "Docs Docs get List available docs post Create doc get Get info about a doc Tables and Views Tables get List tables get Get a table Columns get List columns Rows get List table rows post Insert/upsert rows Formulas & Controls Formulas get List formulas Controls get List controls",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "insufficient evidence",
+          "reason": "API reference mentions 'Superhuman Docs MCP server' but the dedicated help article (help.coda.io) is blocked by Cloudflare; no details on MCP server capabilities, setup, or availability could be verified from accessible official sources.",
+          "source_url": "https://coda.io/developers/apis/v1",
+          "source_title": "Superhuman Docs API (v1) Reference Documentation",
+          "quote": "If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the Superhuman Docs MCP server. It's optimized for LLM usage patterns and often exposes more granular methods for accessing and modifying data.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Free Coda makers have a limited MCP route. Paid makers get the full tool surface. REST uses an account token.",
+          "reviewed_value": "Free Coda makers have a limited MCP route. Paid makers get the full tool surface. REST uses an account token.",
+          "outcome": "insufficient evidence",
+          "reason": "The MCP help article is blocked by Cloudflare; the API reference only mentions the MCP server exists but provides no tier details. Cannot verify the claimed free vs paid maker MCP tier differentiation from accessible official sources.",
+          "source_url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+          "source_title": "Connect to the Coda MCP (page unavailable)",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "app": "Smartsheet",
+      "pages_used": [
+        "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "https://developers.smartsheet.com/api/smartsheet/guides/getting-started"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Spreadsheet-style work and project management",
+          "reviewed_value": "Spreadsheet-style work and project management",
+          "outcome": "confirmed",
+          "reason": "Smartsheet API covers sheets, rows, columns, cells, workspaces, reports — matching spreadsheet-style work and project management.",
+          "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+          "source_title": "Get Started | Smartsheet API",
+          "quote": "Sheets, rows, columns, and cells Query parameters Versioning and changes Advanced topics Best practices Reports Users Webhooks",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Authentication guide describes access tokens (API keys) generated in UI and OAuth 2.0 (3-legged) for user-consent scenarios.",
+          "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+          "source_title": "Authentication | Smartsheet API",
+          "quote": "The API authenticates using access tokens (API keys). You can generate access tokens in the Smartsheet UI. If your scenario involves user consent and interaction, it's typically best to use OAuth with Smartsheet. Note that the Smartsheet implementation of OAuth 2.0 is a 3-legged process, which requires human intervention.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "P",
+          "reviewed_value": "P",
+          "outcome": "confirmed",
+          "reason": "Getting Started guide explicitly states 'Required plan: Business, Enterprise, or Advanced Work Management' for generating an API access token.",
+          "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+          "source_title": "Get Started | Smartsheet API",
+          "quote": "Generate an API access token Required plan: Business, Enterprise, or Advanced Work Management Generate an API access token in the Smartsheet UI.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; sheets, rows, workspaces and reports",
+          "reviewed_value": "REST; sheets, rows, workspaces and reports",
+          "outcome": "confirmed",
+          "reason": "API is REST-based with endpoints for sheets, rows, columns, cells, workspaces, reports, and other resources as listed in the OpenAPI reference.",
+          "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+          "source_title": "Get Started | Smartsheet API",
+          "quote": "Sheets, rows, columns, and cells Query parameters Versioning and changes Advanced topics Best practices Reports Users Webhooks",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor MCP server documentation found in the provided official URLs; navigation shows 'AI & MCP' but no dedicated MCP server docs or setup guides for Smartsheet.",
+          "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+          "source_title": "Get Started | Smartsheet API",
+          "quote": "AI & MCP Search Ctrl+K",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Confirm eligible plan and administrator policy before building.",
+          "reviewed_value": "Confirm eligible plan and administrator policy before building.",
+          "outcome": "confirmed",
+          "reason": "Getting Started guide confirms API access requires Business, Enterprise, or Advanced Work Management plan; admin policies may further restrict token generation.",
+          "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+          "source_title": "Get Started | Smartsheet API",
+          "quote": "Required plan: Business, Enterprise, or Advanced Work Management",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "app": "Harvest",
+      "pages_used": [
+        "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+        "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Time tracking and invoicing",
+          "reviewed_value": "Time tracking and invoicing",
+          "outcome": "confirmed",
+          "reason": "Harvest API v2 covers time entries, projects, tasks, clients, invoices, expenses, and users — matching time tracking and invoicing scope.",
+          "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+          "source_title": "Authentication – Harvest API V2 Documentation",
+          "quote": "Typical use cases for Personal Access Tokens are scripts that build custom reports, sync data between different accounts, or automate tasks that would otherwise take a long time when done manually.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Authentication docs describe Personal Access Tokens and OAuth 2.0 Authorization Code flow as the two authentication methods.",
+          "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+          "source_title": "Authentication – Harvest API V2 Documentation",
+          "quote": "There are two options available to you: A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API. Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "insufficient evidence",
+          "reason": "Authentication page describes PAT creation but does not explicitly state whether free or trial accounts have API access; plan gating for API credentials is not documented on the accessible pages.",
+          "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+          "source_title": "Authentication – Harvest API V2 Documentation",
+          "quote": "The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST v2; time entries, projects and invoicing",
+          "reviewed_value": "REST v2; time entries, projects and invoicing",
+          "outcome": "confirmed",
+          "reason": "Harvest API v2 is REST-based with endpoints for time entries, projects, tasks, clients, invoices, expenses, and users.",
+          "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+          "source_title": "Authentication – Harvest API V2 Documentation",
+          "quote": "https://api.harvestapp.com/v2/users/me",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "source unavailable",
+          "reason": "The Harvest MCP help article (support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP) is blocked by Cloudflare; the authentication page does not mention MCP. Cannot verify vendor MCP server documentation from accessible official sources.",
+          "source_url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+          "source_title": "Harvest MCP (page unavailable)",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Free and trial accounts include API access. Provide a token or OAuth credentials plus account ID.",
+          "reviewed_value": "Free and trial accounts include API access. Provide a token or OAuth credentials plus account ID.",
+          "outcome": "insufficient evidence",
+          "reason": "Account ID requirement confirmed (Harvest-Account-Id header or account_id query param); however, the claim that free and trial accounts include API access is not explicitly confirmed or denied in the accessible authentication documentation.",
+          "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+          "source_title": "Authentication – Harvest API V2 Documentation",
+          "quote": "Each request will require your account ID as well, since you can use this Personal Access Token to access any of your Harvest or Forecast accounts. Header authentication example curl -H \"Authorization: Bearer ***\" -H \"Harvest-Account-Id: $ACCOUNT_ID\"",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    }
+  ]
+}

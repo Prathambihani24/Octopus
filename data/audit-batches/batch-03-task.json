@@ -1,0 +1,317 @@
+{
+  "batch": 3,
+  "apps_checked": 10,
+  "apps": [
+    {
+      "id": 21,
+      "app": "Slack",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Team chat and channels",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST-style Web API and events; conversations and messages",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Workspace installation and scopes; org policies may require approval."
+      },
+      "source_urls": [
+        "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "https://docs.slack.dev/authentication/"
+      ]
+    },
+    {
+      "id": 22,
+      "app": "Twilio",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Programmable messaging, voice and communications",
+        "auth_codes": [
+          "B",
+          "K"
+        ],
+        "auth_label": [
+          "HTTP Basic",
+          "API key"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; SMS, voice, numbers and messaging services",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Trial and routing restrictions differ from live send capability."
+      },
+      "source_urls": [
+        "https://www.twilio.com/docs/iam/api-keys",
+        "https://help.twilio.com/articles/9318455807771"
+      ]
+    },
+    {
+      "id": 23,
+      "app": "Zoho Cliq",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Team messaging and chat extensions",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "REST; users, channels, messages and bots",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Login and OAuth client with scopes; plan conditions unverified."
+      },
+      "source_urls": [
+        "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+        "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+      ]
+    },
+    {
+      "id": 24,
+      "app": "Lark",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Collaboration suite for chat, documents and calendars",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "REST Open Platform; messaging, docs, calendar and Base",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Tenant authorization, app scopes and review vary by distribution."
+      },
+      "source_urls": [
+        "https://open.larksuite.com/",
+        "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md"
+      ]
+    },
+    {
+      "id": 25,
+      "app": "Pumble",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Team messaging and collaboration",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "HTTP API; messages, reactions and related workspace actions",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "API add-on works on all plans. Add it to the workspace and grant permissions before generating a key."
+      },
+      "source_urls": [
+        "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/"
+      ]
+    },
+    {
+      "id": 26,
+      "app": "Discord",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Community chat, servers and bots",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST and Gateway; channels, messages, members and events",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Privileged intents and bot distribution can require review."
+      },
+      "source_urls": [
+        "https://github.com/discord/discord-api-docs/blob/main/developers/reference.mdx",
+        "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx"
+      ]
+    },
+    {
+      "id": 27,
+      "app": "Telegram",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Messaging bots and chats",
+        "auth_codes": [
+          "T"
+        ],
+        "auth_label": [
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "HTTP Bot API; messages, chats, files and webhooks",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "BotFather credentials; bot permissions and chat context constrain scope."
+      },
+      "source_urls": [
+        "https://core.telegram.org/bots/tutorial",
+        "https://core.telegram.org/bots/api"
+      ]
+    },
+    {
+      "id": 28,
+      "app": "WhatsApp Business",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Business messaging on WhatsApp",
+        "auth_codes": [
+          "T"
+        ],
+        "auth_label": [
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "Cloud REST; messages, templates and business account operations",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Test assets are available; live messaging requires appropriate assets and permissions."
+      },
+      "source_urls": [
+        "https://developers.facebook.com/docs/whatsapp",
+        "https://www.postman.com/meta/whatsapp-business-platform/documentation/wlk6lh4/whatsapp-cloud-api"
+      ]
+    },
+    {
+      "id": 29,
+      "app": "Aircall",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Cloud phone system for sales and support",
+        "auth_codes": [
+          "B",
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "HTTP Basic",
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "REST; calls, numbers, users and webhooks",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Account credentials for private access; OAuth for app installs."
+      },
+      "source_urls": [
+        "https://developer.aircall.io/docs/authentication",
+        "https://developer.aircall.io/docs/oauth"
+      ]
+    },
+    {
+      "id": 30,
+      "app": "Vonage",
+      "category": "Communications & Messaging",
+      "claim": {
+        "identity_description": "Programmable voice, SMS and communications",
+        "auth_codes": [
+          "B",
+          "K",
+          "S"
+        ],
+        "auth_label": [
+          "HTTP Basic",
+          "API key",
+          "Signed / JWT"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; communications endpoints vary by product",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Some products use key/secret; others use signed JWTs."
+      },
+      "source_urls": [
+        "https://developer.vonage.com/en/getting-started/overview",
+        "https://developer.vonage.com/en/dashboard/getting-started"
+      ]
+    }
+  ],
+  "instructions": {
+    "role": "Fact-verification subagent for the Composio Product Ops take-home (row audit)",
+    "rules": [
+      "VERIFY ONLY USING OFFICIAL SOURCES: vendor developer docs, official API/auth docs, official pricing/plan pages, official MCP docs, vendor-maintained GitHub repos.",
+      "web_search may only be used LOCATE an official doc page, never as evidence itself.",
+      "Primary tool: web_extract on the official URL. If web_extract fails/403, retry once with browser (browser_exec, read page_info/js to read text). If that fails too, outcome = 'source unavailable'.",
+      "For each field assign exactly ONE of: confirmed | corrected | insufficient evidence | conflicting documentation | source unavailable",
+      "'corrected' REQUIRES a direct quote or precise section from the official doc, plus the corrected value.",
+      "Row auth codes: O=OAuth 2.0, K=API key, T=Token, B=HTTP Basic, S=Signed/JWT, H=Other (e.g. digest), N=None/local, U=Unconfirmed. Use the SET that covers all documented primary API auth methods for the API/CLI in the surface field.",
+      "Row access codes: F=Free/test route (documented free/developer/sandbox route to obtain credentials), C=Run locally (self-host/local tool, no vendor account), P=Paid/licensed, R=Approval/tenant gate, U=Unconfirmed.",
+      "A free plan is NOT proof of API credential access. A mention of a product in docs is NOT proof of a vendor MCP server. The vendor must document/provide the server for THIS product (a generic vendor platform MCP page does not count if it does not cover this product).",
+      "If a credential/access requirement is documented only in a way that needs reading between the lines, prefer 'insufficient evidence' over guessing.",
+      "If docs directly contradict (e.g. one page says free-plan API access, another says paid-only): 'conflicting documentation' with both URLs.",
+      "Do NOT change values you cannot verify. 'insufficient evidence' is a valid, correct outcome.",
+      "source_url must be the exact official page you verified against; source_title is that page's <title>.",
+      "checked_at: ISO timestamp (UTC)."
+    ],
+    "fields_to_check": [
+      "identity (is the product scope/one-line description correct for what the row covers)",
+      "auth (set of auth codes)",
+      "access (access code)",
+      "surface (protocol + major object/action coverage)",
+      "mcp (vendor server Y/U)",
+      "blocker_and_verdict (does the stated caveat/main blocker match what the docs say)"
+    ],
+    "output_schema": {
+      "batch": "int, must equal 'batch' in input",
+      "checked_at": "ISO string",
+      "auditor": "string, e.g. 'Hermes automated documentation audit (batch N)'",
+      "apps": [
+        {
+          "id": "int, the row id",
+          "app": "string, must match input",
+          "pages_used": [
+            "list of official URLs actually read"
+          ],
+          "checks": [
+            {
+              "field": "identity|auth|access|surface|mcp|blocker_and_verdict",
+              "original_value": "string or list, copied verbatim from the row's claim",
+              "reviewed_value": "string or list, the value that should stand (same as original if confirmed)",
+              "outcome": "confirmed|corrected|insufficient evidence|conflicting documentation|source unavailable",
+              "reason": "1-3 plain sentences: what the official source establishes",
+              "source_url": "official URL (or null if unavailable)",
+              "source_title": "page title (or null)",
+              "quote": "short verbatim quote from the official page supporting the outcome (empty string if none)",
+              "checked_at": "ISO string"
+            }
+          ]
+        }
+      ]
+    },
+    "output_path": "ABSOLUTE path to write the final JSON: see your task message",
+    "write_and_verify": "After writing the JSON, re-read it and print: json valid, N apps, M checks, counts per outcome. If any file is missing or invalid, the batch FAILS."
+  }
+}

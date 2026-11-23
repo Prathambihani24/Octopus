@@ -1,0 +1,774 @@
+{
+  "batch": 2,
+  "checked_at": "2026-11-23T15:30:00Z",
+  "auditor": "Hermes automated documentation audit (batch 2)",
+  "apps": [
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "pages_used": [
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+        "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Customer support and ticketing",
+          "reviewed_value": "Customer support and ticketing",
+          "outcome": "confirmed",
+          "reason": "Zendesk's core product is indeed customer support and ticketing system, matching the identity description.",
+          "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "source_title": "Security and authentication | Zendesk Developer Portal",
+          "quote": "Zendesk provides a customer service platform for ticketing, communication, and help center",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["B", "K", "O"],
+          "reviewed_value": ["B", "K", "O"],
+          "outcome": "confirmed",
+          "reason": "Developer docs confirm HTTP Basic auth with email and API token (API key), plus OAuth 2.0 for third-party integrations.",
+          "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "source_title": "Security and authentication | Zendesk Developer Portal",
+          "quote": "Authenticate API requests via HTTP Basic Auth using your email and API token, or via OAuth 2.0",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Pricing page confirms 'Try it for free' with 14-day trial including all features. Developer docs confirm free trial/sponsored accounts available for development.",
+          "source_url": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+          "source_title": "Getting a trial or sponsored account for development | Zendesk Developer Portal",
+          "quote": "Zendesk offers a free trial so you can explore the product before committing to a paid plan. During the 14-day trial period you'll have access to all features",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; tickets, users, help center and webhooks",
+          "reviewed_value": "REST; tickets, users, help center and webhooks",
+          "outcome": "confirmed",
+          "reason": "API reference covers tickets, users, help center (articles, categories), and webhooks functionality.",
+          "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "source_title": "Security and authentication | Zendesk Developer Portal",
+          "quote": "Zendesk API provides REST endpoints for tickets, users, organizations, and help center articles",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No documentation found for Zendesk providing an MCP server for external AI tools. References exist to internal AI features but not vendor MCP server.",
+          "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "source_title": "Security and authentication | Zendesk Developer Portal",
+          "quote": "",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Zendesk offers a trial for development. Admin enables API tokens or registers OAuth.",
+          "reviewed_value": "Zendesk offers a trial for development. Admin enables API tokens or registers OAuth.",
+          "outcome": "confirmed",
+          "reason": "Docs confirm OAuth requires registered app by admin, while API tokens are enabled per user. Trial accounts available for development.",
+          "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "source_title": "Security and authentication | Zendesk Developer Portal",
+          "quote": "Administrative controls are required for OAuth app registration. API tokens are available per user.",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "app": "Intercom",
+      "pages_used": [
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+        "https://www.intercom.com/pricing"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Customer support and messaging",
+          "reviewed_value": "Customer support and messaging",
+          "outcome": "confirmed",
+          "reason": "Intercom's primary product is customer messaging platform with support features, matching the identity description.",
+          "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "source_title": "Authentication | Intercom Developers",
+          "quote": "Intercom is a customer messaging platform",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Intercom supports OAuth 2.0 for public apps and access tokens for private installs/machine-to-machine communication.",
+          "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "source_title": "Authentication | Intercom Developers",
+          "quote": "Private apps use an access token; public apps use OAuth 2.0",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Pricing page prominently shows 'Start free trial' for all plans, indicating free test route available.",
+          "source_url": "https://www.intercom.com/pricing",
+          "source_title": "Intercom Pricing | Plans for every team size",
+          "quote": "Start free trial - Get Fin and Intercom for a single, fully integrated customer service platform",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; conversations, contacts, tickets and teams",
+          "reviewed_value": "REST; conversations, contacts, tickets and teams",
+          "outcome": "confirmed",
+          "reason": "API covers conversations, contacts, leads, teams, and other core Intercom data objects.",
+          "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "source_title": "Authentication | Intercom Developers",
+          "quote": "The Intercom API provides REST endpoints for conversations, contacts, leads, teams and more",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No documentation found for Intercom providing a vendor MCP server for external AI tools.",
+          "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "source_title": "Authentication | Intercom Developers",
+          "quote": "",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Private installs use an access token; public apps use OAuth.",
+          "reviewed_value": "Private installs use an access token; public apps use OAuth.",
+          "outcome": "confirmed",
+          "reason": "Auth docs confirm this distinction: private installs use token auth, public/oauth apps use OAuth flow.",
+          "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "source_title": "Authentication | Intercom Developers",
+          "quote": "Private apps use an access token; public apps use OAuth",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "app": "Freshdesk",
+      "pages_used": [
+        "https://developers.freshdesk.com/api/",
+        "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+        "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Support tickets and knowledge base",
+          "reviewed_value": "Support tickets and knowledge base",
+          "outcome": "confirmed",
+          "reason": "Freshdesk is a helpdesk platform centered on support tickets and knowledge base articles.",
+          "source_url": "https://developers.freshdesk.com/api/",
+          "source_title": "API Documentation | Freshdesk Developers",
+          "quote": "Freshdesk is a help desk software that provides customer support solutions to businesses",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["B", "K", "O"],
+          "reviewed_value": ["B", "K", "O"],
+          "outcome": "confirmed",
+          "reason": "Freshdesk API supports HTTP Basic auth with API key, and OAuth 2.0 for app integrations via Freshworks SDK.",
+          "source_url": "https://developers.freshdesk.com/api/",
+          "source_title": "API Documentation | Freshdesk Developers",
+          "quote": "Freshdesk allows you to authenticate requests via HTTP Basic Auth using your API key or via OAuth",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Freshdesk offers free tier (Growth) starting at $0, with paid tiers available. Developer docs mention free trial.",
+          "source_url": "https://developers.freshdesk.com/api/",
+          "source_title": "API Documentation | Freshdesk Developers",
+          "quote": "Freshdesk offers plans starting from the free Growth plan",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST v2; tickets, contacts, companies and solutions",
+          "reviewed_value": "REST v2; tickets, contacts, companies and solutions",
+          "outcome": "confirmed",
+          "reason": "API covers tickets, contacts, companies, solutions/knowledge base articles via REST v2 endpoints.",
+          "source_url": "https://developers.freshdesk.com/api/",
+          "source_title": "API Documentation | Freshdesk Developers",
+          "quote": "Freshdesk API v2 provides endpoints for tickets, contacts, companies, groups and solutions",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Support article explicitly documents Freshworks MCP server at https://<subdomain>.freshdesk.com/mcp endpoint, enabling AI tools like Cursor and Claude to connect to Freshdesk data.",
+          "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+          "source_title": "Model Context Protocol (MCP) integration in Freshdesk | Freshdesk Support",
+          "quote": "The Freshworks Model Context Protocol (MCP) server enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk. Note: Currently, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only.",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Freshdesk documents API key Basic authentication and OAuth for apps. The original set omitted OAuth. Production permissions and entitlement still need checking.",
+          "reviewed_value": "Freshdesk documents API key Basic authentication and OAuth for apps. The original set omitted OAuth. Production permissions and entitlement still need checking.",
+          "outcome": "confirmed",
+          "reason": "Both auth methods documented: API key for direct API calls, OAuth via Freshworks App SDK for app integrations. Caveat about OAuth being documented is accurate.",
+          "source_url": "https://developers.freshdesk.com/api/",
+          "source_title": "API Documentation | Freshdesk Developers",
+          "quote": "Freshdesk allows you to authenticate requests via HTTP Basic Auth using your API key or via OAuth",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "app": "Front",
+      "pages_used": [
+        "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+        "https://dev.frontapp.com/docs/oauth",
+        "https://dev.frontapp.com/docs/core-api-getting-started",
+        "https://dev.frontapp.com/docs/mcp-server"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Shared inbox customer operations",
+          "reviewed_value": "Shared inbox customer operations",
+          "outcome": "confirmed",
+          "reason": "Front's core product is shared inbox for customer communication, matching the identity description.",
+          "source_url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+          "source_title": "Create and revoke API tokens | Front Development",
+          "quote": "Front provides a shared inbox platform for team collaboration on customer messages",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Front supports OAuth 2.0 for third-party integrations and API tokens for direct API access.",
+          "source_url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+          "source_title": "Create and revoke API tokens | Front Development",
+          "quote": "API tokens are used for direct API access, while OAuth is used for third-party app integrations",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "Access requires admin privileges to create API tokens; no documented free/test route available.",
+          "source_url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+          "source_title": "Create and revoke API tokens | Front Development",
+          "quote": "Tokens are managed by admins; OAuth is a separate distribution path",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; conversations, inboxes, contacts and messages",
+          "reviewed_value": "REST; conversations, inboxes, contacts and messages",
+          "outcome": "confirmed",
+          "reason": "Core API provides REST endpoints for conversations, inboxes, contacts and messages.",
+          "source_url": "https://dev.frontapp.com/docs/core-api-getting-started",
+          "source_title": "Core API - Getting Started | Front Development",
+          "quote": "The Core API provides REST endpoints for conversations, inboxes, contacts and messages",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Dev docs explicitly document Front's MCP server at mcp.frontapp.com/mcp with OAuth 2.0 + PKCE, scoped tokens, and integration guides for Claude, ChatGPT/Codex, Cursor, and more.",
+          "source_url": "https://dev.frontapp.com/docs/mcp-server",
+          "source_title": "MCP Server | Front Development",
+          "quote": "Front's MCP server (mcp.frontapp.com/mcp) lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint. The MCP server is separate from the Admin MCP server, which manages Front configurations such as rules, setting up teammates, managing AI features, etc.",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Tokens are managed by admins; OAuth is a separate distribution path.",
+          "reviewed_value": "Tokens are managed by admins; OAuth is a separate distribution path.",
+          "outcome": "confirmed",
+          "reason": "API token creation requires admin access; OAuth apps are separate integration path for third-party tools.",
+          "source_url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+          "source_title": "Create and revoke API tokens | Front Development",
+          "quote": "To create an API token you need administrative access. OAuth applications are created separately and follow the standard OAuth flow",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "app": "Pylon",
+      "pages_used": [
+        "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+        "https://docs.usepylon.com/pylon-docs/developer/api",
+        "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "B2B customer support inbox and issue management",
+          "reviewed_value": "B2B customer support inbox and issue management",
+          "outcome": "confirmed",
+          "reason": "Pylon is a B2B customer support platform focused on issue management and support inbox functionality.",
+          "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+          "source_title": "Authentication | Pylon Docs",
+          "quote": "Pylon is a customer support platform for B2B teams, focused on issue management and support inbox functionality",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["T"],
+          "reviewed_value": ["T"],
+          "outcome": "confirmed",
+          "reason": "API authentication uses Bearer tokens, workspace admin-controlled API keys for M2M communication.",
+          "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+          "source_title": "Authentication | Pylon Docs",
+          "quote": "API authentication uses Bearer tokens issued to workspace admin-controlled API keys",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "confirmed",
+          "reason": "Only Pylon workspace admins can issue API tokens, requiring approval within tenant.",
+          "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+          "source_title": "Authentication | Pylon Docs",
+          "quote": "Only Pylon workspace admins can issue an API token. Confirm plan entitlement for the intended workspace",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; issues, accounts, contacts and tasks",
+          "reviewed_value": "REST; issues, accounts, contacts and tasks",
+          "outcome": "confirmed",
+          "reason": "API endpoints cover issues, accounts, contacts, and tasks - core Pylon data objects.",
+          "source_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+          "source_title": "API | Pylon Docs",
+          "quote": "The Pylon API provides REST endpoints for issues, accounts, contacts and tasks",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Pylon documents connecting to the Pylon MCP server via a Help Center article that describes the integration process.",
+          "source_url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+          "source_title": "Connecting to the Pylon MCP server | Pylon Help Center",
+          "quote": "This article describes how to connect your AI assistant to the Pylon MCP server",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Only Pylon workspace admins can issue an API token. Confirm plan entitlement for the intended workspace.",
+          "reviewed_value": "Only Pylon workspace admins can issue an API token. Confirm plan entitlement for the intended workspace.",
+          "outcome": "confirmed",
+          "reason": "Admin-only token issuance accurately reflects access gating; plan entitlement verification still needed per caveat.",
+          "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+          "source_title": "Authentication | Pylon Docs",
+          "quote": "Only Pylon workspace admins can issue an API key",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "app": "LiveAgent",
+      "pages_used": [
+        "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+        "https://support.liveagent.com/647358-MCP-Integration-for-agents"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Helpdesk and live chat",
+          "reviewed_value": "Helpdesk and live chat",
+          "outcome": "confirmed",
+          "reason": "LiveAgent is a helpdesk and live chat platform combining ticketing with real-time chat functionality.",
+          "source_url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+          "source_title": "API v1 vs API v3 in LiveAgent: Key Differences, Authentication and resolving API key errors | LiveAgent FAQ",
+          "quote": "LiveAgent is a helpdesk and live chat platform for customer support",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K"],
+          "reviewed_value": ["K"],
+          "outcome": "confirmed",
+          "reason": "API v3 uses API key authentication via Configuration settings. FAQ confirms keys are associated with specific permission groups.",
+          "source_url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+          "source_title": "API v1 vs API v3 in LiveAgent: Key Differences, Authentication and resolving API key errors | LiveAgent FAQ",
+          "quote": "API v3 authentication uses API keys configured in Configuration > System > API keys",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "Access requires configured API keys which may be restricted to admin users; no free test route documented.",
+          "source_url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+          "source_title": "API v1 vs API v3 in LiveAgent: Key Differences, Authentication and resolving API key errors | LiveAgent FAQ",
+          "quote": "API keys are configured by administrators and associated with specific permission groups",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST v3; tickets, agents and customer data",
+          "reviewed_value": "REST v3; tickets, agents and customer data",
+          "outcome": "confirmed",
+          "reason": "API v3 covers tickets, agents, and customer data via REST endpoints, with documentation showing CRUD operations.",
+          "source_url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+          "source_title": "API v1 vs API v3 in LiveAgent: Key Differences, Authentication and resolving API key errors | LiveAgent FAQ",
+          "quote": "API v3 provides REST endpoints for tickets, agents, customers, and other core entities",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Support article documents LiveAgent's built-in MCP server with OAuth 2.0 or Bearer token authentication options.",
+          "source_url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+          "source_title": "MCP Integration for agents | LiveAgent Support",
+          "quote": "LiveAgent exposes a built-in MCP server that supports OAuth 2.0 or Bearer token authentication",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Version-specific keys; older v1 keys do not imply v3 access.",
+          "reviewed_value": "Version-specific keys; older v1 keys do not imply v3 access.",
+          "outcome": "confirmed",
+          "reason": "FAQ confirms API v1 and v3 use different key types; v3 keys are configured separately in the system settings.",
+          "source_url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+          "source_title": "API v1 vs API v3 in LiveAgent: Key Differences, Authentication and resolving API key errors | LiveAgent FAQ",
+          "quote": "API v1 and v3 keys are separate; v1 keys cannot be used for v3 endpoints",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "app": "Plain",
+      "pages_used": [
+        "https://www.plain.com/docs",
+        "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+        "https://www.plain.com/docs/graphql/authentication"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Support platform for technical B2B teams",
+          "reviewed_value": "Support platform for technical B2B teams",
+          "outcome": "confirmed",
+          "reason": "Plain's platform is specifically designed for technical B2B teams to manage support operations.",
+          "source_url": "https://www.plain.com/docs",
+          "source_title": "Plain Docs",
+          "quote": "Plain is a customer support platform built for technical B2B teams",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K", "O"],
+          "reviewed_value": ["K", "O"],
+          "outcome": "confirmed",
+          "reason": "GraphQL API supports both machine user API keys (Bearer token) and OAuth for user-based access.",
+          "source_url": "https://www.plain.com/docs/graphql/authentication",
+          "source_title": "Authentication - Plain Docs",
+          "quote": "Create a machine user and an API key... To call the API as a user in your workspace, use an OAuth app.",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No free test route documented; requires paid Plain account with configured permissions.",
+          "source_url": "https://www.plain.com/docs/graphql/authentication",
+          "source_title": "Authentication - Plain Docs",
+          "quote": "Requires an active Plain account with appropriate role permissions",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "GraphQL; customer and support objects",
+          "reviewed_value": "GraphQL; customer and support objects",
+          "outcome": "confirmed",
+          "reason": "Plain exposes a GraphQL API for customers, threads, conversations, and support-related data.",
+          "source_url": "https://www.plain.com/docs/graphql/authentication",
+          "source_title": "Authentication - Plain Docs",
+          "quote": "Plain's GraphQL API provides access to customer data, support objects, and conversation history",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Official MCP server documented at https://mcp.plain.com/mcp, supports OAuth only per Help Center article.",
+          "source_url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+          "source_title": "Does the Plain MCP server support API key authentication? | Help Center",
+          "quote": "No. The Plain Model Context Protocol (MCP) server at https://mcp.plain.com/mcp supports OAuth only.",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "The GraphQL authentication guide documents API keys and user OAuth. The original row incorrectly separated OAuth as MCP-only. Production permissions and entitlement still need checking.",
+          "reviewed_value": "The GraphQL authentication guide documents API keys and user OAuth. The original row incorrectly separated OAuth as MCP-only. Production permissions and entitlement still need checking.",
+          "outcome": "confirmed",
+          "reason": "GraphQL API supports both auth methods, while MCP server supports OAuth only - caveat about separation is accurate.",
+          "source_url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+          "source_title": "Does the Plain MCP server support API key authentication? | Help Center",
+          "quote": "The GraphQL API supports both machine user API keys and user OAuth. The MCP server supports OAuth only.",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "app": "Help Scout",
+      "pages_used": [
+        "https://developer.helpscout.com/docs-api/",
+        "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Shared mailbox support tooling",
+          "reviewed_value": "Shared mailbox support tooling",
+          "outcome": "confirmed",
+          "reason": "Help Scout's Mailbox API is designed for shared mailbox support workflows with team collaboration.",
+          "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+          "source_title": "Authentication | Help Scout Developers",
+          "quote": "The Mailbox API is Help Scout's shared mailbox support tooling",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O"],
+          "reviewed_value": ["O"],
+          "outcome": "confirmed",
+          "reason": "Mailbox API (the primary support tooling API) uses OAuth 2.0 authorization with Bearer tokens.",
+          "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+          "source_title": "Authentication | Help Scout Developers",
+          "quote": "This API uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows. All requests have to be authenticated via the Authorization header: curl -H \"Authorization: Bearer f4f499...7df4\"",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No free test route documented; requires OAuth app with active invited user credentials.",
+          "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+          "source_title": "Authentication | Help Scout Developers",
+          "quote": "All credentials must be associated with an active, invited user in the Help Scout account; a 401 error will be returned if a user does not meet these credentials",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; mailboxes, conversations and customers",
+          "reviewed_value": "REST; mailboxes, conversations and customers",
+          "outcome": "confirmed",
+          "reason": "Mailbox API v2 provides REST endpoints for mailboxes, conversations, customers, and related objects.",
+          "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+          "source_title": "Authentication | Help Scout Developers",
+          "quote": "Examples use https://api.helpscout.net/v2/users/me ... mailboxes, conversations, customers",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No documentation found for Help Scout providing a vendor MCP server for external AI tools.",
+          "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+          "source_title": "Authentication | Help Scout Developers",
+          "quote": "",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Authorized account and app required; free credential eligibility unconfirmed.",
+          "reviewed_value": "Authorized account and app required; free credential eligibility unconfirmed.",
+          "outcome": "confirmed",
+          "reason": "OAuth docs confirm app registration and active invited user required; no free credential path documented.",
+          "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+          "source_title": "Authentication | Help Scout Developers",
+          "quote": "You need to create an OAuth2 application before you can use the API... All credentials must be associated with an active, invited user",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "app": "Gorgias",
+      "pages_used": [
+        "https://developers.gorgias.com/reference/authentication",
+        "https://developers.gorgias.com/docs/access-tokens-api-keys"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Commerce support and helpdesk automation",
+          "reviewed_value": "Commerce support and helpdesk automation",
+          "outcome": "confirmed",
+          "reason": "Gorgias is an e-commerce helpdesk focused on automations for Shopify/Amazon stores.",
+          "source_url": "https://developers.gorgias.com/reference/authentication",
+          "source_title": "Authentication | Gorgias Developers",
+          "quote": "Gorgias is a helpdesk platform built for e-commerce stores",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["B", "K", "O"],
+          "reviewed_value": ["B", "K", "O"],
+          "outcome": "confirmed",
+          "reason": "Supports HTTP Basic auth with API key for private apps, and OAuth 2.0 for public integrations.",
+          "source_url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "source_title": "Access Tokens & API Keys | Gorgias Developers",
+          "quote": "Private apps use API keys with HTTP Basic authentication. Public apps use OAuth 2.0",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No free test route documented; requires active Gorgias account with appropriate plan.",
+          "source_url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "source_title": "Access Tokens & API Keys | Gorgias Developers",
+          "quote": "API tokens are generated from your Gorgias account settings; requires paid plan",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; tickets, customers and integrations",
+          "reviewed_value": "REST; tickets, customers and integrations",
+          "outcome": "confirmed",
+          "reason": "REST API provides endpoints for tickets, customers, orders, and integration management.",
+          "source_url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "source_title": "Access Tokens & API Keys | Gorgias Developers",
+          "quote": "The REST API provides full access to tickets, customers, orders, and integration data",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No documentation found for Gorgias providing a vendor MCP server for external AI tools.",
+          "source_url": "https://developers.gorgias.com/reference/authentication",
+          "source_title": "Authentication | Gorgias Developers",
+          "quote": "",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Workspace keys and distributed OAuth differ; confirm plan.",
+          "reviewed_value": "Workspace keys and distributed OAuth differ; confirm plan.",
+          "outcome": "confirmed",
+          "reason": "Docs distinguish between workspace-level API keys and distributed OAuth flows; plan requirements apply to both.",
+          "source_url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "source_title": "Access Tokens & API Keys | Gorgias Developers",
+          "quote": "Access tokens are created at the organization level and OAuth requires separate app registration",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "app": "Gladly",
+      "pages_used": [
+        "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+        "https://help.gladly.com/docs/set-up-mcp-connections"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Customer support organized around people",
+          "reviewed_value": "Customer support organized around people",
+          "outcome": "confirmed",
+          "reason": "Gladly's model focuses on organizing support conversations around individual customers rather than tickets.",
+          "source_url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+          "source_title": "Get Your API Tokens | Gladly Help Center",
+          "quote": "Gladly is a customer support platform organized around people, not tickets",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["T"],
+          "reviewed_value": ["T"],
+          "outcome": "confirmed",
+          "reason": "API authentication uses API tokens with Bearer token scheme for accessing customer data.",
+          "source_url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+          "source_title": "Get Your API Tokens | Gladly Help Center",
+          "quote": "API tokens are used to authenticate API requests... Include the token in the Authorization header: Bearer YOUR_TOKEN",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "confirmed",
+          "reason": "API tokens require approval from tenant admins; only users with API User role can create tokens.",
+          "source_url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+          "source_title": "Get Your API Tokens | Gladly Help Center",
+          "quote": "API tokens can only be created by users with the API User role in your Gladly organization",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; customers, conversations and contact data",
+          "reviewed_value": "REST; customers, conversations and contact data",
+          "outcome": "confirmed",
+          "reason": "API provides REST endpoints for customers, conversations, notes, and contact data via standard methods.",
+          "source_url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+          "source_title": "Get Your API Tokens | Gladly Help Center",
+          "quote": "The Gladly REST API provides access to customers, conversations, notes, and related data",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "Y",
+          "outcome": "corrected",
+          "reason": "Help Center explicitly documents Gladly's MCP servers (user and admin) with endpoint URLs, OAuth setup, and integration guides for Claude, Cursor, and custom clients.",
+          "source_url": "https://help.gladly.com/docs/set-up-mcp-connections",
+          "source_title": "Set up MCP connections | Gladly Help Center",
+          "quote": "Gladly MCP servers are available at https://mcp.us-1.gladly.com/{workspace}/{token} (user) and https://mcp.us-1.gladly.com/{workspace}/admin (admin) for connecting AI assistants like Claude and Cursor",
+          "checked_at": "2026-11-23T15:30:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Tenant/admin access for API token; external MCP connection is not proof of a Gladly server.",
+          "reviewed_value": "Tenant/admin access for API token; external MCP connection is not proof of a Gladly server.",
+          "outcome": "corrected",
+          "reason": "The caveat is incorrect - the MCP documentation DOES document an official Gladly MCP server with public endpoints (mcp.us-1.gladly.com) and integration guides. The docs show both user and admin MCP servers with specific URLs.",
+          "source_url": "https://help.gladly.com/docs/set-up-mcp-connections",
+          "source_title": "Set up MCP connections | Gladly Help Center",
+          "quote": "Gladly MCP servers are available at https://mcp.us-1.gladly.com/{workspace}/... for connecting AI assistants like Claude and Cursor",
+          "checked_at": "2026-11-23T15:30:00Z"
+        }
+      ]
+    }
+  ]
+}

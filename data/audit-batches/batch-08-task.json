@@ -1,0 +1,325 @@
+{
+  "batch": 8,
+  "apps_checked": 10,
+  "apps": [
+    {
+      "id": 71,
+      "app": "Notion",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Documents, knowledge bases and databases",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; pages, blocks, data sources and users",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Internal integration requires content sharing; remote MCP auth is a different path."
+      },
+      "source_urls": [
+        "https://www.notion.com/help/create-integrations-with-the-notion-api",
+        "https://developers.notion.com/docs/mcp",
+        "https://developers.notion.com/guides/authorization/overview"
+      ]
+    },
+    {
+      "id": 72,
+      "app": "Airtable",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Collaborative databases and workflows",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; bases, tables, records and schemas",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "PAT scopes, base access and OAuth grants are separate checks."
+      },
+      "source_urls": [
+        "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+        "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server"
+      ]
+    },
+    {
+      "id": 73,
+      "app": "Linear",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Issue and project management",
+        "auth_codes": [
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "GraphQL; issues, projects, teams and comments",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Workspace scopes and install permissions matter."
+      },
+      "source_urls": [
+        "https://linear.app/developers/oauth-2-0-authentication",
+        "https://linear.app/developers/graphql",
+        "https://linear.app/docs/mcp"
+      ]
+    },
+    {
+      "id": 74,
+      "app": "Jira",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Issue and project tracking",
+        "auth_codes": [
+          "B",
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "HTTP Basic",
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "Cloud REST; issues, projects, workflows and users",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Basic with an API token on user scripts; OAuth for delegated integrations."
+      },
+      "source_urls": [
+        "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "https://www.atlassian.com/platform/remote-mcp-server"
+      ]
+    },
+    {
+      "id": 75,
+      "app": "Asana",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Projects, tasks and team coordination",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; tasks, portfolios, projects and users",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Developer app/scopes and workspace access; features vary by plan."
+      },
+      "source_urls": [
+        "https://developers.asana.com/docs/authentication",
+        "https://developers.asana.com/docs/integrating-with-asanas-mcp-server"
+      ]
+    },
+    {
+      "id": 76,
+      "app": "Monday.com",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Work management and configurable boards",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "GraphQL; boards, items, automations and users",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Account token versus scoped app authorization."
+      },
+      "source_urls": [
+        "https://developer.monday.com/api-reference/docs/authentication",
+        "https://developer.monday.com/api-reference/docs/mcp-api-token"
+      ]
+    },
+    {
+      "id": 77,
+      "app": "ClickUp",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Project tasks, docs and workspaces",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; tasks, lists, spaces and members",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Personal token for one account; OAuth for other users."
+      },
+      "source_urls": [
+        "https://developer.clickup.com/docs/authentication",
+        "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+      ]
+    },
+    {
+      "id": 78,
+      "app": "Coda",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Documents with tables and automations",
+        "auth_codes": [
+          "T"
+        ],
+        "auth_label": [
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; docs, tables, rows and formulas",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Free Coda makers have a limited MCP route. Paid makers get the full tool surface. REST uses an account token."
+      },
+      "source_urls": [
+        "https://coda.io/developers/apis/v1",
+        "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+      ]
+    },
+    {
+      "id": 79,
+      "app": "Smartsheet",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Spreadsheet-style work and project management",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "P",
+        "access_label": "Paid / licensed",
+        "surface": "REST; sheets, rows, workspaces and reports",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Confirm eligible plan and administrator policy before building."
+      },
+      "source_urls": [
+        "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "https://developers.smartsheet.com/api/smartsheet/guides/getting-started"
+      ]
+    },
+    {
+      "id": 80,
+      "app": "Harvest",
+      "category": "Productivity & Project Management",
+      "claim": {
+        "identity_description": "Time tracking and invoicing",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST v2; time entries, projects and invoicing",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Free and trial accounts include API access. Provide a token or OAuth credentials plus account ID."
+      },
+      "source_urls": [
+        "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+        "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API"
+      ]
+    }
+  ],
+  "instructions": {
+    "role": "Fact-verification subagent for the Composio Product Ops take-home (row audit)",
+    "rules": [
+      "VERIFY ONLY USING OFFICIAL SOURCES: vendor developer docs, official API/auth docs, official pricing/plan pages, official MCP docs, vendor-maintained GitHub repos.",
+      "web_search may only be used LOCATE an official doc page, never as evidence itself.",
+      "Primary tool: web_extract on the official URL. If web_extract fails/403, retry once with browser (browser_exec, read page_info/js to read text). If that fails too, outcome = 'source unavailable'.",
+      "For each field assign exactly ONE of: confirmed | corrected | insufficient evidence | conflicting documentation | source unavailable",
+      "'corrected' REQUIRES a direct quote or precise section from the official doc, plus the corrected value.",
+      "Row auth codes: O=OAuth 2.0, K=API key, T=Token, B=HTTP Basic, S=Signed/JWT, H=Other (e.g. digest), N=None/local, U=Unconfirmed. Use the SET that covers all documented primary API auth methods for the API/CLI in the surface field.",
+      "Row access codes: F=Free/test route (documented free/developer/sandbox route to obtain credentials), C=Run locally (self-host/local tool, no vendor account), P=Paid/licensed, R=Approval/tenant gate, U=Unconfirmed.",
+      "A free plan is NOT proof of API credential access. A mention of a product in docs is NOT proof of a vendor MCP server. The vendor must document/provide the server for THIS product (a generic vendor platform MCP page does not count if it does not cover this product).",
+      "If a credential/access requirement is documented only in a way that needs reading between the lines, prefer 'insufficient evidence' over guessing.",
+      "If docs directly contradict (e.g. one page says free-plan API access, another says paid-only): 'conflicting documentation' with both URLs.",
+      "Do NOT change values you cannot verify. 'insufficient evidence' is a valid, correct outcome.",
+      "source_url must be the exact official page you verified against; source_title is that page's <title>.",
+      "checked_at: ISO timestamp (UTC)."
+    ],
+    "fields_to_check": [
+      "identity (is the product scope/one-line description correct for what the row covers)",
+      "auth (set of auth codes)",
+      "access (access code)",
+      "surface (protocol + major object/action coverage)",
+      "mcp (vendor server Y/U)",
+      "blocker_and_verdict (does the stated caveat/main blocker match what the docs say)"
+    ],
+    "output_schema": {
+      "batch": "int, must equal 'batch' in input",
+      "checked_at": "ISO string",
+      "auditor": "string, e.g. 'Hermes automated documentation audit (batch N)'",
+      "apps": [
+        {
+          "id": "int, the row id",
+          "app": "string, must match input",
+          "pages_used": [
+            "list of official URLs actually read"
+          ],
+          "checks": [
+            {
+              "field": "identity|auth|access|surface|mcp|blocker_and_verdict",
+              "original_value": "string or list, copied verbatim from the row's claim",
+              "reviewed_value": "string or list, the value that should stand (same as original if confirmed)",
+              "outcome": "confirmed|corrected|insufficient evidence|conflicting documentation|source unavailable",
+              "reason": "1-3 plain sentences: what the official source establishes",
+              "source_url": "official URL (or null if unavailable)",
+              "source_title": "page title (or null)",
+              "quote": "short verbatim quote from the official page supporting the outcome (empty string if none)",
+              "checked_at": "ISO string"
+            }
+          ]
+        }
+      ]
+    },
+    "output_path": "ABSOLUTE path to write the final JSON: see your task message",
+    "write_and_verify": "After writing the JSON, re-read it and print: json valid, N apps, M checks, counts per outcome. If any file is missing or invalid, the batch FAILS."
+  }
+}

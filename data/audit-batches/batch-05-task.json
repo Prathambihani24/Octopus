@@ -1,0 +1,320 @@
+{
+  "batch": 5,
+  "apps_checked": 10,
+  "apps": [
+    {
+      "id": 41,
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Commerce stores and merchant operations",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "GraphQL Admin preferred; REST Admin legacy; storefront APIs",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Development stores are distinct from live merchant installs and permissions."
+      },
+      "source_urls": [
+        "https://shopify.dev/docs/api/usage/authentication",
+        "https://shopify.dev/docs/api/admin-graphql",
+        "https://shopify.dev/docs/apps/build/stores/development-stores"
+      ]
+    },
+    {
+      "id": 42,
+      "app": "WooCommerce",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Open-source store plugin for WordPress",
+        "auth_codes": [
+          "B",
+          "K"
+        ],
+        "auth_label": [
+          "HTTP Basic",
+          "API key"
+        ],
+        "access_code": "C",
+        "access_label": "Run locally",
+        "surface": "REST; products, orders, customers and coupons",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Administrator creates consumer keys on a WooCommerce install."
+      },
+      "source_urls": [
+        "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+        "https://developer.woocommerce.com/docs/features/mcp/"
+      ]
+    },
+    {
+      "id": 43,
+      "app": "BigCommerce",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Hosted commerce and storefront management",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST management and GraphQL storefront surfaces",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Developer sandbox path is documented. Store and distributed app credentials differ."
+      },
+      "source_urls": [
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+        "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+        "https://docs.bigcommerce.com/developer/docs/overview/sandboxes"
+      ]
+    },
+    {
+      "id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Enterprise commerce and storefront operations",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "SCAPI REST; shopper and admin surfaces",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Commerce tenant and appropriate client credentials; development tooling MCP is narrower."
+      },
+      "source_urls": [
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+        "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/security"
+      ]
+    },
+    {
+      "id": 45,
+      "app": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Open-source and enterprise commerce platform",
+        "auth_codes": [
+          "O",
+          "S",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Signed / JWT",
+          "Token"
+        ],
+        "access_code": "C",
+        "access_label": "Run locally",
+        "surface": "REST and GraphQL; catalogs, customers and orders",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Magento Open Source can be self-hosted; Adobe SaaS/PaaS auth differs."
+      },
+      "source_urls": [
+        "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+        "https://developer.adobe.com/commerce/webapi/rest/authentication/"
+      ]
+    },
+    {
+      "id": 46,
+      "app": "Squarespace",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Website and commerce builder",
+        "auth_codes": [
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "P",
+        "access_label": "Paid / licensed",
+        "surface": "Commerce REST; products, inventory, orders and profiles",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "API key permissions depend on subscription; partner OAuth differs."
+      },
+      "source_urls": [
+        "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+        "https://commerce-apis.squarespace.com/oauth"
+      ]
+    },
+    {
+      "id": 47,
+      "app": "Ecwid",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Embeddable online storefront",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "P",
+        "access_label": "Paid / licensed",
+        "surface": "REST; catalog, orders, customers and store data",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Stores need a paid plan for API access. The vendor can grant an upgrade for qualifying development work."
+      },
+      "source_urls": [
+        "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid"
+      ]
+    },
+    {
+      "id": 48,
+      "app": "Gumroad",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Direct digital-product sales",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "REST; products, sales, subscribers and licenses",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Confirm account eligibility and allowed API scopes."
+      },
+      "source_urls": [
+        "https://gumroad.com/api",
+        "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad"
+      ]
+    },
+    {
+      "id": 49,
+      "app": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Marketplace seller and vendor operations",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "REST; orders, listings, reports and fulfillment",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Developer registration and selling-partner authorization; restricted roles have extra review."
+      },
+      "source_urls": [
+        "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+        "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api"
+      ]
+    },
+    {
+      "id": 50,
+      "app": "FanBasis",
+      "category": "Ecommerce",
+      "claim": {
+        "identity_description": "Creator commerce and payment infrastructure",
+        "auth_codes": [
+          "U"
+        ],
+        "auth_label": [
+          "Unconfirmed"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "Embedded product docs exist; public merchant API scope unresolved",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Verify official merchant onboarding and key issuance before committing."
+      },
+      "source_urls": [
+        "https://www.fanbasis.com/",
+        "https://demo.embedded.fanbasis.io/docs/how-it-works"
+      ]
+    }
+  ],
+  "instructions": {
+    "role": "Fact-verification subagent for the Composio Product Ops take-home (row audit)",
+    "rules": [
+      "VERIFY ONLY USING OFFICIAL SOURCES: vendor developer docs, official API/auth docs, official pricing/plan pages, official MCP docs, vendor-maintained GitHub repos.",
+      "web_search may only be used LOCATE an official doc page, never as evidence itself.",
+      "Primary tool: web_extract on the official URL. If web_extract fails/403, retry once with browser (browser_exec, read page_info/js to read text). If that fails too, outcome = 'source unavailable'.",
+      "For each field assign exactly ONE of: confirmed | corrected | insufficient evidence | conflicting documentation | source unavailable",
+      "'corrected' REQUIRES a direct quote or precise section from the official doc, plus the corrected value.",
+      "Row auth codes: O=OAuth 2.0, K=API key, T=Token, B=HTTP Basic, S=Signed/JWT, H=Other (e.g. digest), N=None/local, U=Unconfirmed. Use the SET that covers all documented primary API auth methods for the API/CLI in the surface field.",
+      "Row access codes: F=Free/test route (documented free/developer/sandbox route to obtain credentials), C=Run locally (self-host/local tool, no vendor account), P=Paid/licensed, R=Approval/tenant gate, U=Unconfirmed.",
+      "A free plan is NOT proof of API credential access. A mention of a product in docs is NOT proof of a vendor MCP server. The vendor must document/provide the server for THIS product (a generic vendor platform MCP page does not count if it does not cover this product).",
+      "If a credential/access requirement is documented only in a way that needs reading between the lines, prefer 'insufficient evidence' over guessing.",
+      "If docs directly contradict (e.g. one page says free-plan API access, another says paid-only): 'conflicting documentation' with both URLs.",
+      "Do NOT change values you cannot verify. 'insufficient evidence' is a valid, correct outcome.",
+      "source_url must be the exact official page you verified against; source_title is that page's <title>.",
+      "checked_at: ISO timestamp (UTC)."
+    ],
+    "fields_to_check": [
+      "identity (is the product scope/one-line description correct for what the row covers)",
+      "auth (set of auth codes)",
+      "access (access code)",
+      "surface (protocol + major object/action coverage)",
+      "mcp (vendor server Y/U)",
+      "blocker_and_verdict (does the stated caveat/main blocker match what the docs say)"
+    ],
+    "output_schema": {
+      "batch": "int, must equal 'batch' in input",
+      "checked_at": "ISO string",
+      "auditor": "string, e.g. 'Hermes automated documentation audit (batch N)'",
+      "apps": [
+        {
+          "id": "int, the row id",
+          "app": "string, must match input",
+          "pages_used": [
+            "list of official URLs actually read"
+          ],
+          "checks": [
+            {
+              "field": "identity|auth|access|surface|mcp|blocker_and_verdict",
+              "original_value": "string or list, copied verbatim from the row's claim",
+              "reviewed_value": "string or list, the value that should stand (same as original if confirmed)",
+              "outcome": "confirmed|corrected|insufficient evidence|conflicting documentation|source unavailable",
+              "reason": "1-3 plain sentences: what the official source establishes",
+              "source_url": "official URL (or null if unavailable)",
+              "source_title": "page title (or null)",
+              "quote": "short verbatim quote from the official page supporting the outcome (empty string if none)",
+              "checked_at": "ISO string"
+            }
+          ]
+        }
+      ]
+    },
+    "output_path": "ABSOLUTE path to write the final JSON: see your task message",
+    "write_and_verify": "After writing the JSON, re-read it and print: json valid, N apps, M checks, counts per outcome. If any file is missing or invalid, the batch FAILS."
+  }
+}

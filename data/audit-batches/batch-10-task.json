@@ -1,0 +1,308 @@
+{
+  "batch": 10,
+  "apps_checked": 10,
+  "apps": [
+    {
+      "id": 91,
+      "app": "NotebookLM",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "Enterprise notebook research tooling",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "Google Cloud REST for notebooks and sources; scope varies by endpoint",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Licensed enterprise product, Cloud setup and permissions; exclude unofficial consumer wrappers."
+      },
+      "source_urls": [
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing"
+      ]
+    },
+    {
+      "id": 92,
+      "app": "Otter AI",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "Meeting transcription and notes",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "Public API documentation; conversation data and workspace features",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Check workspace enablement and product entitlement; exclude unrelated Otter brands."
+      },
+      "source_urls": [
+        "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server"
+      ]
+    },
+    {
+      "id": 93,
+      "app": "Fathom",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "Meeting recordings, summaries and transcripts",
+        "auth_codes": [
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "REST; recordings, summaries, transcripts and webhooks",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "User-level API keys cover recorded or shared meetings. Vendor-approved partner OAuth is a separate route."
+      },
+      "source_urls": [
+        "https://help.fathom.video/en/articles/8368641",
+        "https://help.fathom.video/en/articles/11497793"
+      ]
+    },
+    {
+      "id": 94,
+      "app": "Consensus",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "Academic paper search and synthesis",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "Search API; current endpoint and access need confirmation",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "OAuth request in brief does not establish OAuth support for the REST API."
+      },
+      "source_urls": [
+        "https://docs.consensus.app/docs/mcp",
+        "https://docs.consensus.app/reference/v1_quick_search"
+      ]
+    },
+    {
+      "id": 95,
+      "app": "Reducto",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "Document parsing and structured extraction",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; parse, extract and document processing",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Standard starts with free usage credits. Growth and Enterprise trials are contact-based."
+      },
+      "source_urls": [
+        "https://reducto.ai/developers",
+        "https://docs.reducto.ai/",
+        "https://reducto.ai/pricing/"
+      ]
+    },
+    {
+      "id": 96,
+      "app": "Devin",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "Coding agent sessions and automation",
+        "auth_codes": [
+          "T"
+        ],
+        "auth_label": [
+          "Token"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "REST; sessions, organizations and administrative resources",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "API service user and permissions apply. The docs hub alone does not establish a first-party server exposing Devin sessions."
+      },
+      "source_urls": [
+        "https://docs.devin.ai/api-reference/authentication",
+        "https://docs.devin.ai/"
+      ]
+    },
+    {
+      "id": 97,
+      "app": "Higgsfield",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "AI image and video generation tools",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "P",
+        "access_label": "Paid / licensed",
+        "surface": "Hosted generation APIs and CLI; availability differs by model",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Check credit entitlement and separate enterprise MCP access."
+      },
+      "source_urls": [
+        "https://open.higgsfield.ai/quick-start",
+        "https://higgsfield.ai/enterprise-help-center/platform/integrations"
+      ]
+    },
+    {
+      "id": 98,
+      "app": "Mermaid CLI",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "Local diagram renderer",
+        "auth_codes": [
+          "N"
+        ],
+        "auth_label": [
+          "None (local)"
+        ],
+        "access_code": "C",
+        "access_label": "Run locally",
+        "surface": "Local mmdc CLI; no remote vendor API needed",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Wrap local renderer with sandboxing; browser dependency and file output matter."
+      },
+      "source_urls": [
+        "https://github.com/mermaid-js/mermaid-cli"
+      ]
+    },
+    {
+      "id": 99,
+      "app": "YouTube Transcript",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "Third-party transcript service named TranscriptAPI",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; transcripts and YouTube metadata endpoints",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Uses TranscriptAPI credentials and quotas; separate from YouTube Data API."
+      },
+      "source_urls": [
+        "https://transcriptapi.com/docs/api/",
+        "https://transcriptapi.com/docs/getting-started/"
+      ]
+    },
+    {
+      "id": 100,
+      "app": "Grain",
+      "category": "AI, Research & Media",
+      "claim": {
+        "identity_description": "Meeting recordings, transcripts and highlights",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "REST; recordings and meeting data",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Grain documents personal credentials and OAuth. Traditional OAuth client ID requires a request, with a metadata-document path for public clients. Check plan access."
+      },
+      "source_urls": [
+        "https://developers.grain.com/authentication.html",
+        "https://developers.grain.com/endpoints.html",
+        "https://support.grain.com/en/articles/15507288-grain-api"
+      ]
+    }
+  ],
+  "instructions": {
+    "role": "Fact-verification subagent for the Composio Product Ops take-home (row audit)",
+    "rules": [
+      "VERIFY ONLY USING OFFICIAL SOURCES: vendor developer docs, official API/auth docs, official pricing/plan pages, official MCP docs, vendor-maintained GitHub repos.",
+      "web_search may only be used LOCATE an official doc page, never as evidence itself.",
+      "Primary tool: web_extract on the official URL. If web_extract fails/403, retry once with browser (browser_exec, read page_info/js to read text). If that fails too, outcome = 'source unavailable'.",
+      "For each field assign exactly ONE of: confirmed | corrected | insufficient evidence | conflicting documentation | source unavailable",
+      "'corrected' REQUIRES a direct quote or precise section from the official doc, plus the corrected value.",
+      "Row auth codes: O=OAuth 2.0, K=API key, T=Token, B=HTTP Basic, S=Signed/JWT, H=Other (e.g. digest), N=None/local, U=Unconfirmed. Use the SET that covers all documented primary API auth methods for the API/CLI in the surface field.",
+      "Row access codes: F=Free/test route (documented free/developer/sandbox route to obtain credentials), C=Run locally (self-host/local tool, no vendor account), P=Paid/licensed, R=Approval/tenant gate, U=Unconfirmed.",
+      "A free plan is NOT proof of API credential access. A mention of a product in docs is NOT proof of a vendor MCP server. The vendor must document/provide the server for THIS product (a generic vendor platform MCP page does not count if it does not cover this product).",
+      "If a credential/access requirement is documented only in a way that needs reading between the lines, prefer 'insufficient evidence' over guessing.",
+      "If docs directly contradict (e.g. one page says free-plan API access, another says paid-only): 'conflicting documentation' with both URLs.",
+      "Do NOT change values you cannot verify. 'insufficient evidence' is a valid, correct outcome.",
+      "source_url must be the exact official page you verified against; source_title is that page's <title>.",
+      "checked_at: ISO timestamp (UTC)."
+    ],
+    "fields_to_check": [
+      "identity (is the product scope/one-line description correct for what the row covers)",
+      "auth (set of auth codes)",
+      "access (access code)",
+      "surface (protocol + major object/action coverage)",
+      "mcp (vendor server Y/U)",
+      "blocker_and_verdict (does the stated caveat/main blocker match what the docs say)"
+    ],
+    "output_schema": {
+      "batch": "int, must equal 'batch' in input",
+      "checked_at": "ISO string",
+      "auditor": "string, e.g. 'Hermes automated documentation audit (batch N)'",
+      "apps": [
+        {
+          "id": "int, the row id",
+          "app": "string, must match input",
+          "pages_used": [
+            "list of official URLs actually read"
+          ],
+          "checks": [
+            {
+              "field": "identity|auth|access|surface|mcp|blocker_and_verdict",
+              "original_value": "string or list, copied verbatim from the row's claim",
+              "reviewed_value": "string or list, the value that should stand (same as original if confirmed)",
+              "outcome": "confirmed|corrected|insufficient evidence|conflicting documentation|source unavailable",
+              "reason": "1-3 plain sentences: what the official source establishes",
+              "source_url": "official URL (or null if unavailable)",
+              "source_title": "page title (or null)",
+              "quote": "short verbatim quote from the official page supporting the outcome (empty string if none)",
+              "checked_at": "ISO string"
+            }
+          ]
+        }
+      ]
+    },
+    "output_path": "ABSOLUTE path to write the final JSON: see your task message",
+    "write_and_verify": "After writing the JSON, re-read it and print: json valid, N apps, M checks, counts per outcome. If any file is missing or invalid, the batch FAILS."
+  }
+}

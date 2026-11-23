@@ -131,6 +131,9 @@ def compare(before, after, checks):
     result = []
     for check in checks:
         item_id, field = check["id"], check["field"]
+        # Skip fields that don't exist in row structure
+        if field not in original.get(item_id, {}) or field not in reviewed.get(item_id, {}):
+            continue
         old, new = original[item_id][field], reviewed[item_id][field]
         if field == "surface":
             new = sorted(extract_signals(new)["surface"] or ["unknown"])

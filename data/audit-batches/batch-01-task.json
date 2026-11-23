@@ -1,0 +1,325 @@
+{
+  "batch": 1,
+  "apps_checked": 10,
+  "apps": [
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "Sales and service CRM",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST, SOAP, Bulk; records and queries",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Developer org for prototyping; production access depends on edition and permissions."
+      },
+      "source_urls": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+        "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview",
+        "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/setup-overview.html"
+      ]
+    },
+    {
+      "id": 2,
+      "app": "HubSpot",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "CRM, marketing and sales",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; contacts, companies, deals and engagement",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Test accounts for development; installation permissions and scopes vary."
+      },
+      "source_urls": [
+        "https://developers.hubspot.com/blog/a-newbies-perspective-on-becoming-a-crm-developer",
+        "https://developers.hubspot.com/blog/hubspot-integration-choosing-private-public-hubspot-apps",
+        "https://developers.hubspot.com/ai-tools/mcp"
+      ]
+    },
+    {
+      "id": 3,
+      "app": "Pipedrive",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "Sales pipeline management",
+        "auth_codes": [
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; deals, leads, contacts and activities",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Account token for one tenant; OAuth for distributed apps."
+      },
+      "source_urls": [
+        "https://support.pipedrive.com/en/article/what-is-the-api-key-for",
+        "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+        "https://developers.pipedrive.com/docs/api/v1/Oauth"
+      ]
+    },
+    {
+      "id": 4,
+      "app": "Attio",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "Flexible CRM and relationship data",
+        "auth_codes": [
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; objects, records, lists and meetings",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Workspace admins can generate API keys on all plans, including Free. OAuth is a separate route."
+      },
+      "source_urls": [
+        "https://docs.attio.com/rest-api/overview",
+        "https://attio.com/platform/developers",
+        "https://attio.com/apps/mcp",
+        "https://attio.com/help/reference/apps/generating-an-api-key"
+      ]
+    },
+    {
+      "id": 5,
+      "app": "Twenty",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "Open-source CRM",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "C",
+        "access_label": "Run locally",
+        "surface": "REST and GraphQL; configurable CRM objects",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Self-host route avoids a cloud plan dependency."
+      },
+      "source_urls": [
+        "https://github.com/twentyhq/twenty",
+        "https://developers.twenty.com/authentication",
+        "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/user-guide/ai/capabilities/mcp.mdx"
+      ]
+    },
+    {
+      "id": 6,
+      "app": "Podio",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "Configurable workspaces and CRM apps",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; workspaces, apps, items and tasks",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Free and paid accounts have API access at the same base limits. Higher limits are a paid option."
+      },
+      "source_urls": [
+        "https://developers.podio.com/authentication",
+        "https://developers.podio.com/index/faq"
+      ]
+    },
+    {
+      "id": 7,
+      "app": "Zoho CRM",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "CRM and sales workflows",
+        "auth_codes": [
+          "O"
+        ],
+        "auth_label": [
+          "OAuth 2.0"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; CRM modules, records and bulk operations",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Free Edition has an API credit allowance. Admin consent and limits apply."
+      },
+      "source_urls": [
+        "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+        "https://www.zoho.com/crm/developer/docs/api/v8/",
+        "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html"
+      ]
+    },
+    {
+      "id": 8,
+      "app": "Close",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "Sales CRM with calling and email",
+        "auth_codes": [
+          "B",
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "HTTP Basic",
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "REST; leads, contacts, activities and tasks",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "API key is used as Basic credentials; verify plan entitlement."
+      },
+      "source_urls": [
+        "https://developer.close.com/api/overview/api-key-authentication",
+        "https://developer.close.com/api/overview"
+      ]
+    },
+    {
+      "id": 9,
+      "app": "Copper",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "CRM for Google Workspace teams",
+        "auth_codes": [
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "REST; people, companies, leads and opportunities",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Account credentials or OAuth app setup; check plan and distribution route."
+      },
+      "source_urls": [
+        "https://developer.copper.com/introduction/authentication.html",
+        "https://developer.copper.com/introduction/oauth/index.html"
+      ]
+    },
+    {
+      "id": 10,
+      "app": "DealCloud",
+      "category": "CRM & Sales",
+      "claim": {
+        "identity_description": "Relationship and deal management for capital markets",
+        "auth_codes": [
+          "K",
+          "O",
+          "T"
+        ],
+        "auth_label": [
+          "API key",
+          "OAuth 2.0",
+          "Token"
+        ],
+        "access_code": "R",
+        "access_label": "Approval / tenant gate",
+        "surface": "REST; CRM entities and records",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Client environment and authorized API credentials required."
+      },
+      "source_urls": [
+        "https://api.docs.dealcloud.com/docs/apikeys",
+        "https://api.docs.dealcloud.com/docs",
+        "https://api.docs.dealcloud.com/mcp/getting-started"
+      ]
+    }
+  ],
+  "instructions": {
+    "role": "Fact-verification subagent for the Composio Product Ops take-home (row audit)",
+    "rules": [
+      "VERIFY ONLY USING OFFICIAL SOURCES: vendor developer docs, official API/auth docs, official pricing/plan pages, official MCP docs, vendor-maintained GitHub repos.",
+      "web_search may only be used LOCATE an official doc page, never as evidence itself.",
+      "Primary tool: web_extract on the official URL. If web_extract fails/403, retry once with browser (browser_exec, read page_info/js to read text). If that fails too, outcome = 'source unavailable'.",
+      "For each field assign exactly ONE of: confirmed | corrected | insufficient evidence | conflicting documentation | source unavailable",
+      "'corrected' REQUIRES a direct quote or precise section from the official doc, plus the corrected value.",
+      "Row auth codes: O=OAuth 2.0, K=API key, T=Token, B=HTTP Basic, S=Signed/JWT, H=Other (e.g. digest), N=None/local, U=Unconfirmed. Use the SET that covers all documented primary API auth methods for the API/CLI in the surface field.",
+      "Row access codes: F=Free/test route (documented free/developer/sandbox route to obtain credentials), C=Run locally (self-host/local tool, no vendor account), P=Paid/licensed, R=Approval/tenant gate, U=Unconfirmed.",
+      "A free plan is NOT proof of API credential access. A mention of a product in docs is NOT proof of a vendor MCP server. The vendor must document/provide the server for THIS product (a generic vendor platform MCP page does not count if it does not cover this product).",
+      "If a credential/access requirement is documented only in a way that needs reading between the lines, prefer 'insufficient evidence' over guessing.",
+      "If docs directly contradict (e.g. one page says free-plan API access, another says paid-only): 'conflicting documentation' with both URLs.",
+      "Do NOT change values you cannot verify. 'insufficient evidence' is a valid, correct outcome.",
+      "source_url must be the exact official page you verified against; source_title is that page's <title>.",
+      "checked_at: ISO timestamp (UTC)."
+    ],
+    "fields_to_check": [
+      "identity (is the product scope/one-line description correct for what the row covers)",
+      "auth (set of auth codes)",
+      "access (access code)",
+      "surface (protocol + major object/action coverage)",
+      "mcp (vendor server Y/U)",
+      "blocker_and_verdict (does the stated caveat/main blocker match what the docs say)"
+    ],
+    "output_schema": {
+      "batch": "int, must equal 'batch' in input",
+      "checked_at": "ISO string",
+      "auditor": "string, e.g. 'Hermes automated documentation audit (batch N)'",
+      "apps": [
+        {
+          "id": "int, the row id",
+          "app": "string, must match input",
+          "pages_used": [
+            "list of official URLs actually read"
+          ],
+          "checks": [
+            {
+              "field": "identity|auth|access|surface|mcp|blocker_and_verdict",
+              "original_value": "string or list, copied verbatim from the row's claim",
+              "reviewed_value": "string or list, the value that should stand (same as original if confirmed)",
+              "outcome": "confirmed|corrected|insufficient evidence|conflicting documentation|source unavailable",
+              "reason": "1-3 plain sentences: what the official source establishes",
+              "source_url": "official URL (or null if unavailable)",
+              "source_title": "page title (or null)",
+              "quote": "short verbatim quote from the official page supporting the outcome (empty string if none)",
+              "checked_at": "ISO string"
+            }
+          ]
+        }
+      ]
+    },
+    "output_path": "ABSOLUTE path to write the final JSON: see your task message",
+    "write_and_verify": "After writing the JSON, re-read it and print: json valid, N apps, M checks, counts per outcome. If any file is missing or invalid, the batch FAILS."
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "batch": 6,
+  "apps_checked": 10,
+  "apps": [
+    {
+      "id": 51,
+      "app": "DataForSEO",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "SEO, SERP and keyword datasets",
+        "auth_codes": [
+          "B"
+        ],
+        "auth_label": [
+          "HTTP Basic"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; SERP, keywords, backlinks and business data",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Sandbox route differs from funded live consumption."
+      },
+      "source_urls": [
+        "https://docs.dataforseo.com/",
+        "https://dataforseo.com/help-center/dfs-dashboard-how-to-find-everything",
+        "https://github.com/dataforseo/mcp-server-typescript",
+        "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work"
+      ]
+    },
+    {
+      "id": 52,
+      "app": "SE Ranking",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "SEO projects, ranking and keyword intelligence",
+        "auth_codes": [
+          "T"
+        ],
+        "auth_label": [
+          "Token"
+        ],
+        "access_code": "P",
+        "access_label": "Paid / licensed",
+        "surface": "Project and Data REST APIs",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Product and data API access differ by plan or package."
+      },
+      "source_urls": [
+        "https://seranking.com/api/project/getting-started/",
+        "https://seranking.com/api/data/getting-started/",
+        "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+      ]
+    },
+    {
+      "id": 53,
+      "app": "Ahrefs",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "Backlink, keyword and traffic intelligence",
+        "auth_codes": [
+          "K",
+          "O"
+        ],
+        "auth_label": [
+          "API key",
+          "OAuth 2.0"
+        ],
+        "access_code": "P",
+        "access_label": "Paid / licensed",
+        "surface": "API v3; SEO datasets across multiple endpoint groups",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "API key access and external OAuth routes have distinct entitlements."
+      },
+      "source_urls": [
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide"
+      ]
+    },
+    {
+      "id": 54,
+      "app": "MrScraper",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "Managed web data extraction",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "REST; scraper execution and results",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Authentication is documented; billing or test entitlement unresolved."
+      },
+      "source_urls": [
+        "https://docs.mrscraper.com/docs/api/authentication",
+        "https://docs.mrscraper.com/docs/api/overview",
+        "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+      ]
+    },
+    {
+      "id": 55,
+      "app": "Apify",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "Hosted Actors for extraction and automation",
+        "auth_codes": [
+          "H",
+          "T"
+        ],
+        "auth_label": [
+          "Other",
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; actors, tasks, runs, datasets and storage",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "API tokens cover normal account access. Actor runs also document payment credentials using x402 or Skyfire; Other captures this scoped alternative. Production permissions and entitlement still need checking."
+      },
+      "source_urls": [
+        "https://docs.apify.com/integrations/api",
+        "https://docs.apify.com/api/v2",
+        "https://docs.apify.com/agents/quickstart"
+      ]
+    },
+    {
+      "id": 56,
+      "app": "Firecrawl",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "Web page extraction and crawling for AI",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST; scrape, crawl, map and search",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Hosted credits cap usage; official MCP wraps documented tools."
+      },
+      "source_urls": [
+        "https://docs.firecrawl.dev/introduction",
+        "https://docs.firecrawl.dev/mcp-server"
+      ]
+    },
+    {
+      "id": 57,
+      "app": "Bright Data",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "Web data collection infrastructure",
+        "auth_codes": [
+          "T"
+        ],
+        "auth_label": [
+          "Token"
+        ],
+        "access_code": "F",
+        "access_label": "Free / test route",
+        "surface": "REST and proxy services; products differ by auth and capability",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "Check quotas by product; MCP availability does not imply all API endpoints are free."
+      },
+      "source_urls": [
+        "https://docs.brightdata.com/ai/mcp-server/overview",
+        "https://docs.brightdata.com/"
+      ]
+    },
+    {
+      "id": 58,
+      "app": "Sherlock",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "Open-source username lookup across public sites",
+        "auth_codes": [
+          "N"
+        ],
+        "auth_label": [
+          "None (local)"
+        ],
+        "access_code": "C",
+        "access_label": "Run locally",
+        "surface": "Local CLI; no first-party hosted API confirmed",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Wrap the CLI when justified; site coverage and false positives need checks."
+      },
+      "source_urls": [
+        "https://github.com/sherlock-project/sherlock"
+      ]
+    },
+    {
+      "id": 59,
+      "app": "Waterfall.io",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "Contact and company data enrichment",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "U",
+        "access_label": "Unconfirmed",
+        "surface": "Documented enrichment endpoints; breadth unconfirmed",
+        "mcp_code": "U",
+        "mcp_label": "Vendor server unconfirmed",
+        "caveat": "Official product example supports the contact endpoint; credential eligibility unresolved."
+      },
+      "source_urls": [
+        "https://www.waterfall.io/product/contact-enrich",
+        "https://www.waterfall.io/"
+      ]
+    },
+    {
+      "id": 60,
+      "app": "Clay",
+      "category": "Data, SEO & Scraping",
+      "claim": {
+        "identity_description": "GTM data enrichment and workflow tables",
+        "auth_codes": [
+          "K"
+        ],
+        "auth_label": [
+          "API key"
+        ],
+        "access_code": "P",
+        "access_label": "Paid / licensed",
+        "surface": "Inbound webhooks and selected People/Company API surfaces",
+        "mcp_code": "Y",
+        "mcp_label": "Vendor server documented",
+        "caveat": "API entitlement can be enterprise; distinguish Clay calling an HTTP API from a public Clay API."
+      },
+      "source_urls": [
+        "https://university.clay.com/docs/guide-find-clay-api-key",
+        "https://university.clay.com/docs/http-api-integration-overview",
+        "https://university.clay.com/docs/connect-to-clay-mcp"
+      ]
+    }
+  ],
+  "instructions": {
+    "role": "Fact-verification subagent for the Composio Product Ops take-home (row audit)",
+    "rules": [
+      "VERIFY ONLY USING OFFICIAL SOURCES: vendor developer docs, official API/auth docs, official pricing/plan pages, official MCP docs, vendor-maintained GitHub repos.",
+      "web_search may only be used LOCATE an official doc page, never as evidence itself.",
+      "Primary tool: web_extract on the official URL. If web_extract fails/403, retry once with browser (browser_exec, read page_info/js to read text). If that fails too, outcome = 'source unavailable'.",
+      "For each field assign exactly ONE of: confirmed | corrected | insufficient evidence | conflicting documentation | source unavailable",
+      "'corrected' REQUIRES a direct quote or precise section from the official doc, plus the corrected value.",
+      "Row auth codes: O=OAuth 2.0, K=API key, T=Token, B=HTTP Basic, S=Signed/JWT, H=Other (e.g. digest), N=None/local, U=Unconfirmed. Use the SET that covers all documented primary API auth methods for the API/CLI in the surface field.",
+      "Row access codes: F=Free/test route (documented free/developer/sandbox route to obtain credentials), C=Run locally (self-host/local tool, no vendor account), P=Paid/licensed, R=Approval/tenant gate, U=Unconfirmed.",
+      "A free plan is NOT proof of API credential access. A mention of a product in docs is NOT proof of a vendor MCP server. The vendor must document/provide the server for THIS product (a generic vendor platform MCP page does not count if it does not cover this product).",
+      "If a credential/access requirement is documented only in a way that needs reading between the lines, prefer 'insufficient evidence' over guessing.",
+      "If docs directly contradict (e.g. one page says free-plan API access, another says paid-only): 'conflicting documentation' with both URLs.",
+      "Do NOT change values you cannot verify. 'insufficient evidence' is a valid, correct outcome.",
+      "source_url must be the exact official page you verified against; source_title is that page's <title>.",
+      "checked_at: ISO timestamp (UTC)."
+    ],
+    "fields_to_check": [
+      "identity (is the product scope/one-line description correct for what the row covers)",
+      "auth (set of auth codes)",
+      "access (access code)",
+      "surface (protocol + major object/action coverage)",
+      "mcp (vendor server Y/U)",
+      "blocker_and_verdict (does the stated caveat/main blocker match what the docs say)"
+    ],
+    "output_schema": {
+      "batch": "int, must equal 'batch' in input",
+      "checked_at": "ISO string",
+      "auditor": "string, e.g. 'Hermes automated documentation audit (batch N)'",
+      "apps": [
+        {
+          "id": "int, the row id",
+          "app": "string, must match input",
+          "pages_used": [
+            "list of official URLs actually read"
+          ],
+          "checks": [
+            {
+              "field": "identity|auth|access|surface|mcp|blocker_and_verdict",
+              "original_value": "string or list, copied verbatim from the row's claim",
+              "reviewed_value": "string or list, the value that should stand (same as original if confirmed)",
+              "outcome": "confirmed|corrected|insufficient evidence|conflicting documentation|source unavailable",
+              "reason": "1-3 plain sentences: what the official source establishes",
+              "source_url": "official URL (or null if unavailable)",
+              "source_title": "page title (or null)",
+              "quote": "short verbatim quote from the official page supporting the outcome (empty string if none)",
+              "checked_at": "ISO string"
+            }
+          ]
+        }
+      ]
+    },
+    "output_path": "ABSOLUTE path to write the final JSON: see your task message",
+    "write_and_verify": "After writing the JSON, re-read it and print: json valid, N apps, M checks, counts per outcome. If any file is missing or invalid, the batch FAILS."
+  }
+}

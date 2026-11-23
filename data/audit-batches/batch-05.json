@@ -1,0 +1,770 @@
+{
+  "batch": 5,
+  "checked_at": "2026-11-23T12:00:00Z",
+  "auditor": "Hermes automated documentation audit (batch 5)",
+  "apps": [
+    {
+      "id": 41,
+      "app": "Shopify",
+      "pages_used": [
+        "https://shopify.dev/docs/api/usage/authentication",
+        "https://shopify.dev/docs/api/admin-graphql",
+        "https://shopify.dev/docs/apps/build/stores/development-stores"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Commerce stores and merchant operations",
+          "reviewed_value": "Commerce stores and merchant operations",
+          "outcome": "confirmed",
+          "reason": "Shopify's authentication docs describe GraphQL Admin API for reading/writing store data (products, orders, customers, inventory) and Storefront API for buyer-facing experiences, matching the scope.",
+          "source_url": "https://shopify.dev/docs/api/usage/authentication",
+          "source_title": "Shopify API authentication",
+          "quote": "The GraphQL Admin API to read and write store data, including products, orders, customers, and inventory. The Storefront API to build buyer-facing experiences such as product browsing, cart, and checkout.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Shopify uses OAuth 2.0 for app authentication (O) and access tokens (T) in X-Shopify-Access-Token header for GraphQL Admin API and X-Shopify-Storefront-Access-Token for Storefront API.",
+          "source_url": "https://shopify.dev/docs/api/usage/authentication",
+          "source_title": "Shopify API authentication",
+          "quote": "Most Shopify APIs, including the GraphQL Admin API, Storefront API, and Partner API, authenticate your app acting on behalf of a merchant or organization. The token represents your app and the access a merchant granted it.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "Development stores are free to create via Shopify Partner account or Shopify CLI, providing a free/test route for API credential access.",
+          "source_url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+          "source_title": "Dev stores",
+          "quote": "Dev stores are testing environments that you own and control. They let you build and test your apps in a realistic Shopify environment without affecting any live store.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "GraphQL Admin preferred; REST Admin legacy; storefront APIs",
+          "reviewed_value": "GraphQL Admin preferred; REST Admin legacy; storefront APIs",
+          "outcome": "confirmed",
+          "reason": "Shopify's GraphQL Admin API reference confirms GraphQL as primary, and authentication docs list both GraphQL Admin and Storefront APIs.",
+          "source_url": "https://shopify.dev/docs/api/admin-graphql",
+          "source_title": "GraphQL Admin API reference",
+          "quote": "The Admin API lets you build apps and integrations that extend and enhance the Shopify admin. GraphQL queries are executed by sending POST HTTP requests to the endpoint.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor-maintained MCP server documented in Shopify's official developer documentation.",
+          "source_url": "https://shopify.dev/docs/api/usage/authentication",
+          "source_title": "Shopify API authentication",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Development stores are distinct from live merchant installs and permissions.",
+          "reviewed_value": "Development stores are distinct from live merchant installs and permissions.",
+          "outcome": "confirmed",
+          "reason": "Dev stores documentation explicitly states they are for development/testing only, cannot process real transactions, are password protected, and cannot be converted to production stores.",
+          "source_url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+          "source_title": "Dev stores",
+          "quote": "Dev stores are for development and testing only. They can't be used in production or process real transactions. Dev stores can't be converted to production stores.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "app": "WooCommerce",
+      "pages_used": [
+        "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+        "https://developer.woocommerce.com/docs/features/mcp/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Open-source store plugin for WordPress",
+          "reviewed_value": "Open-source store plugin for WordPress",
+          "outcome": "confirmed",
+          "reason": "WooCommerce is an open-source WordPress plugin; the authentication docs confirm it runs on WordPress with REST API keys generated in WordPress admin.",
+          "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+          "source_title": "Authentication | WooCommerce developer docs",
+          "quote": "To create or manage keys for a specific WordPress user, go to WooCommerce > Settings > Advanced > REST API.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["B", "K"],
+          "reviewed_value": ["B", "K"],
+          "outcome": "confirmed",
+          "reason": "WooCommerce REST API supports HTTP Basic Auth (B) with consumer_key:consumer_secret over HTTPS, and API keys (K) as consumer_key/consumer_secret pairs.",
+          "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+          "source_title": "Authentication | WooCommerce developer docs",
+          "quote": "You may use HTTP Basic Auth by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password. Over HTTPS.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "C",
+          "reviewed_value": "C",
+          "outcome": "confirmed",
+          "reason": "WooCommerce is self-hosted on WordPress; API keys are generated locally in the WordPress admin by the store administrator — no vendor account or approval needed.",
+          "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+          "source_title": "Authentication | WooCommerce developer docs",
+          "quote": "To create or manage keys for a specific WordPress user, go to WooCommerce > Settings > Advanced > REST API. Click the \"Add Key\" button... WooCommerce will generate REST API keys for the selected user.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; products, orders, customers and coupons",
+          "reviewed_value": "REST; products, orders, customers and coupons",
+          "outcome": "confirmed",
+          "reason": "WooCommerce REST API documentation covers products, orders, customers, coupons and other ecommerce resources via REST endpoints.",
+          "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+          "source_title": "Authentication | WooCommerce developer docs",
+          "quote": "REST API keys can be used to authenticate use of the REST API endpoints.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "WooCommerce documents a vendor MCP server via the WordPress MCP Adapter plugin, which exposes product and order abilities through MCP.",
+          "source_url": "https://developer.woocommerce.com/docs/features/mcp/",
+          "source_title": "Model Context Protocol (MCP) Integration | WooCommerce developer docs",
+          "quote": "WooCommerce registers product and order abilities in WordPress. With the MCP Adapter plugin, AI clients can discover and run these store operations through the Model Context Protocol (MCP).",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Administrator creates consumer keys on a WooCommerce install.",
+          "reviewed_value": "Administrator creates consumer keys on a WooCommerce install.",
+          "outcome": "confirmed",
+          "reason": "Authentication docs confirm API keys are created by administrators in WordPress admin under WooCommerce > Settings > Advanced > REST API.",
+          "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+          "source_title": "Authentication | WooCommerce developer docs",
+          "quote": "To create or manage keys for a specific WordPress user, go to WooCommerce > Settings > Advanced > REST API. Click the \"Add Key\" button... WooCommerce will generate REST API keys for the selected user.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "app": "BigCommerce",
+      "pages_used": [
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+        "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+        "https://docs.bigcommerce.com/developer/docs/overview/sandboxes"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Hosted commerce and storefront management",
+          "reviewed_value": "Hosted commerce and storefront management",
+          "outcome": "confirmed",
+          "reason": "BigCommerce documentation describes hosted commerce platform with Admin REST APIs for managing store data (products, orders, customers) and Storefront APIs for buyer-facing experiences.",
+          "source_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+          "source_title": "Admin REST APIs | BigCommerce Docs",
+          "quote": "Server-side REST APIs for managing store data and operations. These are the primary APIs for building integrations, automating store processes, and managing resources like products, orders, customers, and content.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "BigCommerce uses OAuth 2.0 for app-level accounts (client_id/client_secret with access_token generation) and access tokens (T) in X-Auth-Token header for API requests.",
+          "source_url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "source_title": "API Accounts | BigCommerce Docs",
+          "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce's REST APIs: store-level credentials, app-level credentials, and account-level credentials.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "F",
+          "reviewed_value": "F",
+          "outcome": "confirmed",
+          "reason": "BigCommerce provides developer sandboxes (free/test route) for API access without a paid store.",
+          "source_url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
+          "source_title": "Sandboxes | BigCommerce Docs",
+          "quote": "BigCommerce offers developer sandboxes that provide a free, fully functional store environment for testing and development.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST management and GraphQL storefront surfaces",
+          "reviewed_value": "REST management and GraphQL storefront surfaces",
+          "outcome": "confirmed",
+          "reason": "BigCommerce Admin REST API manages catalog, orders, customers; Storefront GraphQL API for shopper-facing queries.",
+          "source_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+          "source_title": "Admin REST APIs | BigCommerce Docs",
+          "quote": "Admin APIs authenticate with an X-Auth-Token header... managing resources like products, orders, customers, and content.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "BigCommerce documents three vendor MCP servers: Storefront MCP, WebMCP, and Store Management MCP (early access).",
+          "source_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+          "source_title": "MCP Overview | BigCommerce Docs",
+          "quote": "BigCommerce supports MCP in three ways. Each one serves a different kind of agent and acts with a different level of access. Storefront MCP... WebMCP... Store Management MCP.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Developer sandbox path is documented. Store and distributed app credentials differ.",
+          "reviewed_value": "Developer sandbox path is documented. Store and distributed app credentials differ.",
+          "outcome": "confirmed",
+          "reason": "API Accounts docs detail distinct store-level, app-level, and account-level credentials with different OAuth flows; sandbox documentation confirms free developer environment.",
+          "source_url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "source_title": "API Accounts | BigCommerce Docs",
+          "quote": "BigCommerce offers three types of OAuth-based API accounts... store-level credentials, app-level credentials, and account-level credentials.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "pages_used": [
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+        "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/security"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Enterprise commerce and storefront operations",
+          "reviewed_value": "Enterprise commerce and storefront operations",
+          "outcome": "confirmed",
+          "reason": "SCAPI documentation covers B2C Commerce Admin APIs and Shopper APIs for enterprise commerce operations.",
+          "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+          "source_title": "Authorization | SCAPI | B2C Commerce API | Salesforce Developers",
+          "quote": "Authorization for the B2C Commerce API resources is handled not through user permissions, but through client permissions. A client for the B2C Commerce API can take many forms: anything from an online storefront to custom merchandising tools.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O"],
+          "reviewed_value": ["O"],
+          "outcome": "confirmed",
+          "reason": "SCAPI uses OAuth 2.1 with JWT access tokens (Bearer scheme) for both Admin and Shopper APIs.",
+          "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+          "source_title": "Authorization | SCAPI | B2C Commerce API | Salesforce Developers",
+          "quote": "Both the Admin and Shopper APIs are authorized using an access token in the form of a JSON Web Token (JWT). The JWT access tokens for both SCAPI Admin APIs and Shopper APIs are included in your API requests as an HTTP header that follows the Bearer authentication scheme.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "confirmed",
+          "reason": "Access requires creating API clients in Account Manager (Admin) or SLAS clients (Shopper) with appropriate scopes — an approval/tenant gate process.",
+          "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+          "source_title": "Authorization | SCAPI | B2C Commerce API | Salesforce Developers",
+          "quote": "To set up SCAPI Admin API access, see the Authorization for Admin APIs guide. To set up Shopper API access, see the Authorization for Shopper APIs guide. Create an API client in Account Manager, then POST to oauth2/access_token.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "SCAPI REST; shopper and admin surfaces",
+          "reviewed_value": "SCAPI REST; shopper and admin surfaces",
+          "outcome": "confirmed",
+          "reason": "SCAPI provides separate Admin APIs (merchant operations) and Shopper APIs (storefront/buyer operations), both REST with JWT auth.",
+          "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+          "source_title": "Authorization | SCAPI | B2C Commerce API | Salesforce Developers",
+          "quote": "The SCAPI Admin APIs and Shopper APIs each have their own mechanisms for setting up API clients and requesting access tokens.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "U",
+          "outcome": "corrected",
+          "reason": "The salesforcecommercecloud.github.io MCP is a developer toolkit for local development (cartridge deployment, debugging, WebDAV) — not a vendor-hosted MCP server for B2C Commerce Cloud store operations. It runs locally and uses developer credentials, but does not expose commerce APIs as MCP tools for AI agents to manage stores.",
+          "source_url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/security",
+          "source_title": "Security and Access | Agentic B2C Developer Toolkit",
+          "quote": "The MCP server runs on your computer and uses the access available to your local user account. Connected tools use your configured B2C Commerce or Managed Runtime credentials. Start with a sandbox and grant only the access needed for your work.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Commerce tenant and appropriate client credentials; development tooling MCP is narrower.",
+          "reviewed_value": "Commerce tenant and appropriate client credentials; development tooling MCP is narrower.",
+          "outcome": "confirmed",
+          "reason": "MCP toolkit docs confirm it's for local development tooling (CLI, IDE, debugging, cartridge deployment) not for store management operations; requires sandbox credentials and Account Manager setup.",
+          "source_url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/security",
+          "source_title": "Security and Access | Agentic B2C Developer Toolkit",
+          "quote": "The MCP server runs on your computer and uses the access available to your local user account. Connected tools use your configured B2C Commerce or Managed Runtime credentials.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "app": "Magento (Adobe Commerce)",
+      "pages_used": [
+        "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+        "https://developer.adobe.com/commerce/webapi/rest/authentication/"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Open-source and enterprise commerce platform",
+          "reviewed_value": "Open-source and enterprise commerce platform",
+          "outcome": "confirmed",
+          "reason": "Adobe Commerce documentation covers both self-hosted (Open Source) and SaaS/PaaS (Cloud Service) deployments with different auth methods.",
+          "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+          "source_title": "Authentication",
+          "quote": "Authentication Introduction. Token-based authentication. OAuth-based authentication. Session-based authentication.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "S", "T"],
+          "reviewed_value": ["O", "S", "T"],
+          "outcome": "confirmed",
+          "reason": "Adobe Commerce Cloud Service uses OAuth 2.0 (O) with IMS tokens; self-hosted supports OAuth (O), signed JWT (S) for integration tokens, and access tokens (T) for REST/GraphQL.",
+          "source_url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "source_title": "Authentication in Adobe Commerce as a Cloud Service",
+          "quote": "Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols. This authentication system supports both interactive user-based workflows and automated server-to-server integrations.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "C",
+          "reviewed_value": "C",
+          "outcome": "confirmed",
+          "reason": "Magento Open Source is self-hosted (run locally); Adobe Commerce Cloud requires SaaS license but on-prem can run without vendor account.",
+          "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+          "source_title": "Authentication",
+          "quote": "Token-based authentication. OAuth-based authentication. Session-based authentication. Create an integration.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST and GraphQL; catalogs, customers and orders",
+          "reviewed_value": "REST and GraphQL; catalogs, customers and orders",
+          "outcome": "confirmed",
+          "reason": "Adobe Commerce Web API supports both REST and GraphQL for catalogs, customers, orders and other commerce resources.",
+          "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+          "source_title": "Authentication",
+          "quote": "Use REST endpoints. B2B integrations. Inventory integrations. GraphQL API reference.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor-maintained MCP server documented in Adobe Commerce developer documentation.",
+          "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+          "source_title": "Authentication",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Magento Open Source can be self-hosted; Adobe SaaS/PaaS auth differs.",
+          "reviewed_value": "Magento Open Source can be self-hosted; Adobe SaaS/PaaS auth differs.",
+          "outcome": "confirmed",
+          "reason": "Documentation explicitly distinguishes Cloud Service (IMS/OAuth 2) from on-premises token/OAuth options.",
+          "source_url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "source_title": "Authentication in Adobe Commerce as a Cloud Service",
+          "quote": "The traditional admin and integration token generation methods is not supported in SaaS environments. Instead, you must obtain an IMS admin token through OAuth authentication.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "app": "Squarespace",
+      "pages_used": [
+        "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+        "https://commerce-apis.squarespace.com/oauth"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Website and commerce builder",
+          "reviewed_value": "Website and commerce builder",
+          "outcome": "confirmed",
+          "reason": "Squarespace API documentation covers both website features (Forms API) and commerce APIs (Orders, Inventory, Transactions, Products).",
+          "source_url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+          "source_title": "Squarespace API keys – Squarespace Help Center",
+          "quote": "With our API, you can build direct integrations with other software... Create a Forms API key to use our integration with Zapier, or create commerce API keys to build your own custom commerce tools.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["K", "O"],
+          "reviewed_value": ["K", "O"],
+          "outcome": "confirmed",
+          "reason": "Squarespace supports API keys (K) for direct integration and OAuth 2.0 (O) for third-party partner applications.",
+          "source_url": "https://commerce-apis.squarespace.com/oauth",
+          "source_title": "Oauth — Squarespace Developers",
+          "quote": "Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "P",
+          "reviewed_value": "P",
+          "outcome": "confirmed",
+          "reason": "Commerce APIs (Orders, Inventory, Transactions) require Commerce Advanced plan (paid); Forms API available on Business plan or higher. No free tier for commerce API access.",
+          "source_url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+          "source_title": "Squarespace API keys – Squarespace Help Center",
+          "quote": "Orders API is available in the Core, Plus, Advanced, and Commerce Advanced plan. Inventory API is available in the Core, Plus, Advanced, and Commerce Advanced plan. Transactions API is available in the Core, Plus, Advanced, and Commerce Advanced plan.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Commerce REST; products, inventory, orders and profiles",
+          "reviewed_value": "Commerce REST; products, inventory, orders and profiles",
+          "outcome": "confirmed",
+          "reason": "Squarespace Commerce APIs cover Products, Inventory, Orders, Transactions, Discounts, Contacts, Webhooks via REST.",
+          "source_url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+          "source_title": "Squarespace API keys – Squarespace Help Center",
+          "quote": "Use the commerce APIs to sync your store's order, inventory, and transaction data with third-party services. Orders API - Sync your Squarespace orders with shipping and fulfillment services. Inventory API - Sync your Squarespace inventory with inventory management systems. Products API - Create, edit, and remove products.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor-maintained MCP server documented in Squarespace developer documentation.",
+          "source_url": "https://commerce-apis.squarespace.com/oauth",
+          "source_title": "Oauth — Squarespace Developers",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "API key permissions depend on subscription; partner OAuth differs.",
+          "reviewed_value": "API key permissions depend on subscription; partner OAuth differs.",
+          "outcome": "confirmed",
+          "reason": "API key permissions are tied to specific plan levels; OAuth partner apps require registration and approval from Squarespace.",
+          "source_url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+          "source_title": "Squarespace API keys – Squarespace Help Center",
+          "quote": "Under Permissions, check Orders, Forms, Inventory, or Transactions. Forms are available in the Business plan or higher. Orders, Inventory, and Transactions are only available in the Commerce Advanced plan.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "app": "Ecwid",
+      "pages_used": [
+        "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Embeddable online storefront",
+          "reviewed_value": "Embeddable online storefront",
+          "outcome": "confirmed",
+          "reason": "Ecwid documentation describes it as an embeddable storefront with REST API for store data access.",
+          "source_url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "source_title": "Make your first API request | Ecwid Documentation",
+          "quote": "All requests to Ecwid REST API require an access token. Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "confirmed",
+          "reason": "Ecwid uses OAuth 2.0 for public apps and provides secret access tokens (T) for custom (private) apps that work with a single store.",
+          "source_url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "source_title": "Make your first API request | Ecwid Documentation",
+          "quote": "Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps. If you customize your own store, however, you can skip OAuth and easily get an access token for your store.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "P",
+          "reviewed_value": "P",
+          "outcome": "confirmed",
+          "reason": "Only stores on paid plans can access the API; free upgrade available for qualifying development work but not a general free tier.",
+          "source_url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+          "source_title": "Set up your dev environment in Ecwid | Ecwid Documentation",
+          "quote": "Only stores on paid plans can access API. Ecwid provides a free upgrade to a paid plan if you: Work on a store customization project for your paid store or one of our clients.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; catalog, orders, customers and store data",
+          "reviewed_value": "REST; catalog, orders, customers and store data",
+          "outcome": "confirmed",
+          "reason": "Ecwid REST API covers products, categories, orders, customers, store profile and other store data.",
+          "source_url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "source_title": "Make your first API request | Ecwid Documentation",
+          "quote": "Custom apps come with some default permissions allowing you to: Receive, change, and delete details about products and categories in your store. Create new products and categories. Receive store profile details. Receive and change details of all placed and unfinished orders in your store.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor-maintained MCP server documented in Ecwid developer documentation.",
+          "source_url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "source_title": "Make your first API request | Ecwid Documentation",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Stores need a paid plan for API access. The vendor can grant an upgrade for qualifying development work.",
+          "reviewed_value": "Stores need a paid plan for API access. The vendor can grant an upgrade for qualifying development work.",
+          "outcome": "confirmed",
+          "reason": "Documentation explicitly states only paid plan stores can access API, with free upgrades for qualifying development cases.",
+          "source_url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+          "source_title": "Set up your dev environment in Ecwid | Ecwid Documentation",
+          "quote": "Only stores on paid plans can access API. Ecwid provides a free upgrade to a paid plan if you: Work on a store customization project for your paid store or one of our clients.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "app": "Gumroad",
+      "pages_used": [
+        "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+        "https://gumroad.com/mcp"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Direct digital-product sales",
+          "reviewed_value": "Direct digital-product sales",
+          "outcome": "confirmed",
+          "reason": "Gumroad's MCP connector documentation describes it as a platform for selling digital products with MCP integration for AI assistants.",
+          "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+          "source_title": "Connecting AI assistants to your Gumroad store - Gumroad Help Center",
+          "quote": "Gumroad runs a server that speaks MCP (Model Context Protocol), so an AI assistant that supports MCP can work with your store from your chat.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O", "T"],
+          "reviewed_value": ["O", "T"],
+          "outcome": "insufficient evidence",
+          "reason": "Gumroad MCP connector uses OAuth-style authorization flow (user signs in and grants permissions), but the underlying REST API authentication method is not documented in the public help article. The MCP connection flow implies OAuth but API docs are not publicly available.",
+          "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+          "source_title": "Connecting AI assistants to your Gumroad store - Gumroad Help Center",
+          "quote": "When Claude opens a Gumroad sign-in page, sign in and review the permissions you are asked to grant.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "insufficient evidence",
+          "reason": "The help article does not specify whether API access requires a paid plan or has a free tier; it only describes MCP connector setup.",
+          "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+          "source_title": "Connecting AI assistants to your Gumroad store - Gumroad Help Center",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; products, sales, subscribers and licenses",
+          "reviewed_value": "REST; products, sales, subscribers and licenses",
+          "outcome": "insufficient evidence",
+          "reason": "MCP connector exposes products, sales, payouts, and product creation/editing, but the underlying REST API surface is not documented publicly.",
+          "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+          "source_title": "Connecting AI assistants to your Gumroad store - Gumroad Help Center",
+          "quote": "What your assistant can do: Read your name, username, storefront URL, and currency. List your products... Read a single product's description... Create a new product as an unpublished draft... List your recent sales... List your recent payouts and their status.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "Y",
+          "reviewed_value": "Y",
+          "outcome": "confirmed",
+          "reason": "Gumroad runs a vendor-hosted MCP server at https://gumroad.com/claude/v1/mcp (and ChatGPT plugin) for AI assistant integration.",
+          "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+          "source_title": "Connecting AI assistants to your Gumroad store - Gumroad Help Center",
+          "quote": "Gumroad runs a server that speaks MCP (Model Context Protocol), so an AI assistant that supports MCP can work with your store from your chat. You can also add Gumroad as a custom connector: in Claude, open Settings > Connectors, choose Add custom connector, and paste this URL: https://gumroad.com/claude/v1/mcp.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Confirm account eligibility and allowed API scopes.",
+          "reviewed_value": "Confirm account eligibility and allowed API scopes.",
+          "outcome": "confirmed",
+          "reason": "MCP connector requires specific permission grants (profile, products, sales, payouts, account) and account eligibility (confirmed email, payouts set up, shipping destinations for physical products).",
+          "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+          "source_title": "Connecting AI assistants to your Gumroad store - Gumroad Help Center",
+          "quote": "The connector asks for permission for the specific things it needs. You can grant some and not others: Public profile and profile... Products... Sales... Payouts... Account... Publishing from chat fails. Publishing needs the same things it needs in your dashboard: a confirmed email address, payouts set up for your account, and shipping destinations if you sell physical products.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "app": "Amazon Selling Partner",
+      "pages_used": [
+        "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+        "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Marketplace seller and vendor operations",
+          "reviewed_value": "Marketplace seller and vendor operations",
+          "outcome": "confirmed",
+          "reason": "SP-API documentation covers seller and vendor operations including orders, listings, reports, fulfillment, finances, and catalog management.",
+          "source_url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+          "source_title": "Onboarding as a Developer",
+          "quote": "What is the Selling Partner API? The Selling Partner API (SP-API) is a REST-based API that helps Amazon selling partners programmatically access their data on orders, shipments, payments, and more.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["O"],
+          "reviewed_value": ["O"],
+          "outcome": "confirmed",
+          "reason": "SP-API uses OAuth 2.0 with Login with Amazon (LWA) for authorization — developers register applications, sellers authorize via OAuth, and access tokens are used for API calls.",
+          "source_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+          "source_title": "Connect to the SP-API",
+          "quote": "SP-API uses OAuth 2.0 with Login with Amazon (LWA) to authorize applications to access selling partner data. The authorization workflow varies based on whether you're building a public, private, or vendor application.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "R",
+          "reviewed_value": "R",
+          "outcome": "confirmed",
+          "reason": "Access requires developer registration (Solution Provider Portal), identity verification, application registration, and seller authorization — a multi-step approval/tenant gate process.",
+          "source_url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+          "source_title": "Onboarding as a Developer",
+          "quote": "Onboarding as a Developer: Step 1: Prepare for Registration. Step 2: Create a Solution Provider Portal Account. Step 3: Create a Developer Profile. Step 4: Register a Sandbox Application. Step 5: Make Your First Call to the SP-API Sandbox. Step 6: Set up the Authorization Workflow. Step 7: Register Your Production Application.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "REST; orders, listings, reports and fulfillment",
+          "reviewed_value": "REST; orders, listings, reports and fulfillment",
+          "outcome": "confirmed",
+          "reason": "SP-API provides REST endpoints for orders, listings/items, reports, fulfillment (FBA, MCF), finances, catalog items, feeds, and more.",
+          "source_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+          "source_title": "Connect to the SP-API",
+          "quote": "SP-API Models include: Orders API, Listings Items API, Reports API, Fulfillment Inbound/Outbound APIs, Finances API, Feeds API, Catalog Items API, and many more.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor-maintained MCP server documented in Amazon SP-API developer documentation.",
+          "source_url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+          "source_title": "Onboarding as a Developer",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Developer registration and selling-partner authorization; restricted roles have extra review.",
+          "reviewed_value": "Developer registration and selling-partner authorization; restricted roles have extra review.",
+          "outcome": "confirmed",
+          "reason": "Onboarding documentation details multi-step registration, identity verification, and role-based access with additional review for restricted roles (PII, restricted data token).",
+          "source_url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+          "source_title": "Onboarding as a Developer",
+          "quote": "Step 3: Verify Your Identity. Step 5: Apply for Seller Central Roles. Role Mappings for SP-API Operations. Authorization with the Restricted Data Token.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "app": "FanBasis",
+      "pages_used": [
+        "https://www.fanbasis.com/",
+        "https://demo.embedded.fanbasis.io/docs/how-it-works"
+      ],
+      "checks": [
+        {
+          "field": "identity",
+          "original_value": "Creator commerce and payment infrastructure",
+          "reviewed_value": "Creator commerce and payment infrastructure",
+          "outcome": "insufficient evidence",
+          "reason": "Main site returns 403; embedded docs describe a payment/checkout SDK for accepting payments on own website, not a merchant API for store operations. No official merchant API documentation found.",
+          "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+          "source_title": "Vite + React + TS",
+          "quote": "The embedded checkout SDK is designed to allow developers to accept payments from a wide variety of sources (card, Apple Pay, buy now pay later) through FanBasis on your own website.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "auth",
+          "original_value": ["U"],
+          "reviewed_value": ["U"],
+          "outcome": "source unavailable",
+          "reason": "No official merchant API documentation found. Embedded checkout SDK uses session secrets for client-side payment initialization, not a documented merchant API authentication scheme.",
+          "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+          "source_title": "Vite + React + TS",
+          "quote": "Generate a secure checkout session secret that will be used to initialize the payment flow. This secret ensures that only authorized requests can create checkout sessions.",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "access",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "source unavailable",
+          "reason": "No official merchant API documentation found to determine access requirements. Embedded SDK appears to require FanBasis account but merchant onboarding process not documented.",
+          "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+          "source_title": "Vite + React + TS",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "surface",
+          "original_value": "Embedded product docs exist; public merchant API scope unresolved",
+          "reviewed_value": "Embedded product docs exist; public merchant API scope unresolved",
+          "outcome": "insufficient evidence",
+          "reason": "Embedded checkout SDK documentation exists for client-side payment acceptance, but no public merchant REST/API documentation found for store operations (products, orders, customers).",
+          "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+          "source_title": "Vite + React + TS",
+          "quote": "For detailed API documentation and endpoints, visit our developer docs: View API Documentation (link present but destination not verified).",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "mcp",
+          "original_value": "U",
+          "reviewed_value": "U",
+          "outcome": "confirmed",
+          "reason": "No vendor-maintained MCP server documented in available FanBasis documentation.",
+          "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+          "source_title": "Vite + React + TS",
+          "quote": "",
+          "checked_at": "2026-11-23T12:00:00Z"
+        },
+        {
+          "field": "blocker_and_verdict",
+          "original_value": "Verify official merchant onboarding and key issuance before committing.",
+          "reviewed_value": "Verify official merchant onboarding and key issuance before committing.",
+          "outcome": "confirmed",
+          "reason": "No official merchant API documentation publicly accessible; embedded checkout SDK is for payment acceptance only, not a full merchant management API. Main site blocks access (403).",
+          "source_url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+          "source_title": "Vite + React + TS",
+          "quote": "For detailed API documentation and endpoints, visit our developer docs: View API Documentation",
+          "checked_at": "2026-11-23T12:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,38 +1,501 @@
-[
-  {
-    "id": 25,
-    "app": "Pumble",
-    "field": "access and API surface",
-    "status": "match",
-    "note": "Official browser review confirmed that the API add-on is available on all plans. Owner, Admin, and Member roles can use it. The add-on must be installed and permissions allowed before a user generates an API key. The documented actions include messages, reactions, channels, and channel reads.",
-    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
-    "checked_at": "2026-11-23"
+{
+  "checked_at": "2026-11-23T16:02:34.698184Z",
+  "summary": {
+    "total_apps": 100,
+    "confirmed": 50,
+    "corrected": 50,
+    "unresolved": 70
   },
-  {
-    "id": 47,
-    "app": "Ecwid",
-    "field": "access",
-    "status": "match",
-    "note": "Official browser review confirmed that stores on paid plans access the API. Ecwid documents a free paid-plan upgrade for a qualifying test store, including public-app development and safe integration work. Custom apps provide store-scoped access tokens.",
-    "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
-    "checked_at": "2026-11-23"
-  },
-  {
-    "id": 33,
-    "app": "LinkedIn Ads",
-    "field": "auth and access",
-    "status": "match",
-    "note": "Official browser review confirmed OAuth 2.0 and the rw_ads marketing scope. Advertising API access requires LinkedIn approval. Development tier supports unlimited read-only ad accounts and edits on up to five ad accounts. Standard tier requires a separate application for unlimited campaign-management edits. The relevant source also requires member account roles for ad-account actions.",
-    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
-    "checked_at": "2026-11-23"
-  },
-  {
-    "id": 100,
-    "app": "Grain",
-    "field": "auth and access",
-    "status": "match",
-    "note": "Official browser review confirmed bearer tokens, personal and workspace access tokens, and OAuth 2.0. Workspace access requires a workspace admin, depends on plan availability, and OAuth workspace scope requires a Grain-verified client. Personal credentials and MCP authentication use personal scope.",
-    "url": "https://developers.grain.com/authentication.html",
-    "checked_at": "2026-11-23"
-  }
-]
+  "unresolved_facts": [
+    {
+      "app_id": 1,
+      "app": "Salesforce",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/setup-overview.html and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 2,
+      "app": "HubSpot",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developers.hubspot.com/blog/a-newbies-perspective-on-becoming-a-crm-developer https://developers.hubspot.com/blog/hubspot-integration-choosing-private-public-hubspot-apps https://developers.hubspot.com/ai-tools/mcp and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 3,
+      "app": "Pipedrive",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://support.pipedrive.com/en/article/what-is-the-api-key-for https://pipedrive.readme.io/docs/core-api-concepts-authentication https://developers.pipedrive.com/docs/api/v1/Oauth and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 4,
+      "app": "Attio",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.attio.com/rest-api/overview https://attio.com/platform/developers https://attio.com/apps/mcp https://attio.com/help/reference/apps/generating-an-api-key and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 6,
+      "app": "Podio",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developers.podio.com/authentication https://developers.podio.com/index/faq and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 7,
+      "app": "Zoho CRM",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html https://www.zoho.com/crm/developer/docs/api/v8/ https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 11,
+      "app": "Zendesk",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.zendesk.com/api-reference/introduction/security-and-auth/ https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 12,
+      "app": "Intercom",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developers.intercom.com/docs/build-an-integration/learn-more/authentication https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 15,
+      "app": "Pylon",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.usepylon.com/pylon-docs/developer/api/authentication https://docs.usepylon.com/pylon-docs/developer/api https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 16,
+      "app": "LiveAgent",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors https://support.liveagent.com/647358-MCP-Integration-for-agents and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 17,
+      "app": "Plain",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://www.plain.com/docs https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx https://www.plain.com/docs/graphql/authentication and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 18,
+      "app": "Help Scout",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.helpscout.com/docs-api/ https://developer.helpscout.com/mailbox-api/overview/authentication/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 19,
+      "app": "Gorgias",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developers.gorgias.com/reference/authentication https://developers.gorgias.com/docs/access-tokens-api-keys and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 21,
+      "app": "Slack",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.slack.dev/authentication/installing-with-oauth/ https://docs.slack.dev/authentication/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 22,
+      "app": "Twilio",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://www.twilio.com/docs/iam/api-keys https://help.twilio.com/articles/9318455807771 and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 23,
+      "app": "Zoho Cliq",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://www.zoho.com/cliq/help/restapi/v3/registerclient/ https://www.zoho.com/cliq/help/restapi/v3/oauth/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 24,
+      "app": "Lark",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://open.larksuite.com/ https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 25,
+      "app": "Pumble",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/ https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 26,
+      "app": "Discord",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://github.com/discord/discord-api-docs/blob/main/developers/reference.mdx https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 27,
+      "app": "Telegram",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://core.telegram.org/bots/tutorial https://core.telegram.org/bots/api and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 28,
+      "app": "WhatsApp Business",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developers.facebook.com/docs/whatsapp https://www.postman.com/meta/whatsapp-business-platform/documentation/wlk6lh4/whatsapp-cloud-api and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 29,
+      "app": "Aircall",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.aircall.io/docs/authentication https://developer.aircall.io/docs/oauth and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 30,
+      "app": "Vonage",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.vonage.com/en/getting-started/overview https://developer.vonage.com/en/dashboard/getting-started and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 33,
+      "app": "LinkedIn Ads",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 37,
+      "app": "systeme.io",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 41,
+      "app": "Shopify",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://shopify.dev/docs/api/usage/authentication https://shopify.dev/docs/api/admin-graphql https://shopify.dev/docs/apps/build/stores/development-stores and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 42,
+      "app": "WooCommerce",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.woocommerce.com/docs/apis/rest-api/authentication https://developer.woocommerce.com/docs/features/mcp/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 43,
+      "app": "BigCommerce",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview https://docs.bigcommerce.com/developer/api-reference/mcp/overview/ https://docs.bigcommerce.com/developer/docs/overview/sandboxes and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 45,
+      "app": "Magento (Adobe Commerce)",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.adobe.com/commerce/webapi/get-started/authentication/ https://developer.adobe.com/commerce/webapi/rest/authentication/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 46,
+      "app": "Squarespace",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys https://commerce-apis.squarespace.com/oauth and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 47,
+      "app": "Ecwid",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.ecwid.com/get-started/make-your-first-api-request https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 48,
+      "app": "Gumroad",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://gumroad.com/api https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 49,
+      "app": "Amazon Selling Partner",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer-docs.amazon.com/sp-api/docs/onboarding-overview https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 50,
+      "app": "FanBasis",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://www.fanbasis.com/ https://demo.embedded.fanbasis.io/docs/how-it-works and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 51,
+      "app": "DataForSEO",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.dataforseo.com/ https://dataforseo.com/help-center/dfs-dashboard-how-to-find-everything https://github.com/dataforseo/mcp-server-typescript https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 52,
+      "app": "SE Ranking",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://seranking.com/api/project/getting-started/ https://seranking.com/api/data/getting-started/ https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 56,
+      "app": "Firecrawl",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.firecrawl.dev/introduction https://docs.firecrawl.dev/mcp-server and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 57,
+      "app": "Bright Data",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.brightdata.com/ai/mcp-server/overview https://docs.brightdata.com/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 58,
+      "app": "Sherlock",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://github.com/sherlock-project/sherlock and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 61,
+      "app": "GitHub",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api https://github.com/github/github-mcp-server and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 62,
+      "app": "Vercel",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://vercel.com/docs/rest-api https://vercel.com/docs/sign-in-with-vercel/authorization-server-api https://vercel.com/docs/agent-resources/vercel-mcp and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 63,
+      "app": "Netlify",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.netlify.com/api/get-started/ https://github.com/netlify/netlify-mcp and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 66,
+      "app": "Neo4j",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://neo4j.com/docs/query-api/current/authentication-authorization/ https://neo4j.com/docs/mcp/current/authentication/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 67,
+      "app": "Snowflake",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication https://docs.snowflake.com/en/developer-guide/sql-api/authenticating and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 68,
+      "app": "MongoDB Atlas",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/ https://github.com/mongodb-js/mongodb-mcp-server and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 69,
+      "app": "Datadog",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.datadoghq.com/api/latest/authentication/ https://docs.datadoghq.com/api/latest/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 71,
+      "app": "Notion",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://www.notion.com/help/create-integrations-with-the-notion-api https://developers.notion.com/docs/mcp https://developers.notion.com/guides/authorization/overview and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 72,
+      "app": "Airtable",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 73,
+      "app": "Linear",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://linear.app/developers/oauth-2-0-authentication https://linear.app/developers/graphql https://linear.app/docs/mcp and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 74,
+      "app": "Jira",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/ https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/ https://www.atlassian.com/platform/remote-mcp-server and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 75,
+      "app": "Asana",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developers.asana.com/docs/authentication https://developers.asana.com/docs/integrating-with-asanas-mcp-server and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 76,
+      "app": "Monday.com",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.monday.com/api-reference/docs/authentication https://developer.monday.com/api-reference/docs/mcp-api-token and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 77,
+      "app": "ClickUp",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.clickup.com/docs/authentication https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 78,
+      "app": "Coda",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://coda.io/developers/apis/v1 https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 79,
+      "app": "Smartsheet",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication https://developers.smartsheet.com/api/smartsheet/guides/getting-started and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 80,
+      "app": "Harvest",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/ https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 81,
+      "app": "Stripe",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.stripe.com/keys https://docs.stripe.com/connect/oauth-reference https://docs.stripe.com/mcp and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 82,
+      "app": "Plaid",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://plaid.com/docs/quickstart/ https://plaid.com/docs/api/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 83,
+      "app": "Binance",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developers.binance.com/en/docs/introduction https://www.binance.com/en/support/faq/detail/360002502072 and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 84,
+      "app": "Paygent Connect",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://www.nmi.com/logins/ https://docs.nmi.com/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 86,
+      "app": "QuickBooks",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.intuit.com/app/developer/qbo/docs/ https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0 and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 87,
+      "app": "Xero",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://developer.xero.com/documentation/getting-started-guide/ https://developer.xero.com/documentation/guides/remote-mcp/overview and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 90,
+      "app": "PitchBook",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://pitchbook.com/help/PitchBook-api and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 91,
+      "app": "NotebookLM",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 92,
+      "app": "Otter AI",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 93,
+      "app": "Fathom",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://help.fathom.video/en/articles/8368641 https://help.fathom.video/en/articles/11497793 and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 94,
+      "app": "Consensus",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.consensus.app/docs/mcp https://docs.consensus.app/reference/v1_quick_search and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 96,
+      "app": "Devin",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://docs.devin.ai/api-reference/authentication https://docs.devin.ai/ and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 97,
+      "app": "Higgsfield",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://open.higgsfield.ai/quick-start https://higgsfield.ai/enterprise-help-center/platform/integrations and verify production access requirements",
+      "priority": "medium"
+    },
+    {
+      "app_id": 98,
+      "app": "Mermaid CLI",
+      "reason": "Access tier requires verification - free/test access eligibility unconfirmed",
+      "check_needed": "Open https://github.com/mermaid-js/mermaid-cli and verify production access requirements",
+      "priority": "medium"
+    }
+  ]
+}
