@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Connector readiness across 100 apps. Evidence, build paths, research workflow, and verification.">
+<title>Connector readiness across 100 apps · Pratham Bihani</title>
+<style>
+:root{color-scheme:light;--paper:#f6f7f3;--ink:#15251e;--muted:#46564c;--rule:#c8d1c8;--green:#175c40;--deep:#142d23;--wash:#e4ede4;--white:#fff;--mono:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.55 "Instrument Sans","Segoe UI",Arial,sans-serif}
+a{color:var(--green);text-underline-offset:.19em}
+a:hover{color:var(--ink)}
+:focus-visible{outline:3px solid #a85916;outline-offset:3px}
+.wrap{width:min(1180px,calc(100% - 56px));margin:auto}
+header{border-bottom:1px solid var(--rule)}
+.head{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:15px 0}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--ink);font-size:.93rem}
+.byline,.kicker{font:600 .79rem/1.5 var(--mono);letter-spacing:.05em}
+.hero{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(230px,1fr);gap:52px;padding:64px 0 45px;align-items:end}
+.kicker{color:var(--green);text-transform:uppercase}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.04;letter-spacing:-.04em}
+h1{font-size:clamp(3.05rem,7vw,6rem);margin:12px 0 16px}
+h2{font-size:clamp(2.1rem,4.4vw,3.6rem);margin:.2rem 0 1rem}
+h3{margin:0 0 .45rem;font-size:1.1rem}
+p{margin:0 0 .8em}
+.lead{font-size:1.22rem;max-width:660px;color:var(--muted);margin:0}
+.priority{background:var(--deep);color:#f2f7ef;padding:25px;align-self:end}
+.priority .kicker{color:#b4d8bb}
+.priority p:last-child{margin-bottom:0}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--rule)}
+.metric{padding:17px 18px 19px}
+.metric:first-child{padding-left:0}
+.metric+.metric{border-left:1px solid var(--rule)}
+.num{display:block;font:500 clamp(1.7rem,3vw,2.9rem)/1.2 Georgia,serif}
+.metric small{font-size:.89rem;color:var(--muted)}
+section{padding:43px 0;border-bottom:1px solid var(--rule);scroll-margin-top:14px}
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:40px}
+.facts{list-style:none;padding:0;margin:0}
+.facts li{border-top:1px solid var(--rule);padding:12px 0}
+.facts li:last-child{border-bottom:1px solid var(--rule)}
+.subtle{color:var(--muted);max-width:74ch}
+.bar-row{display:grid;grid-template-columns:minmax(146px,1fr) 1fr 2rem;gap:10px;align-items:center;margin:11px 0;font-size:.89rem}
+.track{height:13px;background:#dfe7df}
+.fill{height:100%;background:var(--green)}
+.filter{display:flex;flex-wrap:wrap;align-items:end;gap:12px;margin:20px 0 13px}
+label{display:grid;gap:5px;font-weight:600;font-size:.9rem}
+input,select{background:var(--white);border:1px solid #829185;border-radius:0;padding:9px;color:var(--ink);font:inherit;min-height:42px}
+input{width:min(100%,320px)}
+.filter label:first-child{flex:1;min-width:min(100%,210px)}
+.filter label:first-child input{width:100%}
+.table-wrap{overflow:auto;max-height:620px;border-bottom:1px solid var(--rule)}
+table{width:100%;border-collapse:collapse;text-align:left}
+thead th{position:sticky;top:0;background:#e6eee6;z-index:1;color:var(--ink)}
+th,td{padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:.89rem}
+td small{display:block;color:var(--muted);margin-top:3px;font-size:.87rem}
+td:nth-child(3){min-width:190px}
+td:nth-child(4){min-width:220px}
+.verdict{font-weight:700;color:var(--green)}
+.src{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.src a{font-size:.83rem}
+.count{color:var(--muted);font-size:.9rem}
+.workflow{margin:20px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.workflow div{background:var(--paper);padding:19px}
+.audit-top{background:var(--wash);border-left:4px solid var(--green);padding:17px 20px;margin:16px 0}
+.audit-top strong{font-size:1.5rem}
+details{margin:14px 0}
+summary{cursor:pointer;font-weight:700;color:var(--green);width:fit-content}
+code{font-family:var(--mono);font-size:.87em;overflow-wrap:anywhere}
+.links{display:flex;flex-wrap:wrap;gap:18px}
+footer{padding:22px 0;color:var(--muted);font-size:.9rem}
+@media(max-width:780px){.wrap{width:calc(100% - 34px)}.hero,.split{grid-template-columns:1fr;gap:17px}.hero{padding:38px 0 32px}.metrics{grid-template-columns:1fr 1fr}.metric{padding-left:14px}.metric:nth-child(odd){border-left:0;padding-left:0}.metric:nth-child(n+3){border-top:1px solid var(--rule)}.workflow{grid-template-columns:1fr}.filter label{flex:1}.filter select{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap head"><div class="byline">PRATHAM BIHANI · COMPOSIO PRODUCT OPS TAKE-HOME</div><nav aria-label="Page sections"><a href="#findings">Findings</a><a href="#matrix">App matrix</a><a href="#verification">Verification</a><a href="#run">Run it</a></nav></div></header>
+<main class="wrap">
+<div class="hero">
+  <div><div class="kicker">Integration research · November 2026</div><h1>Which connectors can we build first?</h1><p class="lead" id="headline"></p></div>
+  <aside class="priority"><h3 class="kicker">Recommended first builds</h3><p>Start with one read action each: GitHub issues, Linear issue search, and Notion page retrieval. Validate permissions and check existing tool coverage before adding anything new.</p></aside>
+</div>
+<div class="metrics" aria-label="Study totals" id="metrics"></div>
+<section id="findings" class="split">
+  <div><div class="kicker">Findings</div><h2>Access determines the first build</h2><ul class="facts" id="facts"></ul></div>
+  <div><h3>Apps with a free or test route</h3><p class="subtle">Each category contains 10 apps. Production requirements are shown in the matrix.</p><div id="bars"></div></div>
+</section>
+<section id="matrix">
+  <div class="kicker">Research matrix</div><h2>100 apps, with sources</h2>
+  <p class="subtle">The verdict describes the earliest documented build path. “Investigate” means a material fact remains open. A missing vendor MCP confirmation leaves room for an original API or CLI wrapper.</p>
+  <div class="filter"><label>Search apps or blockers<input type="search" id="search" placeholder="Search by name, auth, API, or blocker"></label><label>Category<select id="category"><option value="">All categories</option></select></label><label>Access<select id="access"><option value="">All access types</option></select></label></div>
+  <p class="count" id="count" aria-live="polite"></p>
+  <div class="table-wrap" role="region" aria-label="Scrollable app matrix" tabindex="0"><table><thead><tr><th scope="col">App</th><th scope="col">Auth &amp; access</th><th scope="col">API surface &amp; MCP</th><th scope="col">Verdict &amp; evidence</th></tr></thead><tbody id="apps"></tbody></table></div>
+</section>
+<section id="verification">
+  <div class="kicker">Verification</div><h2>Where the first pass missed</h2>
+  <p class="subtle">A targeted sample checks named fields against official documentation. These are the fields used for corrections, so the comparison measures the fixes on this sample. It does not estimate accuracy across all 100 apps.</p>
+  <div class="audit-top" id="audit-top"></div>
+  <p id="human"></p>
+  <details open><summary>Inspect the sample and corrections</summary><div class="table-wrap" role="region" aria-label="Scrollable audit results" tabindex="0"><table><thead><tr><th scope="col">App / field</th><th scope="col">First pass</th><th scope="col">After review</th><th scope="col">Why / evidence</th></tr></thead><tbody id="audit"></tbody></table></div></details>
+</section>
+<section id="run">
+  <div class="kicker">Workflow and runnable proof</div><h2>Reproduce the result</h2>
+  <div class="workflow">
+    <div><h3>Discover</h3><p>Search every app for API, auth, credential access and MCP. Save the source candidates and extract the first result's signals.</p></div>
+    <div><h3>Check the docs</h3><p>Read targeted official sources for policy changes, ambiguous product names and mismatches between API and MCP access. Record decisions that need judgment.</p></div>
+    <div><h3>Compare and aggregate</h3><p>Score reviewed fields against the retained baseline, then generate category totals and the filterable matrix from the same rows.</p></div>
+  </div>
+  <p>Run <code>python3 research.py</code> to reproduce the saved 100-app comparison. Use <code>python3 research.py --refresh-docs --id 31</code> to fetch current documentation and inspect live candidate signals for Google Ads.</p>
+  <p class="links" id="repo-links"><a href="composio-toolkit-study.zip">Download runnable source</a><a href="README.md">Read the setup guide</a><a href="findings.json">Download findings as JSON</a></p>
+</section>
+</main>
+<footer class="wrap">Documentation snapshot · 23 November 2026 · No vendor API calls or live credentials used.</footer>
+<script id="findings-data" type="application/json">__FINDINGS__</script>
+<script>
+"use strict";
+const data = JSON.parse(document.getElementById("findings-data").textContent);
+const {apps, audit, summary, auth_labels, access_labels, mcp_labels, human_audit, source_repo} = data;
+const el = id => document.getElementById(id);
+function node(tag, value, className) {
+  const element = document.createElement(tag);
+  if (value !== null) element.textContent = value;
+  if (className) element.className = className;
+  return element;
+}
+function link(url, label) {
+  const anchor = node("a", label);
+  if (/^https:\/\//i.test(url)) {
+    anchor.href = url;
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+  }
+  return anchor;
+}
+function options(select, entries) {
+  for (const [value,label] of entries) {
+    const option = node("option",label);
+    option.value = value;
+    select.append(option);
+  }
+}
+const free = summary.access.F || 0;
+const local = summary.access.C || 0;
+const gate = (summary.access.P || 0) + (summary.access.R || 0);
+el("headline").textContent = free + " apps have a documented free or test route. Developer infrastructure and productivity offer the clearest place to prototype. Paid access, tenant permissions, and production approval change what can ship.";
+for (const [number,label] of [[apps.length,"Apps researched"],[free+local,"Free, test, or local paths"],[gate,"Paid or approval gated"],[summary.mcp.Y,"Vendor MCP documented"]]) {
+  const item = node("div",null,"metric");
+  item.append(node("span",number,"num"),node("small",label));
+  el("metrics").append(item);
+}
+const topAuth = Object.entries(summary.auth).filter(([k])=>!["U","N"].includes(k)).sort((a,b)=>b[1]-a[1]).slice(0,2);
+const facts = [
+  ["Auth patterns recur.", topAuth.map(([k,v])=>auth_labels[k]+" appears on "+v).join(" apps, and ")+" apps. Tags can overlap."],
+  ["Budget for approval and outreach.", (summary.access.R || 0)+" apps have a tenant or approval gate and "+(summary.access.P || 0)+" have a paid or licensed route. Confirm entitlement before scoping LinkedIn Ads, DealCloud, or PitchBook."],
+  ["Separate unknowns from gates.", (summary.access.U || 0)+" starting routes remain unconfirmed. FanBasis and Paygent Connect need product or credential confirmation before estimating a build."],
+  ["Audit the sandbox-to-live path.", "Google Ads and Plaid support early tests but have separate production access. Plan these as prototypes first."],
+];
+for (const [title,detail] of facts) {
+  const li = node("li",null);
+  li.append(node("strong",title+" "),document.createTextNode(detail));
+  el("facts").append(li);
+}
+Object.entries(summary.by_category).sort((a,b)=>(b[1].F||0)-(a[1].F||0)).forEach(([label,counts])=>{
+  const value = counts.F || 0;
+  const line = node("div",null,"bar-row");
+  const track = node("div",null,"track");
+  const bar = node("div",null,"fill");
+  track.setAttribute("aria-hidden","true");
+  bar.style.width = (value*10)+"%";
+  track.append(bar);
+  line.append(node("span",label),track,node("strong",value));
+  el("bars").append(line);
+});
+options(el("category"),Object.keys(summary.by_category).map(x=>[x,x]));
+options(el("access"),Object.entries(access_labels));
+function renderMatrix() {
+  const query = el("search").value.trim().toLowerCase();
+  const category = el("category").value;
+  const access = el("access").value;
+  const matches = apps.filter(row=>{
+    const text = [row.app,row.description,row.caveat,row.surface,row.verdict,...row.auth.map(x=>auth_labels[x])].join(" ").toLowerCase();
+    return (!query || text.includes(query)) && (!category || row.category===category) && (!access || row.access===access);
+  });
+  el("count").textContent = matches.length+" of "+apps.length+" apps";
+  el("apps").replaceChildren(...matches.map(row=>{
+    const tr = node("tr",null);
+    const name = node("th",null);
+    name.scope = "row";
+    name.append(document.createTextNode(row.app),node("small",row.description),node("small",row.category));
+    const auth = node("td",row.auth.map(x=>auth_labels[x]).join(", "));
+    auth.append(node("small",access_labels[row.access]));
+    const surface = node("td",row.surface);
+    surface.append(node("small",mcp_labels[row.mcp]));
+    const decision = node("td",null);
+    const sources = node("div",null,"src");
+    row.sources.forEach((url,index)=>sources.append(link(url,"Source "+(index+1))));
+    decision.append(node("span",row.verdict,"verdict"),node("small",row.caveat),sources);
+    tr.append(name,auth,surface,decision);
+    return tr;
+  }));
+}
+for (const id of ["search","category","access"]) el(id).addEventListener("input",renderMatrix);
+renderMatrix();
+function auditLabel(field,value) {
+  if (field==="auth") return value.map(x=>auth_labels[x]).join(", ");
+  if (field==="access") return access_labels[value];
+  if (field==="mcp") return mcp_labels[value];
+  return value.join(", ");
+}
+el("audit-top").append(node("strong",summary.before_correct+"/"+audit.length+" → "+summary.after_correct+"/"+audit.length),node("div","Exact field matches in the targeted documentation comparison."));
+el("human").textContent = human_audit.length ? "Applicant cross-checks: "+human_audit.map(x=>x.note).join(" ") : "Independent applicant spot checks are pending. The table below records assistant checks against vendor documentation.";
+for (const check of audit) {
+  const row = node("tr",null);
+  const app = node("th",check.app);
+  app.scope = "row";
+  app.append(node("small",check.field));
+  const before = node("td",auditLabel(check.field,check.before));
+  before.append(node("small",check.before_ok ? "Matched" : "Missed"));
+  const after = node("td",auditLabel(check.field,check.after));
+  after.append(node("small",check.after_ok ? "Matched" : "Missed"));
+  const notes = node("td",check.note);
+  notes.append(node("br",null),link(check.url,"Official documentation"));
+  row.append(app,before,after,notes);
+  el("audit").append(row);
+}
+if (source_repo) el("repo-links").prepend(link(source_repo,"Source repository"));
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+[
+  {
+    "id": 3,
+    "field": "auth",
+    "expected": [
+      "O",
+      "T"
+    ],
+    "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "note": "The developer guide distinguishes OAuth for apps and the account API token header."
+  },
+  {
+    "id": 27,
+    "field": "auth",
+    "expected": [
+      "T"
+    ],
+    "url": "https://core.telegram.org/bots/tutorial",
+    "note": "BotFather issues a bot token. The main Telegram account API is a separate surface."
+  },
+  {
+    "id": 31,
+    "field": "auth",
+    "expected": [
+      "O"
+    ],
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "note": "The current migration guide supersedes older REST auth pages on developer tokens. OAuth still applies."
+  },
+  {
+    "id": 31,
+    "field": "access",
+    "expected": "F",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+    "note": "Enabling the API grants a test-only route. Explorer, Basic or Standard access is needed for live accounts."
+  },
+  {
+    "id": 31,
+    "field": "mcp",
+    "expected": "Y",
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "note": "Google publishes a server setup guide for Google Ads."
+  },
+  {
+    "id": 41,
+    "field": "access",
+    "expected": "F",
+    "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+    "note": "A development store provides a test environment. Merchant stores have a separate installation path."
+  },
+  {
+    "id": 51,
+    "field": "access",
+    "expected": "F",
+    "url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+    "note": "The vendor documents a free Sandbox with limited responses and a separate paid live path."
+  },
+  {
+    "id": 68,
+    "field": "auth",
+    "expected": [
+      "H",
+      "O"
+    ],
+    "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+    "note": "The scoped Admin API documents HTTP Digest and OAuth 2.0 service accounts. Generic database auth is out of scope."
+  },
+  {
+    "id": 71,
+    "field": "auth",
+    "expected": [
+      "O",
+      "T"
+    ],
+    "url": "https://developers.notion.com/guides/authorization/overview",
+    "note": "Static internal connection tokens and PATs differ from public OAuth."
+  },
+  {
+    "id": 82,
+    "field": "access",
+    "expected": "F",
+    "url": "https://plaid.com/docs/quickstart/",
+    "note": "Signup exposes Sandbox credentials. Production is a separate environment."
+  },
+  {
+    "id": 91,
+    "field": "access",
+    "expected": "R",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "note": "The documented Notebook Enterprise methods require a signed-in user with an active license."
+  },
+  {
+    "id": 92,
+    "field": "mcp",
+    "expected": "Y",
+    "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "note": "Otter.ai publishes the server guide. Other search results were for an unrelated Otter."
+  },
+  {
+    "id": 98,
+    "field": "surface",
+    "expected": [
+      "cli"
+    ],
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "note": "The assignment entry is the local mmdc renderer. The other Mermaid AI product is outside the row scope."
+  }
+]

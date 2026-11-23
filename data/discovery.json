@@ -1,0 +1,4939 @@
+[
+  {
+    "id": 1,
+    "query_app": "Salesforce",
+    "results": [
+      {
+        "url": "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [
+            "F"
+          ],
+          "surface": [
+            "rest",
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/setup-overview.html",
+        "signals": {
+          "auth": [
+            "S"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "query_app": "HubSpot",
+    "results": [
+      {
+        "url": "https://legal.hubspot.com/hubfs/Privacy%20and%20Security%20documents/HubSpot%20Security%20Overview%20%28March%202023%29_en.pdf",
+        "signals": {
+          "auth": [
+            "O",
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://fs.hubspotusercontent00.net/hubfs/742851/Privacy%20and%20Security%20documents/HubSpot%20Security%20Overview%20-%20October%202021.pdf",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "query_app": "Pipedrive",
+    "results": [
+      {
+        "url": "https://support.pipedrive.com/en/article/what-is-the-api-key-for",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://pipedrive.readme.io/docs/client-id-and-client-secret",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "query_app": "Attio",
+    "results": [
+      {
+        "url": "https://attio.com/apps/mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://attio.com/platform/developers?_rsc=7xpj1",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://mcp.attio.com/mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://attio.com/help/reference/attio-ai/attio-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "query_app": "Twenty CRM",
+    "results": [
+      {
+        "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/user-guide/ai/capabilities/mcp.mdx",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [
+            "C"
+          ],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/WEBDIENSTE/twenty-crm/blob/main/packages/twenty-docs/developers/extend/api.mdx",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://integrations.sh/twenty.com/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://integrations.sh/twenty.com/twenty-core-rest-api/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "query_app": "Podio",
+    "results": [
+      {
+        "url": "https://developers.podio.com/authentication",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.podio.com/index/faq",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.podio.com/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.podio.com/doc/oauth-authorization",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "query_app": "Zoho CRM",
+    "results": [
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [
+            "F"
+          ],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html?cxsrc_param=crm-solutions&srcPlan=NewCRM",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "query_app": "Close CRM",
+    "results": [
+      {
+        "url": "https://developer.close.com/api/overview/api-key-authentication",
+        "signals": {
+          "auth": [
+            "O",
+            "K",
+            "B"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.close.com/api/overview",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.close.com/integrations",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.close.com/integrations/api-keys-oauth",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "query_app": "Copper CRM",
+    "results": [
+      {
+        "url": "https://developer.copper.com/introduction/authentication.html",
+        "signals": {
+          "auth": [
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.copper.com/introduction/oauth/index.html",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.developer.copper.com/introduction/oauth/flow.html",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "query_app": "DealCloud",
+    "results": [
+      {
+        "url": "https://api.docs.dealcloud.com/docs/apikeys",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/docs",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/mcp/connections",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "query_app": "Zendesk",
+    "results": [
+      {
+        "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "signals": {
+          "auth": [
+            "O",
+            "T",
+            "B"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+        "signals": {
+          "auth": [
+            "O",
+            "T",
+            "B"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "query_app": "Intercom",
+    "results": [
+      {
+        "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.intercom.com/help/en/articles/8771110-getting-started-faqs",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.intercom.com/docs",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "query_app": "Freshdesk",
+    "results": [
+      {
+        "url": "https://developers.freshdesk.com/api/",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "query_app": "Front helpdesk",
+    "results": [
+      {
+        "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://dev.frontapp.com/docs/oauth",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://dev.frontapp.com/docs/core-api-getting-started",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://dev.frontapp.com/me/docs/core-api-getting-started",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "query_app": "Pylon usepylon",
+    "results": [
+      {
+        "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://support.usepylon.com/articles/1478561037-how-do-i-connect-a-custom-mcp-to-pylon",
+        "signals": {
+          "auth": [
+            "K",
+            "T",
+            "B"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.usepylon.com/integrations/mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://www.usepylon.com/blog/connect-pylon-chatgpt-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "query_app": "LiveAgent",
+    "results": [
+      {
+        "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.liveagent.com/567924-Documentation?r=1",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.liveagent.com/802463-REST-API",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "query_app": "Plain support",
+    "results": [
+      {
+        "url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "graphql"
+          ],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://integrations.sh/plain.com/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://integrations.sh/plain.com/plain-mcp-server/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://www.plain.com/changelog/plain-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "query_app": "Help Scout",
+    "results": [
+      {
+        "url": "https://developer.helpscout.com/docs-api/",
+        "signals": {
+          "auth": [
+            "K",
+            "B"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://cdn.cdata.com/help/FAM/api/helpscout/pg_connectionprofile.htm",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://cdn.cdata.com/help/FAN/api/helpscout/pg_connectionprofile.htm",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "query_app": "Gorgias",
+    "results": [
+      {
+        "url": "https://developers.gorgias.com/reference/authentication",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+        "signals": {
+          "auth": [
+            "K",
+            "T",
+            "B"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.gorgias.com/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "query_app": "Gladly",
+    "results": [
+      {
+        "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+        "signals": {
+          "auth": [
+            "O",
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.gladly.com/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "query_app": "Slack",
+    "results": [
+      {
+        "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.slack.dev/faq/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.slack.dev/authentication/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.slack.dev/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "query_app": "Twilio",
+    "results": [
+      {
+        "url": "https://www.twilio.com/docs/iam/api-keys",
+        "signals": {
+          "auth": [
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest",
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.twilio.com/articles/9318455807771",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://static1.twilio.com/docs/usage/api-security-reference-guide/secure-auth",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.twilio.com/docs/iam/api-keys/keys-in-console",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "query_app": "Zoho Cliq",
+    "results": [
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "query_app": "Lark Larksuite",
+    "results": [
+      {
+        "url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/troubleshooting/faq.md",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://open.larksuite.com/document/uAjLw4CM/uYjL24iN/mobile-app/mobile-app-overview",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "query_app": "Pumble",
+    "results": [
+      {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://pumble.com/mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "query_app": "Discord",
+    "results": [
+      {
+        "url": "https://github.com/discord/discord-api-docs/blob/main/developers/reference.mdx",
+        "signals": {
+          "auth": [
+            "T",
+            "B"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.discord.food/topics/oauth2",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://supabase.com/docs/guides/auth/social-sign-in/auth-discord",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "query_app": "Telegram Bot",
+    "results": [
+      {
+        "url": "https://telegram.org/tos/bot-developers",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://core.telegram.org/api/obtaining_api_id/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://core.telegram.org/api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://core.telegram.org/api/auth",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "query_app": "WhatsApp Cloud Business",
+    "results": [
+      {
+        "url": "https://www.postman.com/meta/whatsapp-business-platform/collection/wlk6lh4/whatsapp-cloud-api?action=share&creator=22794852",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.postman.com/meta/whatsapp-business-platform/documentation/wlk6lh4/whatsapp-cloud-api?entity=request-13382743-6909d472-3637-41d8-a338-c2fc14485f26",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.abdulkadirsagkol.com.tr/cdn/developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.postman.com/meta/whatsapp-business-platform/documentation/wlk6lh4/whatsapp-cloud-api?entity=request-13382743-22765e5e-e14f-420a-bdc0-60a4abda065a",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "query_app": "Aircall",
+    "results": [
+      {
+        "url": "https://developer.aircall.io/docs/authentication",
+        "signals": {
+          "auth": [
+            "O",
+            "B"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.aircall.io/docs/oauth",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.aircall.io/en-gb/articles/10375395181853",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.aircall.io/docs/how-to-register",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "query_app": "Vonage",
+    "results": [
+      {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.vonage.com/en/getting-started/overview?source=dispatch",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.vonage.com/en/dashboard/getting-started",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.vonage.com/en/getting-started/overview?source=reports",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "query_app": "Google Ads",
+    "results": [
+      {
+        "url": "https://developers.google.com/google-ads/api/rest/auth",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.google.com/google-ads/api/docs/oauth/cloud-project",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.google.com/google-ads/shopping/campaign-management/articles/t11",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "query_app": "Meta Ads",
+    "results": [
+      {
+        "url": "https://developers.facebook.com/docs",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/yvfl/faceads-mcp-v2/blob/main/docs/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started.md",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens?locale=en_US",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.cloud.google.com/integration-connectors/docs/connectors/metaads/configure",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "query_app": "LinkedIn Ads",
+    "results": [
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/tips-to-get-started?view=li-lms-2026-10",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2025-11",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/integration-requirements?view=li-lms-2025-11",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "query_app": "HighLevel",
+    "results": [
+      {
+        "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://gohighlevelassist.freshdesk.com/support/solutions/articles/48001060529-highlevel-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "query_app": "Mailchimp",
+    "results": [
+      {
+        "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=2ba81bac28a06ff733260d5e29d36e1c",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "query_app": "Klaviyo",
+    "results": [
+      {
+        "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+        "signals": {
+          "auth": [
+            "O",
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/v1-2/docs/retrieve-api-credentials",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/v2024-07-15/docs/authenticate_",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "query_app": "systeme.io",
+    "results": [
+      {
+        "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.systeme.io/article/11414-how-to-manage-your-automation-rules-with-the-systeme-io-mcp-server",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp?sa=sa0113591320d4c241776a203bd1e71b106b1b292a",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://systeme.io/mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "query_app": "Pinterest",
+    "results": [
+      {
+        "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/developer-tools/quickstart-tools/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "query_app": "Threads Meta",
+    "results": [
+      {
+        "url": "https://developers.facebook.com/docs",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.postman.com/meta/threads/overview",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.postman.com/meta/threads/documentation/dht3nzz/threads-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.postman.com/meta/threads/documentation/dht3nzz/threads-api?entity=folder-34203612-995a4593-61de-4558-9b26-6c8becae85e4",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "query_app": "SendGrid",
+    "results": [
+      {
+        "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+        "signals": {
+          "auth": [
+            "K",
+            "T",
+            "B"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference/api-keys",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference/api-keys/create-api-keys",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "query_app": "Shopify",
+    "results": [
+      {
+        "url": "https://shopify.dev/docs/api/usage/authentication",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://shopify.dev/docs/apps/build/authentication-authorization/manage-credentials",
+        "signals": {
+          "auth": [
+            "O",
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.shopify.com/en/manual/apps/install-setup-apps",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "query_app": "WooCommerce",
+    "results": [
+      {
+        "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/features/mcp/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/apis/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "query_app": "BigCommerce",
+    "results": [
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "query_app": "Salesforce Commerce Cloud",
+    "results": [
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+        "signals": {
+          "auth": [
+            "O",
+            "T",
+            "S"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/security",
+        "signals": {
+          "auth": [],
+          "access": [
+            "F"
+          ],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/configuration.html",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "query_app": "Adobe Commerce Magento",
+    "results": [
+      {
+        "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [
+            "rest",
+            "graphql"
+          ],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "query_app": "Squarespace",
+    "results": [
+      {
+        "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://commerce-apis.squarespace.com/oauth",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+        "signals": {
+          "auth": [
+            "O",
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://static3.squarespace.com/api/docs/oauth.pdf",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "query_app": "Ecwid",
+    "results": [
+      {
+        "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [
+            "P"
+          ],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.ecwid.com/api-reference",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "query_app": "Gumroad",
+    "results": [
+      {
+        "url": "https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/credentials/gumroad.md",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://gumroad.com/mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://apis.apievangelist.com/store/v2-api/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "query_app": "Amazon Selling Partner",
+    "results": [
+      {
+        "url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+        "signals": {
+          "auth": [],
+          "access": [
+            "F"
+          ],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer-docs.shipping.amazon.com/apis/docs/connecting-to-the-selling-partner-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer-docs.amazon.com/sp-api/lang-en_EN/docs/sp-api-registration-overview",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "query_app": "FanBasis",
+    "results": [
+      {
+        "url": "https://www.fanbasis.com/auth/setup/signup",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://mybio.fan/developers",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://actionist.ai/app-store/apps/fanbasis",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "query_app": "DataForSEO",
+    "results": [
+      {
+        "url": "https://github.com/dataforseo/mcp-server-typescript/blob/master/README.md",
+        "signals": {
+          "auth": [
+            "O",
+            "B"
+          ],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://dataforseo.com/help-center/connecting-the-remote-dataforseo-mcp-server-using-oauth",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://dataforseo.com/help-center/dfs-dashboard-how-to-find-everything",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "query_app": "SE Ranking",
+    "results": [
+      {
+        "url": "https://seranking.com/api/project/getting-started/",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://seranking.com/api/data/getting-started/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://seranking.com/api/how-to-get-api/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "query_app": "Ahrefs",
+    "results": [
+      {
+        "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.ahrefs.com/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "query_app": "MrScraper",
+    "results": [
+      {
+        "url": "https://docs.mrscraper.com/docs/api/authentication",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/features/activating-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "query_app": "Apify",
+    "results": [
+      {
+        "url": "https://docs.apify.com/integrations/api",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.apify.com/agents/quickstart",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [
+            "F"
+          ],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://docs.apify.com/api/v2",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.apify.com/mcp?fpr=xl2jer",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "query_app": "Firecrawl",
+    "results": [
+      {
+        "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/mcp-server.mdx",
+        "signals": {
+          "auth": [
+            "O",
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://firecrawl.demo-docs7.io/mcp-server",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.npmjs.com/package/firecrawl-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/mcp/firecrawl/firecrawl-mcp-server",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "query_app": "Bright Data",
+    "results": [
+      {
+        "url": "https://mcp.ai/brightdata",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/brightdata/opencode-brightdata/blob/main/skills/bright-data-mcp/references/mcp-setup.md",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.npmjs.com/package/%40brightdata/cli?activeTab=code",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://brightdata.com/blog/ai/pi-agent-with-web-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "query_app": "Sherlock github username project",
+    "results": [
+      {
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "signals": {
+          "auth": [
+            "O",
+            "T",
+            "B"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.github.com/en/apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/sherlock-project/sherlock/wiki/Adding-Sites-To-Sherlock",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "query_app": "Waterfall.io contact intel",
+    "results": [
+      {
+        "url": "https://www.waterfall.io/",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://toolkit-radar.vercel.app/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/OWASP/MCP-Security-Testing-Guide/blob/main/04.%20Secure%20MCP%20Development.md",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://docs.portfoliointel.co.in/mcp/authentication/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "query_app": "Clay enrichment",
+    "results": [
+      {
+        "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://docs.dtwo.ai/docs/mcp-server-clay",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://university.clay.com/docs/http-api-integration-overview",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://university.clay.com/lessons/use-clay-through-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "query_app": "GitHub",
+    "results": [
+      {
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.github.com/en/rest/quickstart",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure?apiVersion=2026-03-10",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "query_app": "Vercel",
+    "results": [
+      {
+        "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://vercel.com/docs/sign-in-with-vercel/getting-started",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://vercel.com/kb/guide/complete-guide-authentication-vercel",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "query_app": "Netlify",
+    "results": [
+      {
+        "url": "https://github.com/netlify/netlify-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://docs.netlify.com/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/netlify/netlify-mcp/blob/main/README.md",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "query_app": "Cloudflare",
+    "results": [
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+        "signals": {
+          "auth": [
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/oauth/create-an-oauth-client/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/cloudflare/mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "query_app": "Supabase",
+    "results": [
+      {
+        "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://supabase.com/docs/guides/auth/oauth-server",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://supabase.com/docs/guides/auth/oauth-server/mcp-authentication?trk=article-ssr-frontend-pulse_little-text-block",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://supabase.com/docs/guides/self-hosting/enable-mcp",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [
+            "C"
+          ],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "query_app": "Neo4j",
+    "results": [
+      {
+        "url": "https://neo4j.com/docs/mcp/current/authentication/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://neo4j.com/docs/developer-manual/current/http-api/authentication/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "query_app": "Snowflake",
+    "results": [
+      {
+        "url": "https://docs.snowflake.com/en/user-guide/api-authentication",
+        "signals": {
+          "auth": [
+            "O",
+            "B"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [
+            "rest",
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "query_app": "MongoDB Atlas",
+    "results": [
+      {
+        "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+        "signals": {
+          "auth": [
+            "O",
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+        "signals": {
+          "auth": [
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-auth-login/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/?msockid=23693c46da786f1224f72aa3dbc86e21",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "query_app": "Datadog",
+    "results": [
+      {
+        "url": "https://docs.datadoghq.com/api/latest/authentication/",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.datadoghq.com/api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.datadoghq.com/api/latest/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/DataDog/documentation/blob/master/hugo/content/en/mcp_server/setup.md",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "query_app": "Sentry",
+    "results": [
+      {
+        "url": "https://docs.sentry.io/api/auth/",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.sentry.io/api/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://cli.sentry.dev/getting-started/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/sentry-official/sentry-mcp/blob/main/README.md",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "query_app": "Notion",
+    "results": [
+      {
+        "url": "https://integrations.sh/notion.com/notion-api/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.notion.com/en-gb/help/create-integrations-with-the-notion-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.notion.com/help/what-is-the-notion-developer-platform",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "query_app": "Airtable",
+    "results": [
+      {
+        "url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://www.airtablemcp.com/docs/authentication",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.airtable.com/articles/6811769763-Third-party-integrations-via-OAuth-overview",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "query_app": "Linear",
+    "results": [
+      {
+        "url": "https://linear.app/developers/oauth-2-0-authentication",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://mcp-pool.vineethnk.in/docs/linear/installation/",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://linear.app/docs/mcp?4c18c78a_page=3&ef207e20_page=2",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://docs.krucible.app/integrations/linear-mcp/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "query_app": "Jira Cloud",
+    "results": [
+      {
+        "url": "https://developer.atlassian.com/developer-guide/auth/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.atlassian.com/software/jira/docs/api/REST/1000.1488.1/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/software/oauth-2-3lo-apps/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "query_app": "Asana",
+    "results": [
+      {
+        "url": "https://developers.asana.com/docs/authentication",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://developers.asana.com/docs/connecting-mcp-clients-to-asanas-v2-server",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.asana.com/docs/oauth",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "query_app": "Monday.com",
+    "results": [
+      {
+        "url": "https://developer.monday.com/api-reference/docs/mcp-api-token",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/authentication",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/getting-started",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "query_app": "ClickUp",
+    "results": [
+      {
+        "url": "https://developer.clickup.com/docs/authentication",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.clickup.com/docs/Getting%20Started",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "query_app": "Coda",
+    "results": [
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.glob.ai/docs/coda/extend-coda/mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/44722769665549-Security-recommendations-for-the-Coda-MCP",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://mcp.ai/coda/en",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": [
+            "Y"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "query_app": "Smartsheet",
+    "results": [
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "signals": {
+          "auth": [
+            "O",
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.smartsheet.com/articles/2482389-generate-API-key",
+        "signals": {
+          "auth": [
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "query_app": "Harvest time tracking",
+    "results": [
+      {
+        "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "signals": {
+          "auth": [
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/harvesthq/api/blob/master/Authentication/OAuth%202.0.md",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.harvestr.io/en/articles/13905940-connect-your-ai-tools-to-harvestr-with-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "query_app": "Stripe",
+    "results": [
+      {
+        "url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.stripe.com/questions/locate-api-keys",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://stripe.com/legal/api-key-security",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://integrations.sh/stripe.com/stripe-mcp-server/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "query_app": "Plaid",
+    "results": [
+      {
+        "url": "https://plaid.com/core-exchange/docs/reference/authentication/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://plaid.com/docs/quickstart/",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://plaid.com/docs/auth/add-to-app/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://plaid.com/core-exchange/docs/authentication/oauth-server-setup/",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "query_app": "Binance",
+    "results": [
+      {
+        "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.binance.com/en/docs/introduction",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.binance.me/en/docs/products/login/web-integration",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.binance.com/en/docs/products/login/introduction",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "query_app": "Paygent Connect NMI",
+    "results": [
+      {
+        "url": "https://docs.nmi.com/docs/mcp-api",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://api.paygent.tech/",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://api.paygent.tech/docs",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.google.com/pay-wallet/ai-tools/mcp-server/mcp-server",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "query_app": "iPayX ipayx.ai",
+    "results": [
+      {
+        "url": "https://www.ipayx.ai/docs/api",
+        "signals": {
+          "auth": [
+            "K",
+            "T",
+            "S"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.ipayx.ai/developers",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.ipayx.ai/docs/mcp-server",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://www.ipayx.ai/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "query_app": "QuickBooks Online",
+    "results": [
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/",
+        "signals": {
+          "auth": [],
+          "access": [
+            "F"
+          ],
+          "surface": [
+            "rest",
+            "graphql"
+          ],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://intuit-developer-faq.readthedocs.io/en/latest/getting_started/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0?utm%3Cem%3Ecampaign=integrations-break-year-2&utm%3Cem%3Esource=stoa-agency",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "query_app": "Xero",
+    "results": [
+      {
+        "url": "https://developer.xero.com/faq/getting-started",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.xero.com/documentation/getting-started-guide/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "query_app": "Brex",
+    "results": [
+      {
+        "url": "https://developer.brex.com/guides/authentication",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.brex.com/docs/faq",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developer.brex.com/guides/quickstart",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://integrations.sh/brex.com/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "query_app": "Ramp",
+    "results": [
+      {
+        "url": "https://support.ramp.com/accessing-the-developer-api/",
+        "signals": {
+          "auth": [],
+          "access": [
+            "F"
+          ],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/authorization",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/guides/getting-started",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/api/authorization",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "query_app": "PitchBook",
+    "results": [
+      {
+        "url": "https://pitchbook.com/help/PitchBook-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://mcp.so/servers/pitchbook",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://faq.library.upenn.edu/business/faq/285797",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://martechdb.com/vendors/pitchbook",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "query_app": "NotebookLM Enterprise",
+    "results": [
+      {
+        "url": "https://integrations.sh/notebooklm.google/notebooklm-enterprise-api/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.notebooktools.com/blog/notebooklm-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/teng-lin/notebooklm-py/blob/main/docs/auth-cookie-lifecycle.md",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/teng-lin/notebooklm-py/blob/main/SECURITY.md",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "query_app": "Otter AI",
+    "results": [
+      {
+        "url": "https://www.otterab.com/mcp-docs",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://connect.tryotter.com/docs/guides-authentication/",
+        "signals": {
+          "auth": [
+            "O",
+            "T",
+            "S"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.connect.tryotter.com/guides/core-concepts/authentication/",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "query_app": "Fathom video",
+    "results": [
+      {
+        "url": "https://help.fathom.video/en/articles/8368641",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.fathomhq.com/en/articles/17312058-connect-to-fathom-s-mcp-server",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://integrations.sh/fathom.ai/",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.fathom.video/en/articles/11497793",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "query_app": "Consensus.app",
+    "results": [
+      {
+        "url": "https://support.goconsensus.com/authenticating-with-the-consensus-api-using-oauth-2.0",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://docs.consensus.app/docs/mcp",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://support.goconsensus.com/how-to-access-your-api-credentials",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.goconsensus.com/consensus-api-documents",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "query_app": "Reducto",
+    "results": [
+      {
+        "url": "https://reducto.ai/developers",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [
+            "cli"
+          ],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://reducto.ai/?from=explinks.com",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://reducto.ai/blog/build-document-feature-with-reducto",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.apitracker.io/a/reducto",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "query_app": "Devin Cognition",
+    "results": [
+      {
+        "url": "https://engram.page/docs/integrations/devin",
+        "signals": {
+          "auth": [
+            "O",
+            "K"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://www.mnemoverse.com/docs/api/install-by-host",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://help.fatwafinder.org/connections/devin-mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://github.com/api-evangelist/cognition/blob/main/apis.yml",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "query_app": "Higgsfield",
+    "results": [
+      {
+        "url": "https://higgsfield.ai/creator-hub/help-center/getting-started/official-higgsfield-platforms",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://open.higgsfield.ai/quick-start",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://open.higgsfield.ai/terms-of-service",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "query_app": "Mermaid CLI",
+    "results": [
+      {
+        "url": "https://mermaid.ai/docs/ai/mcp-server",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/data-mermaid/mermaid-api/blob/master/docs/source/authentication.rst",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://trymermaid.app/docs/mcp",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://mermaid.ai/products/mermaid-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "query_app": "TranscriptAPI YouTube",
+    "results": [
+      {
+        "url": "https://transcriptapi.com/docs/getting-started/",
+        "signals": {
+          "auth": [
+            "K"
+          ],
+          "access": [],
+          "surface": [
+            "rest"
+          ],
+          "mcp": [
+            "Y"
+          ]
+        }
+      },
+      {
+        "url": "https://transcript.im/docs/authentication",
+        "signals": {
+          "auth": [
+            "K",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.google.com/youtube/data/guides/authentication",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.google.cn/youtube/terms/developer-policies?hl=en",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "query_app": "Grain meeting notes",
+    "results": [
+      {
+        "url": "https://developers.grain.com/authentication.html",
+        "signals": {
+          "auth": [
+            "O",
+            "T"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://developers.grain.com/endpoints.html",
+        "signals": {
+          "auth": [
+            "O"
+          ],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://support.grain.com/en/articles/15507288-grain-api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      },
+      {
+        "url": "https://rungrain.com/docs/api",
+        "signals": {
+          "auth": [],
+          "access": [],
+          "surface": [],
+          "mcp": []
+        }
+      }
+    ]
+  }
+]
