@@ -47,7 +47,7 @@ section{padding:43px 0;border-bottom:1px solid var(--rule);scroll-margin-top:14p
 .fill{height:100%;background:var(--green)}
 .filter{display:flex;flex-wrap:wrap;align-items:end;gap:12px;margin:20px 0 13px}
 label{display:grid;gap:5px;font-weight:600;font-size:.9rem}
-input,select{background:var(--white);border:1px solid #829185;border-radius:0;padding:9px;color:var(--ink);font:inherit;min-height:42px}
+button{background:var(--green);color:white;border:0;padding:12px 18px;font:inherit;cursor:pointer;min-height:44px}input,select{background:var(--white);border:1px solid #829185;border-radius:0;padding:9px;color:var(--ink);font:inherit;min-height:42px}
 input{width:min(100%,320px)}
 .filter label:first-child{flex:1;min-width:min(100%,210px)}
 .filter label:first-child input{width:100%}
@@ -88,6 +88,12 @@ footer{padding:22px 0;color:var(--muted);font-size:.9rem}
   <div><div class="kicker">Findings</div><h2>Access determines the first build</h2><ul class="facts" id="facts"></ul></div>
   <div><h3>Apps with a free or test route</h3><p class="subtle">Each category contains 10 apps. Production requirements are shown in the matrix.</p><div id="bars"></div></div>
 </section>
+<section id="decisions">
+<div class="kicker">Decision brief</div><h2>Prototype, clear access, or investigate</h2>
+<p class="subtle">Feasibility priorities, subject to customer demand and existing Composio coverage. Customer demand is unknown in this dataset. These groups are derived from documented starting access, not measured engineering effort.</p>
+<div class="workflow" id="decision-groups"></div>
+<details><summary>Prototype access versus production readiness</summary><p>A free account, trial or sandbox supports a first experiment. Shipping to customers still requires suitable scopes, distribution approval, commercial entitlement and a permission-tested action. No row is marked production-verified because no authenticated vendor API tests were performed.</p></details>
+</section>
 <section id="matrix">
   <div class="kicker">Research matrix</div><h2>100 apps, with sources</h2>
   <p class="subtle">The verdict describes the earliest documented build path. “Investigate” means a material fact remains open. A missing vendor MCP confirmation leaves room for an original API or CLI wrapper.</p>
@@ -100,10 +106,19 @@ footer{padding:22px 0;color:var(--muted);font-size:.9rem}
   <p class="subtle">A targeted sample checks named fields against official documentation. These are the fields used for corrections, so the comparison measures the fixes on this sample. It does not estimate accuracy across all 100 apps.</p>
   <div class="audit-top" id="audit-top"></div>
   <p id="human"></p>
+<div class="audit-top" id="second-score"></div>
+<details><summary>Second audit — ten previously unsampled apps</summary><p class="subtle" id="second-method"></p><div class="table-wrap" tabindex="0" role="region" aria-label="Second audit"><table><thead><tr><th>App</th><th>Frozen original auth</th><th>Corrected auth</th><th>Evidence and finding</th></tr></thead><tbody id="second-audit"></tbody></table></div></details>
+<h3>Three failures that changed the review process</h3><div class="workflow" id="error-stories"></div>
   <details open><summary>Inspect the sample and corrections</summary><div class="table-wrap" role="region" aria-label="Scrollable audit results" tabindex="0"><table><thead><tr><th scope="col">App / field</th><th scope="col">First pass</th><th scope="col">After review</th><th scope="col">Why / evidence</th></tr></thead><tbody id="audit"></tbody></table></div></details>
 </section>
 <section id="run">
-  <div class="kicker">Workflow and runnable proof</div><h2>Reproduce the result</h2>
+  <div class="kicker">Workflow and runnable proof</div><h2>Research an app beyond the list</h2>
+<p>The new <code>agent.py</code> pipeline starts with an official website or documentation URL, discovers relevant links, reads a bounded number of pages and saves evidence candidates. It uses zero model tokens. Product identity, scope and entitlement still require review.</p>
+<form id="command-form" class="filter"><label>App name<input id="new-app" required maxlength="80" value="Resend"></label><label>Official HTTPS website or docs<input id="new-url" type="url" required value="https://resend.com/docs"></label><button type="submit">Generate run command</button></form>
+<pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code id="run-command">python3 agent.py --app 'Resend' --website 'https://resend.com/docs' --max-pages 8 --out output/new-app</code></pre>
+<p class="subtle">Run this command from the downloaded source or repository. This static page generates a local command; it does not run a backend or ask for credentials.</p>
+<div class="audit-top" id="demo-proof"></div><p class="links"><a href="demo.json">Inspect the actual new-app run</a><a href="holdout-audit.json">Download second audit</a></p>
+<h3>How the 100-app snapshot was produced</h3>
   <div class="workflow">
     <div><h3>Discover</h3><p>Search every app for API, auth, credential access and MCP. Save the source candidates and extract the first result's signals.</p></div>
     <div><h3>Check the docs</h3><p>Read targeted official sources for policy changes, ambiguous product names and mismatches between API and MCP access. Record decisions that need judgment.</p></div>
@@ -197,7 +212,7 @@ function renderMatrix() {
     const decision = node("td",null);
     const sources = node("div",null,"src");
     row.sources.forEach((url,index)=>sources.append(link(url,"Source "+(index+1))));
-    decision.append(node("span",row.verdict,"verdict"),node("small",row.caveat),sources);
+    decision.append(node("span",row.verdict,"verdict"),node("small","Prototype: "+row.prototype),node("small","Production: "+row.production),node("small",row.caveat),sources);
     tr.append(name,auth,surface,decision);
     return tr;
   }));
@@ -226,6 +241,21 @@ for (const check of audit) {
   row.append(app,before,after,notes);
   el("audit").append(row);
 }
+
+const groups = [
+ ["Prototype first",apps.filter(r=>r.decision_group==="prototype"),"Start with GitHub issue retrieval, Linear issue search, or Notion page retrieval. Confirm existing coverage, then test one permission-scoped read action."],
+ ["Clear access first",apps.filter(r=>r.decision_group==="access"),"Paid or approval routes. For DealCloud, LinkedIn Ads and PitchBook, establish credential eligibility, distribution rights and approval requirements before committing an estimate."],
+ ["Research next",apps.filter(r=>r.decision_group==="research"),"Resolve missing auth or entitlement evidence. FanBasis and Paygent Connect need product and credential clarification. Unknown does not mean impossible."]
+];
+for(const [title,rows,reason] of groups){const box=node("div",null);box.append(node("h3",title+" · "+rows.length),node("p",reason));const names=node("details",null);names.append(node("summary","See apps"),node("p",rows.map(r=>r.app).join(", ")));box.append(names);el("decision-groups").append(box);}
+const second=data.second_audit;
+if(second){el("second-method").textContent=second.method;const matched=second.checks.filter(c=>c.before_ok).length;el("second-score").append(node("strong",matched+"/"+second.checks.length+" original auth sets matched"),node("div",(second.checks.length-matched)+" sets corrected after a fresh documentation review. Rechecking the corrected sets gives "+second.checks.filter(c=>c.after_ok).length+"/"+second.checks.length+". This is assistant-reviewed auth completeness, not independent overall accuracy."));
+ for(const c of second.checks){const tr=node("tr",null),notes=node("td",c.note);notes.append(node("br",null),link(c.url,"Official source"));tr.append(node("th",c.app),node("td",auditLabel("auth",c.before)),node("td",auditLabel("auth",c.after)),notes);el("second-audit").append(tr);}
+ for(const [id,rule] of [[17,"Check the API authentication guide separately from the MCP login guide."],[35,"Record both the credential and the transport, including HTTP Basic."],[61,"Scope auth to resource calls versus app-management endpoints."]]){const c=second.checks.find(x=>x.id===id);const box=node("div",null);box.append(node("h3",c.app),node("p",auditLabel("auth",c.before)+" → "+auditLabel("auth",c.after)),node("p",c.note),node("strong","Review rule"),node("p",rule),link(c.url,"Evidence"));el("error-stories").append(box);}}
+if(data.demo){el("demo-proof").append(node("strong",data.demo.app+" · "+data.demo.pages_read+"/"+data.demo.pages_attempted+" documents read"),node("div","Actual run on an app outside the assignment. "+data.demo.model_tokens+" model tokens; "+data.demo.elapsed_seconds+" seconds. Findings remain candidates until reviewed. Recorded "+data.demo.checked_at));}
+function shellQuote(value){return "'"+value.replaceAll("'", "'\"'\"'")+"'";}
+el("command-form").addEventListener("submit",event=>{event.preventDefault();const url=new URL(el("new-url").value);if(url.protocol!=="https:"){el("run-command").textContent="Enter an HTTPS documentation URL.";return;}el("run-command").textContent="python3 agent.py --app "+shellQuote(el("new-app").value)+" --website "+shellQuote(url.href)+" --max-pages 8 --out output/new-app";});
+
 if (source_repo) el("repo-links").prepend(link(source_repo,"Source repository"));
 </script>
 </body>

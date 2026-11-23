@@ -1,0 +1,195 @@
+[
+  {
+    "id": 4,
+    "app": "Attio",
+    "category": "CRM & Sales",
+    "description": "Flexible CRM and relationship data",
+    "auth": [
+      "K",
+      "O"
+    ],
+    "access": "F",
+    "surface": "REST; objects, records, lists and meetings",
+    "mcp": "Y",
+    "caveat": "Workspace admins can generate API keys on all plans, including Free. OAuth is a separate route.",
+    "verdict": "Prototype",
+    "sources": [
+      "https://docs.attio.com/rest-api/overview",
+      "https://attio.com/platform/developers",
+      "https://attio.com/apps/mcp",
+      "https://attio.com/help/reference/apps/generating-an-api-key"
+    ]
+  },
+  {
+    "id": 6,
+    "app": "Podio",
+    "category": "CRM & Sales",
+    "description": "Configurable workspaces and CRM apps",
+    "auth": [
+      "O"
+    ],
+    "access": "F",
+    "surface": "REST; workspaces, apps, items and tasks",
+    "mcp": "U",
+    "caveat": "Free and paid accounts have API access at the same base limits. Higher limits are a paid option.",
+    "verdict": "Prototype",
+    "sources": [
+      "https://developers.podio.com/authentication",
+      "https://developers.podio.com/index/faq"
+    ]
+  },
+  {
+    "id": 13,
+    "app": "Freshdesk",
+    "category": "Support & Helpdesk",
+    "description": "Support tickets and knowledge base",
+    "auth": [
+      "B",
+      "K"
+    ],
+    "access": "F",
+    "surface": "REST v2; tickets, contacts, companies and solutions",
+    "mcp": "U",
+    "caveat": "API key acts as the Basic username; limits vary by plan. MCP source concerns Freshdesk connecting to external MCP servers.",
+    "verdict": "Prototype",
+    "sources": [
+      "https://developers.freshdesk.com/api/",
+      "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-"
+    ]
+  },
+  {
+    "id": 17,
+    "app": "Plain",
+    "category": "Support & Helpdesk",
+    "description": "Support platform for technical B2B teams",
+    "auth": [
+      "K"
+    ],
+    "access": "U",
+    "surface": "GraphQL; customer and support objects",
+    "mcp": "Y",
+    "caveat": "GraphQL API key and MCP OAuth are distinct credential paths.",
+    "verdict": "Investigate",
+    "sources": [
+      "https://www.plain.com/docs",
+      "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx"
+    ]
+  },
+  {
+    "id": 21,
+    "app": "Slack",
+    "category": "Communications & Messaging",
+    "description": "Team chat and channels",
+    "auth": [
+      "O",
+      "T"
+    ],
+    "access": "F",
+    "surface": "REST-style Web API and events; conversations and messages",
+    "mcp": "U",
+    "caveat": "Workspace installation and scopes; org policies may require approval.",
+    "verdict": "Prototype",
+    "sources": [
+      "https://docs.slack.dev/authentication/installing-with-oauth/",
+      "https://docs.slack.dev/authentication/"
+    ]
+  },
+  {
+    "id": 35,
+    "app": "Mailchimp",
+    "category": "Marketing, Ads, Email & Social",
+    "description": "Email campaigns and audience management",
+    "auth": [
+      "K",
+      "O"
+    ],
+    "access": "F",
+    "surface": "REST; audiences, campaigns, automation and reports",
+    "mcp": "U",
+    "caveat": "Credential available inside an eligible account; features vary by plan.",
+    "verdict": "Prototype",
+    "sources": [
+      "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+      "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app"
+    ]
+  },
+  {
+    "id": 55,
+    "app": "Apify",
+    "category": "Data, SEO & Scraping",
+    "description": "Hosted Actors for extraction and automation",
+    "auth": [
+      "T"
+    ],
+    "access": "F",
+    "surface": "REST; actors, tasks, runs, datasets and storage",
+    "mcp": "Y",
+    "caveat": "Free allowances support trials; individual Actor terms and costs may differ.",
+    "verdict": "Prototype",
+    "sources": [
+      "https://docs.apify.com/integrations/api",
+      "https://docs.apify.com/api/v2",
+      "https://docs.apify.com/agents/quickstart"
+    ]
+  },
+  {
+    "id": 61,
+    "app": "GitHub",
+    "category": "Developer, Infra & Data",
+    "description": "Source control and development collaboration",
+    "auth": [
+      "O",
+      "T"
+    ],
+    "access": "F",
+    "surface": "REST and GraphQL; repositories, PRs, issues and Actions",
+    "mcp": "Y",
+    "caveat": "Fine-grained token or app permissions limit resources and actions.",
+    "verdict": "Prototype",
+    "sources": [
+      "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "https://github.com/github/github-mcp-server"
+    ]
+  },
+  {
+    "id": 73,
+    "app": "Linear",
+    "category": "Productivity & Project Management",
+    "description": "Issue and project management",
+    "auth": [
+      "K",
+      "O"
+    ],
+    "access": "F",
+    "surface": "GraphQL; issues, projects, teams and comments",
+    "mcp": "Y",
+    "caveat": "Workspace scopes and install permissions matter.",
+    "verdict": "Prototype",
+    "sources": [
+      "https://linear.app/developers/oauth-2-0-authentication",
+      "https://linear.app/developers/graphql",
+      "https://linear.app/docs/mcp"
+    ]
+  },
+  {
+    "id": 81,
+    "app": "Stripe",
+    "category": "Finance & Fintech",
+    "description": "Payments, billing and subscriptions",
+    "auth": [
+      "B",
+      "K",
+      "O"
+    ],
+    "access": "F",
+    "surface": "REST; payments, invoices, subscriptions and account data",
+    "mcp": "Y",
+    "caveat": "Test mode is self-serve; live payments require activated accounts and suitable permissions.",
+    "verdict": "Prototype",
+    "sources": [
+      "https://docs.stripe.com/keys",
+      "https://docs.stripe.com/connect/oauth-reference",
+      "https://docs.stripe.com/mcp"
+    ]
+  }
+]

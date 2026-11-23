@@ -1,0 +1,402 @@
+[
+  {
+    "app": "Salesforce",
+    "website": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+  },
+  {
+    "app": "HubSpot",
+    "website": "https://developers.hubspot.com/blog/a-newbies-perspective-on-becoming-a-crm-developer"
+  },
+  {
+    "app": "Pipedrive",
+    "website": "https://support.pipedrive.com/en/article/what-is-the-api-key-for"
+  },
+  {
+    "app": "Attio",
+    "website": "https://docs.attio.com/rest-api/overview"
+  },
+  {
+    "app": "Twenty",
+    "website": "https://github.com/twentyhq/twenty"
+  },
+  {
+    "app": "Podio",
+    "website": "https://developers.podio.com/authentication"
+  },
+  {
+    "app": "Zoho CRM",
+    "website": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+  },
+  {
+    "app": "Close",
+    "website": "https://developer.close.com/api/overview/api-key-authentication"
+  },
+  {
+    "app": "Copper",
+    "website": "https://developer.copper.com/introduction/authentication.html"
+  },
+  {
+    "app": "DealCloud",
+    "website": "https://api.docs.dealcloud.com/docs/apikeys"
+  },
+  {
+    "app": "Zendesk",
+    "website": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+  },
+  {
+    "app": "Intercom",
+    "website": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+  },
+  {
+    "app": "Freshdesk",
+    "website": "https://developers.freshdesk.com/api/"
+  },
+  {
+    "app": "Front",
+    "website": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens"
+  },
+  {
+    "app": "Pylon",
+    "website": "https://docs.usepylon.com/pylon-docs/developer/api/authentication"
+  },
+  {
+    "app": "LiveAgent",
+    "website": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors"
+  },
+  {
+    "app": "Plain",
+    "website": "https://www.plain.com/docs"
+  },
+  {
+    "app": "Help Scout",
+    "website": "https://developer.helpscout.com/docs-api/"
+  },
+  {
+    "app": "Gorgias",
+    "website": "https://developers.gorgias.com/reference/authentication"
+  },
+  {
+    "app": "Gladly",
+    "website": "https://help.gladly.com/implementation/docs/get-your-api-tokens"
+  },
+  {
+    "app": "Slack",
+    "website": "https://docs.slack.dev/authentication/installing-with-oauth/"
+  },
+  {
+    "app": "Twilio",
+    "website": "https://www.twilio.com/docs/iam/api-keys"
+  },
+  {
+    "app": "Zoho Cliq",
+    "website": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/"
+  },
+  {
+    "app": "Lark",
+    "website": "https://open.larksuite.com/"
+  },
+  {
+    "app": "Pumble",
+    "website": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+  },
+  {
+    "app": "Discord",
+    "website": "https://github.com/discord/discord-api-docs/blob/main/developers/reference.mdx"
+  },
+  {
+    "app": "Telegram",
+    "website": "https://core.telegram.org/bots/tutorial"
+  },
+  {
+    "app": "WhatsApp Business",
+    "website": "https://developers.facebook.com/docs/whatsapp"
+  },
+  {
+    "app": "Aircall",
+    "website": "https://developer.aircall.io/docs/authentication"
+  },
+  {
+    "app": "Vonage",
+    "website": "https://developer.vonage.com/en/getting-started/overview"
+  },
+  {
+    "app": "Google Ads",
+    "website": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token"
+  },
+  {
+    "app": "Meta Ads",
+    "website": "https://developers.facebook.com/docs/marketing-apis/"
+  },
+  {
+    "app": "LinkedIn Ads",
+    "website": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview"
+  },
+  {
+    "app": "GoHighLevel",
+    "website": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation"
+  },
+  {
+    "app": "Mailchimp",
+    "website": "https://mailchimp.com/developer/marketing/api-concepts/authentication/"
+  },
+  {
+    "app": "Klaviyo",
+    "website": "https://developers.klaviyo.com/en/docs/authenticate_"
+  },
+  {
+    "app": "systeme.io",
+    "website": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io"
+  },
+  {
+    "app": "Pinterest",
+    "website": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+  },
+  {
+    "app": "Threads",
+    "website": "https://developers.facebook.com/docs/threads/"
+  },
+  {
+    "app": "SendGrid",
+    "website": "https://www.twilio.com/docs/sendgrid/api-reference/api-keys"
+  },
+  {
+    "app": "Shopify",
+    "website": "https://shopify.dev/docs/api/usage/authentication"
+  },
+  {
+    "app": "WooCommerce",
+    "website": "https://developer.woocommerce.com/docs/apis/rest-api/authentication"
+  },
+  {
+    "app": "BigCommerce",
+    "website": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts"
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "website": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html"
+  },
+  {
+    "app": "Magento (Adobe Commerce)",
+    "website": "https://developer.adobe.com/commerce/webapi/get-started/authentication/"
+  },
+  {
+    "app": "Squarespace",
+    "website": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys"
+  },
+  {
+    "app": "Ecwid",
+    "website": "https://docs.ecwid.com/get-started/make-your-first-api-request"
+  },
+  {
+    "app": "Gumroad",
+    "website": "https://gumroad.com/api"
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "website": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview"
+  },
+  {
+    "app": "FanBasis",
+    "website": "https://www.fanbasis.com/"
+  },
+  {
+    "app": "DataForSEO",
+    "website": "https://docs.dataforseo.com/"
+  },
+  {
+    "app": "SE Ranking",
+    "website": "https://seranking.com/api/project/getting-started/"
+  },
+  {
+    "app": "Ahrefs",
+    "website": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+  },
+  {
+    "app": "MrScraper",
+    "website": "https://docs.mrscraper.com/docs/api/authentication"
+  },
+  {
+    "app": "Apify",
+    "website": "https://docs.apify.com/integrations/api"
+  },
+  {
+    "app": "Firecrawl",
+    "website": "https://docs.firecrawl.dev/introduction"
+  },
+  {
+    "app": "Bright Data",
+    "website": "https://docs.brightdata.com/ai/mcp-server/overview"
+  },
+  {
+    "app": "Sherlock",
+    "website": "https://github.com/sherlock-project/sherlock"
+  },
+  {
+    "app": "Waterfall.io",
+    "website": "https://www.waterfall.io/product/contact-enrich"
+  },
+  {
+    "app": "Clay",
+    "website": "https://university.clay.com/docs/guide-find-clay-api-key"
+  },
+  {
+    "app": "GitHub",
+    "website": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+  },
+  {
+    "app": "Vercel",
+    "website": "https://vercel.com/docs/rest-api"
+  },
+  {
+    "app": "Netlify",
+    "website": "https://docs.netlify.com/api/get-started/"
+  },
+  {
+    "app": "Cloudflare",
+    "website": "https://developers.cloudflare.com/fundamentals/api/get-started/"
+  },
+  {
+    "app": "Supabase",
+    "website": "https://supabase.com/docs/guides/getting-started/api-keys"
+  },
+  {
+    "app": "Neo4j",
+    "website": "https://neo4j.com/docs/query-api/current/authentication-authorization/"
+  },
+  {
+    "app": "Snowflake",
+    "website": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+  },
+  {
+    "app": "MongoDB Atlas",
+    "website": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication"
+  },
+  {
+    "app": "Datadog",
+    "website": "https://docs.datadoghq.com/api/latest/authentication/"
+  },
+  {
+    "app": "Sentry",
+    "website": "https://docs.sentry.io/api/auth/"
+  },
+  {
+    "app": "Notion",
+    "website": "https://www.notion.com/help/create-integrations-with-the-notion-api"
+  },
+  {
+    "app": "Airtable",
+    "website": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api"
+  },
+  {
+    "app": "Linear",
+    "website": "https://linear.app/developers/oauth-2-0-authentication"
+  },
+  {
+    "app": "Jira",
+    "website": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/"
+  },
+  {
+    "app": "Asana",
+    "website": "https://developers.asana.com/docs/authentication"
+  },
+  {
+    "app": "Monday.com",
+    "website": "https://developer.monday.com/api-reference/docs/authentication"
+  },
+  {
+    "app": "ClickUp",
+    "website": "https://developer.clickup.com/docs/authentication"
+  },
+  {
+    "app": "Coda",
+    "website": "https://coda.io/developers/apis/v1"
+  },
+  {
+    "app": "Smartsheet",
+    "website": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication"
+  },
+  {
+    "app": "Harvest",
+    "website": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+  },
+  {
+    "app": "Stripe",
+    "website": "https://docs.stripe.com/keys"
+  },
+  {
+    "app": "Plaid",
+    "website": "https://plaid.com/docs/quickstart/"
+  },
+  {
+    "app": "Binance",
+    "website": "https://developers.binance.com/en/docs/introduction"
+  },
+  {
+    "app": "Paygent Connect",
+    "website": "https://www.nmi.com/logins/"
+  },
+  {
+    "app": "iPayX",
+    "website": "https://www.ipayx.ai/docs/api"
+  },
+  {
+    "app": "QuickBooks",
+    "website": "https://developer.intuit.com/app/developer/qbo/docs/"
+  },
+  {
+    "app": "Xero",
+    "website": "https://developer.xero.com/documentation/getting-started-guide/"
+  },
+  {
+    "app": "Brex",
+    "website": "https://developer.brex.com/guides/authentication"
+  },
+  {
+    "app": "Ramp",
+    "website": "https://docs.ramp.com/developer-api/v1/authorization"
+  },
+  {
+    "app": "PitchBook",
+    "website": "https://pitchbook.com/help/PitchBook-api"
+  },
+  {
+    "app": "NotebookLM",
+    "website": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  {
+    "app": "Otter AI",
+    "website": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  {
+    "app": "Fathom",
+    "website": "https://help.fathom.video/en/articles/8368641"
+  },
+  {
+    "app": "Consensus",
+    "website": "https://docs.consensus.app/docs/mcp"
+  },
+  {
+    "app": "Reducto",
+    "website": "https://reducto.ai/developers"
+  },
+  {
+    "app": "Devin",
+    "website": "https://docs.devin.ai/api-reference/authentication"
+  },
+  {
+    "app": "Higgsfield",
+    "website": "https://open.higgsfield.ai/quick-start"
+  },
+  {
+    "app": "Mermaid CLI",
+    "website": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  {
+    "app": "YouTube Transcript",
+    "website": "https://transcriptapi.com/docs/api/"
+  },
+  {
+    "app": "Grain",
+    "website": "https://developers.grain.com/authentication.html"
+  }
+]
