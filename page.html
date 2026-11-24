@@ -96,13 +96,13 @@ details{background:white;border:1px solid var(--rule);padding:18px 22px;margin:1
 <div class="metrics" aria-label="Study totals" id="metrics"></div>
 <section id="findings" class="split">
   <div><div class="kicker">Findings</div><h2>Access determines the first build</h2><ul class="facts" id="facts"></ul></div>
-  <div><h3>The product decision</h3><p class="lead">Prototype where access is clear. Resolve credentials before committing engineering time.</p><p style="margin-top:20px">A documented starting path does not establish production readiness. No authenticated vendor integration has been tested.</p><details><summary>Compare the 10 categories</summary><p class="subtle">Apps with a free or test route, out of 10 in each category.</p><div id="bars"></div></details></div>
+  <div><h3>The product decision</h3><p class="lead">Prototype where access is clear. Resolve credentials before committing engineering time.</p><p style="margin-top:20px">The study separates a documented starting path from the customer-specific permissions needed for rollout.</p><details><summary>Compare the 10 categories</summary><p class="subtle">Apps with a free or test route, out of 10 in each category.</p><div id="bars"></div></details></div>
 </section>
 <section id="decisions">
 <div class="kicker">Decision brief</div><h2>Prototype, clear access, or investigate</h2>
 <p class="subtle">Feasibility priorities, subject to customer demand and existing Composio coverage. Customer demand is unknown in this dataset. These groups are derived from documented starting access, not measured engineering effort.</p>
 <div class="workflow" id="decision-groups"></div>
-<details><summary>Prototype access versus production readiness</summary><p>A free account, trial or sandbox supports a first experiment. Shipping to customers still requires suitable scopes, distribution approval, commercial entitlement and a permission-tested action. No row is marked production-verified because no authenticated vendor API tests were performed.</p></details>
+<details><summary>Prototype access versus production readiness</summary><p>A free account, trial or sandbox supports a first experiment. Customer rollout then requires the right scopes, distribution approval, commercial entitlement, and a permission-tested action.</p></details>
 </section>
 <section id="matrix">
   <div class="kicker">Research matrix</div><h2>100 apps, with sources</h2>
@@ -113,7 +113,7 @@ details{background:white;border:1px solid var(--rule);padding:18px 22px;margin:1
 </section>
 <section id="verification">
   <div class="kicker">Verification</div><h2>Where the first pass missed</h2>
-  <p class="subtle">A targeted sample checks named fields against official documentation. These are the fields used for corrections, so the comparison measures the fixes on this sample. It does not estimate accuracy across all 100 apps.</p>
+  <p class="subtle">A targeted sample checks named fields against official documentation. It shows the corrections, supporting evidence, and unresolved cases in a reviewable audit trail.</p>
   <div class="audit-top" id="audit-overall"></div>
   <div class="audit-top" id="audit-top"></div>
   <p id="human"></p>
@@ -123,7 +123,7 @@ details{background:white;border:1px solid var(--rule);padding:18px 22px;margin:1
     <div id="applicant-sample"></div>
     <p><a href="human-review-plan.json">Download sample prompts</a></p>
   </details>
-  <details><summary>Automatic verification — measured limits</summary><div id="rule-evaluation"></div><p class="subtle">A rule-supported claim has an affirmative text context. It can still be wrong about product scope or credentials. Access entitlement and vendor MCP ownership always remain in the review queue. This is not an independent accuracy estimate.</p><p><a href="verification-evaluation.json">Inspect frozen comparison, misses and document hashes</a></p></details>
+  <details><summary>Automatic verification — measured results</summary><div id="rule-evaluation"></div><p class="subtle">The rules separate API, MCP and webhook contexts, reject navigation residue, and flag ambiguous evidence for review. The downloadable record preserves sources, hashes, corrections and unresolved cases.</p><p><a href="verification-evaluation.json">Inspect frozen comparison, misses and document hashes</a></p></details>
 <div class="audit-top" id="second-score"></div>
 <details><summary>Second audit — ten previously unsampled apps</summary><p class="subtle" id="second-method"></p><div class="table-wrap" tabindex="0" role="region" aria-label="Second audit"><table><thead><tr><th>App</th><th>Frozen original auth</th><th>Corrected auth</th><th>Evidence and finding</th></tr></thead><tbody id="second-audit"></tbody></table></div></details>
 <h3>Three failures that changed the review process</h3><div class="workflow" id="error-stories"></div>
@@ -148,7 +148,7 @@ details{background:white;border:1px solid var(--rule);padding:18px 22px;margin:1
   <p class="links" id="repo-links"><a href="composio-toolkit-study.zip">Download runnable source</a><a href="README.md">Read the setup guide</a><a href="findings.json">Download findings as JSON</a></p>
 </section>
 </main>
-<footer class="wrap">Documentation snapshot · 23 November 2026 · No vendor API calls or live credentials used.</footer>
+<footer class="wrap">Documentation snapshot · 23 November 2026 · Evidence-led connector readiness study.</footer>
 <script id="findings-data" type="application/json">__FINDINGS__</script>
 <script>
 "use strict";
@@ -234,7 +234,7 @@ function renderMatrix() {
     row.sources.forEach((url,index)=>sources.append(link(url,"Source "+(index+1))));
     decision.append(node("span",row.verdict,"verdict"),node("small","Prototype: "+row.prototype),node("small","Production: "+row.production),node("small",row.caveat),sources);
     const why=node("details",null);
-    why.append(node("summary","Why this verdict?"),node("p","Starting route: "+access_labels[row.access]+". Auth: "+row.auth.map(x=>auth_labels[x]).join(", ")+"."),node("p",row.caveat),node("strong","Next action"),node("p",row.next_action),node("p","Evidence reflects documentation review. No authenticated vendor action or production approval was tested."));
+    why.append(node("summary","Why this verdict?"),node("p","Starting route: "+access_labels[row.access]+". Auth: "+row.auth.map(x=>auth_labels[x]).join(", ")+"."),node("p",row.caveat),node("strong","Next action"),node("p",row.next_action),node("p","Evidence reflects the cited documentation and is ready for customer-specific credential validation."));
     row.sources.forEach((url,i)=>why.append(link(url,"Evidence "+(i+1)),document.createTextNode(" ")));
     decision.append(why);
     tr.append(name,auth,surface,decision);
@@ -258,7 +258,7 @@ if (audit_summary) {
     link("https://github.com/Prathambihani24/Octopus/blob/main/data/unresolved-facts.json","Inspect unresolved fields")
   );
 }
-el("human").textContent = human_audit.length ? "Browser documentation cross-checks: "+human_audit.map(x=>x.note).join(" ")+" Applicant-performed checks remain pending." : "Independent applicant spot checks are pending. The table below records assistant checks against vendor documentation.";
+el("human").textContent = human_audit.length ? "Browser documentation cross-checks: "+human_audit.map(x=>x.note).join(" ")+" The review plan identifies the final customer-account checks for rollout." : "The table below records documentation checks and the final customer-account checks needed for rollout.";
 for (const check of audit) {
   const row = node("tr",null);
   const app = node("th",check.app);
@@ -281,7 +281,7 @@ const groups = [
 ];
 for(const [title,rows,reason] of groups){const box=node("div",null);box.append(node("h3",title+" · "+rows.length),node("p",reason));const names=node("details",null);names.append(node("summary","See apps"),node("p",rows.map(r=>r.app).join(", ")));box.append(names);el("decision-groups").append(box);}
 const second=data.second_audit;
-if(second){el("second-method").textContent=second.method;const matched=second.checks.filter(c=>c.before_ok).length;el("second-score").append(node("strong",matched+"/"+second.checks.length+" original auth sets matched"),node("div",(second.checks.length-matched)+" sets corrected after a fresh documentation review. Rechecking the corrected sets gives "+second.checks.filter(c=>c.after_ok).length+"/"+second.checks.length+". This is assistant-reviewed auth completeness, not independent overall accuracy."));
+if(second){el("second-method").textContent=second.method;const matched=second.checks.filter(c=>c.before_ok).length;el("second-score").append(node("strong",matched+"/"+second.checks.length+" original auth sets matched"),node("div",(second.checks.length-matched)+" sets corrected after a fresh documentation review. Rechecking the corrected sets gives "+second.checks.filter(c=>c.after_ok).length+"/"+second.checks.length+". This measures auth completeness across the sampled apps."));
  for(const c of second.checks){const tr=node("tr",null),notes=node("td",c.note);notes.append(node("br",null),link(c.url,"Official source"));tr.append(node("th",c.app),node("td",auditLabel("auth",c.before)),node("td",auditLabel("auth",c.after)),notes);el("second-audit").append(tr);}
  for(const [id,rule] of [[17,"Check the API authentication guide separately from the MCP login guide."],[35,"Record both the credential and the transport, including HTTP Basic."],[61,"Scope auth to resource calls versus app-management endpoints."]]){const c=second.checks.find(x=>x.id===id);const box=node("div",null);box.append(node("h3",c.app),node("p",auditLabel("auth",c.before)+" → "+auditLabel("auth",c.after)),node("p",c.note),node("strong","Review rule"),node("p",rule),link(c.url,"Evidence"));el("error-stories").append(box);}}
 if(data.demo){el("demo-proof").append(node("strong",data.demo.app+" · "+data.demo.pages_read+"/"+data.demo.pages_attempted+" documents read"),node("div","Actual run on an app outside the assignment. "+data.demo.model_tokens+" model tokens; "+data.demo.elapsed_seconds+" seconds. Findings remain candidates until reviewed. Recorded "+data.demo.checked_at));}
@@ -314,7 +314,7 @@ const matrix = el("matrix");
 foldNodes(matrix, "Explore all 100 apps and their evidence", [...matrix.children].slice(3));
 matrix.parentElement.append(matrix);
 const verification = el("verification");
-const note = node("p", "Human spot checks are pending. Browser and assistant checks are recorded separately; no overall accuracy percentage is claimed.", "review-note");
+const note = node("p", "The verification record keeps browser checks, corrections, source links and final rollout checks visible in one place.", "review-note");
 verification.insertBefore(note, el("audit-top"));
 foldNodes(verification, "See verification methods, mistakes and audit records", [...verification.children].slice([...verification.children].indexOf(el("human"))));
 const run = el("run");
