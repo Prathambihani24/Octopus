@@ -23,7 +23,7 @@ for row in findings["apps"]:
     row["decision_group"] = "research" if row["access"] == "U" or "U" in row["auth"] else ("access" if row["access"] in ("P","R") else "prototype")
     row["prototype"] = {"F":"Documented free/test route", "C":"Local execution route", "P":"Paid access required", "R":"Approval or tenant access required", "U":"Unconfirmed"}[row["access"]]
     row["next_action"] = {"prototype":"Test one read action with least-privilege credentials; confirm existing Composio coverage.", "access":"Confirm account eligibility, API entitlement and distribution approval before estimating implementation.", "research":"Resolve the missing credential or access evidence in official documentation before making a build commitment."}[row["decision_group"]]
-    row["production"] = "Not verified; check entitlement, scopes and distribution"
+    row["production"] = "Rollout: validate scopes, entitlement and distribution"
 payload = json.dumps(findings, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
 template = (ROOT / "page.html").read_text(encoding="utf-8")
 (dist / "index.html").write_text(template.replace("__FINDINGS__", payload), encoding="utf-8")
